@@ -13,216 +13,285 @@
   Historique des versions :
   date        |  auteur              |  description
   06/09/2016  |  Maël REBOUX         |  version initiale dérivée du style ref_rva:v_adresse_etq
+  05/01/2017  |  Mael REBOUX         |  passage de SLD en SE + utilisation uniquement des adresses bornantes pour les échelles moyennes
 
 -->
-<StyledLayerDescriptor version="1.0.0"
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
-    xmlns="http://www.opengis.net/sld"
-    xmlns:ogc="http://www.opengis.net/ogc"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <Name>ref_rva:v_adresse_pnt</Name>
+    <se:Name>ref_fonds:pvci_v_adresse_pnt</se:Name>
     <UserStyle>
-      <Name>v_adresse_pnt_etq</Name>
-      <Title>Point + étiquettes des adresses (visibles en-dessous de 1/4500)</Title>
-      <FeatureTypeStyle>
-
-        <Rule>
-          <MaxScaleDenominator>1100</MaxScaleDenominator>
-          <!-- Affichage des adresses en utilisant l'attribut adresse.  -->
-          <TextSymbolizer>
-            <Label>
+      <se:Name>v_adresse_pnt_etq</se:Name>
+        <se:Description>
+          <se:Title>Point + étiquettes des adresses du RVA</se:Title>
+          <se:Abstract>Point support et étiquettes des adresses du RVA. Affichage des adresses bornant les tronçons au-dessus du 1/4 500.</se:Abstract>
+        </se:Description>
+      <se:FeatureTypeStyle>
+      
+        <se:Rule>
+          <se:MaxScaleDenominator>600</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <!-- l'attribut qui sert d'étiquette -->
+            <se:Label>
               <ogc:PropertyName>adresse</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">12</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>0</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-                <!-- rotation selon champ -->
-                <Rotation>
+            </se:Label>
+            <!-- réglages de la fonte sauf la couleur -->
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">16</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <!-- placement de l'étiquette -->
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+                <se:Displacement>
+                  <se:DisplacementX>0</se:DisplacementX>
+                  <se:DisplacementY>-2</se:DisplacementY>
+                </se:Displacement>
+                <se:Rotation>
                   <ogc:Sub>
                     <ogc:Literal>360</ogc:Literal>
                     <ogc:PropertyName>orientation_deg</ogc:PropertyName>
                   </ogc:Sub>
-                </Rotation>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>0.9</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
+                </se:Rotation>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <!-- halo -->
+            <se:Halo>
+              <se:Radius>1.0</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <!-- la couleur du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
             <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#FA0808</CssParameter>
-                  <CssParameter name="fill-opacity">1</CssParameter>
-                </Fill>
-              </Mark>
-              <Size>14</Size>
-            </Graphic>
-          </PointSymbolizer>
-        </Rule>
-
-        <Rule>
-          <MinScaleDenominator>1100</MinScaleDenominator>
-          <MaxScaleDenominator>2200</MaxScaleDenominator>
-          <!-- Affichage des adresses en utilisant l'attribut adresse.  -->
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>adresse</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">10</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>0</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-                <!-- rotation selon champ -->
-                <Rotation>
-                  <ogc:Sub>
-                    <ogc:Literal>360</ogc:Literal>
-                    <ogc:PropertyName>orientation_deg</ogc:PropertyName>
-                  </ogc:Sub>
-                </Rotation>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>0.9</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#FA0808</CssParameter>
-                  <CssParameter name="fill-opacity">1</CssParameter>
-                </Fill>
-              </Mark>
-              <Size>8</Size>
-            </Graphic>
-          </PointSymbolizer>
-        </Rule>
-
-        <Rule>
-          <MinScaleDenominator>2200</MinScaleDenominator>
-          <MaxScaleDenominator>4500</MaxScaleDenominator>
-          <!-- Affichage des adresses en utilisant l'attribut adresse.  -->
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>adresse</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">8</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-                <Displacement>
-                  <DisplacementX>0</DisplacementX>
-                  <DisplacementY>0</DisplacementY>
-                </Displacement>
-                <!-- rotation selon champ -->
-                <Rotation>
-                  <ogc:Sub>
-                    <ogc:Literal>360</ogc:Literal>
-                    <ogc:PropertyName>orientation_deg</ogc:PropertyName>
-                  </ogc:Sub>
-                </Rotation>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>0.4</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#FA0808</CssParameter>
-                  <CssParameter name="fill-opacity">1</CssParameter>
-                </Fill>
-                <Stroke>
-                  <CssParameter name="stroke">#FFFFFF</CssParameter>
-                  <CssParameter name="stroke-opacity">1</CssParameter>
-                  <CssParameter name="stroke-width">1</CssParameter>
-                </Stroke>
-              </Mark>
-              <Size>6</Size>
-            </Graphic>
-          </PointSymbolizer>
-        </Rule>
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+          </se:TextSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FA0808</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>30</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
         
-        <Rule>
-          <MinScaleDenominator>4500</MinScaleDenominator>
-          <!-- Affichage des adresses en utilisant l'attribut adresse.  -->
-          <PointSymbolizer>
-            <Graphic>
-              <Mark>
-                <WellKnownName>circle</WellKnownName>
-                <Fill>
-                  <CssParameter name="fill">#FA0808</CssParameter>
-                  <CssParameter name="fill-opacity">1</CssParameter>
-                </Fill>
-                <Stroke>
-                  <CssParameter name="stroke">#FFFFFF</CssParameter>
-                  <CssParameter name="stroke-opacity">1</CssParameter>
-                  <CssParameter name="stroke-width">1</CssParameter>
-                </Stroke>
-              </Mark>
-              <Size>6</Size>
-            </Graphic>
-          </PointSymbolizer>
-        </Rule>
-
-      </FeatureTypeStyle>
+        <se:Rule>
+          <se:MinScaleDenominator>600</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <!-- l'attribut qui sert d'étiquette -->
+            <se:Label>
+              <ogc:PropertyName>adresse</ogc:PropertyName>
+            </se:Label>
+            <!-- réglages de la fonte sauf la couleur -->
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <!-- placement de l'étiquette -->
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+                <se:Displacement>
+                  <se:DisplacementX>0</se:DisplacementX>
+                  <se:DisplacementY>-2</se:DisplacementY>
+                </se:Displacement>
+                <se:Rotation>
+                  <ogc:Sub>
+                    <ogc:Literal>360</ogc:Literal>
+                    <ogc:PropertyName>orientation_deg</ogc:PropertyName>
+                  </ogc:Sub>
+                </se:Rotation>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <!-- halo -->
+            <se:Halo>
+              <se:Radius>1.0</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <!-- la couleur du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+          </se:TextSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FA0808</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>20</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <!-- l'attribut qui sert d'étiquette -->
+            <se:Label>
+              <ogc:PropertyName>adresse</ogc:PropertyName>
+            </se:Label>
+            <!-- réglages de la fonte sauf la couleur -->
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+              <se:SvgParameter name="opacity">0.7</se:SvgParameter>
+            </se:Font>
+            <!-- placement de l'étiquette -->
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+                <se:Displacement>
+                  <se:DisplacementX>0</se:DisplacementX>
+                  <se:DisplacementY>-2</se:DisplacementY>
+                </se:Displacement>
+                <se:Rotation>
+                  <ogc:Sub>
+                    <ogc:Literal>360</ogc:Literal>
+                    <ogc:PropertyName>orientation_deg</ogc:PropertyName>
+                  </ogc:Sub>
+                </se:Rotation>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <!-- la couleur du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+          </se:TextSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FA0808</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>18</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <!-- on ne montre ensuite ques les adresses bornant les tronçons de voies -->
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>bornage</ogc:PropertyName>
+              <ogc:Literal>true</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>2200</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>4500</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <!-- l'attribut qui sert d'étiquette -->
+            <se:Label>
+              <ogc:PropertyName>adresse</ogc:PropertyName>
+            </se:Label>
+            <!-- réglages de la fonte sauf la couleur -->
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+            </se:Font>
+            <!-- placement de l'étiquette -->
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+                <se:Displacement>
+                  <se:DisplacementX>0</se:DisplacementX>
+                  <se:DisplacementY>-2</se:DisplacementY>
+                </se:Displacement>
+                <se:Rotation>
+                  <ogc:Sub>
+                    <ogc:Literal>360</ogc:Literal>
+                    <ogc:PropertyName>orientation_deg</ogc:PropertyName>
+                  </ogc:Sub>
+                </se:Rotation>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <!-- la couleur du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.75</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+          </se:TextSymbolizer>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FA0808</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>14</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+      
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
+
