@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ï»¿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : pvci_troncon_niv_1_lgn
-auteur :   Stéphane GELIN
+auteur :   StÃ©phane GELIN
   date :     10/06/2015
   couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
  
@@ -47,7 +47,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -94,7 +94,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -143,7 +143,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -190,7 +190,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -260,7 +260,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -278,7 +278,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -309,7 +309,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -327,7 +327,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -360,7 +360,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                     <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                      <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                      <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                     </ogc:PropertyIsEqualTo>
                     <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -400,7 +400,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                    <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -442,7 +442,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -460,7 +460,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -491,7 +491,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -509,7 +509,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -542,7 +542,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -582,7 +582,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -614,16 +614,16 @@ auteur :   Stéphane GELIN
          </Rule>
       </FeatureTypeStyle>
       
-<!-- 8  symbole Voie nationale ou régionale (niveau -1) echelle 1 -->
+<!-- 8  symbole Voie nationale ou rÃ©gionale (niveau -1) echelle 1 -->
       <FeatureTypeStyle>
          <Rule>
-             <Name>Voie nationale ou régionale (niveau -1) echelle 1 </Name>
-             <Title>Voie nationale ou régionale (niveau -1) echelle 1 </Title>
+             <Name>Voie nationale ou rÃ©gionale (niveau -1) echelle 1 </Name>
+             <Title>Voie nationale ou rÃ©gionale (niveau -1) echelle 1 </Title>
              <ogc:Filter>
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -636,7 +636,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -660,13 +660,13 @@ auteur :   Stéphane GELIN
       </FeatureTypeStyle>
       <FeatureTypeStyle>
          <Rule>
-             <Name>Voie nationale ou régionale (niveau -1) echelle 1 </Name>
-             <Title>Voie nationale ou régionale (niveau -1) echelle 1 </Title>
+             <Name>Voie nationale ou rÃ©gionale (niveau -1) echelle 1 </Name>
+             <Title>Voie nationale ou rÃ©gionale (niveau -1) echelle 1 </Title>
              <ogc:Filter>
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -679,7 +679,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -700,7 +700,7 @@ auteur :   Stéphane GELIN
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>
+      </FeatureTypeStyle> 
       
 <!-- 9  symbole Voie nationale (niveau -1) echelle 2 -->
       <FeatureTypeStyle>
@@ -711,7 +711,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -745,7 +745,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -860,7 +860,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -899,7 +899,7 @@ auteur :   Stéphane GELIN
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                    <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:PropertyIsEqualTo>
@@ -913,7 +913,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -947,7 +947,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -965,7 +965,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -997,7 +997,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -1022,7 +1022,7 @@ auteur :   Stéphane GELIN
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>
+      </FeatureTypeStyle> 
 
       
     </UserStyle>

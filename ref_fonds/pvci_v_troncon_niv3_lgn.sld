@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ï»¿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : pvci_v_troncon_niv3_lgn
-auteur :   Stéphane GELIN
+auteur :   StÃ©phane GELIN
   date :     10/06/2015
   couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
  
@@ -32,7 +32,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -50,7 +50,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -81,7 +81,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -99,7 +99,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -132,7 +132,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -172,7 +172,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -214,7 +214,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -254,7 +254,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -295,7 +295,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -325,7 +325,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
