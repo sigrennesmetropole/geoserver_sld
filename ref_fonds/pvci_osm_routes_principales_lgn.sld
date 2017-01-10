@@ -26,6 +26,191 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Abstract>Montrer les routes principales aux petites échelles sur le grand Ouest de la France.</se:Abstract>
       </se:Description>
       
+      
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <!-- les départementales secondaires -->
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5114</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#eddc73</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5114</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>273000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>550000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#EDDCB6</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.6</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5114</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>550000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#EDDCB6</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5114</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1100000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#F2ECDE</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.7</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <!-- les départementales primaires -->
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5113</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FFC53F</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">4.2</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5113</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>273000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>550000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FFC53F</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5113</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>550000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FFC53F</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code</ogc:PropertyName>
+              <ogc:Literal>5113</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1100000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FFC53F</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      
       <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
       <!-- les voies principales, principalement les 2x2 voies et les autoroutes -->
       
@@ -139,7 +324,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
       </se:FeatureTypeStyle>
       
-      
       <se:FeatureTypeStyle>
         <se:Rule>
           <ogc:Filter>
@@ -168,7 +352,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
       </se:FeatureTypeStyle>
       
-      
       <se:FeatureTypeStyle>
         <se:Rule>
           <ogc:Filter>
@@ -188,8 +371,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#679AD3</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.8</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
             </se:Stroke>
