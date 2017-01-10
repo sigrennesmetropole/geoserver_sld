@@ -13,6 +13,7 @@
   Historique des versions :
   date        |  auteur              |  description
   10/06/2015  |  Stéphane GELIN      |  version initiale
+  10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
 
 -->
 <StyledLayerDescriptor version="1.0.0"
