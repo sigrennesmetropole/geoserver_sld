@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ï»¿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : pvci_senscirc_niv0_lgn
-  auteur :   Stéphane GELIN
+  auteur :   StÃ©phane GELIN 
   date :     10/06/2015
   couche principale cible du style : v_troncon_sens_circul_lgn: ref_fonds
  
@@ -39,7 +39,7 @@
                   </ogc:PropertyIsEqualTo>                  
                   <ogc:PropertyIsEqualTo>
                      <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                     <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                     <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
               </ogc:Filter>              
@@ -85,7 +85,7 @@
                   </ogc:PropertyIsEqualTo>                  
                   <ogc:PropertyIsEqualTo>
                      <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                     <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                     <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
               </ogc:Filter>              
