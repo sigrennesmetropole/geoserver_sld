@@ -49,7 +49,7 @@
             </ogc:And>
           </ogc:Filter>              
           <MinScaleDenominator>1</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>
+          <MaxScaleDenominator>9000</MaxScaleDenominator>
 
           <LineSymbolizer>
             <Stroke>
