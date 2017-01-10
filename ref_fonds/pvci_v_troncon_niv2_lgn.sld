@@ -744,6 +744,44 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
+      
+      
+      <!-- 39  symbole Voie nationale (niveau 2) echelle 3 -->
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Voie nationale (niveau 2) echelle 3 </Name>
+          <Title>Voie nationale (niveau 2) echelle 3 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Automobile</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>2</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+
+          <MinScaleDenominator>50001</MinScaleDenominator>
+          <MaxScaleDenominator>137000</MaxScaleDenominator>
+
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#004DA8</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+      
 
     </UserStyle>
   </NamedLayer>

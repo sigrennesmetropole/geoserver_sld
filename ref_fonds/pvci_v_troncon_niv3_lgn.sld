@@ -310,7 +310,7 @@
           </ogc:Filter>
 
           <MinScaleDenominator>100001</MinScaleDenominator>
-          <MaxScaleDenominator>500000</MaxScaleDenominator>
+          <MaxScaleDenominator>137000</MaxScaleDenominator>
 
           <LineSymbolizer>
             <Stroke>
@@ -340,7 +340,7 @@
           </ogc:Filter>
 
           <MinScaleDenominator>100001</MinScaleDenominator>
-          <MaxScaleDenominator>500000</MaxScaleDenominator>
+          <MaxScaleDenominator>137000</MaxScaleDenominator>
 
           <LineSymbolizer>
             <Stroke>
