@@ -1,14 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-
+  
   nom du SLD : pvci_v_troncon_niv0_lgn
-  auteur :   Stéphane GELIN
-  date :     10/06/2015
-  couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
 
-  objet :
-  Style des voies
+  couche source dans la base :  rva.v_troncon_lgn
+  layer cible du style       :  ref_fonds:pvci_v_troncon_lgn  utilise dans les aggregats ref_fonds:pvci / pvci_fond / pvci_nb
 
+  objet : affichage des voies selon la hiérarchisation
+  
+  La jonction visuelle entre tous les tronçons ne s'obtient qu'en séparant les FeatureTypeStyle : 1 pour le contour et un pour l'intérieur. Il faut donc dupliquer tous les filtres également...
+  
+  Historique des versions :
+  date        |  auteur              |  description
+  10/06/2015  |  Stéphane GELIN      |  version initiale
+  
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
