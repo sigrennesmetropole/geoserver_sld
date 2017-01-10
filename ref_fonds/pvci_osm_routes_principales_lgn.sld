@@ -38,7 +38,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>5114</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>137000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -130,7 +130,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>5113</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>137000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -228,7 +228,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
           </ogc:Filter>
-          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>137000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -255,7 +255,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
           </ogc:Filter>
-          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>137000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
