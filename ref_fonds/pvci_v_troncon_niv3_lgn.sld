@@ -2,12 +2,17 @@
 <!--
 
   nom du SLD : pvci_v_troncon_niv3_lgn
-  auteur :   Stéphane GELIN
-  date :     10/06/2015
-  couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
 
-  objet :
-  Style des voies
+  couche source dans la base :  rva.v_troncon_lgn
+  layer cible du style       :  ref_fonds:pvci_v_troncon_lgn  utilisé dans les aggregats ref_fonds:pvci / pvci_fond
+
+  objet : affichage des voies de niveau 3 selon la hiérarchisation
+  
+  La jonction visuelle entre tous les tronçons ne s'obtient qu'en séparant les FeatureTypeStyle : 1 pour le contour et un pour l'intérieur. Il faut donc dupliquer tous les filtres également...
+  
+  Historique des versions :
+  date        |  auteur              |  description
+  10/06/2015  |  Stéphane GELIN      |  version initiale
 
 -->
 <StyledLayerDescriptor version="1.0.0"

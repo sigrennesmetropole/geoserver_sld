@@ -4,9 +4,9 @@
   nom du SLD : pvci_v_troncon_niv0_lgn
 
   couche source dans la base :  rva.v_troncon_lgn
-  layer cible du style       :  ref_fonds:pvci_v_troncon_lgn  utilise dans les aggregats ref_fonds:pvci / pvci_fond / pvci_nb
+  layer cible du style       :  ref_fonds:pvci_v_troncon_lgn  utilisé dans les aggregats ref_fonds:pvci / pvci_fond
 
-  objet : affichage des voies selon la hiérarchisation
+  objet : affichage des voies de niveau 0 selon la hiérarchisation
   
   La jonction visuelle entre tous les tronçons ne s'obtient qu'en séparant les FeatureTypeStyle : 1 pour le contour et un pour l'intérieur. Il faut donc dupliquer tous les filtres également...
   
