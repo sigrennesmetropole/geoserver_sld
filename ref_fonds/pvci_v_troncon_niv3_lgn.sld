@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : pvci_v_troncon_niv3_lgn
-auteur :   Stéphane GELIN
+  auteur :   Stéphane GELIN
   date :     10/06/2015
   couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
- 
+
   objet :
   Style des voies
-  
+
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -54,14 +54,14 @@ auteur :   Stéphane GELIN
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>3</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#A80000</CssParameter>
@@ -71,7 +71,7 @@ auteur :   Stéphane GELIN
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>    
+      </FeatureTypeStyle>
       <FeatureTypeStyle>
          <Rule>
              <Name>Voie d'agglomeration (niveau 3) echelle 1 </Name>
@@ -103,14 +103,14 @@ auteur :   Stéphane GELIN
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -121,7 +121,7 @@ auteur :   Stéphane GELIN
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-      
+
 <!-- 80  symbole Voie d'agglomeration (niveau 3) echelle 2 -->
       <FeatureTypeStyle>
          <Rule>
@@ -148,11 +148,11 @@ auteur :   Stéphane GELIN
                     <ogc:Literal>3</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#A80000</CssParameter>
@@ -188,11 +188,11 @@ auteur :   Stéphane GELIN
                     <ogc:Literal>3</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -202,8 +202,8 @@ auteur :   Stéphane GELIN
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>       
-      
+      </FeatureTypeStyle>
+
 <!-- 81  symbole Voie d'agglomeration (niveau 3) echelle 3 -->
       <FeatureTypeStyle>
          <Rule>
@@ -230,11 +230,11 @@ auteur :   Stéphane GELIN
                     <ogc:Literal>3</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>50001</MinScaleDenominator>
               <MaxScaleDenominator>100000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#A80000</CssParameter>
@@ -270,11 +270,11 @@ auteur :   Stéphane GELIN
                     <ogc:Literal>3</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>50001</MinScaleDenominator>
               <MaxScaleDenominator>100000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -284,8 +284,8 @@ auteur :   Stéphane GELIN
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>      
-      
+      </FeatureTypeStyle>
+
 <!-- 82  symbole Voie nationale echelle 3 -->
       <FeatureTypeStyle>
          <Rule>
@@ -302,11 +302,11 @@ auteur :   Stéphane GELIN
                     <ogc:Literal>Automobile</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>100001</MinScaleDenominator>
               <MaxScaleDenominator>500000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#002673</CssParameter>
@@ -332,11 +332,11 @@ auteur :   Stéphane GELIN
                     <ogc:Literal>Automobile</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>100001</MinScaleDenominator>
               <MaxScaleDenominator>500000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#004DA8</CssParameter>
@@ -346,9 +346,9 @@ auteur :   Stéphane GELIN
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>      
-      
-      
+      </FeatureTypeStyle>
+
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

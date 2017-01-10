@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : pvci_troncon_niv1_lgn
-auteur :   arnaud LECLERE
+  auteur :   arnaud LECLERE
   date :     03/01/2017
   couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
- 
+
   objet :
   Style des voies
-  
+
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -40,7 +40,7 @@ auteur :   arnaud LECLERE
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
                         <ogc:Literal>Voie de desserte urbaine</ogc:Literal>
-                      </ogc:PropertyIsEqualTo>                      
+                      </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -57,14 +57,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#AB9874</CssParameter>
@@ -74,7 +74,7 @@ auteur :   arnaud LECLERE
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>       
+      </FeatureTypeStyle>
       <FeatureTypeStyle>
          <Rule>
              <Name>Voie secondaire  (niveau 1) echelle 1 </Name>
@@ -93,7 +93,7 @@ auteur :   arnaud LECLERE
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
                         <ogc:Literal>Voie de desserte urbaine</ogc:Literal>
-                      </ogc:PropertyIsEqualTo>                      
+                      </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -110,14 +110,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F8EC00</CssParameter>
@@ -128,7 +128,7 @@ auteur :   arnaud LECLERE
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-      
+
 <!-- 68  symbole Voie secondaire (niveau 1) echelle 2 -->
       <FeatureTypeStyle>
          <Rule>
@@ -148,7 +148,7 @@ auteur :   arnaud LECLERE
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
                         <ogc:Literal>Voie de desserte urbaine</ogc:Literal>
-                      </ogc:PropertyIsEqualTo>                      
+                      </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -159,11 +159,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#AB9874</CssParameter>
@@ -173,7 +173,7 @@ auteur :   arnaud LECLERE
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>       
+      </FeatureTypeStyle>
       <FeatureTypeStyle>
          <Rule>
              <Name>Voie secondaire  (niveau 1) echelle 2 </Name>
@@ -192,7 +192,7 @@ auteur :   arnaud LECLERE
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
                         <ogc:Literal>Voie de desserte urbaine</ogc:Literal>
-                      </ogc:PropertyIsEqualTo>                      
+                      </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -203,11 +203,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F8EC00</CssParameter>
@@ -217,8 +217,8 @@ auteur :   arnaud LECLERE
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>      
-      
+      </FeatureTypeStyle>
+
 <!-- 69  symbole Voie d'agglomeration (niveau 1) echelle 1 -->
       <FeatureTypeStyle>
          <Rule>
@@ -251,14 +251,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#A80000</CssParameter>
@@ -268,7 +268,7 @@ auteur :   arnaud LECLERE
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>    
+      </FeatureTypeStyle>
       <FeatureTypeStyle>
          <Rule>
              <Name>Voie d'agglomeration (niveau 1) echelle 1 </Name>
@@ -300,14 +300,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -318,7 +318,7 @@ auteur :   arnaud LECLERE
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-      
+
 <!-- 70  symbole Voie d'agglomeration (niveau 1) echelle 2 -->
       <FeatureTypeStyle>
          <Rule>
@@ -345,11 +345,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#A80000</CssParameter>
@@ -385,11 +385,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -399,7 +399,7 @@ auteur :   arnaud LECLERE
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>      
+      </FeatureTypeStyle>
 
 <!-- 71  symbole Voie nationale ou régionale (niveau 1) echelle 1 -->
       <FeatureTypeStyle>
@@ -427,14 +427,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#002673</CssParameter>
@@ -470,14 +470,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#004DA8</CssParameter>
@@ -487,7 +487,7 @@ auteur :   arnaud LECLERE
                      </Stroke>
               </LineSymbolizer>
          </Rule>
-      </FeatureTypeStyle>      
+      </FeatureTypeStyle>
 
 <!-- 72  symbole Voie nationale (niveau 1) echelle 2 -->
       <FeatureTypeStyle>
@@ -509,11 +509,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#002673</CssParameter>
@@ -543,11 +543,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>20001</MinScaleDenominator>
               <MaxScaleDenominator>50000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#004DA8</CssParameter>
@@ -558,7 +558,7 @@ auteur :   arnaud LECLERE
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-      
+
 <!-- 73  symbole mode doux  (niveau 1) echelle 1 -->
       <FeatureTypeStyle>
          <Rule>
@@ -581,13 +581,13 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
+              </ogc:Filter>
               <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
+
              <LineSymbolizer>
                <Stroke>
                  <CssParameter name="stroke">#39855F</CssParameter>
@@ -597,7 +597,7 @@ auteur :   arnaud LECLERE
          </Rule>
       </FeatureTypeStyle>
 
-      
+
 <!-- 37b  symbole Voie secondaire d'agglomeration (niveau 1) echelle 3 -->
 
       <FeatureTypeStyle>
@@ -635,14 +635,14 @@ auteur :   arnaud LECLERE
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                      </ogc:PropertyIsNull>                    
+                      </ogc:PropertyIsNull>
                   </ogc:Or>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>50001</MinScaleDenominator>
               <MaxScaleDenominator>100000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F8EC00</CssParameter>
@@ -653,7 +653,7 @@ auteur :   arnaud LECLERE
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-      
+
 <!-- 74  symbole Voie d'agglomeration (niveau 1) echelle 3 -->
 
       <FeatureTypeStyle>
@@ -681,11 +681,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>50001</MinScaleDenominator>
               <MaxScaleDenominator>100000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -696,7 +696,7 @@ auteur :   arnaud LECLERE
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-    
+
 <!-- 75  symbole Voie d'agglomeration (niveau 1) echelle 3 -->
 
       <FeatureTypeStyle>
@@ -724,11 +724,11 @@ auteur :   arnaud LECLERE
                     <ogc:Literal>1</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                 </ogc:And>
-              </ogc:Filter>              
-              
+              </ogc:Filter>
+
               <MinScaleDenominator>50001</MinScaleDenominator>
               <MaxScaleDenominator>100000</MaxScaleDenominator>
-           
+
               <LineSymbolizer>
                      <Stroke>
                        <CssParameter name="stroke">#F84931</CssParameter>
@@ -739,7 +739,7 @@ auteur :   arnaud LECLERE
               </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>
-      
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
