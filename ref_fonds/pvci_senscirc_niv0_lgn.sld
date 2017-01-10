@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+    
   nom du SLD : pvci_senscirc_niv0_lgn
-  auteur :   Stéphane GELIN 
-  date :     10/06/2015
-  couche principale cible du style : v_troncon_sens_circul_lgn: ref_fonds
- 
-  objet :
-  Style des sens de circulation
+
+  couche source dans la base :  ??
+  layer cible du style       :  ref_fonds:v_troncon_sens_circul_lgn  utilisé dans les aggregats ref_fonds:pvci / pvci_fond
+
+  objet : affichage des sens de circulation niveau 0 selon la hiérarchisation
+
+
+  Historique des versions :
+  date        |  auteur              |  description
+  10/06/2015  |  Stéphane GELIN      |  version initiale
+  10/01/2017  |  Maël REBOUX         |  UTF-8, commentaires, pretty XML
   
 -->   
 <StyledLayerDescriptor version="1.0.0"
@@ -17,102 +22,102 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-   <Name>v_troncon_sens_circul_lgn</Name>
+    <Name>v_troncon_sens_circul_lgn</Name>
     <UserStyle>
-     <Name>sens circulation</Name>
+      <Name>sens circulation</Name>
 
-<!--  46  symbole sens unique - sens inverse numerisation (niveau 0) echelle 1 -->      
+      <!--  46  symbole sens unique - sens inverse numerisation (niveau 0) echelle 1 -->      
 
       <FeatureTypeStyle>
-         <Rule>
-             <Name>sens unique (niveau 0) echelle 1 </Name>
-             <Title>sens unique (niveau 0) echelle 1 </Title>
-             <ogc:Filter>
-                <ogc:And>
-                  <ogc:PropertyIsEqualTo>
-                      <ogc:PropertyName>niveau</ogc:PropertyName>
-                      <ogc:Literal>0</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>mode</ogc:PropertyName>
-                    <ogc:Literal>Automobile</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>                  
-                  <ogc:PropertyIsEqualTo>
-                     <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                     <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:And>
-              </ogc:Filter>              
-              <MinScaleDenominator>1</MinScaleDenominator>
-              <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
-             <LineSymbolizer>
-               <Stroke>
-                   <GraphicStroke>
-                       <Graphic>
-                          <Mark>
-                             <WellKnownName>ttf://ESRI Arrowhead#191</WellKnownName>
-                                <Fill>
-                                    <CssParameter name="fill">#FF0000</CssParameter>
-                                </Fill>
-                          </Mark>
-                          <Size>10</Size>
-                       </Graphic>
+        <Rule>
+          <Name>sens unique (niveau 0) echelle 1 </Name>
+          <Title>sens unique (niveau 0) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Automobile</ogc:Literal>
+              </ogc:PropertyIsEqualTo>                  
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>sens_circule</ogc:PropertyName>
+                <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>              
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>20000</MaxScaleDenominator>
 
-                   </GraphicStroke>
-                   <CssParameter name="stroke-dasharray">10 50</CssParameter>
-               </Stroke>
-             </LineSymbolizer>
-       
-         </Rule>
+          <LineSymbolizer>
+            <Stroke>
+              <GraphicStroke>
+                <Graphic>
+                  <Mark>
+                    <WellKnownName>ttf://ESRI Arrowhead#191</WellKnownName>
+                    <Fill>
+                      <CssParameter name="fill">#FF0000</CssParameter>
+                    </Fill>
+                  </Mark>
+                  <Size>10</Size>
+                </Graphic>
+
+              </GraphicStroke>
+              <CssParameter name="stroke-dasharray">10 50</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+
+        </Rule>
       </FeatureTypeStyle>
 
-<!--  47  symbole sens unique - sens de numerisation (niveau 0) echelle 1 -->      
+      <!--  47  symbole sens unique - sens de numerisation (niveau 0) echelle 1 -->      
 
       <FeatureTypeStyle>
-         <Rule>
-             <Name>sens unique (niveau 0) echelle 1 </Name>
-             <Title>sens unique (niveau 0) echelle 1 </Title>
-             <ogc:Filter>
-                <ogc:And>
-                  <ogc:PropertyIsEqualTo>
-                      <ogc:PropertyName>niveau</ogc:PropertyName>
-                      <ogc:Literal>0</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>mode</ogc:PropertyName>
-                    <ogc:Literal>Automobile</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>                  
-                  <ogc:PropertyIsEqualTo>
-                     <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                     <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-                </ogc:And>
-              </ogc:Filter>              
-              <MinScaleDenominator>1</MinScaleDenominator>
-              <MaxScaleDenominator>20000</MaxScaleDenominator>
-           
-             <LineSymbolizer>
-               <Stroke>
-                   <GraphicStroke>
-                       <Graphic>
-                          <Mark>
-                             <WellKnownName>ttf://ESRI Arrowhead#63</WellKnownName>
-                                <Fill>
-                                    <CssParameter name="fill">#FF0000</CssParameter>
-                                </Fill>
-                          </Mark>
-                          <Size>10</Size>
-                       </Graphic>
+        <Rule>
+          <Name>sens unique (niveau 0) echelle 1 </Name>
+          <Title>sens unique (niveau 0) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Automobile</ogc:Literal>
+              </ogc:PropertyIsEqualTo>                  
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>sens_circule</ogc:PropertyName>
+                <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>              
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>20000</MaxScaleDenominator>
 
-                   </GraphicStroke>
-                   <CssParameter name="stroke-dasharray">10 50</CssParameter>
-               </Stroke>
-             </LineSymbolizer>
-       
-         </Rule>
+          <LineSymbolizer>
+            <Stroke>
+              <GraphicStroke>
+                <Graphic>
+                  <Mark>
+                    <WellKnownName>ttf://ESRI Arrowhead#63</WellKnownName>
+                    <Fill>
+                      <CssParameter name="fill">#FF0000</CssParameter>
+                    </Fill>
+                  </Mark>
+                  <Size>10</Size>
+                </Graphic>
+
+              </GraphicStroke>
+              <CssParameter name="stroke-dasharray">10 50</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+
+        </Rule>
       </FeatureTypeStyle>      
-      
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
