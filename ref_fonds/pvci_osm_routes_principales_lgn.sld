@@ -13,6 +13,7 @@
   Historique des versions :
   date        |  auteur              |  description
   06/01/2017  |  Maël REBOUX         |  version initiale
+  12/01/2016  |  Maël REBOUX         |  dégradé orange -> rouge pour adoucir transition vers PVCI
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -134,7 +135,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FFC53F</se:SvgParameter>
+              <se:SvgParameter name="stroke">#FF623F</se:SvgParameter>
               <se:SvgParameter name="stroke-width">4.2</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
@@ -156,7 +157,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>550000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FFC53F</se:SvgParameter>
+              <se:SvgParameter name="stroke">#FF8F3F</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3.4</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.8</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
