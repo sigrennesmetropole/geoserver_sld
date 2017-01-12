@@ -2,13 +2,17 @@
 <!--
   
   nom du SLD : pvci_syntplu_za_plg
- 
-  auteur :   Stéphane GELIN, Maël REBOUX
-  date :     26/05/2016
-  
-  couche principale cible du style :  ref_fonds:pvci_syntplu_za
- 
-  objet : style zones artisanales de Rennes Métropole pour le PVCI
+
+  couche source dans la base :  ??
+  layer cible du style       :  ref_fonds:pvci_syntplu_za
+
+  objet :
+  zones artisanales de Rennes Métropole pour le PVCI
+
+  Historique des versions :
+  date        |  auteur              |  description
+  01/11/2014  |  Stéphane GELIN      |  version initiale
+  26/05/2016  |  Maël REBOUX         |  modifications
   
 -->
 <StyledLayerDescriptor version="1.0.0"
