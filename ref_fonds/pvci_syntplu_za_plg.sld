@@ -24,6 +24,8 @@
       <Title>Zone artisanale sur Renne Métropole</Title>
       <Abstract>Ce style est conçu pour afficher les zones artisanales sur Rennes Métropole dans le PVCI.</Abstract>
       <FeatureTypeStyle>
+        
+        
         <Rule>
           <!-- la requête -->
           <ogc:Filter>
@@ -45,7 +47,43 @@
             </Stroke>
           </PolygonSymbolizer>
         </Rule>
-
+        
+        
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- les étiquettes des noms des ZA -->
+        
+        <!-- grandes échelles -->
+        <Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>affich_pvi</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>9000</MaxScaleDenominator>  
+          <TextSymbolizer>
+            <Label>
+              <ogc:PropertyName>nom_zoneza</ogc:PropertyName>
+            </Label>        
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">14</CssParameter>
+              <CssParameter name="font-style">normal</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>
+            </LabelPlacement>        
+          </TextSymbolizer>
+        </Rule>
+        
+        <!-- moyennes échelles -->
         <Rule>
           <!-- la requête -->
           <ogc:Filter>
@@ -55,9 +93,9 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <MinScaleDenominator>1</MinScaleDenominator>
-          <MaxScaleDenominator>20099</MaxScaleDenominator>  
-          <!-- affichage nom de la ZA -->
+          <MinScaleDenominator>9000</MinScaleDenominator>
+          <MaxScaleDenominator>35000</MaxScaleDenominator>  
+          <!-- réglages de l'étiquette -->
           <TextSymbolizer>
             <Label>
               <ogc:PropertyName>nom_zoneza</ogc:PropertyName>
@@ -71,19 +109,14 @@
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
-                  <AnchorPointX>0</AnchorPointX>
-                  <AnchorPointY>0</AnchorPointY>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
               </PointPlacement>
-            </LabelPlacement>
-            <!-- <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                   <CssParameter name="fill">#4C5D63</CssParameter>
-              </Fill>
-            </Halo> -->           
+            </LabelPlacement>        
           </TextSymbolizer>
         </Rule>
+        
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
