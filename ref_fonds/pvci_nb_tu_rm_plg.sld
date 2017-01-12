@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : pvci_nb_tu_rm_plg
+  nom du SLD : pvci_tu_rm_plg
   
-  auteur :   StÈphane GELIN, MaÎl REBOUX
+  auteur :   St√©phane GELIN, Ma√´l REBOUX
   date :     26/05/2016
   
   couche principale cible du style :  ref_fonds:pvci_tu_rm
  
-  objet : style zones urbaines des communes de Rennes MÈtropole pour le PVCI en niveaux de gris.
+  objet : style zones urbaines des communes de Rennes M√©tropole pour le PVCI.
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -20,12 +20,13 @@
   <NamedLayer>
     <Name>pvci_tu_rm</Name>
     <UserStyle>
-      <Name>pvci_nb_tu_rm_plg</Name>
-      <Title>T‚che urbaine sur Renne MÈtropole</Title>
-      <Abstract>Ce style est conÁu pour afficher la t‚che urbaine sur Rennes MÈtropole dans le PVCI en niveaux de gris.</Abstract>
+      <Name>pvci_tu_rm_plg</Name>
+      <Title>T√¢che urbaine sur Renne M√©tropole</Title>
+      <Abstract>Ce style est con√ßu pour afficher la t√¢che urbaine sur Renne M√©tropole dans le PVCI.</Abstract>
       <FeatureTypeStyle>
+
         <Rule>
-          <!-- la requÍte -->
+          <!-- la requ√™te -->
           <ogc:Filter>
             <ogc:Or>
               <ogc:PropertyIsEqualTo>
@@ -44,13 +45,14 @@
           <!-- style des polygones -->
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#CCCCCC</CssParameter>
+              <CssParameter name="fill">#E6D7C3</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#CCCCCC</CssParameter>
+              <CssParameter name="stroke">#E6D7C3</CssParameter>
             </Stroke>
           </PolygonSymbolizer>  
         </Rule>
+
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
