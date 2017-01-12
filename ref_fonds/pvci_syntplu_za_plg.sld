@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   01/11/2014  |  Stéphane GELIN      |  version initiale
   26/05/2016  |  Maël REBOUX         |  modifications
+  12/01/2017  |  Maël REBOUX         |  ajout d'un niveau pour mieux gérer les étiquettes, affichage des ZA aux plus petites échelles mais atténuées
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -29,19 +30,17 @@
       <Abstract>Ce style est conçu pour afficher les zones artisanales sur Rennes Métropole dans le PVCI.</Abstract>
       <FeatureTypeStyle>
         
-        
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- grandes et moyennes échelles : polygone gris-bleu -->
         <Rule>
-          <!-- la requête -->
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>affich_pvi</ogc:PropertyName>
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- Echelle d'affichage -->
           <MinScaleDenominator>1</MinScaleDenominator>
-          <MaxScaleDenominator>100099</MaxScaleDenominator>  
-          <!-- représentation des ZA -->
+          <MaxScaleDenominator>35000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#B8CCD4</CssParameter>
@@ -51,6 +50,29 @@
             </Stroke>
           </PolygonSymbolizer>
         </Rule>
+        
+        <!-- grandes et moyennes échelles : polygone gris-bleu atténué -->
+        <Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>affich_pvi</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MinScaleDenominator>35000</MinScaleDenominator>
+          <MaxScaleDenominator>273000</MaxScaleDenominator>  
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#B8CCD4</CssParameter>
+              <CssParameter name="fill-opacity">0.5</CssParameter>
+            </Fill>
+            <Stroke>
+              <CssParameter name="stroke">#B8CCD4</CssParameter>
+              <CssParameter name="stroke-opacity">0</CssParameter>
+            </Stroke>
+          </PolygonSymbolizer>
+        </Rule>
+        
         
         
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
