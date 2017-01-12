@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   07/06/2015  |  Catherine MORALES   |  version initiale
   10/01/2017  |  Maël REBOUX         |  UTF-8, commentaires, pretty XML, passage en SE
+  12/01/2017  |  Maël REBOUX         |  renforcement visuel aux grandes échelles en montrant les contours, que les bâtis durs aux moyennes et petites échelles
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -26,19 +27,102 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Abstract>Bâtiments du PVCI (source : cadastre)</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
-      
-        <!-- polygone gris semi transparent avec bordure noire fine -->
+        
+        
+        <!-- grandes échelles : on montre les bâtiments dur et légers, avec contours -->
         <se:Rule>
-          <se:Name>Polygone</se:Name>
-          <se:MaxScaleDenominator>100099</se:MaxScaleDenominator>
+          <se:Name>Bâtiments durs</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>01</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#B59F84</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-      
+        <!-- les bâtiments légers apparaissent atténués -->
+        <se:Rule>
+          <se:Name>Bâtiments légers</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>02</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#B59F84</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        
+        <!-- moyennes échelles : on montre que les bâtiments en dur, avec contours -->
+        <se:Rule>
+          <se:Name>Bâtiments</se:Name>
+          <!-- que les bâtiments en dur -->
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>01</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>2200</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#B59F84</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        
+        <!-- petites échelles : on ne montre que les bâtiments en dur, sans contours -->
+        <se:Rule>
+          <se:Name>Bâtiments</se:Name>
+          <!-- que les bâtiments en dur -->
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>01</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
