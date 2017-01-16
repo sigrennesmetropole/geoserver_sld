@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : pvci_denomination_voie_etq
+
+  couche source dans la base :  rva.v_adresse_pnt
+  layer cible du style       :  ref_fonds:pvci_denomination_voie_etq  utilisé dans les aggrégats ref_fonds: pvci / pvci_fond / pvci_nb / pvci_toponymie
   
-  auteur :   Stéphane GELIN
-  date :     01/11/2014
+  objet :
+  étiquettes des voies
+  on utilise l'attribut "denomination"
   
-  couche principale cible du style :  bdu.rva.v_denomination_voie - ref_fond
- 
-  objet : style des étiquettes de dénomination de voie.
+  Historique des versions :
+  date        |  auteur              |  description
+  01/11/2014  |  Stéphane GELIN      |  version initiale
+  16/01/2017  |  Maël REBOUX         |  UTF-8, commentaires, pretty XML
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -23,39 +28,39 @@
       <Name>Etiquettes de dénomination de voie</Name>
       <FeatureTypeStyle>
 
-         <Rule>     
-              <ogc:Filter>
-                  <ogc:PropertyIsNotEqualTo>
-                    <ogc:PropertyName>denomination</ogc:PropertyName>
-                    <ogc:Literal>Inconnu</ogc:Literal>
-                  </ogc:PropertyIsNotEqualTo>
-              </ogc:Filter>
-         
-              <MinScaleDenominator>1</MinScaleDenominator>
-              <MaxScaleDenominator>20099</MaxScaleDenominator>  
+        <Rule>     
+          <ogc:Filter>
+            <ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyName>denomination</ogc:PropertyName>
+              <ogc:Literal>Inconnu</ogc:Literal>
+            </ogc:PropertyIsNotEqualTo>
+          </ogc:Filter>
 
-              <TextSymbolizer>
-                 <Label>
-                        <ogc:PropertyName>denomination</ogc:PropertyName>
-                 </Label>        
-                 <Font>
-                        <CssParameter name="font-family">DejaVu Sans</CssParameter>
-                        <CssParameter name="font-size">10</CssParameter>
-                        <CssParameter name="font-style">normal</CssParameter>
-                        <CssParameter name="font-weight">bold</CssParameter>
-                 </Font>
-                 <Halo>
-                       <Radius>1</Radius>
-                       <Fill>
-                            <CssParameter name="fill">#FFFFFF</CssParameter>
-                       </Fill>
-                 </Halo>
-                 <VendorOption name="followLine">true</VendorOption>
-             <!--    <VendorOption name="repeat">10000</VendorOption>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>20099</MaxScaleDenominator>  
+
+          <TextSymbolizer>
+            <Label>
+              <ogc:PropertyName>denomination</ogc:PropertyName>
+            </Label>        
+            <Font>
+              <CssParameter name="font-family">DejaVu Sans</CssParameter>
+              <CssParameter name="font-size">10</CssParameter>
+              <CssParameter name="font-style">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <Halo>
+              <Radius>1</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+              </Fill>
+            </Halo>
+            <VendorOption name="followLine">true</VendorOption>
+            <!--    <VendorOption name="repeat">10000</VendorOption>
                  <VendorOption name="group">yes</VendorOption>   -->
-                
-              </TextSymbolizer>     
-          </Rule> 
+
+          </TextSymbolizer>     
+        </Rule> 
       </FeatureTypeStyle> 
 
     </UserStyle>
