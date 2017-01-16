@@ -4,7 +4,7 @@
   nom du SLD : pvci_v_adresse_etq
 
   couche source dans la base :  rva.v_adresse_pnt
-  layer cible du style       :  ref_fonds:pvci_v_adresse_pnt  utilise dans les aggregats ref_fonds: pvci / pvci_fond / pvci_nb
+  layer cible du style       :  ref_fonds:pvci_v_adresse_pnt  utilise dans les aggregats ref_fonds: pvci / pvci_fond / pvci_nb / pvci_toponymie
 
   objet :
   etiquettes des adresses
@@ -13,8 +13,8 @@
 
   Historique des versions :
   date        |  auteur              |  description
-  01/12/2016  |  Mael REBOUX         |  version initiale derivee du style ref_rva:v_adresse_etq
-  05/01/2017  |  Mael REBOUX         |  passage de SLD en SE + utilisation uniquement des adresses bornantes pour les échelles moyennes
+  01/12/2016  |  Maël REBOUX         |  version initiale derivee du style ref_rva:v_adresse_etq
+  05/01/2017  |  Maël REBOUX         |  passage de SLD en SE + utilisation uniquement des adresses bornantes pour les échelles moyennes
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
