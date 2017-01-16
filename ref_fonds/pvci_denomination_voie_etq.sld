@@ -3,12 +3,12 @@
   
   nom du SLD : pvci_denomination_voie_etq
   
-  auteur :   Stéphane GELIN
+  auteur :   StÃ©phane GELIN
   date :     01/11/2014
   
   couche principale cible du style :  bdu.rva.v_denomination_voie - ref_fond
  
-  objet : style des étiquettes de dénomination de voie.
+  objet : style des Ã©tiquettes de dÃ©nomination de voie.
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -20,7 +20,7 @@
   <NamedLayer>
     <Name>pvci_denomination_voie_etq</Name>
     <UserStyle>
-      <Name>Etiquettes de dénomination de voie</Name>
+      <Name>Etiquettes de dÃ©nomination de voie</Name>
       <FeatureTypeStyle>
 
          <Rule>     
@@ -55,8 +55,8 @@
                  <VendorOption name="group">yes</VendorOption>   -->
                 
               </TextSymbolizer>     
-          </Rule>
-      </FeatureTypeStyle>
+          </Rule> 
+      </FeatureTypeStyle> 
 
     </UserStyle>
   </NamedLayer>
