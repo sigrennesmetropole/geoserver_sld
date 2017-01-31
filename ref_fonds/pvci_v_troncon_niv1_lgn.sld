@@ -14,7 +14,7 @@
   date        |  auteur              |  description
   10/06/2015  |  Stéphane GELIN      |  version initiale
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
-  31/01/2017  |  Maël REBOUX         |  rajout des voies de desserte locale
+  31/01/2017  |  Maël REBOUX         |  rajout des voies de desserte locale : principale et secondaire
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -159,11 +159,154 @@
             </ogc:And>
           </ogc:Filter>
           <MinScaleDenominator>20001</MinScaleDenominator>
-          <MaxScaleDenominator>40000</MaxScaleDenominator>
+          <MaxScaleDenominator>50000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#FFFFFF</CssParameter>
               <CssParameter name="stroke-width">1</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+      
+      
+      <!--  52a  symbole Voie de desserte principale (niveau 1) echelle 1  -->
+      <!-- fond marron -->
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Voie de desserte principale (niveau 1) echelle 1 </Name>
+          <Title>Voie de desserte principale (niveau 1) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie inter quartier</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Automobile</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>sens_circule</ogc:PropertyName>
+                <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                  <ogc:Literal>Définitif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>20000</MaxScaleDenominator>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#AB9874</CssParameter>
+              <CssParameter name="stroke-width">4.5</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+      
+      <!-- intérieur blanc -->
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Voie de desserte principale (niveau 1) echelle 1 </Name>
+          <Title>Voie de desserte principale (niveau 1) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie inter quartier</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Automobile</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>sens_circule</ogc:PropertyName>
+                <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                  <ogc:Literal>Définitif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>20000</MaxScaleDenominator>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
+              <CssParameter name="stroke-linejoin">round</CssParameter>
+              <CssParameter name="stroke-linecap">round</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+
+      <!--  52b  symbole Voie de desserte principale (niveau 1) echelle 2  -->
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Voie de desserte principale (niveau 1) echelle 2 </Name>
+          <Title>Voie de desserte principale (niveau 1) echelle 2 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie inter quartier</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Automobile</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>sens_circule</ogc:PropertyName>
+                <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                  <ogc:Literal>Définitif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>20001</MinScaleDenominator>
+          <MaxScaleDenominator>50000</MaxScaleDenominator>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
             </Stroke>
