@@ -6,8 +6,7 @@
   couche source dans la base :  cadastre.edi_parc
   layer cible du style       :  ref_cad:edi_parc_plg + ref_cad:parcelle
   
-  objet :
-  [objectifs du style, description et commentaires, etc]
+  objet :  style des parcelles du service cadastre de référence
   
   Historique des versions :
   date        |  auteur              |  description
@@ -30,7 +29,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <se:Rule>
           <se:Name>Grandes échelles</se:Name>
-          <se:MincaleDenominator>1</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -47,7 +46,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
         <se:Rule>
           <se:Name>Moyennes échelles</se:Name>
-          <se:MincaleDenominator>9000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -64,7 +63,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
         <se:Rule>
           <se:Name>Petites échelles</se:Name>
-          <se:MincaleDenominator>35000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>35000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
