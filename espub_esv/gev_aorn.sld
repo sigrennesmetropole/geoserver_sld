@@ -26,7 +26,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- point rond rouge avec bordure noire -->
+        <!-- point vert avec bordure noire -->
         <se:Rule>
           <se:Name>Point</se:Name>
           <se:PointSymbolizer>
@@ -34,7 +34,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                  <se:SvgParameter name="fill">#0D9B6B</se:SvgParameter>
                   <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
