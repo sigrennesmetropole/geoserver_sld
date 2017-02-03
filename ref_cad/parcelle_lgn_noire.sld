@@ -26,7 +26,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:FeatureTypeStyle>
       
         <se:Rule>
-          <se:Name>Très grandes échelles</se:Name>
+          <se:Name>Parcelles cadastrales</se:Name>
           <se:MinScaleDenominator>300</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -43,7 +43,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
       
         <se:Rule>
-          <se:Name>Grandes échelles</se:Name>
+          <se:Name>Parcelles cadastrales</se:Name>
           <se:MinScaleDenominator>2200</se:MinScaleDenominator>
           <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -60,7 +60,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         
         <se:Rule>
-          <se:Name>Moyennes échelles</se:Name>
+          <se:Name>Parcelles cadastrales</se:Name>
           <se:MinScaleDenominator>9000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -77,7 +77,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         
         <se:Rule>
-          <se:Name>Petites échelles</se:Name>
+          <se:Name>Parcelles cadastrales</se:Name>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
