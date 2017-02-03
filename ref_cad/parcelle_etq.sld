@@ -37,9 +37,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Geometry>
             <se:Label>
               <!-- on extrait la référence de l'ID complet -->
+              <!-- sans le préfixe de section pour le moment -->
               <ogc:Function name="strSubstring">
                 <ogc:PropertyName>id_parc</ogc:PropertyName>
-                <ogc:Literal>6</ogc:Literal>
+                <ogc:Literal>9</ogc:Literal>
                 <ogc:Literal>15</ogc:Literal>
               </ogc:Function>
             </se:Label>
