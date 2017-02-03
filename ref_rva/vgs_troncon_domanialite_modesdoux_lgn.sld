@@ -12,6 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   22/12/2016  |  Maël REBOUX         |  version initiale
+  03/02/2017  |  Maël REBOUX         |  correction couleur modes doux privé (orange -> rouge)
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -205,7 +206,7 @@
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FFAA00</se:SvgParameter>
+              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">6 10</se:SvgParameter>
               <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
