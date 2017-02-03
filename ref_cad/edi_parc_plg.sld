@@ -29,7 +29,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <se:Rule>
           <se:Name>Parcelles cadastrales</se:Name>
-          <se:MinScaleDenominator>500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
