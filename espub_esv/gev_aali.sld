@@ -11,7 +11,7 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  25/01/2017  |  Maël REBOUX         |  version initiale
+  10/02/2017  |  Maël REBOUX         |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -28,7 +28,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- rond vert avec bordure noire + un point noir au centre  -->
         <se:Rule>
-          <se:Name>Point</se:Name>
+          <se:Name>Arbre d'alignement en accompagnement de voirie</se:Name>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
