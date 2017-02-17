@@ -29,7 +29,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- point vert avec bordure noire -->
         <se:Rule>
           <se:Name>Arbre d'ornement</se:Name>
-          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>

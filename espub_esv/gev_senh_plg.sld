@@ -29,7 +29,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- polygone vert sans bordure -->
         <se:Rule>
           <se:Name>Surfaces enherbées</se:Name>
-          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#009600</se:SvgParameter>
