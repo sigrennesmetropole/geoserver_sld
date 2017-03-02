@@ -43,7 +43,10 @@
               <ogc:PropertyName>niveau</ogc:PropertyName>
               <ogc:Literal>-1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>              
+          </ogc:Filter> 
+          
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>
@@ -68,6 +71,9 @@
               <ogc:Literal>-1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>        
+
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>

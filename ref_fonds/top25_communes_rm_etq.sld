@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : top25_communes_rm_etq
   
-  couche source dans la base :  reseaux.erdf_reseau_distrib
+  couche source dans la base :  limite_admin:pvci_communes_emprise
   layer cible du style       :  ref_fonds:pvci_commune_emprise
   
   objet :  Style relatif aux noms de communes
@@ -36,6 +36,7 @@
       <se:FeatureTypeStyle>
 
         <se:Rule>
+          <!-- seulement les communes RM -->
           <se:Name>Communes RM</se:Name>  
 
           <ogc:Filter>
@@ -45,10 +46,14 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
 
-          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+
 
           <se:TextSymbolizer>
+
+            <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
+             afin de ne pas avoir +ieurs étiquettes dans le cache -->
 
             <se:Geometry>
               <ogc:Function name="centroid">

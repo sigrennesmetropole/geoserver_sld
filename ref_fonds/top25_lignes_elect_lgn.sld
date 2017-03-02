@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : top25_lignes_elect_lgn
@@ -38,6 +38,10 @@
 
         <se:Rule>
           <se:Name>Lignes électriques</se:Name>
+
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   nom du SLD : top25_equip_gare_pnt
   
@@ -40,17 +40,45 @@
               <ogc:PropertyName>nom_princi</ogc:PropertyName>
               <ogc:Literal>Gare SNCF</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>      
+          </ogc:Filter>   
+          
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
 
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#99cc00</se:SvgParameter>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
+                
+                <se:Stroke>
+             		  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+             		  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            	 </se:Stroke>  
+                
               </se:Mark>
-              <se:Size>6</se:Size>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Equipements_PVI#${'U+0056'}</se:WellKnownName>
+                
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>                  
+                </se:Fill>
+
+                <se:Stroke>
+             		  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+             		  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            	 </se:Stroke>   
+                
+              </se:Mark>
+              <se:Size>14</se:Size>         
             </se:Graphic>
           </se:PointSymbolizer>
 

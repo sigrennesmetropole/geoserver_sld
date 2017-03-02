@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : top25_mnt_courbe_niveau_lgn
@@ -14,9 +14,9 @@
  
 -->
 <StyledLayerDescriptor version="1.1.0" 
-	xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
     xmlns="http://www.opengis.net/sld" 
-	xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
     xmlns:se="http://www.opengis.net/se" 
     xmlns:xlink="http://www.w3.org/1999/xlink" 			
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -43,7 +43,11 @@
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-
+          
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>           
+          
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#dda840</se:SvgParameter>

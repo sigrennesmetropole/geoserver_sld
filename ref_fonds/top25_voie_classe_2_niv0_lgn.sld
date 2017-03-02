@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : top25_voie_classe_2_niv0_lgn
@@ -44,7 +44,11 @@
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>              
+       
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
 
+          
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9c9c9c</se:SvgParameter>
@@ -68,6 +72,9 @@
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>        
+
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>

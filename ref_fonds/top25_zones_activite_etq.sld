@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  nom du SLD : top25_noms_quartiers_etq
+  nom du SLD : top25_zones_activite_etq
   
-  couche source dans la base : rva.v_voie
-  layer cible du style : ref_fonds:v_voie_lgn
+  couche source dans la base : bdu:economie.audiar_actrm_syntplu
+  layer cible du style : ref_fonds:audiar_actrm_syntplu
   
-  objet : Permet d'afficher le nom des quartiers de la ville de Rennes
+  objet : Permet d'afficher les zones d'activité sur Rennes Métropole
   
   Historique des versions :
   date        |  auteur              |  description
-  20/01/2017  |  Arnaud LECLERE      |  version initiale
+  09/02/2017  |  Arnaud LECLERE      |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -21,27 +21,27 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds:limite_admin</se:Name>
+    <se:Name>ref_fonds:audiar_actrm_syntplu</se:Name>
 
     <UserStyle>
-      <se:Name>top25_noms_quartiers_etq</se:Name>
+      <se:Name>top25_zones_activite_etq</se:Name>
 
       <se:Description>	
-        <se:Title>Nom des sous-quartiers</se:Title>
-        <se:Abstract>Etiquettes des noms des sous-quartiers ville de Rennes.</se:Abstract>
+        <se:Title>Noms des zones d'activité sur Rennes Métropole </se:Title>
+        <se:Abstract>Etiquettes des zones d'activité sur Rennes Métropole.</se:Abstract>
       </se:Description>	
 
       <se:FeatureTypeStyle>
 
-        <se:Rule>
+        <se:Rule>     
 
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>       
           <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
 
           <se:TextSymbolizer>
             <se:Label>
-              <ogc:PropertyName>nomsquart</ogc:PropertyName>
+              <ogc:PropertyName>nom_zoneza</ogc:PropertyName>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Arial</se:SvgParameter>

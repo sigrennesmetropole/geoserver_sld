@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : top25_batis_plg
@@ -36,27 +36,26 @@
 
         <se:Rule>
 
-          <!-- filtre bâs durs -->
+          <!-- filtre bâtis durs -->
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_</ogc:PropertyName>
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>   
+          </ogc:Filter>  
+          
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
 
           <!-- polygone gris foncé avec bordure noire -->
 
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#c0c0c0</se:SvgParameter>
+              <se:SvgParameter name="fill">#5f5f5f</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#9c9c9c</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
+           </se:PolygonSymbolizer>
 
         </se:Rule>
 

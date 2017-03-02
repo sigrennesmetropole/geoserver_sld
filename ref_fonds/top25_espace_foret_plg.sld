@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   nom du SLD : top25_espace_foret_plg
   
@@ -36,7 +36,11 @@
         <se:Name>top25_espace_foret_plg</se:Name>
 
         <se:Rule>
-          <se:Name>Couche des espaces boisés sur Rennes Métropole</se:Name>              
+          <se:Name>Couche des espaces boisés sur Rennes Métropole</se:Name> 
+
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+
           <se:PolygonSymbolizer>                               
             <se:Fill>
               <se:SvgParameter name="fill">#baddb9</se:SvgParameter>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   nom du SLD : top25_hydro_plg
   
@@ -35,6 +35,9 @@
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Couche hydrographie</se:Name>
+
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
 
           <se:PolygonSymbolizer>                               
             <se:Fill>

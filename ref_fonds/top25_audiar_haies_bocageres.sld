@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : top25_modes_doux_lgn
+  nom du SLD : top25_audiar_haies_bocageres
   
-  couche source dans la base :  rva.troncon_voies
-  layer cible du style       :  ref_fonds:v_modes_doux
+  couche source dans la base :  pat_naturel.audiar_haies_bocageres
+  layer cible du style       :  ref_fonds:audiar_haies_bocageres
   
-  objet :  Style relatif aux modes doux.
+  objet :  Style relatif aux haies bocageres.
   
   Historique des versions :
   date        |  auteur              |  description
-  20/01/2017  |  Arnaud LECLERE      |  version initiale
+  27/02/2017  |  Arnaud LECLERE      |  version initiale
   
 -->
 
@@ -23,34 +23,33 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds:v_modes_doux</se:Name>
+    <se:Name>ref_fonds:audiar_haies_bocageres</se:Name>
+
 
     <UserStyle>
-      <se:Name>top25_modes_doux_lgn</se:Name>
+      <se:Name>top25_audiar_haies_bocageres</se:Name>
 
       <se:Description>
-        <se:Title>Modes doux Rennes Métropole</se:Title>    
-        <se:Abstract>Style de lignes tiretées grises claires.</se:Abstract>
+        <se:Title>Haies bocagères</se:Title>    
+        <se:Abstract>Style de lignes vertes.</se:Abstract>
       </se:Description>
 
       <se:FeatureTypeStyle>
 
         <se:Rule>
-          <se:Name>Modes doux</se:Name>
-
+          <se:Name>Haies bocagères</se:Name>                  
           <!-- plage affichage -->
           <se:MinScaleDenominator>8500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#999999</se:SvgParameter>
+              <se:SvgParameter name="stroke">#b8da9f</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>        
+          </se:LineSymbolizer>
 
         </se:Rule>
 

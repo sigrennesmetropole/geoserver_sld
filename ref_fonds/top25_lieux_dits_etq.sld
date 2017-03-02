@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   nom du SLD : top25_lieux_dits_etq
   
@@ -40,7 +40,11 @@
               <ogc:PropertyName>type</ogc:PropertyName>
               <ogc:Literal>Lieu-dit</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>              
+          </ogc:Filter>          
+
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>34000</se:MaxScaleDenominator>
 
           <se:TextSymbolizer>
             <se:Label>
@@ -54,8 +58,8 @@
               <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
             </se:Font>
 
-           
-             <se:Halo>
+
+            <se:Halo>
               <se:Radius>1</se:Radius>
               <se:Fill>
                 <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>

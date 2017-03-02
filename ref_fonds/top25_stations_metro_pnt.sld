@@ -42,15 +42,45 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>      
 
+          <!-- plage affichage -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
+
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>square</se:WellKnownName>
+                <se:WellKnownName>ttf://Equipements_PVI#${'U+005C'}</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>                  
+                </se:Fill>
+
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                </se:Stroke>     
+
+              </se:Mark>
+              <se:Size>14</se:Size>         
+            </se:Graphic>
+          </se:PointSymbolizer>
+
+
+
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Equipements_PVI#${'U+0058'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#004b94</se:SvgParameter>
                 </se:Fill>
+
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                </se:Stroke> 
+
               </se:Mark>
-              <se:Size>15</se:Size>
+              <se:Size>14</se:Size>         
             </se:Graphic>
           </se:PointSymbolizer>
 
