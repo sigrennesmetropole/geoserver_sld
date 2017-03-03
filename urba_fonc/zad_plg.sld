@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : zad_plg
@@ -20,7 +20,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>zad_plg</se:Name>
         <se:Description>
-          <se:Title>Style par défaut</se:Title>
+          <se:Title>Style par defaut</se:Title>
           <se:Abstract>Style par défaut</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
