@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : zac_particip_plg
@@ -29,12 +29,22 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <!--<se:Name>Polygone</se:Name>-->
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#505050</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            <se:Fill>               
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#0070ff</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>16</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0070ff</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>

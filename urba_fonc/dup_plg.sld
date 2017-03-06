@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : dup_plg
@@ -27,15 +27,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- polygone grise à grosse bordure -->
         <se:Rule>
-          <!--<se:Name>?</se:Name>-->
+          <se:Name>Déclaration d'Utilité Publique (DUP)sur Rennes Métropole</se:Name>
+          
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#505050</se:SvgParameter>
+              <se:SvgParameter name="fill">#e1e1e1</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke">#828282</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
