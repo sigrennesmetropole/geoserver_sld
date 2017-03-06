@@ -27,21 +27,124 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- 1 règle par type -->
         <se:Rule>
-          <se:Name>#typelot#</se:Name>
+          <se:Name>Autre</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>typelot</ogc:PropertyName>
+              <ogc:Literal>Autre</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#505050</se:SvgParameter>
+              <se:SvgParameter name="fill">#64fade</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
-        </se:Rule>
+        </se:Rule>       
+        
+        <se:Rule>
+          <se:Name>Déclaration préalable</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>typelot</ogc:PropertyName>
+              <ogc:Literal>Déclaration préalable</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#504bd1</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>  
+        
+        <se:Rule>
+          <se:Name>Lotissement</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>typelot</ogc:PropertyName>
+              <ogc:Literal>Lotissement</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e6505d</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>       
+        
+        <se:Rule>
+          <se:Name>Permis d'aménager</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>typelot</ogc:PropertyName>
+              <ogc:Literal>Permis d'aménager</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f7fa61</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>  
         
         <!-- nom du lotissement à partir du 1/34000 -->
+         <se:Rule>
+
+          <!-- plage affichage -->
+          <se:MaxScaleDenominator>34000</se:MaxScaleDenominator>
+
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>nomlot</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>      
+              <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
+            </se:Font>
+
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+
+          </se:TextSymbolizer>
+        </se:Rule>
       
       </se:FeatureTypeStyle>
     </UserStyle>
