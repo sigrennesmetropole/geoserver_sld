@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : zac_bordure_plg
@@ -26,22 +26,148 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:FeatureTypeStyle>
       
         <!-- 1 règle par étape : polygone transparent -->
-        <se:Rule>
-          <se:Name>#nom de l'étape#</se:Name>
+       <se:Rule>
+          <se:Name>En projet</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etape</ogc:PropertyName>
+              <ogc:Literal>En projet</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#505050</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="fill">#ffbee8</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#ffbee8</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
         
+        <se:Rule>
+          <se:Name>En études de création</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etape</ogc:PropertyName>
+              <ogc:Literal>En études de création</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#ff73df</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ff73df</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>En études de réalisation</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etape</ogc:PropertyName>
+              <ogc:Literal>En études de réalisation</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e600a9</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#e600a9</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+       </se:Rule>
+        
+       <se:Rule>
+          <se:Name>En cours d'aménagement</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etape</ogc:PropertyName>
+              <ogc:Literal>En cours d'aménagement</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#73b2ff</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#73b2ff</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+         <se:Rule>
+          <se:Name>Réalisé</se:Name>    
+          
+           <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etape</ogc:PropertyName>
+              <ogc:Literal>Réalisé</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter> 
+                   
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#cdf57a</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#cdf57a</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>       
+        
         <!-- nom de la ZAC à partir du 1/34000 -->
+         <se:Rule>
+
+          <!-- plage affichage -->
+          <se:MaxScaleDenominator>34000</se:MaxScaleDenominator>
+
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>nomzac</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>      
+              <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
+            </se:Font>
+
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+
+          </se:TextSymbolizer>
+        </se:Rule>
       
       </se:FeatureTypeStyle>
     </UserStyle>
