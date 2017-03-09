@@ -25,7 +25,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Description>
       <se:FeatureTypeStyle>
       
+<<<<<<< HEAD
         <!-- 1 règle par étape : polygone transparent -->
+=======
+        <!-- 1 règle par étape : polygone plein -->
+>>>>>>> 02b559854a10b6ccfd4b2b22f59124994a4b398f
        <se:Rule>
           <se:Name>En projet</se:Name>    
           
