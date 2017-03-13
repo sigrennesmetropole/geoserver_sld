@@ -4,7 +4,7 @@
   nom du SLD : star_arret_physique_pnt
   
   couche source dans la base :  mobilite_transp.star_arret_physique
-  layer cible du style       :  trp_coll:star_arret_physique
+  layer cible du style       :  trp_coll:v_star_arret_physique
   
   objet :
   Style par défaut
@@ -12,12 +12,13 @@
   Historique des versions :
   date        |  auteur              |  description
   14/11/2016  |  Léo Petipas         |  version initiale
+  10/03/2017  |  Maël REBOUX         |  passage à v_star_arret_physique
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:star_arret_physique</se:Name>
+    <se:Name>trp_coll:v_star_arret_physique</se:Name>
     <UserStyle>
       <se:Name>star_arret_physique_pnt</se:Name>
         <se:Description>
@@ -28,7 +29,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- point rond rouge avec bordure noire -->
         <se:Rule>
-          <se:Name>Point</se:Name>
+          <!--<se:Name>Point</se:Name>-->
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
