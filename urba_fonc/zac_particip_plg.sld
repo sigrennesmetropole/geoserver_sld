@@ -39,7 +39,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>16</se:Size>
+                  <se:Size>12</se:Size>
                 </se:Graphic>
               </se:GraphicFill>
             </se:Fill>
