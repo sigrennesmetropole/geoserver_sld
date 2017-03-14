@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
-  nom du SLD : rap_taux_plg
-  
+
+  nom du SLD : rap_plg
+
   couche source dans la base :  urba_foncier.rap
   layer cible du style       :  urba_fonc:rap
-  
-  objet : style basé sur l'attribut taux
-  
+
+  objet : style par défaut
+
   Historique des versions :
   date        |  auteur              |  description
-  02/03/2017  |  Arnaud LECLERE      |  version initiale
-  
+  14/03/2017  |  Maël REBOUX         |  version initiale
+
 -->
-<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>urba_fonc:rap</se:Name>
     <UserStyle>
-      <se:Name>rap_taux_plg</se:Name>
+      <se:Name>rap_plg</se:Name>
         <se:Description>
           <se:Title>Taux pour la redevance d'archéologie préventive</se:Title>
-          <se:Abstract>Couleurs en fonction de la valeur du taux de la redevance d'archéologie préventive.</se:Abstract>
+          <se:Abstract>Couleur unique.</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
-      
-        <!-- 1 règle par taux -->
+
+        <!-- polygone rose saumon pâle  -->
         <se:Rule>
-          <se:Name>taux</se:Name>
+          <!--<se:Name>taux</se:Name>-->
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffebd6</se:SvgParameter>
@@ -40,7 +40,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-      
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
