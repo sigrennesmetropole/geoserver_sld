@@ -20,7 +20,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>dup_bordure_plg</se:Name>
       <se:Description>
-        <se:Title>Style par défaut</se:Title>
+        <se:Title>Style avec uniquement les bordures des polygones</se:Title>
         <se:Abstract>Style avec uniquement les bordures des polygones</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
