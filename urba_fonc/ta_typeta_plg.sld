@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : ta_typeta_plg
-  
+
   couche source dans la base :  urba_foncier.ta
   layer cible du style       :  urba_fonc:ta
-  
+
   objet : style basé sur l'attribut typeta
-  
+
   Historique des versions :
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
-  
+  14/03/2017  |  Maël REBOUX         |  mise en forme
+
 -->
-<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>urba_fonc:ta</se:Name>
@@ -27,17 +28,15 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
 
         <!-- 1 règle par typeta -->
         <se:Rule>
-          <se:Name>Secteur</se:Name>    
-
+          <se:Name>Secteur</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typeta</ogc:PropertyName>
               <ogc:Literal>Secteur</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
+          </ogc:Filter>
           <se:PolygonSymbolizer>
-            <se:Fill> 
+            <se:Fill>
               <se:GraphicFill>
                 <se:Graphic>
                   <se:Mark>
@@ -60,17 +59,15 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
 
         <se:Rule>
-          <se:Name>Périmètre communal</se:Name>    
-
+          <se:Name>Périmètre communal</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typeta</ogc:PropertyName>
               <ogc:Literal>Périmètre communal</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
+          </ogc:Filter>
           <se:PolygonSymbolizer>
-            <se:Fill>               
+            <se:Fill>
               <se:GraphicFill>
                 <se:Graphic>
                   <se:Mark>
@@ -93,15 +90,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
 
         <se:Rule>
-          <se:Name>Périmètre départemental</se:Name>    
-
+          <se:Name>Périmètre départemental</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typeta</ogc:PropertyName>
               <ogc:Literal>Périmètre départemental</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter> 
-
+          </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffe3e3</se:SvgParameter>

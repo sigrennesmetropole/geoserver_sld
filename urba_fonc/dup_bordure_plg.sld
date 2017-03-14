@@ -1,19 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : dup_bordure_plg
-  
+
   couche source dans la base :  urba_foncier.dup
   layer cible du style       :  urba_fonc:dup
-  
+
   objet : style avec polygone transparent + bordure
-  
+
   Historique des versions :
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
-  
+  14/03/2017  |  Maël REBOUX         |  mise en forme
+
 -->
-<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>urba_fonc:dup</se:Name>
@@ -26,10 +27,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:FeatureTypeStyle>
 
         <!-- polygone transparent à grosse bordure -->
-
         <se:Rule>
-          <se:Name>Déclaration d'Utilité Publique (DUP)sur Rennes Métropole</se:Name>
-
+          <!--<se:Name>Déclaration d'Utilité Publique (DUP)sur Rennes Métropole</se:Name>-->
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#e1e1e1</se:SvgParameter>

@@ -25,9 +25,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- 1 règle par taux -->
+        <!-- 1 règle par taux -> pas possible en l'état : c'est du texte ! -->
         <se:Rule>
-          <se:Name>#taux#</se:Name>
+          <!--<se:Name>taux</se:Name>-->
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#505050</se:SvgParameter>
