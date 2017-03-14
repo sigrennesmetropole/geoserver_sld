@@ -32,7 +32,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etape</ogc:PropertyName>
-              <ogc:Literal>en projet</ogc:Literal>
+              <ogc:Literal>En projet</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
                    
@@ -55,7 +55,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etape</ogc:PropertyName>
-              <ogc:Literal>en études de création</ogc:Literal>
+              <ogc:Literal>En études de création</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
                    
@@ -78,7 +78,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etape</ogc:PropertyName>
-              <ogc:Literal>en études de réalisation</ogc:Literal>
+              <ogc:Literal>En études de réalisation</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
                    
@@ -101,7 +101,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etape</ogc:PropertyName>
-              <ogc:Literal>en cours d'aménagement</ogc:Literal>
+              <ogc:Literal>En cours d'aménagement</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
                    
@@ -124,7 +124,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etape</ogc:PropertyName>
-              <ogc:Literal>réalisé</ogc:Literal>
+              <ogc:Literal>Réalisé</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter> 
                    
