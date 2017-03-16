@@ -262,16 +262,14 @@
           <se:TextSymbolizer>
               <se:Label>
                 UNIT 
-                
                 <ogc:Function name="numberFormat">
-                
-                  <ogc:Function name="numberFormat">
-                    <ogc:Literal>#</ogc:Literal>
-                    <ogc:Mul>
-                    <ogc:PropertyName>hauteur</ogc:PropertyName>
+                  <ogc:Literal>#</ogc:Literal>
+                  <ogc:Mul>
+                    <ogc:PropertyName>altitude</ogc:PropertyName>
                     <ogc:Literal>1000</ogc:Literal>
                   </ogc:Mul> 
-                  </ogc:Function>
+                </ogc:Function> 
+				 * 
                   
                   <ogc:Function name="numberFormat">
                     <ogc:Literal>#</ogc:Literal>
@@ -280,10 +278,7 @@
                     <ogc:Literal>1000</ogc:Literal>
                   </ogc:Mul> 
                  </ogc:Function>
-               
-                </ogc:Function>
-                
-              </se:Label>
+              </se:Label>                                
         
               <se:Font>
                     <se:SvgParameter name="font-family">Arial</se:SvgParameter>
