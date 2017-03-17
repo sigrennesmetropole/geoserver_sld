@@ -32,7 +32,76 @@
         <se:Abstract>Style des objets de surface de la famille Clôture</se:Abstract>
      </se:Description>
       
+<!-- 4380 - 4380 - mur h > 1,10m  -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RCTR Surface - cloture - 4380 - mur h > 1,10m </se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>CL_4380</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
 
+        <se:Rule>  
+          <se:Name>RCTR Surface - cloture - 4380 - mur h > 1,10m </se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>CL_4380</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>    
+                    <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:GraphicStroke>
+                <se:Graphic>
+                  <se:Mark>
+                	 <se:WellKnownName>shape://vertline</se:WellKnownName>
+                	 <se:Stroke>
+                	   <se:SvgParameter name="stroke">#a500a5</se:SvgParameter>
+                	   <se:SvgParameter name="stroke-width">0.7</se:SvgParameter>
+               		 </se:Stroke>
+                  </se:Mark>
+                  <se:Size>8</se:Size>
+                  <se:Rotation>
+                      <ogc:Literal>225</ogc:Literal>
+                  </se:Rotation>
+                </se:Graphic>
+
+              </se:GraphicStroke>
+            </se:Stroke>
+
+          </se:LineSymbolizer>          
+        </se:Rule>
+     </se:FeatureTypeStyle>
+                   
 <!-- 4350 - Mur de plaques  -->
      <se:FeatureTypeStyle>
         <se:Rule>
@@ -84,7 +153,8 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                     <se:WellKnownName>wkt://MULTILINESTRING((0 -0.1, 0 0.1),(0 0.1, 0.2 0.1),(0.2 0.1, 0.2 -0.1),(0.2 -0.1, 0 -0.1))</se:WellKnownName>                     
+<!--                     <se:WellKnownName>wkt://MULTILINESTRING((0 -0.1, 0 0.1),(0 0.1, 0.2 0.1),(0.2 0.1, 0.2 -0.1),(0.2 -0.1, 0 -0.1))</se:WellKnownName>      --> 
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 0.1, 0 0.3),(0 0.3, 0.2 0.3),(0.2 0.3, 0.2 0.1),(0.2 0.1, 0 0.1))</se:WellKnownName>                       
                      <se:Stroke>
                         <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
                         <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
