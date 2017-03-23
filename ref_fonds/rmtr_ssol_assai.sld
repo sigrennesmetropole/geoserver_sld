@@ -79,7 +79,7 @@
 <!-- 7360 - Fourreau en attente -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 1</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
              <ogc:And>
                 <ogc:PropertyIsEqualTo>
@@ -94,7 +94,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>400</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -107,7 +107,7 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 1</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
              <ogc:And>
                 <ogc:PropertyIsEqualTo>
@@ -122,6 +122,119 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>400</se:MaxScaleDenominator>  
+           <se:TextSymbolizer>
+              <se:Label>
+                ø  
+                <ogc:Function name="numberFormat">
+                  <ogc:Literal>#</ogc:Literal>
+                  <ogc:Mul>
+                    <ogc:PropertyName>largeur</ogc:PropertyName>
+                    <ogc:Literal>1000</ogc:Literal>
+                  </ogc:Mul> 
+                </ogc:Function> 
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>             
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>  
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>14</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+             <se:Geometry>
+               <ogc:Function name="endPoint">
+                 <ogc:PropertyName>shape</ogc:PropertyName>
+               </ogc:Function>
+             </se:Geometry>
+             <se:Graphic>
+               <se:Mark>
+                 <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                 <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+                 </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+                 </se:Stroke>                 
+               </se:Mark>
+               <se:Size>14</se:Size>
+               <se:Rotation>
+                 <ogc:PropertyName>gis_fin</ogc:PropertyName>
+               </se:Rotation>             
+             </se:Graphic>
+           </se:PointSymbolizer>          
+        </se:Rule>       
+     </se:FeatureTypeStyle> 
+      
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 2</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_7360</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>401</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>      
+        </se:Rule>       
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 2</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_7360</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>401</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
            <se:TextSymbolizer>
               <se:Label>
@@ -143,11 +256,55 @@
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
-          </se:TextSymbolizer>     
+          </se:TextSymbolizer>  
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="startPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>6</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+             <se:Geometry>
+               <ogc:Function name="endPoint">
+                 <ogc:PropertyName>shape</ogc:PropertyName>
+               </ogc:Function>
+             </se:Geometry>
+             <se:Graphic>
+               <se:Mark>
+                 <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                 <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+                 </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+                 </se:Stroke>                 
+               </se:Mark>
+               <se:Size>6</se:Size>
+               <se:Rotation>
+                 <ogc:PropertyName>gis_fin</ogc:PropertyName>
+               </se:Rotation>             
+             </se:Graphic>
+           </se:PointSymbolizer>          
         </se:Rule>       
       </se:FeatureTypeStyle> 
             
-      
+       
 <!-- 7356 - Drain -->
      <se:FeatureTypeStyle>
         <se:Rule>
