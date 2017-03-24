@@ -3,7 +3,7 @@
   
   nom du SLD : rmtr_surf_gaz
   
-  couche source dans la base :  toposurf.v_gaz_mat
+  couche source dans la base :  toposurf.v_gazfl_mat
   layer cible du style       :  ref_fonds:rmtr_surf_gaz
   
   objet :  Style relatif aux objets Gaz de surface.
@@ -23,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>v_gaz_mat</se:Name>
+    <se:Name>v_gazfl_mat</se:Name>
     <UserStyle>
      <se:Name>rmtr_surf_gaz</se:Name>
      <se:Description>        

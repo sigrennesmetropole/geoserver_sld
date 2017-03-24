@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rmtr_surf_chauf
+  nom du SLD : rmtr_surf_chauffage
   
   couche source dans la base :  toposurf.v_chauf_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_chauf
+  layer cible du style       :  ref_fonds:rmtr_surf_chauffage
   
   objet :  Style relatif aux objets Chauffage Public de surface.
   
@@ -25,7 +25,7 @@
  <NamedLayer>
     <se:Name>v_chauf_mat</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_chauf</se:Name>
+     <se:Name>rmtr_surf_chauffage</se:Name>
      <se:Description>        
         <se:Title>Chauffage Public</se:Title>
         <se:Abstract>Style des objets de surface de la famille Chauffage Public</se:Abstract>

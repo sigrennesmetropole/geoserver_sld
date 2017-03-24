@@ -45,7 +45,7 @@
                 </ogc:PropertyIsEqualTo> 
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
+                  <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
              </ogc:And>
           </ogc:Filter>
@@ -61,7 +61,32 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-
+        <se:Rule>
+          <se:Name>RCTR Surface - cloture - Mur de plaques </se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>CL_4350</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
         <se:Rule>  
           <se:Name>RCTR Surface - cloture - Mur de plaques </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -72,7 +97,7 @@
                 </ogc:PropertyIsEqualTo> 
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>0</ogc:Literal>
+                  <ogc:Literal>1</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
              </ogc:And>
           </ogc:Filter>    
@@ -172,7 +197,6 @@
                  <se:Graphic>
                    <se:Mark>
                      <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0 0.2),(0 0.2, 0.2 0.2),(0.2 0.2, 0.2 0))</se:WellKnownName>                     
-
                      <se:Stroke>
                         <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
                         <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>

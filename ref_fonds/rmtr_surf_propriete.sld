@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rmtr_surf_prop
+  nom du SLD : rmtr_surf_propriete
   
-  couche source dans la base :  toposurf.v_prop_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_prop
+  couche source dans la base :  toposurf.v_propi_mat
+  layer cible du style       :  ref_fonds:rmtr_surf_propriete
   
   objet :  Style relatif aux objets Propriété de surface.
   
@@ -23,9 +23,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>v_prop_mat</se:Name>
+    <se:Name>v_propi_mat</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_prop</se:Name>
+     <se:Name>rmtr_surf_propriete</se:Name>
      <se:Description>        
         <se:Title>Propriété</se:Title>
         <se:Abstract>Style des objets de surface de la famille Propriété</se:Abstract>

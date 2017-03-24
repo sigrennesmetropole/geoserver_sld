@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rmtr_surf_indet
+  nom du SLD : rmtr_surf_indetermine
   
-  couche source dans la base :  toposurf.v_indet_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_indet
+  couche source dans la base :  toposurf.v_indef_mat
+  layer cible du style       :  ref_fonds:rmtr_surf_indetermine
   
   objet :  Style relatif aux objets Indéterminé de surface.
   
@@ -23,9 +23,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>v_indet_mat</se:Name>
+    <se:Name>v_indef_mat</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_indet</se:Name>
+     <se:Name>rmtr_surf_indetermine</se:Name>
      <se:Description>        
         <se:Title>Indéterminé</se:Title>
         <se:Abstract>Style des objets de surface de la famille Indéterminé</se:Abstract>

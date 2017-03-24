@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rmtr_surf_elect
+  nom du SLD : rmtr_surf_transport
   
-  couche source dans la base :  toposurf.v_elect_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_elect
+  couche source dans la base :  toposurf.v_trans_mat
+  layer cible du style       :  ref_fonds:rmtr_surf_transport
   
-  objet :  Style relatif aux objets Electricité de surface.
+  objet :  Style relatif aux objets Transport de surface.
   
   Historique des versions :
   date        |  auteur              |  description
@@ -23,298 +23,231 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>v_elect_mat</se:Name>
+    <se:Name>v_trans_mat</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_elect</se:Name>
+     <se:Name>rmtr_surf_transport</se:Name>
      <se:Description>        
-        <se:Title>Electricité</se:Title>
-        <se:Abstract>Style des objets de surface de la famille Electricité</se:Abstract>
+        <se:Title>Transport</se:Title>
+        <se:Abstract>Style des objets de surface de la famille Transport</se:Abstract>
      </se:Description>
+                             
+ <!-- 5130 - Tablier viaduc passerelle -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Tablier viaduc passerelle</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KL_5130</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                      
+ <!-- 5110 - Ouvrage annexe -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Ouvrage annexe</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KL_5110</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                                 
+ <!-- 1161 - Trappe rectangulaire métro -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Trappe rectangulaire métro</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1161</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                           
+ <!-- 1151 - Trappe carré métro -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Trappe carré métro</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1151</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                    
+ <!-- 1141 - Aération rectangulaire métro -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Aération rectangulaire métro</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1141</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+               
+ <!-- 1131 - Aération carrée métro -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Aération carrée métro</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1131</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+           
+ <!-- 1121 - Poteau d'arrêt de bus -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Poteau d'arrêt de bus</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1121</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+        
+ <!-- 1111 - Distributeur de tickets -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Distributeur de tickets</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1111</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+    
+ <!-- 1101 - Abri bus -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Abri bus</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>KS_1101</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A50029</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+
  
-                       
- <!-- 6220 - Ligne aerienne -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Ouvrage annexe </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WL_6220</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:GraphicStroke>
-                <se:Graphic>
-                  <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 -0.2, 0.4 -0.2),(0.4 -0.2, 0 0.2),( 0 0.2, 0.4 0.2),( 0.4 0.2, 0.3 0.3),( 0.4 0.2, 0.3 0.1))</se:WellKnownName>                     
-                    <se:Stroke>
-                      <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-                    </se:Stroke>
-                  </se:Mark>
-                  <se:Size>3</se:Size>
-                </se:Graphic>
-              </se:GraphicStroke>
-
-              <se:SvgParameter name="stroke-dasharray">2 4</se:SvgParameter> 
-
-            </se:Stroke>
-          </se:LineSymbolizer>          
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                       
- <!-- 6210 - Ouvrage annexe -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Ouvrage annexe </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WL_6210</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                            
- <!-- 2381 - Chambre -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Chambre </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2381</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                
- <!-- 2371 - Transformateur -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Transformateur </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2371</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                            
- <!-- 2361 - Pylone -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Pylone </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2361</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                          
- <!-- 2351 - Coffret -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Coffret </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2351</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                          
- <!-- 2341 - Armoire -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Armoire </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2341</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                            
- <!-- 2304 - Support ligne, lampadaire et télécom -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Support ligne, lampadaire et télécom </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2304</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                                  
- <!-- 2303 - Support ligne et télécom -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Support ligne et télécom </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2303</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                                             
- <!-- 2302 - Support ligne et lampadaire -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Support ligne et lampadaire </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2302</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                         
- <!-- 2301 - Support ligne -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Electricité - Support ligne </se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>WS_2301</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>      
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-   
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

@@ -43,25 +43,60 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>500</se:MaxScaleDenominator>  
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
                     <se:WellKnownName>circle</se:WellKnownName> 
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                    </se:Fill>                    
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
                     </se:Stroke>                    
                   </se:Mark>
-                  <se:Size>2</se:Size>
+                  <se:Size>8</se:Size>
                 </se:Graphic>
               </se:GraphicStroke>
-              <se:SvgParameter name="stroke-dasharray">2 3</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">8 30</se:SvgParameter> 
             </se:Stroke>
-          </se:LineSymbolizer>            
+          </se:LineSymbolizer>              
         </se:Rule>
+        <se:Rule>
+          <se:Name>RMTR Surface - Mobilier Urbain - Potelet anti-stationnement</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>ML_5360</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1200</se:MaxScaleDenominator>  
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:GraphicStroke>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>circle</se:WellKnownName> 
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                    </se:Fill>                    
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+                    </se:Stroke>                    
+                  </se:Mark>
+                  <se:Size>4</se:Size>
+                </se:Graphic>
+              </se:GraphicStroke>
+              <se:SvgParameter name="stroke-dasharray">4 10</se:SvgParameter> 
+            </se:Stroke>
+          </se:LineSymbolizer>              
+        </se:Rule>       
      </se:FeatureTypeStyle>  
                              
  <!-- 5350 - Bordure anti-stationnement -->
@@ -82,7 +117,7 @@
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0.3, 2 0.3),(2 0.3, 2 -0.3),(2 -0.3, 0 -0.3),(0 -0.3, 0 0.3))</se:WellKnownName> 
+                    <se:WellKnownName>wkt://MULTILINESTRING((0 1, 20 1),(20 1, 20 -1),(20 -1, 0 -1),(0 -1, 0 1))</se:WellKnownName> 
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
@@ -91,7 +126,7 @@
                   <se:Size>2</se:Size>
                 </se:Graphic>
               </se:GraphicStroke>
-              <se:SvgParameter name="stroke-dasharray">2 3</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">2 25</se:SvgParameter> 
             </se:Stroke>
           </se:LineSymbolizer>            
         </se:Rule>
@@ -102,40 +137,57 @@
         <se:Rule>
           <se:Name>RMTR Surface - Mobilier Urbain - Glissière de sécurité</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>ML_5340</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>ML_5340</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>           
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.08</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:GraphicStroke>
-                <se:Graphic>
-                  <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0.1, 0.2 0.1))</se:WellKnownName> 
-                    <se:Stroke>
-                      <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-                    </se:Stroke>                    
-                  </se:Mark>
-                  <se:Size>2</se:Size>
-                </se:Graphic>
-              </se:GraphicStroke>
-              <se:SvgParameter name="stroke-dasharray">2 3</se:SvgParameter> 
-            </se:Stroke>
           </se:LineSymbolizer>            
         </se:Rule>
+        <se:Rule>
+          <se:Name>RMTR Surface - Mobilier Urbain - Glissière de sécurité</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>ML_5340</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>           
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.08</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 1</se:SvgParameter> 
+              
+            </se:Stroke>
+          </se:LineSymbolizer>            
+        </se:Rule>       
      </se:FeatureTypeStyle>  
                                           
  <!-- 5330 - Rambarde de protection -->
@@ -154,7 +206,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.05</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -165,14 +217,17 @@
                 <se:Graphic>
                   <se:Mark>
                     <se:WellKnownName>square</se:WellKnownName> 
-                    <Fill>
-                      <CssParameter name="fill">#7F6F3F</CssParameter>
-                    </Fill>                    
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#7F6F3F</se:SvgParameter>
+                    </se:Fill>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#7F6F3F</se:SvgParameter>
+                    </se:Stroke>                     
                   </se:Mark>
-                  <se:Size>2</se:Size>
+                  <se:Size>4</se:Size>
                 </se:Graphic>
               </se:GraphicStroke>
-              <se:SvgParameter name="stroke-dasharray">2 3</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">3 30</se:SvgParameter> 
             </se:Stroke>
           </se:LineSymbolizer>            
         </se:Rule>
