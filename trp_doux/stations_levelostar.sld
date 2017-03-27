@@ -3,7 +3,7 @@
   
   nom du SLD : stations_levelostar
   
-  couche source dans la base :  mobilite.stations_vls 
+  couche source dans la base :  mobilite_transp.stations_vls 
   layer cible du style       :  trp_doux:stations_vls
   
   objet :

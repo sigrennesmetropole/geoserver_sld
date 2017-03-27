@@ -2,12 +2,17 @@
 <!--
   
   nom du SLD : pvci_v_axe_rail_lgn
-  auteur :   Stéphane GELIN
-  date :     0110/06/2015
-  couche principale cible du style : v_axe_rail:ref_fonds
+  
+  couche source dans la base :  donnees_gen.v_axe_rail
+  layer cible du style       :  ref_fonds:pvci_v_axe_rail
   
   objet :
   Style des voies ferrées
+  
+  Historique des versions :
+  date        |  auteur              |  description
+  11/06/2015  |  Stéphane GELIN      |  version initiale
+  27/03/2017  |  Maël REBOUX         |  rajout title et abstract
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -20,6 +25,8 @@
     <Name>v_axe_rail</Name>
     <UserStyle>
       <Name>voies ferrées</Name>
+      <Title>Style PVCI voies ferrées</Title>
+      <Abstract>Style PVCI voies ferrées.</Abstract>
       <FeatureTypeStyle>
        
 
