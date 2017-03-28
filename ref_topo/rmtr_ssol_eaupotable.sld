@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rmtr_surf_nivel
+  nom du SLD : rmtr_ssol_eaupotable
   
-  couche source dans la base :  toposurf.v_nivel_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_nivel
+  couche source dans la base :  topossol.v_eaupo_mat
+  layer cible du style       :  ref_fonds:rmtr_ssol_eaupotable
   
-  objet :  Style relatif aux objets Nivellement de surface.
+  objet :  Style relatif aux objets Eau Potable de sous-sol.
   
   Historique des versions :
   date        |  auteur              |  description
@@ -23,22 +23,23 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>v_nivel_mat</se:Name>
+    <se:Name>v_eaupo_mat</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_nivel</se:Name>
+     <se:Name>rmtr_ssol_eaupotable</se:Name>
      <se:Description>        
-        <se:Title>Nivellement</se:Title>
-        <se:Abstract>Style des objets de surface de la famille Nivellement</se:Abstract>
+        <se:Title>Eau Potable</se:Title>
+        <se:Abstract>Style des objets de Sous-sol de la famille Eau Potable</se:Abstract>
      </se:Description>
-                  
- <!-- 5500 - Départ de busage -->
+      
+           
+ <!-- 7000 - Canalisation eau potable -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Départ de busage</se:Name>
+          <se:Name>RMTR Sous-sol - eau potable - Changement matériau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NL_5500</ogc:Literal>
+              <ogc:Literal>AL_7000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -46,24 +47,45 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
             </se:Stroke>
-          </se:LineSymbolizer>           
+          </se:LineSymbolizer>
+           <se:TextSymbolizer>
+              <se:Label>
+                ø  
+                <ogc:Function name="numberFormat">
+                  <ogc:Literal>#</ogc:Literal>
+                  <ogc:Mul>
+                    <ogc:PropertyName>largeur</ogc:PropertyName>
+                    <ogc:Literal>1000</ogc:Literal>
+                  </ogc:Mul> 
+                </ogc:Function> 
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>             
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>            
+          
         </se:Rule>
      </se:FeatureTypeStyle>  
-                                             
- <!-- 5490 - Busage fossé rectiligne -->
+                             
+ <!-- 3061 - Changement matériau -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Busage fossé rectiligne</se:Name>
+          <se:Name>RMTR Sous-sol - eau potable - Changement matériau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NL_5490</ogc:Literal>
+              <ogc:Literal>AS_3061</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -71,24 +93,23 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
             </se:Stroke>
-          </se:LineSymbolizer>           
+          </se:LineSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>  
-                                             
- <!-- 5480 - Fossé levé en axe ( l > 0.50 m) -->
+                    
+ <!-- 3051 - Extrémité conduite -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Fossé levé en axe (l sup à 0.50 m)</se:Name>
+          <se:Name>RMTR Sous-sol - eau potable - Extrémité conduite</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NL_5480</ogc:Literal>
+              <ogc:Literal>AS_3051</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -96,24 +117,71 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
             </se:Stroke>
-          </se:LineSymbolizer>           
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                         
+ <!-- 3041 - Citerneau circulaire -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous-sol - eau potable - Citerneau circulaire</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>AS_3041</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+          
+ <!-- 3031 - Chambre rectangulaire -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous-sol - eau potable - Chambre rectangulaire</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>AS_3031</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>  
                                          
- <!-- 5470 - Fossé levé en axe ( l < 0.50 m) -->
+ <!-- 3021 - Cône de réduction -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Fossé levé en axe (l inf à 0.50 m)</se:Name>
+          <se:Name>RMTR Sous-sol - eau potable - Cône de réduction</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NL_5470</ogc:Literal>
+              <ogc:Literal>AS_3021</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -121,24 +189,23 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
             </se:Stroke>
-          </se:LineSymbolizer>           
+          </se:LineSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>  
-                                        
- <!-- 5440 - Haut de talus -->
+                     
+ <!-- 3011 - Ventouse -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Haut de talus</se:Name>
+          <se:Name>RMTR Sous-sol - eau potable - Ventouse</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NL_5440</ogc:Literal>
+              <ogc:Literal>AS_3011</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -146,24 +213,23 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
             </se:Stroke>
-          </se:LineSymbolizer>           
+          </se:LineSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>  
-                        
- <!-- 5430 - Pied de talus -->
+             
+ <!-- 3001 - Vanne -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Pied de talus</se:Name>
+          <se:Name>RMTR Sous-sol - eau potable - Vanne</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NL_5430</ogc:Literal>
+              <ogc:Literal>AS_3001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -171,65 +237,15 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
-            </se:Stroke>
-          </se:LineSymbolizer>           
-        </se:Rule>
-     </se:FeatureTypeStyle>  
-                            
- <!-- 1411 - Sondage -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Sondage</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NS_1411</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>           
+          </se:LineSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>  
-               
- <!-- 1401 - Piézomètre -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RMTR Surface - Nivellement - Piézomètre</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>NS_1401</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#00A529</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>           
-        </se:Rule>
-     </se:FeatureTypeStyle>  
- 
- 
+     
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

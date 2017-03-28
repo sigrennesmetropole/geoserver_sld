@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rmtr_surf_voirie
+  nom du SLD : rmtr_surf_assai
   
-  couche source dans la base :  toposurf.v_voiri_mat
-  layer cible du style       :  ref_topo:rmtr_surf_voirie
+  couche source dans la base :  toposurf.v_assai_mat
+  layer cible du style       :  ref_fonds:rmtr_surf_assai
   
-  objet :  Style relatif aux objets de voirie de surface.
+  objet :  Style relatif aux objets d'assainissement de surface.
   
   Historique des versions :
   date        |  auteur              |  description
-  08/02/2017  |  Stephane GELIN      |  version initiale
+  01/02/2017  |  Stephane GELIN      |  version initiale
   
 -->
-
 
 <StyledLayerDescriptor version="1.1.0" 
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
@@ -24,249 +23,581 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>v_voiri_mat</se:Name>
+    <se:Name>v_assai_mat</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_voirie</se:Name>
+     <se:Name>rmtr_surf_assai</se:Name>
      <se:Description>        
-        <se:Title>Jardin</se:Title>
-        <se:Abstract>Style des objets de surface de la famille Voirie</se:Abstract>
+        <se:Title>Assainissement</se:Title>
+        <se:Abstract>Style des objets de surface de la famille Assainissement</se:Abstract>
      </se:Description>
-
-<!-- 6090 - Détection mal-voyants -->
+      
+      
+<!-- 4740 - Bassin tampon -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Détection mal-voyants</se:Name>
+          <se:Name>RMTR Surface - Assainissement - Bassin tampon</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VZ_6090</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_4740</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>              
-              <se:SvgParameter name="stroke-dasharray">0.6 0.1</se:SvgParameter>               
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-                                        
-<!-- 6080 - Piste cyclable -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Piste cyclable</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6080</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.0 0.3</se:SvgParameter>               
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-                           
-<!-- 6040 - Passage piétons -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Passage piétons</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6040</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">0.9 0.9</se:SvgParameter>              
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-       
-<!-- 6070 - Caniveau double pentes -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Caniveau double pentes</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6070</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>              
             </se:Stroke>
           </se:LineSymbolizer>
-
         </se:Rule>
-     </se:FeatureTypeStyle> 
-                    
-<!-- 6060 - Bordurette -->
-     <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Bordurette</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6060</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">       
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_4740</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>     
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">       
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_4740</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>2</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>   
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_4740</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>3</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.08 0.4</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>         
+     </se:FeatureTypeStyle>     
+    
+<!-- 4730 - Acodrain ( L > 1.00m ) -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Acodrain ( L > 1.00m )</se:Name>
+         <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_4730</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsNotEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle> 
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Acodrain ( L > 1.00m )</se:Name>
+         <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>GL_4730</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 -6, 0 6))</se:WellKnownName>
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>6</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+                      <se:SvgParameter name="stroke-dasharray">5 1.5</se:SvgParameter> 
+             </se:Stroke>
+           </se:LineSymbolizer>
+        </se:Rule>        
+     </se:FeatureTypeStyle>     
+    
+<!-- 4710 - Ouvrage annexe -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Ouvrage annexe</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GL_4710</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+    
+<!-- 0791 - Exutoire de gargouille -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Exutoire de gargouille</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0791</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+    
+<!-- 0781 - Gargouille -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Gargouille</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0781</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+    
+<!-- 0771 - Armoire -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Armoire</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0771</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+    
+<!-- 0764 - Avaloir (sélectat) -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Avaloir (sélectat)</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0764</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+    
+<!-- 0763 - Avaloir (tampon) -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Avaloir (tampon)</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0763</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+    
+<!-- 0762 - Avaloir (gueule de loup) -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Avaloir (gueule de loup)</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0762</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0761 - Avaloir (siphoïde) -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Avaloir (siphoïde)</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0761</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0751 - Grille rectangulaire -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Grille rectangulaire</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0751</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0741 - Grille carrée -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Grille carrée</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0741</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0731 - Trappe rectangulaire -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Trappe rectangulaire</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0731</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0723 - Trappe carrée -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Trappe carrée</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0723</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0722 - Tampon carré -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Tampon carré</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0722</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
+     
+<!-- 0721 - Tampon carré -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Tampon carré</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0721</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
                 
-<!-- 6010 - Bordure fil d'eau -->
+<!-- 0711 - Grille circulaire -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Bordure fil d'eau</se:Name>
+          <se:Name>RMTR Surface - Assainissement - Grille circulaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6010</ogc:Literal>
+              <ogc:Literal>GS_0711</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle> 
+     </se:FeatureTypeStyle>     
+              
+<!-- 0702 - Citerneau -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Citerneau</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GS_0702</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>     
           
-<!-- 6030 - Changement de revêtement -->
+<!-- 0701 - Tampon -->
      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Changement de revêtement</se:Name>
+          <se:Name>RMTR Surface - Assainissement - Tampon</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6030</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.3 0.3 0.3</se:SvgParameter>              
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-          
-<!-- 6020 - Axe ouvrage -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Axe ouvrage</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6020</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.3 0.3 0.3</se:SvgParameter>              
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-      
-<!-- 6000 - Ouvrage annexe -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Ouvrage annexe</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VL_6000</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>              
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-        
-<!-- 2281 - Massif ou socle rectangulaire -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Massif ou socle rectangulaire</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2281</ogc:Literal>
+              <ogc:Literal>GS_0701</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -274,238 +605,15 @@
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle> 
-          
-<!-- 2271 - Massif ou socle carré -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Massif ou socle carré</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2271</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-       
-<!-- 2242 - Surbaisse de trottoir (droite) -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Surbaisse de trottoir (droite)</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2242</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-      
-      
-<!-- 2241 - Surbaisse de trottoir (gauche) -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Surbaisse de trottoir (gauche)</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2241</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-       
-<!-- 2221 - Borne de contrôle d'accès -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Borne de contrôle d'accès</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2221</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-         
-      
-<!-- 2205 - Potelet bois -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Potelet bois</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2205</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-         
-      
-<!-- 2204 - Potelet amovible -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Potelet amovible</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2204</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-            
-      
-<!-- 2203 - Borne escamotable -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Borne escamotable</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2203</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-      
-      
-<!-- 2202 - Borne de voirie <= 0,20 -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Borne de voirie supérieure à 0,20m</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2202</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-      
-      
-<!-- 2201 - Borne de voirie <= 0,20 -->
-     <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>RCTR Surface - Voirie - Borne de voirie inférieure ou égale à 0,20m</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>VS_2201</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-     </se:FeatureTypeStyle> 
-      
-
+     </se:FeatureTypeStyle>     
+     
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
