@@ -232,11 +232,17 @@
         <se:Rule>
           <se:Name>RMTR Sous sol - Eclairage Public - Câble HT sous fourreau </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>EL_7112</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>EL_7112</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
@@ -322,10 +328,16 @@
         <se:Rule>
           <se:Name>RMTR Sous sol - Eclairage Public - Câble HT </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>EL_7111</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>EL_7111</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -364,10 +376,16 @@
         <se:Rule>
           <se:Name>RMTR Sous sol - Eclairage Public - Câble BT sous fourreau </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>EL_7102</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>EL_7102</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -455,10 +473,16 @@
         <se:Rule>
           <se:Name>RMTR Sous sol - Eclairage Public - Câble BT </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>EL_7101</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>EL_7101</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>

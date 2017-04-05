@@ -31,7 +31,202 @@
         <se:Abstract>Style des objets de sous sol de la famille Signalisation Lumineuse</se:Abstract>
      </se:Description>
  
-              
+        
+  <!-- 7290 - Fourreau vide -->
+     <se:FeatureTypeStyle>
+     
+      <!-- modele dont diametre est inf à 0.1m -->
+        <se:Rule>
+          <se:Name>RMTR Sous-sol - Signalisation Lumineuse - Fourreau vide</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7290</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+                <ogc:PropertyIsLessThanOrEqualTo>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>0.10</ogc:Literal>
+                </ogc:PropertyIsLessThanOrEqualTo>                   
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+        
+      <!-- modele dont diametre est sup à 0.1m -->        
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7290</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>0.10</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                   
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>        
+ 
+       <!-- *** symbole extrémités - Echelle 1 : 1/133 à 1/533 *** -->
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7290</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>500</se:MaxScaleDenominator>         
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="EndPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>10</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_fin</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="StartPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>10</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>       
+        </se:Rule> 
+
+       <!-- symbole extrémités - Echelle 1 : 1/501 à 1/1200 -->        
+      <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7290</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1200</se:MaxScaleDenominator>         
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="EndPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>5</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_fin</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="StartPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>5</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>       
+        </se:Rule> 
+     </se:FeatureTypeStyle>  
+                        
 <!-- 7242 - TBT autre sous fourreau-->
      <se:FeatureTypeStyle>
         <se:Rule>

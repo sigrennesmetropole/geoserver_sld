@@ -33,7 +33,7 @@
  
    <!-- 6450 - Palplanche couronnée -->  
        <se:FeatureTypeStyle>  
-   		<se:Rule>
+        <se:Rule>
           <se:Name>RCTR Surface - Hydrographie - Palplanche couronnée</se:Name>
           <se:Description>
             <se:Title>Palplanche couronnée</se:Title>
@@ -53,8 +53,46 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
+          </se:LineSymbolizer>  
+        </se:Rule>          
+        <se:Rule>
+          <se:Name>RCTR Surface - Hydrographie - Palplanche couronnée</se:Name>
+          <se:Description>
+            <se:Title>Palplanche couronnée</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>RL_6450</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter>          
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:GraphicStroke>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>wkt://MULTILINESTRING((1 0,1 2),(1 2, 5 2),(5 2, 5 0))</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.05</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>6</se:Size>
+                  
+                </se:Graphic>
+              </se:GraphicStroke>
+                  <se:SvgParameter name="stroke-dasharray">6 25</se:SvgParameter> 
+            </se:Stroke>
+          </se:LineSymbolizer> 
+        </se:Rule>        
      </se:FeatureTypeStyle>
        
   <!-- 6440 - Palplanche -->   
@@ -72,21 +110,30 @@
           </ogc:Filter> 
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>          
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0,6 0),(6 0, 6 0.5),(6 0.5, 10 0.5),(10 0.5, 10 0))</se:WellKnownName>
+                    <se:WellKnownName>wkt://MULTILINESTRING((1 0,1 2),(1 2, 5 2),(5 2, 5 0))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.05</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>2</se:Size>
+                  <se:Size>6</se:Size>
+                  
                 </se:Graphic>
               </se:GraphicStroke>
-
+                  <se:SvgParameter name="stroke-dasharray">6 25</se:SvgParameter> 
             </se:Stroke>
           </se:LineSymbolizer>            
         </se:Rule>

@@ -312,7 +312,7 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
-              <ogc:Literal>MS_1361</ogc:Literal>
+              <ogc:Literal>MS_1371</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
