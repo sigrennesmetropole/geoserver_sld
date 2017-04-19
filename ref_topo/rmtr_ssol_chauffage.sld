@@ -296,7 +296,6 @@
   <!-- 7530 - Cable de télécommande -->
      <se:FeatureTypeStyle>
         
-        <!-- modele dont diametre est inf à 0.1m -->
         <se:Rule>
           <se:Name>RMTR sous sol - Chauffage Public - Cable de télécommande</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -309,10 +308,7 @@
                   <ogc:PropertyName>exist_offset</ogc:PropertyName>
                   <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsEqualTo>                  
-                <ogc:PropertyIsLessThanOrEqualTo>
-                  <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
-                </ogc:PropertyIsLessThanOrEqualTo>                   
+             
              </ogc:And>
           </ogc:Filter>           
           <!-- Echelle d'affichage -->
@@ -391,125 +387,7 @@
              </se:Stroke>
            </se:LineSymbolizer>          
       </se:Rule>
-        
-       <!-- modele dont diametre est sup à 0.1m -->        
-
-        <se:Rule>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-             <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>modele</ogc:PropertyName>
-                  <ogc:Literal>HL_7530</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>                  
-                <ogc:PropertyIsGreaterThan>
-                  <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
-                </ogc:PropertyIsGreaterThan>                   
-             </ogc:And>
-          </ogc:Filter>           
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FF00FF</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">6 1</se:SvgParameter>               
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-       <!-- *** symbole  *** -->
-       <se:Rule>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-             <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>modele</ogc:PropertyName>
-                  <ogc:Literal>HL_7530</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>0</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsGreaterThan>
-                  <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
-                </ogc:PropertyIsGreaterThan>                  
-             </ogc:And>
-          </ogc:Filter> 
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>600</se:MaxScaleDenominator>                   
-          
-          <!-- Etiquettes -->
-          <se:TextSymbolizer>
-              <se:Label>
-                <ogc:Function name="numberFormat">
-                  <ogc:Literal>#</ogc:Literal>
-                  <ogc:Mul>
-                    <ogc:PropertyName>largeur</ogc:PropertyName>
-                    <ogc:Literal>1000</ogc:Literal>
-                  </ogc:Mul> 
-                </ogc:Function> 
-                 * 
-                <ogc:Function name="numberFormat">
-                    <ogc:Literal>#</ogc:Literal>
-                    <ogc:Mul>
-                        <ogc:PropertyName>hauteur</ogc:PropertyName>
-                        <ogc:Literal>1000</ogc:Literal>
-                    </ogc:Mul> 
-                </ogc:Function>
-                 ø
-                <ogc:Function name="numberFormat">
-                    <ogc:Literal>#</ogc:Literal>
-                        <ogc:PropertyName>diametre_interieur</ogc:PropertyName>
-                </ogc:Function>         
-                 /
-                <ogc:Function name="numberFormat">
-                    <ogc:Literal>#</ogc:Literal>
-                        <ogc:PropertyName>diametre_exterieur</ogc:PropertyName>
-                </ogc:Function>                
-              </se:Label>                                
-        
-              <se:Font>
-                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-                    <se:SvgParameter name="font-size">8</se:SvgParameter>
-                    <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
-              <se:VendorOption name="underlineText">true</se:VendorOption>
-              <se:VendorOption name="followLine">true</se:VendorOption>      
-              <se:VendorOption name="labelObstacle">true</se:VendorOption>
-          </se:TextSymbolizer>       
-          
-          <se:LineSymbolizer>
-             <se:Stroke>
-               <se:GraphicStroke>
-                 <se:Graphic>
-                   <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((1 -4,0 -2),(0 -2, 0 0),(0 0, 1 2),(1 2, 0.5 4),(0.5 4, 0 2.5),(0.5 4, 1.5 2.5)),MULTILINESTRING((3 0,2 2),(2 2, 2 4),(2 4, 3 6),(3 6, 2.5 8),(2.5 8, 2 6.5),(2.5 8, 3.5 6.5))</se:WellKnownName>
-                    <se:Fill>
-                      <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
-                    </se:Fill>   
-                     <se:Stroke>
-                        <se:SvgParameter name="stroke">#FF00FF</se:SvgParameter>
-                        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-                     </se:Stroke>
-                   </se:Mark>
-                   <se:Size>16</se:Size>
-                 </se:Graphic>
-               </se:GraphicStroke>
-               <se:SvgParameter name="stroke-dasharray">50 200</se:SvgParameter> 
-             </se:Stroke>
-           </se:LineSymbolizer>          
-      </se:Rule>        
-
-     </se:FeatureTypeStyle>     
+     </se:FeatureTypeStyle>   
         
  <!-- 7510 - Conduite en pleine terre -->
      <se:FeatureTypeStyle>

@@ -34,6 +34,7 @@
    <!-- 6450 - Palplanche couronnée -->  
        <se:FeatureTypeStyle>  
         <se:Rule>
+        
           <se:Name>RCTR Surface - Hydrographie - Palplanche couronnée</se:Name>
           <se:Description>
             <se:Title>Palplanche couronnée</se:Title>

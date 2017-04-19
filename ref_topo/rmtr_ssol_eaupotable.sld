@@ -504,7 +504,7 @@
  <!-- 7000 - Canalisation eau potable -->
      <se:FeatureTypeStyle>
      
-      <!-- modele dont diametre est inf à 0.01m -->           
+      <!-- modele dont diametre est inf à 0.1m -->           
         <se:Rule>
           <se:Name>RMTR Sous-sol - eau potable - Changement matériau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -536,7 +536,7 @@
           </se:LineSymbolizer>
         </se:Rule>
         
-      <!-- modele dont diametre est sup à 0.01m -->        
+      <!-- modele dont diametre est sup à 0.1m -->        
         <se:Rule>
           <se:Name>RMTR Sous-sol - eau potable - Changement matériau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
