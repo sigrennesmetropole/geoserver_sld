@@ -31,7 +31,529 @@
         <se:Abstract>Style des objets de sous-sol de la famille Electricité</se:Abstract>
      </se:Description>
  
-                                                                
+         
+  <!-- 7890 - Fourreau en attente -->
+     <se:FeatureTypeStyle>
+     
+      <!-- modele dont diametre est inf à 0.1m -->
+        <se:Rule>
+          <se:Name>RMTR Sous-sol - Signalisation Lumineuse - Fourreau en attente</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7890</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+                <ogc:PropertyIsLessThanOrEqualTo>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>0.10</ogc:Literal>
+                </ogc:PropertyIsLessThanOrEqualTo>                   
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+        
+      <!-- modele dont diametre est sup à 0.1m -->        
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7890</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>0.10</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                   
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>              
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>        
+ 
+       <!-- *** symbole extrémités - Echelle 1 : 1/133 à 1/533 *** -->
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7890</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>500</se:MaxScaleDenominator> 
+         
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="EndPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>10</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_fin</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="StartPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>10</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>       
+        </se:Rule> 
+
+       <!-- symbole extrémités - Echelle 1 : 1/501 à 1/1200 -->        
+      <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7890</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1200</se:MaxScaleDenominator>         
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="EndPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>5</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_fin</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="StartPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>5</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>       
+        </se:Rule> 
+     </se:FeatureTypeStyle>  
+                                                                            
+ <!-- 7870 - Câble indéfini sous fourreau -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Electricité - Câble basse tension sous fourreau</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7870</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+                <ogc:PropertyIsLessThanOrEqualTo>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>0.10</ogc:Literal>
+                </ogc:PropertyIsLessThanOrEqualTo>                   
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>                     
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <!-- représentation symbole -->          
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                    </se:Fill>   
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+             </se:Stroke>
+           </se:LineSymbolizer> 
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                    </se:Fill>   
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+               <se:SvgParameter name="stroke-dashoffset">20</se:SvgParameter>                
+             </se:Stroke>
+           </se:LineSymbolizer>
+
+        </se:Rule>
+        
+      <!-- modele dont diametre est sup à 0.1m -->        
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7870</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>1</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>0.10</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                   
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>                
+            </se:Stroke>
+          </se:LineSymbolizer>
+       </se:Rule>          
+        <!-- *** symbole extrémités - Echelle 1 : 1/133 à 1/533 *** -->
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7870</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>500</se:MaxScaleDenominator> 
+          
+          <!-- représentation symbole -->          
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                    </se:Fill>   
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+             </se:Stroke>
+           </se:LineSymbolizer> 
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                    </se:Fill>   
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+               <se:SvgParameter name="stroke-dashoffset">20</se:SvgParameter>                
+             </se:Stroke>
+           </se:LineSymbolizer>
+
+           <!-- représentation symbole crochets-->          
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="EndPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>10</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_fin</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="StartPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>10</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>       
+        </se:Rule> 
+
+       <!-- symbole extrémités - Echelle 1 : 1/501 à 1/1200 -->        
+      <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>WL_7870</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+             </ogc:And>
+          </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1200</se:MaxScaleDenominator>  
+       
+          <!-- représentation symbole -->          
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                    </se:Fill>   
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+             </se:Stroke>
+           </se:LineSymbolizer> 
+           <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                    </se:Fill>   
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+               <se:SvgParameter name="stroke-dashoffset">20</se:SvgParameter>                
+             </se:Stroke>
+           </se:LineSymbolizer>
+
+         
+            <!-- représentation symbole crochets-->             
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="EndPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>5</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_fin</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>
+           <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="StartPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Arial#0x005D</se:WellKnownName>
+                <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                 <se:Stroke>
+                  <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                 </se:Stroke>                 
+              </se:Mark>
+              <se:Size>5</se:Size>
+              <se:Rotation>
+                <ogc:PropertyName>gis_deb</ogc:PropertyName>
+              </se:Rotation>
+            </se:Graphic>
+           </se:PointSymbolizer>  
+        </se:Rule>        
+     </se:FeatureTypeStyle>  
+                                                                                                     
  <!-- 7860 - Câble indéfini -->
      <se:FeatureTypeStyle>
         <se:Rule>
@@ -540,9 +1062,156 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer>  
-        </se:Rule>        
+         </se:Rule>           
+         
+         <!-- représentation des etiquettes-->  
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7850</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsNull>
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                  </ogc:PropertyIsNull>  
+                  <ogc:PropertyIsGreaterThan>  
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>                   
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                *BT
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule> 
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7850</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsGreaterThan>
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>                    
+                  </ogc:PropertyIsGreaterThan>  
+                  <ogc:PropertyIsGreaterThan>  
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>                   
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                *HTA
+                <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                *BT
+              </se:Label>
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule>        
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7850</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsNull>
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                  </ogc:PropertyIsNull>  
+                  <ogc:PropertyIsGreaterThan>  
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>                   
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                *HTA
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule>         
      </se:FeatureTypeStyle>  
-                                                                                                   
+         
+          
  <!-- 7840 - Câble HTA+BT -->
      <se:FeatureTypeStyle>
         <se:Rule>
@@ -686,9 +1355,155 @@
               <se:SvgParameter name="stroke-dasharray">3 1</se:SvgParameter>               
             </se:Stroke>
           </se:LineSymbolizer>    
-        </se:Rule>        
-     </se:FeatureTypeStyle> 
-                             
+        </se:Rule>    
+        
+         <!-- représentation des etiquettes-->  
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7840</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsNull>
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                  </ogc:PropertyIsNull>  
+                  <ogc:PropertyIsGreaterThan>  
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>                   
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                *BT
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule> 
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7840</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsGreaterThan>
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>                    
+                  </ogc:PropertyIsGreaterThan>  
+                  <ogc:PropertyIsGreaterThan>  
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>                   
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                *HTA
+                <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                *BT
+              </se:Label>
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule>        
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7840</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsNull>
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                  </ogc:PropertyIsNull>  
+                  <ogc:PropertyIsGreaterThan>  
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsGreaterThan>                   
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                *HTA
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule>         
+     </se:FeatureTypeStyle>  
+                            
                                                                        
  <!-- 7830 - Câble HTA sous fourreau -->
      <se:FeatureTypeStyle>
@@ -1009,9 +1824,57 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer>  
-        </se:Rule>        
+         </se:Rule>        
+        
+        <!-- représentation des etiquettes-->  
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7830</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsGreaterThan>
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>                    
+                  </ogc:PropertyIsGreaterThan>  
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                *HTA
+              </se:Label>
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule>        
+       
      </se:FeatureTypeStyle>  
-   
+         
+     
                                                                                                  
  <!-- 7820 - Câble HTA -->
      <se:FeatureTypeStyle>
@@ -1136,6 +1999,52 @@
             </se:Stroke>
           </se:LineSymbolizer>    
         </se:Rule>        
+
+        <!-- représentation des etiquettes-->  
+        <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7820</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsGreaterThan>
+                    <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>                    
+                  </ogc:PropertyIsGreaterThan>  
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_hta</ogc:PropertyName>
+                *HTA
+              </se:Label>
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+        </se:Rule>  
      </se:FeatureTypeStyle> 
                                                            
  <!-- 7810 - Câble basse tension sous fourreau -->
@@ -1396,7 +2305,53 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer>  
-        </se:Rule>        
+        </se:Rule>  
+        
+        <!-- représentation des etiquettes-->  
+         <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7810</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsGreaterThan>
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>                    
+                  </ogc:PropertyIsGreaterThan>  
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                *BT
+              </se:Label>
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+         </se:Rule>  
      </se:FeatureTypeStyle>  
                                                                  
  <!-- 7800 - Câble basse tension -->
@@ -1501,7 +2456,53 @@
               <se:SvgParameter name="stroke-dasharray">1.2 0.4</se:SvgParameter>               
             </se:Stroke>
           </se:LineSymbolizer>    
-        </se:Rule>        
+        </se:Rule>
+        
+        <!-- représentation des etiquettes-->  
+        <se:Rule>
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+               <ogc:And>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>modele</ogc:PropertyName>
+                    <ogc:Literal>WL_7800</ogc:Literal>
+                  </ogc:PropertyIsEqualTo> 
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+                  <ogc:PropertyIsGreaterThan>
+                    <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                    <ogc:Literal>0</ogc:Literal>                    
+                  </ogc:PropertyIsGreaterThan>  
+               </ogc:And>
+            </ogc:Filter> 
+            <se:MinScaleDenominator>1</se:MinScaleDenominator>
+            <se:MaxScaleDenominator>1200</se:MaxScaleDenominator> 
+            <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_bt</ogc:PropertyName>
+                *BT
+              </se:Label>
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>              
+        </se:Rule>  
      </se:FeatureTypeStyle>  
                                        
  <!-- 3631 - Extrémité de conduite -->
