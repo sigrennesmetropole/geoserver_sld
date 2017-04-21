@@ -31,8 +31,46 @@
         <se:Abstract>Style des objets de réseau de sous sol de la famille Assainissement</se:Abstract>
      </se:Description>
 
+  
+ <!-- Réseaux abandonnées -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement - Réseaux abandonnées</se:Name>
 
-   
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>fonction</ogc:PropertyName>
+                  <ogc:Literal>aba</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 -2, 2 2))</se:WellKnownName>       
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+             </se:Stroke>
+           </se:LineSymbolizer>        
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                         
             
 <!-- 7351 - Chambre de forme complexe -->
      <se:FeatureTypeStyle>
@@ -123,7 +161,9 @@
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>400</se:MaxScaleDenominator>  
-           <se:TextSymbolizer>
+ 
+          <!-- Etiquette --> 
+          <se:TextSymbolizer>
               <se:Label>
                 ø  
                 <ogc:Function name="numberFormat">
@@ -139,11 +179,22 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
-          </se:TextSymbolizer>  
+          </se:TextSymbolizer>   
+
+          <!-- symbolique crochets -->          
           <se:PointSymbolizer>
             <se:Geometry>
               <ogc:Function name="startPoint">
@@ -236,6 +287,8 @@
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>401</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          
+          <!-- Etiquette -->           
            <se:TextSymbolizer>
               <se:Label>
                 ø  
@@ -252,11 +305,22 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
-          </se:TextSymbolizer>  
+          </se:TextSymbolizer>
+          
+          <!-- symbolique crochets -->           
           <se:PointSymbolizer>
             <se:Geometry>
               <ogc:Function name="startPoint">
@@ -344,7 +408,9 @@
                 <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
                 <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter>
               </se:Stroke>
-           </se:LineSymbolizer>  
+           </se:LineSymbolizer> 
+ 
+           <!-- Etiquette --> 
            <se:TextSymbolizer>
               <se:Label>
                 ø  
@@ -361,11 +427,20 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
-          </se:TextSymbolizer> 
+          </se:TextSymbolizer>
         </se:Rule>
        
       </se:FeatureTypeStyle> 
@@ -417,6 +492,8 @@
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          
+          <!-- Etiquette -->         
           <se:TextSymbolizer>
               <se:Label>
                 ø  
@@ -433,7 +510,16 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
@@ -489,6 +575,8 @@
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+
+          <!-- Etiquette -->          
           <se:TextSymbolizer>
               <se:Label>
                 ø  
@@ -505,7 +593,16 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
@@ -560,6 +657,8 @@
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          
+          <!-- représentation symbole sur ligne  -->         
           <se:TextSymbolizer>
              <se:Label>U</se:Label>
                  <se:Font>
@@ -574,7 +673,9 @@
       			 </se:Fill>
                  <se:VendorOption name="followLine">true</se:VendorOption> 
                  <se:VendorOption name="repeat">100</se:VendorOption>
-          </se:TextSymbolizer>          
+          </se:TextSymbolizer>       
+
+          <!-- Etiquette  -->          
           <se:TextSymbolizer>
               <se:Label>
                 UNIT 
@@ -594,13 +695,21 @@
                     </ogc:Mul> 
                 </ogc:Function>
               </se:Label>                                
-        
               <se:Font>
                     <se:SvgParameter name="font-family">Arial</se:SvgParameter>
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
               <se:VendorOption name="underlineText">true</se:VendorOption>
               <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
@@ -654,6 +763,8 @@
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+
+          <!-- Etiquette -->          
           <se:TextSymbolizer>
               <se:Label>
                 EU 
@@ -670,9 +781,18 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
-        <se:VendorOption name="underlineText">true</se:VendorOption>
-        <se:VendorOption name="followLine">true</se:VendorOption>      
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
           </se:TextSymbolizer>
         </se:Rule>
@@ -709,7 +829,6 @@
         </se:Rule>
      </se:FeatureTypeStyle>     
 
-
      <se:FeatureTypeStyle>
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -726,7 +845,9 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator> 
+
+          <!-- Etiquette -->          
           <se:TextSymbolizer>
               <se:Label>
                 EP 
@@ -743,16 +864,24 @@
                     <se:SvgParameter name="font-size">8</se:SvgParameter>
                     <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
                     <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>             
-        <se:VendorOption name="underlineText">true</se:VendorOption>
-        <se:VendorOption name="followLine">true</se:VendorOption>      
+              </se:Font>   
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+              </se:Fill>                            
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
               <se:VendorOption name="labelObstacle">true</se:VendorOption>
           </se:TextSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>      
       
-      
-      
+            
 <!-- 3397 - Regard borgne -->
      <se:FeatureTypeStyle>
         <se:Rule>

@@ -31,7 +31,46 @@
         <se:Abstract>Style des objets de sous-sol de la famille Transport</se:Abstract>
      </se:Description>
                    
-       
+  
+ <!-- Réseaux abandonnées -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Transport - Réseaux abandonnées</se:Name>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>fonction</ogc:PropertyName>
+                  <ogc:Literal>aba</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 -2, 2 2))</se:WellKnownName>       
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+             </se:Stroke>
+           </se:LineSymbolizer>        
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                                
   <!-- 7690 - Fourreau en attente -->
      <se:FeatureTypeStyle>
      

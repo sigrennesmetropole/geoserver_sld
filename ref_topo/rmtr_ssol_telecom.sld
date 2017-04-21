@@ -31,6 +31,46 @@
         <se:Abstract>Style des objets de sous-sol de la famille Télécommunication</se:Abstract>
      </se:Description>
  
+   
+ <!-- Réseaux abandonnées -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Télécommunication - Réseaux abandonnées</se:Name>
+
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>fonction</ogc:PropertyName>
+                  <ogc:Literal>aba</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>                  
+             </ogc:And>
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer>
+             <se:Stroke>
+               <se:GraphicStroke>
+                 <se:Graphic>
+                   <se:Mark>
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 -2, 2 2))</se:WellKnownName>       
+                     <se:Stroke>
+                        <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+                     </se:Stroke>
+                   </se:Mark>
+                   <se:Size>10</se:Size>
+                 </se:Graphic>
+               </se:GraphicStroke>
+             </se:Stroke>
+           </se:LineSymbolizer>        
+        </se:Rule>
+     </se:FeatureTypeStyle>  
+                         
   <!-- 7740 - Chambre de forme complexe -->
      <se:FeatureTypeStyle>
         <se:Rule>
@@ -75,7 +115,7 @@
  <!-- 7750 - Reseau For nappe de fourreau -->
      <se:FeatureTypeStyle>
      
-      <!-- modele dont diametre est inf à 0.1m -->
+      <!-- modele dont diametre est inf à 0.15m -->
         <se:Rule>
           <se:Name>RMTR Sous-sol - Télécommunication - Reseau For nappe de fourreau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -90,7 +130,7 @@
                 </ogc:PropertyIsEqualTo>                  
                 <ogc:PropertyIsLessThanOrEqualTo>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
+                  <ogc:Literal>0.150</ogc:Literal>
                 </ogc:PropertyIsLessThanOrEqualTo>                   
              </ogc:And>
           </ogc:Filter>          
@@ -150,7 +190,7 @@
           </se:LineSymbolizer>            
         </se:Rule>
         
-      <!-- modele dont diametre est sup à 0.1m -->        
+      <!-- modele dont diametre est sup à 0.15m -->        
        <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
              <ogc:And>
@@ -164,7 +204,7 @@
                 </ogc:PropertyIsEqualTo>                  
                 <ogc:PropertyIsGreaterThan>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
+                  <ogc:Literal>0.150</ogc:Literal>
                 </ogc:PropertyIsGreaterThan>                   
              </ogc:And>
           </ogc:Filter>          
@@ -378,7 +418,7 @@
  <!-- 7730 - Cable telecom VDR -->
      <se:FeatureTypeStyle>
      
-      <!-- modele dont diametre est inf à 0.1m -->
+      <!-- modele dont diametre est inf à 0.15m -->
         <se:Rule>
           <se:Name>RMTR Sous-sol - Télécommunication - Cable telecom VDR</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -393,7 +433,7 @@
                 </ogc:PropertyIsEqualTo>                  
                 <ogc:PropertyIsLessThanOrEqualTo>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
+                  <ogc:Literal>0.150</ogc:Literal>
                 </ogc:PropertyIsLessThanOrEqualTo>                   
              </ogc:And>
           </ogc:Filter>          
@@ -453,7 +493,7 @@
            </se:LineSymbolizer>         
         </se:Rule>
         
-      <!-- modele dont diametre est sup à 0.1m -->        
+      <!-- modele dont diametre est sup à 0.15m -->        
        <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
              <ogc:And>
@@ -467,7 +507,7 @@
                 </ogc:PropertyIsEqualTo>                  
                 <ogc:PropertyIsGreaterThan>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
+                  <ogc:Literal>0.150</ogc:Literal>
                 </ogc:PropertyIsGreaterThan>                   
              </ogc:And>
           </ogc:Filter>          
@@ -597,7 +637,7 @@
  <!-- 7700 - Nappe de fourreau -->
      <se:FeatureTypeStyle>
      
-      <!-- modele dont diametre est inf à 0.1m -->
+      <!-- modele dont diametre est inf à 0.15m -->
         <se:Rule>
           <se:Name>RMTR Sous-sol - Télécommunication - Nappe de fourreau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -612,7 +652,7 @@
                 </ogc:PropertyIsEqualTo>                  
                 <ogc:PropertyIsLessThanOrEqualTo>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
+                  <ogc:Literal>0.150</ogc:Literal>
                 </ogc:PropertyIsLessThanOrEqualTo>                   
              </ogc:And>
           </ogc:Filter>          
@@ -651,7 +691,7 @@
            </se:LineSymbolizer>          
         </se:Rule>
         
-      <!-- modele dont diametre est sup à 0.1m -->        
+      <!-- modele dont diametre est sup à 0.15m -->        
        <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
              <ogc:And>
@@ -665,7 +705,7 @@
                 </ogc:PropertyIsEqualTo>                  
                 <ogc:PropertyIsGreaterThan>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
-                  <ogc:Literal>0.10</ogc:Literal>
+                  <ogc:Literal>0.150</ogc:Literal>
                 </ogc:PropertyIsGreaterThan>                   
              </ogc:And>
           </ogc:Filter>          
