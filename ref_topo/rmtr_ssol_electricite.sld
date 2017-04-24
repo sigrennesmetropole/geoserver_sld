@@ -2288,7 +2288,7 @@
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
                      <se:Stroke>
-                        <se:SvgParameter name="stroke">#00FF00</se:SvgParameter>
+                        <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
                         <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
                      </se:Stroke>
                    </se:Mark>
