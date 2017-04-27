@@ -3,13 +3,16 @@
   
   nom du SLD : mnt_point_culminant
   
-  auteur :   Maël REBOUX
-  date :     09/11/2015
-  
-  couche principale cible du style :  ref_alti:mnt_point_culminant
+  couche source dans la base :  ref_alti.mnt_point_culminant 
+  layer cible du style       :  ref_alti:mnt_point_culminant 
   
   objet :
     Points culminants avec une étiquettes
+  
+  Historique des versions :
+  date        |  auteur              |  description
+  09/11/2015  |  Maël REBOUX         |  version initiale
+  27/03/2017  |  Maël REBOUX         |  rajout title et abstract
   
 -->
 <sld:StyledLayerDescriptor
@@ -22,6 +25,8 @@
   <sld:NamedLayer>
     <sld:Name>ref_alti:mnt_point_culminant</sld:Name>
     <sld:UserStyle>
+      <sld:Title>Style par défaut pour les points culminants</sld:Title>
+      <sld:Abstract>Point rouge avec étiquette</sld:Abstract>
       <sld:FeatureTypeStyle>
 
         <sld:Rule>

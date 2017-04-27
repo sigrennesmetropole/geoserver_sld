@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : lot_plg
-  
+
   couche source dans la base :  urba_foncier.lot
   layer cible du style       :  urba_fonc:lot
-  
+
   objet : style avec polygone plein bordeaux  + nom du lotissement à partir du 1/34000
-  
+
   Historique des versions :
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
-  
+  14/03/2017  |  Maël REBOUX         |  mise en forme
+
 -->
-<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>urba_fonc:lot</se:Name>
@@ -26,10 +27,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:FeatureTypeStyle>
 
         <!-- polygone bordeaux -->
-
         <se:Rule>
           <se:Name>Lotissements RM</se:Name>
-
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#d68589</se:SvgParameter>
@@ -43,33 +42,29 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PolygonSymbolizer>
         </se:Rule>
 
-        <!-- nom du lotissement à partir du 1/34000 -->
+        <!-- nom du lotissement -->
         <se:Rule>
-
           <!-- plage affichage -->
-          <se:MaxScaleDenominator>34000</se:MaxScaleDenominator>
-
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>nomlot</ogc:PropertyName>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-size">12</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-weight">normal</se:SvgParameter>      
-              <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+              <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>
             </se:Font>
-
             <se:Halo>
               <se:Radius>1</se:Radius>
               <se:Fill>
                 <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
               </se:Fill>
             </se:Halo>
-
-          </se:TextSymbolizer>       
-        </se:Rule> 
+          </se:TextSymbolizer>
+        </se:Rule>
 
       </se:FeatureTypeStyle>
     </UserStyle>

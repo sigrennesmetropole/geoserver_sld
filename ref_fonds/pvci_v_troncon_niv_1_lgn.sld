@@ -14,6 +14,7 @@
   date        |  auteur              |  description
   10/06/2015  |  Stéphane GELIN      |  version initiale
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
+  27/03/2017  |  Maël REBOUX         |  rajout title et abstract
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -25,7 +26,9 @@
   <NamedLayer>
     <Name>pvci_v_troncon_lgn</Name>
     <UserStyle>
-     <Name>Voirie</Name>
+     <Name>Style PVCI tronçon de voie niveau -1</Name>
+     <Title>Style PVCI tronçon de voie niveau -1</Title>
+     <Abstract>Style PVCI tronçon de voie niveau -1.</Abstract>
 
  <!-- 1   symbole Voie de desserte secondaire (niveau -1) echelle 1 -->
       <FeatureTypeStyle>

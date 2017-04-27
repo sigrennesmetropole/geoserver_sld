@@ -3,14 +3,17 @@
   
   nom du SLD : mnt_courbe_niveau
   
-  auteur :   Maël REBOUX
-  date :     09/11/2015
-  
-  couche principale cible du style :  ref_alti:mnt_courbe_niveau
+  couche source dans la base :  ref_alti.mnt_courbe_niveau
+  layer cible du style       :  ref_alti:mnt_courbe_niveau
   
   objet :
     courbes de niveaux maîtresse 10 m épaisses et étiquetées
     courbes secondaires 2 m plus fines
+    
+  Historique des versions :
+  date        |  auteur              |  description
+  09/11/2015  |  Maël REBOUX         |  version initiale
+  27/03/2017  |  Maël REBOUX         |  rajout title et abstract
   
 -->
 <sld:StyledLayerDescriptor
@@ -23,6 +26,8 @@
   <sld:NamedLayer>
     <sld:Name>ref_alti:mnt_courbe_niveau</sld:Name>
     <sld:UserStyle>
+      <sld:Title>Courbes de niveaux avec étiquettes</sld:Title>
+      <sld:Abstract>Courbes de niveau (isohypses) de couleur bistre avec une étiquette de la valeur de l'altitude.</sld:Abstract>
       <sld:FeatureTypeStyle>
       
         <sld:Rule>
