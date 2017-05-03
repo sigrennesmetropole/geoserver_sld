@@ -32,7 +32,31 @@
         <se:Abstract>Style des objets linéaires de surface de la famille Clôture</se:Abstract>
      </se:Description>
  
- 
+         
+<!-- 4420 - mur h < 1,10m -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RCTR Surface - cloture - mur h inférieur à 1,10m</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>CL_4420</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>
+
 <!-- 4350 - Mur de plaques  -->
      <se:FeatureTypeStyle>
         <se:Rule>

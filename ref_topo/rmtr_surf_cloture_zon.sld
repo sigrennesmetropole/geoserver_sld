@@ -120,7 +120,12 @@
              </se:GraphicFill>
            </se:Fill>
          </se:PolygonSymbolizer>
-        
+          <se:PolygonSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#a500a5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>          
         </se:Rule>
      </se:FeatureTypeStyle>        
     </UserStyle>

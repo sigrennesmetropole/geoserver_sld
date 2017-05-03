@@ -203,7 +203,7 @@
             </se:Geometry>
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                <se:WellKnownName>ttf://rmtr#0x0041</se:WellKnownName>
                 <se:Fill>
                     <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
                 </se:Fill>
@@ -225,7 +225,7 @@
              </se:Geometry>
              <se:Graphic>
                <se:Mark>
-                 <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                 <se:WellKnownName>ttf://rmtr#0x0041</se:WellKnownName>
                  <se:Fill>
                     <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
                  </se:Fill>
@@ -329,7 +329,7 @@
             </se:Geometry>
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                <se:WellKnownName>ttf://rmtr#0x0041</se:WellKnownName>
                 <se:Fill>
                     <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
                 </se:Fill>
@@ -351,7 +351,7 @@
              </se:Geometry>
              <se:Graphic>
                <se:Mark>
-                 <se:WellKnownName>ttf://ESRI AMFM Gas#0x0024</se:WellKnownName>
+                 <se:WellKnownName>ttf://rmtr#0x0041</se:WellKnownName>
                  <se:Fill>
                     <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
                  </se:Fill>
