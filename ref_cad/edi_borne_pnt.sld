@@ -3,8 +3,8 @@
   
   nom du SLD : edi_ptcanv_pnt
   
-  couche source dans la base :  cadastre.edi_ptcanv
-  layer cible du style       :  ref_cad:edi_ptcanv_pnt
+  couche source dans la base :  cadastre.edi_borne
+  layer cible du style       :  ref_cad:edi_borne_pnt
   
   objet :
   Style relatif aux bornes de limites de propriété du cadastre.
@@ -13,8 +13,9 @@
   date        |  auteur              |  description
   19/09/2014  |  Arnaud LECLERE      |  version initiale
   10/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
-  
+  04/05/2017  |  Arnaud LECLERE      |  changement de fonte > cadastre_rm.ttf	  
 -->
+
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -32,7 +33,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A5'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0045'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -49,7 +50,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A5'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0045'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
