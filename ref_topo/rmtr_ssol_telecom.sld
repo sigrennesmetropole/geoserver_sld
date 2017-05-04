@@ -188,30 +188,6 @@
                <se:SvgParameter name="stroke-dasharray">8 100</se:SvgParameter> 
              </se:Stroke>
           </se:LineSymbolizer>            
-          <se:TextSymbolizer>
-              <se:Label>
-                <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
-                Fx
-              </se:Label>                                
-              <se:Font>
-                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-                    <se:SvgParameter name="font-size">8</se:SvgParameter>
-                    <se:SvgParameter name="stroke">#00FF00</se:SvgParameter>
-                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>  
-              <se:Halo>  
-                <se:Radius>4</se:Radius>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-                </se:Fill>                 
-              </se:Halo>  
-              <se:Fill>
-                    <se:SvgParameter name="fill">#00FF00</se:SvgParameter>
-              </se:Fill>              
-              <se:VendorOption name="underlineText">true</se:VendorOption>
-              <se:VendorOption name="followLine">true</se:VendorOption>      
-              <se:VendorOption name="labelObstacle">true</se:VendorOption>
-          </se:TextSymbolizer> 
         </se:Rule>
           
       <!-- modele dont diametre est sup à 0.15m -->        
@@ -329,32 +305,6 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer>    
-
-           <!-- représentation des etiquettes-->             
-           <se:TextSymbolizer>
-              <se:Label>
-                <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
-                Fx
-              </se:Label>                                
-              <se:Font>
-                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-                    <se:SvgParameter name="font-size">8</se:SvgParameter>
-                    <se:SvgParameter name="stroke">#00FF00</se:SvgParameter>
-                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              </se:Font>  
-              <se:Halo>  
-                <se:Radius>4</se:Radius>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-                </se:Fill>                 
-              </se:Halo>  
-              <se:Fill>
-                    <se:SvgParameter name="fill">#00FF00</se:SvgParameter>
-              </se:Fill>              
-              <se:VendorOption name="underlineText">true</se:VendorOption>
-              <se:VendorOption name="followLine">true</se:VendorOption>      
-              <se:VendorOption name="labelObstacle">true</se:VendorOption>
-           </se:TextSymbolizer> 
       </se:Rule> 
 
        <!-- symbole extrémités - Echelle 1 : 1/501 à 1/1200 -->        
@@ -461,9 +411,27 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer> 
+        </se:Rule> 
 
            <!-- représentation des etiquettes-->             
-           <se:TextSymbolizer>
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>TL_7750</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                
+             </ogc:And>
+          </ogc:Filter> 
+          <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
                 Fx

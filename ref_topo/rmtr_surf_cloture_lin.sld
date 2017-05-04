@@ -57,6 +57,68 @@
         </se:Rule>
      </se:FeatureTypeStyle>
 
+<!-- 4410 - mur de soutènement  -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RCTR Surface - cloture - mur de soutènement </se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>CL_4410</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>  
+             </ogc:And> 
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle> 
+     
+<!-- 4400 - mur de soutènement  -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RCTR Surface - cloture - mur de soutènement </se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>CL_4400</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsEqualTo>  
+             </ogc:And> 
+          </ogc:Filter>          
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle> 
+     
 <!-- 4350 - Mur de plaques  -->
      <se:FeatureTypeStyle>
         <se:Rule>
