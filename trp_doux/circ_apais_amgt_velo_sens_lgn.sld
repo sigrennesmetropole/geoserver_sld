@@ -13,8 +13,10 @@
   date        |  auteur              |  description
   01/02/2016  |  Arnaud LECLERE      |  version initiale
   19/01/2017  |  Maël REBOUX         |  renommage, passage en SE
-  
+  05/05/2017  |  Arnaud LECLERE      |  changement de fonte pour les sens de circu. : flèches > Equipements_PVI.ttf 	  
+
 -->
+
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
@@ -66,7 +68,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>ttf://ESRI Arrowhead#63</se:WellKnownName>
+                    <se:WellKnownName>ttf://Equipements_PVI#${'U+007A'}</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#00734c</se:SvgParameter>
                     </se:Fill>
@@ -100,7 +102,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>ttf://ESRI Arrowhead#63</se:WellKnownName>
+                    <se:WellKnownName>ttf://Equipements_PVI#${'U+007A'}</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#fa3411</se:SvgParameter>
                     </se:Fill>
