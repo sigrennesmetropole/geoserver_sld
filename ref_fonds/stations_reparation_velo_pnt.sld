@@ -5,6 +5,7 @@
   couche source dans la base : mobilite_transp.reparation_velo 
   layer cible du style :  ref_fonds.reparation_velo
   
+  objet : Affiche les stations de réparation et de gonflage pour vélo sur Rennes Métropole par un symbole ponctuel .
   
   Historique des versions :
   date        |  auteur              |  description
@@ -30,10 +31,14 @@
       
 
           <se:Description>
+            <se:Title>Stations réparation pour vélo</se:Title>       
+            <se:Abstract>Style de points représentant les stations de réparation et de gonflage pour vélo sur Rennes Métropole</se:Abstract>
           </se:Description>
         
+<!-- Etat=En service - gonflage=Non - Réparation=Oui -->
          
         <se:Rule>  
+          <se:Name>Etat = En service - gonflage = Non - Réparation = Oui</se:Name>
           <ogc:Filter>
            <ogc:And>
             <ogc:PropertyIsEqualTo>
@@ -74,8 +79,10 @@
           </se:PointSymbolizer>
         </se:Rule>
         
+<!-- Etat=En service - gonflage=Oui - Réparation=Non -->
          
         <se:Rule>    
+         <se:Name>Etat = En service - gonflage = Oui - Réparation = Non</se:Name>
           <ogc:Filter>
            <ogc:And>
             <ogc:PropertyIsEqualTo>
@@ -118,6 +125,7 @@
         
         <se:Rule> 
         
+        <se:Name>Etat = Hors service - gonflage = Non - Réparation = Oui</se:Name>       
           <ogc:Filter>
            <ogc:And>
             <ogc:PropertyIsEqualTo>
