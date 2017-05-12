@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
-  nom du SLD : pvci_nb_senscirc_niv_1_lgn
-  auteur :   Stéphane GELIN
-  date :     15/06/2015
-  couche principale cible du style : v_troncon_sens_circul_lgn: ref_fonds
  
+  nom du SLD : pvci_senscirc_niv_1_lgn
+  
+  couche source dans la base :  
+  layer cible du style       :  ref_fonds : v_troncon_sens_circul_lgn
+  
   objet :
   Style niveau de gris des sens de circulation
   
+  Historique des versions :
+  date        |  auteur              |  description
+  10/06/2015  |  StÃ©phane GELIN      |  version initiale
+  05/05/2017  |  Arnaud LECLERE      |  changement de fonte pour les sens de circu. : flÃ¨ches > Equipements_PVI	  
+
 -->   
-<StyledLayerDescriptor version="1.0.0"
+
+  <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
     xmlns:ogc="http://www.opengis.net/ogc"
@@ -40,11 +46,11 @@
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                 </ogc:And>
@@ -57,8 +63,7 @@
                    <GraphicStroke>
                        <Graphic>
                           <Mark>
-                             <WellKnownName>ttf://ESRI Arrowhead#63</WellKnownName>
-                                <Fill>
+                           <WellKnownName>ttf://Equipements_PVI#${'U+007A'}</WellKnownName>                                									<Fill>
                                     <CssParameter name="fill">#333333</CssParameter>
                                 </Fill>
                           </Mark>

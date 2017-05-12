@@ -306,7 +306,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -326,7 +326,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -400,7 +400,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -420,7 +420,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -508,7 +508,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -528,7 +528,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -620,7 +620,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -640,7 +640,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -759,7 +759,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -779,7 +779,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -800,7 +800,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -872,7 +872,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -892,7 +892,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -913,7 +913,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -999,7 +999,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1019,7 +1019,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1040,7 +1040,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1278,7 +1278,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1298,7 +1298,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1319,7 +1319,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1584,7 +1584,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1604,7 +1604,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1676,7 +1676,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1696,7 +1696,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1782,7 +1782,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1802,7 +1802,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1942,7 +1942,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -1962,7 +1962,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -2125,7 +2125,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -2197,7 +2197,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -2283,7 +2283,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   
@@ -2420,7 +2420,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>ttf://ESRI ArcPad#0x0075</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0042</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                     </se:Fill>   

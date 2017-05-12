@@ -13,8 +13,10 @@
   date        |  auteur              |  description
   11/09/2014  |  Arnaud LECLERE      |  version initiale
   10/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
+  04/05/2017  |  Arnaud LECLERE      |  changement de fonte > cadastre_rm.ttf	  
   
 -->
+
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -25,8 +27,7 @@
     <Name>Symboles des points de canevas du cadastre de Rennes Métropole</Name>
     <UserStyle>
       <FeatureTypeStyle>
-      
-      
+        
         <Rule>
           <!-- Filtre sur les bornes limites de commune -->
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -41,7 +42,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A5'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0045'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -50,7 +51,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre des autres repères de nivellement -->
@@ -66,7 +66,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A4'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0044'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -79,7 +79,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre sur les bornes du N.G.F. -->
@@ -95,7 +94,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A3'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0043'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -108,7 +107,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre sur les repères du N.G.F. -->
@@ -124,7 +122,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A3'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0043'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -137,7 +135,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre sur les points bornés d'appui de géoréférencement -->
@@ -153,7 +150,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A2'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0042'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -166,7 +163,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre sur les points bornés pérenne ou cadastral de précision -->
@@ -183,7 +179,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A2'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0042'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -196,7 +192,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre sur les points bornés cadastral ordinaire -->
@@ -213,7 +208,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A2'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0042'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -225,8 +220,7 @@
               </Rotation>
             </Graphic>
           </PointSymbolizer>
-        </Rule>
-        
+        </Rule>      
         
         <Rule>
           <!-- Filtre sur les points géodésiques non bornés -->
@@ -242,7 +236,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A1'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0041'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -255,7 +249,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
         <Rule>
           <!-- Filtre sur les points géodésiques bornés -->
@@ -271,7 +264,7 @@
           <PointSymbolizer>
             <Graphic>
               <Mark>
-                <WellKnownName>ttf://Equipements_PVI#${'U+00A1'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+0041'}</WellKnownName>
                 <Fill>
                   <CssParameter name="fill">#6e6e6e</CssParameter>
                 </Fill>
@@ -280,7 +273,6 @@
             </Graphic>
           </PointSymbolizer>
         </Rule>
-        
         
       </FeatureTypeStyle>
     </UserStyle>

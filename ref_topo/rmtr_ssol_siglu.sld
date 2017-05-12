@@ -377,6 +377,46 @@
             </se:Graphic>
            </se:PointSymbolizer> 
        </se:Rule>
+       
+       <!-- représentation des etiquettes-->             
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7242</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                
+             </ogc:And>
+          </ogc:Filter> 
+          <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                *Fx-SL
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+           </se:TextSymbolizer>           
+       </se:Rule>
      </se:FeatureTypeStyle>   
   
                        
@@ -476,7 +516,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                    <se:WellKnownName>wkt://CIRCULARSTRING(-2 0, 2 -4, 6 0, 2 4, -2 0)</se:WellKnownName>                    
+                      <se:WellKnownName>ttf://Equipements_PVI#0x0078</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
                     </se:Fill>   
@@ -485,32 +525,12 @@
                         <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
                      </se:Stroke>
                    </se:Mark>
-                   <se:Size>8</se:Size>
+                   <se:Size>15</se:Size>
                  </se:Graphic>
                </se:GraphicStroke>
-               <se:SvgParameter name="stroke-dasharray">10 100</se:SvgParameter> 
+               <se:SvgParameter name="stroke-dasharray">15 100</se:SvgParameter> 
              </se:Stroke>
-           </se:LineSymbolizer>          
-          <se:LineSymbolizer>
-             <se:Stroke>
-               <se:GraphicStroke>
-                 <se:Graphic>
-                   <se:Mark>
-                    <se:WellKnownName>wkt://CIRCULARSTRING(1 0, 1 -1, 3 0, 1 1, 1 0)</se:WellKnownName>                    
-                    <se:Fill>
-                      <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
-                    </se:Fill>   
-                     <se:Stroke>
-                        <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
-                        <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
-                     </se:Stroke>
-                   </se:Mark>
-                   <se:Size>4</se:Size>
-                 </se:Graphic>
-               </se:GraphicStroke>
-               <se:SvgParameter name="stroke-dasharray">4 108</se:SvgParameter> 
-             </se:Stroke>
-           </se:LineSymbolizer>    
+           </se:LineSymbolizer>     
            
           <!-- représentation crochets -->    
            <se:PointSymbolizer>
@@ -558,7 +578,47 @@
             </se:Graphic>
            </se:PointSymbolizer> 
        </se:Rule>
-     </se:FeatureTypeStyle>   
+       
+       <!-- représentation des etiquettes-->             
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7231</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                
+             </ogc:And>
+          </ogc:Filter> 
+          <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                *Fx-VI
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+           </se:TextSymbolizer>              
+        </se:Rule>
+      </se:FeatureTypeStyle>  
                
 <!-- 7212 - Câble BT - Alimentation sous fourreau -->
      <se:FeatureTypeStyle>
@@ -650,6 +710,46 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer> 
+       </se:Rule>
+       
+       <!-- représentation des etiquettes-->             
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7212</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                
+             </ogc:And>
+          </ogc:Filter> 
+          <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                *Fx-SL
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+           </se:TextSymbolizer>           
        </se:Rule>
      </se:FeatureTypeStyle>    
               
@@ -791,6 +891,46 @@
               </se:Rotation>
             </se:Graphic>
            </se:PointSymbolizer> 
+       </se:Rule>
+       
+       <!-- représentation des etiquettes-->             
+       <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+             <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>modele</ogc:PropertyName>
+                  <ogc:Literal>FL_7202</ogc:Literal>
+                </ogc:PropertyIsEqualTo> 
+                <ogc:PropertyIsGreaterThan>
+                  <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                  <ogc:Literal>0</ogc:Literal>
+                </ogc:PropertyIsGreaterThan>                
+             </ogc:And>
+          </ogc:Filter> 
+          <se:TextSymbolizer>
+              <se:Label>
+                <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
+                *Fx-SL
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">8</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              </se:Font>  
+              <se:Halo>  
+                <se:Radius>4</se:Radius>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                </se:Fill>                 
+              </se:Halo>  
+              <se:Fill>
+                    <se:SvgParameter name="fill">#FF3F00</se:SvgParameter>
+              </se:Fill>              
+              <se:VendorOption name="underlineText">true</se:VendorOption>
+              <se:VendorOption name="followLine">true</se:VendorOption>      
+              <se:VendorOption name="labelObstacle">true</se:VendorOption>
+           </se:TextSymbolizer>              
         </se:Rule>
       </se:FeatureTypeStyle>    
 

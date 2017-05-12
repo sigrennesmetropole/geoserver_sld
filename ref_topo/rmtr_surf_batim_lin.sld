@@ -131,23 +131,17 @@
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                  <!--
-                  <WellKnownName>wkt://MULTILINESTRING((-0.25 -0.25, -0.125 -0.25), (0.125 -0.25, 0.25 -0.25), (-0.25 0.25, -0.125 0.25), (0.125 0.25, 0.25 0.25))</WellKnownName>
-http://docs.geoserver.org/stable/en/user/styling/sld-extensions/pointsymbols.html
-                  -->
-                	 <se:WellKnownName>shape://vertline</se:WellKnownName>
-                	 <se:Stroke>
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 0, 5 5))</se:WellKnownName>
+                   <se:Stroke>
                 	   <se:SvgParameter name="stroke">#9152A5</se:SvgParameter>
-                	   <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                	   <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
                		 </se:Stroke>
                   </se:Mark>
-                  <se:Size>8</se:Size>
-                  <se:Rotation>
-                      <ogc:Literal>225</ogc:Literal>
-                  </se:Rotation>
-                </se:Graphic>
+                  <se:Size>3</se:Size>
 
+                </se:Graphic>
               </se:GraphicStroke>
+               <se:SvgParameter name="stroke-dasharray">3 3</se:SvgParameter>               
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
