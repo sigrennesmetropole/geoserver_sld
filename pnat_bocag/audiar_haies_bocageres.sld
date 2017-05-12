@@ -35,8 +35,8 @@
           <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#b8da9f</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke">#107040</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
