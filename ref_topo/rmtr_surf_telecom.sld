@@ -49,7 +49,7 @@
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>ttf://ESRI IGL Font25#0x0023</se:WellKnownName>
+                    <se:WellKnownName>ttf://rmtr#0x0044</se:WellKnownName>
                   <se:Fill>
                       <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
                   </se:Fill>

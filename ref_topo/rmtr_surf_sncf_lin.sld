@@ -207,7 +207,7 @@
                 </ogc:PropertyIsEqualTo> 
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
+                  <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
              </ogc:And>
           </ogc:Filter>  
@@ -237,7 +237,7 @@
                 </ogc:PropertyIsEqualTo> 
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
+                  <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
              </ogc:And>
           </ogc:Filter>  

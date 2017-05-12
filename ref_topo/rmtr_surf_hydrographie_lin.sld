@@ -317,7 +317,7 @@
              </ogc:And>
           </ogc:Filter>            
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#007FFF</se:SvgParameter>
@@ -392,7 +392,7 @@
              </ogc:And>
           </ogc:Filter>            
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>  
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#007FFF</se:SvgParameter>

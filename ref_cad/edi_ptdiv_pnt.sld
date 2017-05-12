@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   11/09/2014  |  Arnaud LECLERE      |  version initiale
   15/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
+  04/05/2017  |  Arnaud LECLERE      |  changement de fonte > cadastre_rm.ttf	  
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -41,7 +42,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00AD'}</WellKnownName>
+                <WellKnownName>ttf://cadastre_rm#${'U+004D'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -73,7 +74,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#0x00A9</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0049'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -105,7 +106,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00AC'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+004C'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -137,7 +138,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00A8'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0048'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -169,7 +170,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00AA'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+004A'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -201,7 +202,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00A6'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0046'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -233,7 +234,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00AB'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+004B'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -265,7 +266,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00A7'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0047'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -309,7 +310,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00AE'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+004E'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -335,7 +336,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00B8'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0058'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -362,7 +363,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00B8'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0058'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -388,7 +389,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00B7'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+0057'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -420,7 +421,7 @@
       <PointSymbolizer>
         <Graphic>
           <Mark>
-            <WellKnownName>ttf://Equipements_PVI#${'U+00AF'}</WellKnownName>
+            <WellKnownName>ttf://cadastre_rm#${'U+004F'}</WellKnownName>
             <Fill>
               <CssParameter name="fill">#444444</CssParameter>
             </Fill>
@@ -428,8 +429,7 @@
           <Size>8</Size>
         </Graphic>
       </PointSymbolizer>
-    </Rule>
-    
+    </Rule> 
     
   </FeatureTypeStyle>
 </UserStyle>

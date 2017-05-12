@@ -294,6 +294,30 @@
           </se:LineSymbolizer>
         </se:Rule>
      </se:FeatureTypeStyle>  
+     
+ <!-- 0091 - coffret -->
+     <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - eau potable - Bouche à clé AEP</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>AS_0101</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+     </se:FeatureTypeStyle>       
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

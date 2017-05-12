@@ -120,7 +120,6 @@
              </se:GraphicFill>
            </se:Fill>
          </se:PolygonSymbolizer>
-        
         </se:Rule>
      </se:FeatureTypeStyle>        
     </UserStyle>

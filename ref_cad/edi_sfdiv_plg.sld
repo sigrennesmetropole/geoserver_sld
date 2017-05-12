@@ -13,8 +13,10 @@
   date        |  auteur              |  description
   28/02/2015  |  Arnaud LECLERE      |  version initiale
   10/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
+  04/05/2017  |  Arnaud LECLERE      |  changement de fonte > cadastre_rm.ttf 
   
 -->
+
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -164,7 +166,7 @@
               <GraphicFill>
                 <Graphic>
                   <Mark>
-                    <WellKnownName>ttf://ESRI Cartography#${'U+00EF'}</WellKnownName>
+                    <WellKnownName>ttf://cadastre_rm#${'U+0089'}</WellKnownName>
                     <Stroke>
                       <CssParameter name="stroke">#000000</CssParameter>
                     </Stroke>

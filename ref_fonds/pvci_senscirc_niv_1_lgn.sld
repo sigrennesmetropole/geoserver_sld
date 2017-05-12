@@ -13,7 +13,7 @@
   date        |  auteur              |  description
   10/06/2015  |  Stéphane GELIN      |  version initiale
   10/01/2017  |  Maël REBOUX         |  UTF-8, commentaires, pretty XML
-
+  05/05/2017  |  Arnaud LECLERE      |  changement de fonte pour les sens de circu. : flèches > Equipements_PVI.ttf 	  
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -62,7 +62,7 @@
               <GraphicStroke>
                 <Graphic>
                   <Mark>
-                    <WellKnownName>ttf://ESRI Arrowhead#63</WellKnownName>
+ 					<WellKnownName>ttf://Equipements_PVI#${'U+007A'}</WellKnownName>
                     <Fill>
                       <CssParameter name="fill">#FF0000</CssParameter>
                     </Fill>
