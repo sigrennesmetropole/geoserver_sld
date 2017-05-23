@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : for_vueclientpointtechnique
-  
+
   couche source dans la base :  reseaux.for_vueclientpointtechnique
   layer cible du style       :  res_num:for_vueclientpointtechnique
-  
+
   objet :  Style relatif aux types de point technique du Réseau FOR.
-  
+
   Historique des versions :
   date        |  auteur              |  description
   16/03/2017  |  Stephane GELIN      |  version initiale
   23/05/2017  |  Maël REBOUX         |  changement de workspace, mise en forme
-  
+
 -->
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
+
+  <NamedLayer>
     <se:Name>res_num:for_vueclientpointtechnique</se:Name>
     <UserStyle>
-     <se:Name>for_vueclientpointtechnique</se:Name>
-     <se:Description>        
+      <se:Name>for_vueclientpointtechnique</se:Name>
+      <se:Description>
         <se:Title>Points techniques</se:Title>
         <se:Abstract>Typologie des points techniques</se:Abstract>
-     </se:Description>
-     <se:FeatureTypeStyle>
+      </se:Description>
+      <se:FeatureTypeStyle>
 
-     
- <!-- Regard de visite -->
+
+        <!-- Regard de visite -->
         <se:Rule>
           <se:Name>Regard de visite</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -45,8 +45,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -63,10 +62,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                         
- <!-- Regard Eclairage Publique -->
+        </se:Rule>
+
+        <!-- Regard Eclairage Publique -->
         <se:Rule>
           <se:Name>Regard Eclairage Publique</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -77,9 +75,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
@@ -95,10 +92,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                     
- <!-- Point de pénétration -->
+        </se:Rule>
+
+        <!-- Point de pénétration -->
         <se:Rule>
           <se:Name>Point de pénétration</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -109,9 +105,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -127,10 +122,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                                     
-<!-- Indéterminé -->
+        </se:Rule>
+
+        <!-- Indéterminé -->
         <se:Rule>
           <se:Name>Indéterminé</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -141,9 +135,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -159,10 +152,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                                    
-<!-- En attente -->
+        </se:Rule>
+
+        <!-- En attente -->
         <se:Rule>
           <se:Name>En attente</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -173,9 +165,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -191,10 +182,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                                          
-<!-- Coffret de contrôle d'accès -->
+        </se:Rule>
+
+        <!-- Coffret de contrôle d'accès -->
         <se:Rule>
           <se:Name>Coffret de contrôle d'accès</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -205,9 +195,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -223,10 +212,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                                     
-<!-- Coffret de Vidéoprotection -->
+        </se:Rule>
+
+        <!-- Coffret de Vidéoprotection -->
         <se:Rule>
           <se:Name>Coffret de Vidéoprotection</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -237,9 +225,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -255,10 +242,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-                           
-<!-- Changement de support -->
+        </se:Rule>
+
+        <!-- Changement de support -->
         <se:Rule>
           <se:Name>Changement de support</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -269,9 +255,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -287,10 +272,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule> 
-        
-<!-- Changement de domaine -->
+        </se:Rule>
+
+        <!-- Changement de domaine -->
         <se:Rule>
           <se:Name>Changement de domaine</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -301,9 +285,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -319,10 +302,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule>        
-                                     
-<!-- Chambre de tirage -->
+        </se:Rule>
+
+        <!-- Chambre de tirage -->
         <se:Rule>
           <se:Name>Chambre de tirage</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -333,9 +315,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -351,10 +332,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule>        
-                  
-<!-- Chambre de raccordement -->
+        </se:Rule>
+
+        <!-- Chambre de raccordement -->
         <se:Rule>
           <se:Name>Chambre de raccordement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -365,9 +345,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -383,10 +362,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule>  
-                                       
-<!-- Chambre de coordination -->
+        </se:Rule>
+
+        <!-- Chambre de coordination -->
         <se:Rule>
           <se:Name>Chambre de coordination</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -397,9 +375,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -415,10 +392,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-          
-        </se:Rule>  
-                       
-<!-- Chambre de contrôle d'accès -->
+        </se:Rule>
+
+        <!-- Chambre de contrôle d'accès -->
         <se:Rule>
           <se:Name>Chambre de contrôle d'accès</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -429,9 +405,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -447,10 +422,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-        
-        </se:Rule>  
-                  
-<!-- Chambre de Signalisation Lumineuse -->
+        </se:Rule>
+
+        <!-- Chambre de Signalisation Lumineuse -->
         <se:Rule>
           <se:Name>Chambre de Signalisation Lumineuse</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -461,9 +435,8 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
-           <se:PointSymbolizer>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>square</se:WellKnownName>
@@ -480,20 +453,20 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>x</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                 </se:Fill>
-                 <se:Stroke/>
-               </se:Mark>
-               <se:Size>7</se:Size>               
-             </se:Graphic>
-          </se:PointSymbolizer>          
-        </se:Rule>  
-               
-<!-- Chambre Opérateurs -->
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>x</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke/>
+              </se:Mark>
+              <se:Size>7</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+
+        <!-- Chambre Opérateurs -->
         <se:Rule>
           <se:Name>Chambre Opérateurs</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -504,8 +477,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -522,9 +494,9 @@
               <se:Size>7</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-        </se:Rule>      
-       
-<!-- Boîtier PBO -->
+        </se:Rule>
+
+        <!-- Boîtier PBO -->
         <se:Rule>
           <se:Name>Boîtier PBO</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -535,8 +507,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -552,13 +523,11 @@
               </se:Mark>
               <se:Size>7</se:Size>
               <se:Rotation>90</se:Rotation>
-
             </se:Graphic>
           </se:PointSymbolizer>
-       
         </se:Rule>
-                   
-<!-- Boîte de raccordement -->
+
+        <!-- Boîte de raccordement -->
         <se:Rule>
           <se:Name>Boîte de raccordement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -569,8 +538,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -588,20 +556,20 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>           
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-            
-<!-- Armoire éclairage public -->
+
+        <!-- Armoire éclairage public -->
         <se:Rule>
           <se:Name>Armoire éclairage public</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -612,8 +580,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -631,20 +598,20 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>x</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                 </se:Fill>
-                 <se:Stroke/>
-               </se:Mark>
-               <se:Size>7</se:Size>               
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>x</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke/>
+              </se:Mark>
+              <se:Size>7</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-       
-<!-- Armoire de signalisation -->
+
+        <!-- Armoire de signalisation -->
         <se:Rule>
           <se:Name>Armoire de signalisation</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -655,8 +622,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -674,20 +640,20 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>x</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                 </se:Fill>
-                 <se:Stroke/>
-               </se:Mark>
-               <se:Size>7</se:Size>               
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>x</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke/>
+              </se:Mark>
+              <se:Size>7</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-       
-<!-- Armoire de raccordement -->
+
+        <!-- Armoire de raccordement -->
         <se:Rule>
           <se:Name>Armoire de raccordement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -698,8 +664,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -717,20 +682,20 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>x</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                 </se:Fill>
-                 <se:Stroke/>
-               </se:Mark>
-               <se:Size>7</se:Size>               
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>x</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke/>
+              </se:Mark>
+              <se:Size>7</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
 
-        </se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

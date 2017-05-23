@@ -1,39 +1,37 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : for_vueclientsite
-  
+
   couche source dans la base :  reseaux.for_vueclientsite
   layer cible du style       :  res_num:for_vueclientsite
-  
+
   objet :  Style relatif aux types de sites Réseau FOR.
-  
+
   Historique des versions :
   date        |  auteur              |  description
   16/03/2017  |  Stephane GELIN      |  version initiale
   23/05/2017  |  Maël REBOUX         |  changement de workspace, mise en forme
-  
--->
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+-->
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
+    
+  <NamedLayer>
     <se:Name>res_num:for_vueclientsite</se:Name>
     <UserStyle>
-     <se:Name>for_vueclientsite</se:Name>
-     <se:Description>        
+      <se:Name>for_vueclientsite</se:Name>
+      <se:Description>
         <se:Title>Typologie des sites raccordés</se:Title>
         <se:Abstract>Typologie des sites raccordés.</se:Abstract>
-     </se:Description>
-     <se:FeatureTypeStyle>
+      </se:Description>
+      <se:FeatureTypeStyle>
 
-        
         <!-- Parking sous-terrain -->
         <se:Rule>
           <se:Name>Parking sous-terrain</se:Name>
@@ -45,8 +43,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -64,19 +61,19 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-                            
+
         <!-- Indéterminé -->
         <se:Rule>
           <se:Name>Indéterminé</se:Name>
@@ -88,8 +85,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -107,19 +103,19 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-                           
+
         <!-- Bâtiment privé -->
         <se:Rule>
           <se:Name>Bâtiment privé</se:Name>
@@ -131,8 +127,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -150,19 +145,19 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-                            
+
         <!-- Bâtiment -->
         <se:Rule>
           <se:Name>Bâtiment</se:Name>
@@ -174,8 +169,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -193,19 +187,19 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-                  
+
         <!-- Batiment public -->
         <se:Rule>
           <se:Name>Batiment public</se:Name>
@@ -217,8 +211,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -236,19 +229,19 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
-        
+
         <!-- Armoire -->
         <se:Rule>
           <se:Name>Armoire</se:Name>
@@ -260,8 +253,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>  
-
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -279,20 +271,20 @@
             </se:Graphic>
           </se:PointSymbolizer>
           <se:PointSymbolizer>
-             <se:Graphic>
-               <se:Mark>
-                 <se:WellKnownName>circle</se:WellKnownName>
-                 <se:Fill>
-                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>                   
-                 </se:Fill>
-               </se:Mark>
-               <se:Size>2</se:Size>
-             </se:Graphic>
-          </se:PointSymbolizer>          
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>2</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
 
-     </se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
