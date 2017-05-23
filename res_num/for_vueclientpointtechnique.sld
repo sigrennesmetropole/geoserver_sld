@@ -4,13 +4,14 @@
   nom du SLD : for_vueclientpointtechnique
   
   couche source dans la base :  reseaux.for_vueclientpointtechnique
-  layer cible du style       :  ref_fonds:for_vueclientpointtechnique
+  layer cible du style       :  res_num:for_vueclientpointtechnique
   
   objet :  Style relatif aux types de point technique du Réseau FOR.
   
   Historique des versions :
   date        |  auteur              |  description
   16/03/2017  |  Stephane GELIN      |  version initiale
+  23/05/2017  |  Maël REBOUX         |  changement de workspace, mise en forme
   
 -->
 
@@ -23,19 +24,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>for_vueclientpointtechnique</se:Name>
+    <se:Name>res_num:for_vueclientpointtechnique</se:Name>
     <UserStyle>
      <se:Name>for_vueclientpointtechnique</se:Name>
      <se:Description>        
-        <se:Title>Réseau FOR</se:Title>
-        <se:Abstract>Réseau FOR - type de point technique</se:Abstract>
+        <se:Title>Points techniques</se:Title>
+        <se:Abstract>Typologie des points techniques</se:Abstract>
      </se:Description>
      <se:FeatureTypeStyle>
 
      
  <!-- Regard de visite -->
         <se:Rule>
-          <se:Name>Réseau FOR - Regard de visite</se:Name>
+          <se:Name>Regard de visite</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -67,7 +68,7 @@
                          
  <!-- Regard Eclairage Publique -->
         <se:Rule>
-          <se:Name>Réseau FOR - Regard Eclairage Publique</se:Name>
+          <se:Name>Regard Eclairage Publique</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -99,7 +100,7 @@
                      
  <!-- Point de pénétration -->
         <se:Rule>
-          <se:Name>Réseau FOR - Point de pénétration</se:Name>
+          <se:Name>Point de pénétration</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -131,7 +132,7 @@
                                      
 <!-- Indéterminé -->
         <se:Rule>
-          <se:Name>Réseau FOR - Indéterminé</se:Name>
+          <se:Name>Indéterminé</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -163,7 +164,7 @@
                                     
 <!-- En attente -->
         <se:Rule>
-          <se:Name>Réseau FOR - En attente</se:Name>
+          <se:Name>En attente</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -195,7 +196,7 @@
                                           
 <!-- Coffret de contrôle d'accès -->
         <se:Rule>
-          <se:Name>Réseau FOR - Coffret de contrôle d'accès</se:Name>
+          <se:Name>Coffret de contrôle d'accès</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -227,7 +228,7 @@
                                      
 <!-- Coffret de Vidéoprotection -->
         <se:Rule>
-          <se:Name>Réseau FOR - Coffret de Vidéoprotection</se:Name>
+          <se:Name>Coffret de Vidéoprotection</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -259,7 +260,7 @@
                            
 <!-- Changement de support -->
         <se:Rule>
-          <se:Name>Réseau FOR - Changement de support</se:Name>
+          <se:Name>Changement de support</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -291,7 +292,7 @@
         
 <!-- Changement de domaine -->
         <se:Rule>
-          <se:Name>Réseau FOR - Changement de domaine</se:Name>
+          <se:Name>Changement de domaine</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -323,7 +324,7 @@
                                      
 <!-- Chambre de tirage -->
         <se:Rule>
-          <se:Name>Réseau FOR - Chambre de tirage</se:Name>
+          <se:Name>Chambre de tirage</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -355,7 +356,7 @@
                   
 <!-- Chambre de raccordement -->
         <se:Rule>
-          <se:Name>Réseau FOR - Chambre de raccordement</se:Name>
+          <se:Name>Chambre de raccordement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -387,7 +388,7 @@
                                        
 <!-- Chambre de coordination -->
         <se:Rule>
-          <se:Name>Réseau FOR - Chambre de coordination</se:Name>
+          <se:Name>Chambre de coordination</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -419,7 +420,7 @@
                        
 <!-- Chambre de contrôle d'accès -->
         <se:Rule>
-          <se:Name>Réseau FOR - Chambre de contrôle d'accès</se:Name>
+          <se:Name>Chambre de contrôle d'accès</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -451,7 +452,7 @@
                   
 <!-- Chambre de Signalisation Lumineuse -->
         <se:Rule>
-          <se:Name>Réseau FOR - Chambre de Signalisation Lumineuse</se:Name>
+          <se:Name>Chambre de Signalisation Lumineuse</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -494,7 +495,7 @@
                
 <!-- Chambre Opérateurs -->
         <se:Rule>
-          <se:Name>Réseau FOR - Chambre Opérateurs</se:Name>
+          <se:Name>Chambre Opérateurs</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -525,7 +526,7 @@
        
 <!-- Boîtier PBO -->
         <se:Rule>
-          <se:Name>Réseau FOR - Boîtier PBO</se:Name>
+          <se:Name>Boîtier PBO</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -559,7 +560,7 @@
                    
 <!-- Boîte de raccordement -->
         <se:Rule>
-          <se:Name>Réseau FOR - Boîte de raccordement</se:Name>
+          <se:Name>Boîte de raccordement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -602,7 +603,7 @@
             
 <!-- Armoire éclairage public -->
         <se:Rule>
-          <se:Name>Réseau FOR - Armoire éclairage public</se:Name>
+          <se:Name>Armoire éclairage public</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -645,7 +646,7 @@
        
 <!-- Armoire de signalisation -->
         <se:Rule>
-          <se:Name>Réseau FOR - Armoire de signalisation</se:Name>
+          <se:Name>Armoire de signalisation</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>
@@ -688,7 +689,7 @@
        
 <!-- Armoire de raccordement -->
         <se:Rule>
-          <se:Name>Réseau FOR - Armoire de raccordement</se:Name>
+          <se:Name>Armoire de raccordement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typefonctionnel</ogc:PropertyName>

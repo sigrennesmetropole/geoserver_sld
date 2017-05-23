@@ -4,13 +4,14 @@
   nom du SLD : for_vueclientcableoptique
   
   couche source dans la base :  reseaux.for_vueclientcableoptique
-  layer cible du style       :  ref_fonds:for_vueclientcableoptique
+  layer cible du style       :  res_num:for_vueclientcableoptique
   
   objet :  Style relatif aux câbles optiques.
   
   Historique des versions :
   date        |  auteur              |  description
   16/03/2017  |  Stephane GELIN      |  version initiale
+  23/05/2017  |  Maël REBOUX         |  changement de workspace, mise en forme
   
 -->
 
@@ -23,12 +24,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>for_vueclientcableoptique</se:Name>
+    <se:Name>res_num:for_vueclientcableoptique</se:Name>
     <UserStyle>
      <se:Name>for_vueclientcableoptique</se:Name>
      <se:Description>        
-        <se:Title>Réseau FOR - Câbles optiques</se:Title>
-        <se:Abstract>Réseau FOR - Câbles optiques</se:Abstract>
+        <se:Title>Câbles optiques</se:Title>
+        <se:Abstract>Ligne verte fine.</se:Abstract>
      </se:Description>
      <se:FeatureTypeStyle>
 

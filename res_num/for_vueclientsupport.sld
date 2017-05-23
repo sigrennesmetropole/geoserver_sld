@@ -4,13 +4,14 @@
   nom du SLD : for_vueclientsupport
   
   couche source dans la base :  reseaux.for_vueclientsupport
-  layer cible du style       :  ref_fonds:for_vueclientsupport
+  layer cible du style       :  res_num:for_vueclientsupport
   
   objet :  Style relatif aux Infrastructures Télécom Ville de Rennes.
   
   Historique des versions :
   date        |  auteur              |  description
   16/03/2017  |  Stephane GELIN      |  version initiale
+  23/05/2017  |  Maël REBOUX         |  changement de workspace, mise en forme
   
 -->
 
@@ -23,19 +24,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>for_vueclientsupport</se:Name>
+    <se:Name>res_num:for_vueclientsupport</se:Name>
     <UserStyle>
      <se:Name>for_vueclientsupport</se:Name>
      <se:Description>        
-        <se:Title>Réseau FOR</se:Title>
-        <se:Abstract>Réseau FOR - Infrastructures Télécom Ville de Rennes</se:Abstract>
+        <se:Title>Infrastructure</se:Title>
+        <se:Abstract>Typologie du réseau.</se:Abstract>
      </se:Description>
      <se:FeatureTypeStyle>
 
          
         <!-- Réseau operateurs -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Réseau operateurs</se:Name>
+          <se:Name>Réseau operateurs</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -57,7 +58,7 @@
                            
         <!-- Réseau de contrôle d'accès -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Réseau de contrôle d'accès</se:Name>
+          <se:Name>Réseau de contrôle d'accès</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -79,7 +80,7 @@
                            
         <!-- Réseau ZAC -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Réseau ZAC</se:Name>
+          <se:Name>Réseau ZAC</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -101,7 +102,7 @@
                                   
         <!-- Réseau VDR avec operateurs -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Réseau VDR avec operateurs</se:Name>
+          <se:Name>Réseau VDR avec operateurs</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -123,7 +124,7 @@
                          
         <!-- Réseau VDR abandonné -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Réseau VDR abandonné</se:Name>
+          <se:Name>Réseau VDR abandonné</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -145,7 +146,7 @@
                  
         <!-- Réseau VDR (fourreaux libres) -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Réseau VDR (fourreaux libres)</se:Name>
+          <se:Name>Réseau VDR (fourreaux libres)</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -167,7 +168,7 @@
                         
         <!-- Réseau FOR sous voirie -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - sous voirie</se:Name>
+          <se:Name>sous voirie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -189,7 +190,7 @@
                              
         <!-- Réseau FOR en aérien -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - en aérien</se:Name>
+          <se:Name>en aérien</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -211,7 +212,7 @@
                             
        <!-- Réseau FOR dans réseau opérateur -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans réseau opérateur</se:Name>
+          <se:Name>dans réseau opérateur</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -233,7 +234,7 @@
                   
        <!-- Réseau FOR dans réseau de coordination -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans réseau de coordination</se:Name>
+          <se:Name>dans réseau de coordination</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -255,7 +256,7 @@
         
        <!-- Réseau FOR dans réseau d'éclairage public -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans réseau d'éclairage public</se:Name>
+          <se:Name>dans réseau d'éclairage public</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -277,7 +278,7 @@
                                       
        <!-- Réseau FOR dans réseau d'AEP HS -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans réseau d'AEP HS</se:Name>
+          <se:Name>dans réseau d'AEP HS</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -299,7 +300,7 @@
                                  
        <!-- Réseau FOR dans collecteur d'assainissement -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans collecteur d'assainissement</se:Name>
+          <se:Name>dans collecteur d'assainissement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -321,7 +322,7 @@
                                  
        <!-- Réseau FOR dans bâtiment -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans bâtiment</se:Name>
+          <se:Name>dans bâtiment</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -343,7 +344,7 @@
                          
        <!-- Réseau FOR dans VAL -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans VAL</se:Name>
+          <se:Name>dans VAL</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -365,7 +366,7 @@
                             
        <!-- Réseau FOR dans Galerie technique -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - dans Galerie technique</se:Name>
+          <se:Name>dans Galerie technique</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -387,7 +388,7 @@
                          
        <!-- Projet Réseau ZAC -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Projet Réseau ZAC</se:Name>
+          <se:Name>Projet Réseau ZAC</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -410,7 +411,7 @@
                      
        <!-- Projet Réseau VDR (fourreaux libres) -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Projet Réseau VDR (fourreaux libres)</se:Name>
+          <se:Name>Projet Réseau VDR (fourreaux libres)</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -433,7 +434,7 @@
                          
        <!-- Projet Réseau FOR sous voirie -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Projet Réseau FOR sous voirie</se:Name>
+          <se:Name>Projet Réseau FOR sous voirie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -456,7 +457,7 @@
                           
        <!-- Projet Réseau FOR dans réseau de coordination -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Projet Réseau FOR dans réseau de coordination</se:Name>
+          <se:Name>Projet Réseau FOR dans réseau de coordination</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -479,7 +480,7 @@
                       
        <!-- Projet Réseau FOR dans métro -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Projet Réseau FOR dans métro</se:Name>
+          <se:Name>Projet Réseau FOR dans métro</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -502,7 +503,7 @@
                      
        <!-- Fourreaux Citédia sous voirie -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Fourreaux Citédia sous voirie</se:Name>
+          <se:Name>Fourreaux Citédia sous voirie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -524,7 +525,7 @@
               
      <!-- Fourreaux Citédia dans assainissement -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Fourreaux Citédia dans assainissement</se:Name>
+          <se:Name>Fourreaux Citédia dans assainissement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -546,7 +547,7 @@
        
      <!-- Desserte privative -->
         <se:Rule>
-          <se:Name>Réseau FOR - Infrastructures - Desserte privative</se:Name>
+          <se:Name>Desserte privative</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>

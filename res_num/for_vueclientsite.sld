@@ -4,13 +4,14 @@
   nom du SLD : for_vueclientsite
   
   couche source dans la base :  reseaux.for_vueclientsite
-  layer cible du style       :  ref_fonds:for_vueclientsite
+  layer cible du style       :  res_num:for_vueclientsite
   
   objet :  Style relatif aux types de sites Réseau FOR.
   
   Historique des versions :
   date        |  auteur              |  description
   16/03/2017  |  Stephane GELIN      |  version initiale
+  23/05/2017  |  Maël REBOUX         |  changement de workspace, mise en forme
   
 -->
 
@@ -23,19 +24,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>for_vueclientsite</se:Name>
+    <se:Name>res_num:for_vueclientsite</se:Name>
     <UserStyle>
      <se:Name>for_vueclientsite</se:Name>
      <se:Description>        
-        <se:Title>Réseau FOR</se:Title>
-        <se:Abstract>Réseau FOR - type de sites</se:Abstract>
+        <se:Title>Typologie des sites raccordés</se:Title>
+        <se:Abstract>Typologie des sites raccordés.</se:Abstract>
      </se:Description>
      <se:FeatureTypeStyle>
 
         
         <!-- Parking sous-terrain -->
         <se:Rule>
-          <se:Name>Réseau FOR - Parking sous-terrain</se:Name>
+          <se:Name>Parking sous-terrain</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -78,7 +79,7 @@
                             
         <!-- Indéterminé -->
         <se:Rule>
-          <se:Name>Réseau FOR - Indéterminé</se:Name>
+          <se:Name>Indéterminé</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -121,7 +122,7 @@
                            
         <!-- Bâtiment privé -->
         <se:Rule>
-          <se:Name>Réseau FOR - Bâtiment privé</se:Name>
+          <se:Name>Bâtiment privé</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -164,7 +165,7 @@
                             
         <!-- Bâtiment -->
         <se:Rule>
-          <se:Name>Réseau FOR - Bâtiment</se:Name>
+          <se:Name>Bâtiment</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -207,7 +208,7 @@
                   
         <!-- Batiment public -->
         <se:Rule>
-          <se:Name>Réseau FOR - Batiment public</se:Name>
+          <se:Name>Batiment public</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
@@ -250,7 +251,7 @@
         
         <!-- Armoire -->
         <se:Rule>
-          <se:Name>Réseau FOR - Armoire</se:Name>
+          <se:Name>Armoire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typestructurel</ogc:PropertyName>
