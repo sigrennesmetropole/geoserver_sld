@@ -31,10 +31,47 @@
       </se:Description>
       <se:FeatureTypeStyle>
 
-        <!-- étiquetage des zonages avec le libellé court -->
+        <!-- étiquetage des zonages avec le libellé court : grandes échelles -->
         <se:Rule>
           <se:Name>Etiquettes des zonages</se:Name>
-          <se:MaxScaleDenominator>50001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <!--<se:Geometry>
+              <ogc:Function name="interiorPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>-->
+            <se:Label>
+              <ogc:PropertyName>libelle</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">16</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+          </se:TextSymbolizer>
+        </se:Rule>
+
+        <!-- étiquetage des zonages avec le libellé court : moyennes échelles -->
+        <se:Rule>
+          <se:Name>Etiquettes des zonages</se:Name>
+          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <!--<se:Geometry>
               <ogc:Function name="interiorPoint">
@@ -66,7 +103,8 @@
             </se:Halo>
           </se:TextSymbolizer>
         </se:Rule>
-
+        
+        
         <!-- cette règle permet de faire apparaître une double hachure pour les polygones pour lesquels la valeur n'est pas conforme aux valeurs attendues. Les autres valeurs sont dessinées par-dessus, masquant cette règle qui s'applique à tous les polygones.-->
         <se:Rule>
           <se:Name>Valeurs non conformes</se:Name>
