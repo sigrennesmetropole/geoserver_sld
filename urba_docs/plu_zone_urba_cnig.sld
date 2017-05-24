@@ -16,7 +16,8 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  08/08/2016  | m.reboux             |  version initiale
+  08/08/2016  |  Maël REBOUX         |  version initiale
+  23/05/2017  |  Maël REBOUX         |  désactivation du calcul du centroïde car cela génère des erreurs "com.vividsolutions.jts.geom.TopologyException: found non-noded intersection between LINESTRING" dans GeoServer. GeoServer n'arrive pas à trouver l'interiopoint donc ne peut pas afficher le label donc ne calcule pas la dalle image. La fonction "labelPoint" n'est pas dispo avec la version 2.8.3 de GeoServer. Indiquer l'usage du mode non-tuilé dans Mapfishapp pour compenser la présence de trop nombreux labels sur la carte.
   
 -->
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:xlink="http://www.w3.org/1999/xlink"  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se">
@@ -35,11 +36,11 @@
           <se:Name>Etiquettes des zonages</se:Name>
           <se:MaxScaleDenominator>50001</se:MaxScaleDenominator>
           <se:TextSymbolizer>
-            <se:Geometry>
+            <!--<se:Geometry>
               <ogc:Function name="interiorPoint">
                 <ogc:PropertyName>shape</ogc:PropertyName>
               </ogc:Function>
-            </se:Geometry>
+            </se:Geometry>-->
             <se:Label>
               <ogc:PropertyName>libelle</ogc:PropertyName>
             </se:Label>
