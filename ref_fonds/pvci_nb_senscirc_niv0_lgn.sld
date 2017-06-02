@@ -57,7 +57,7 @@
                    <GraphicStroke>
                        <Graphic>
                           <Mark>
-				                <WellKnownName>ttf://Equipements_PVI#${'U+00BF'}</WellKnownName>
+				                <WellKnownName>ttf://Equipements_PVI#${'U+0079'}</WellKnownName>
                                 <Fill>
                                     <CssParameter name="fill">#333333</CssParameter>
                                 </Fill>
