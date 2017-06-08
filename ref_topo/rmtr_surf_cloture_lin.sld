@@ -209,7 +209,7 @@
                    <se:Size>4</se:Size>
                  </se:Graphic>
                </se:GraphicStroke>
-    				<se:SvgParameter name="stroke-dasharray">2 30</se:SvgParameter> 
+    				<se:SvgParameter name="stroke-dasharray">3 30</se:SvgParameter> 
              </se:Stroke>
            </se:LineSymbolizer>           
         </se:Rule>
@@ -250,7 +250,7 @@
                    <se:Size>4</se:Size>
                  </se:Graphic>
                </se:GraphicStroke>
-    				<se:SvgParameter name="stroke-dasharray">2 30</se:SvgParameter> 
+    				<se:SvgParameter name="stroke-dasharray">3 30</se:SvgParameter> 
              </se:Stroke>
            </se:LineSymbolizer>           
         </se:Rule>
@@ -291,7 +291,7 @@
                    <se:Size>4</se:Size>
                  </se:Graphic>
                </se:GraphicStroke>
-    				<se:SvgParameter name="stroke-dasharray">2 30</se:SvgParameter> 
+    				<se:SvgParameter name="stroke-dasharray">3 30</se:SvgParameter> 
              </se:Stroke>
            </se:LineSymbolizer>           
         </se:Rule>
