@@ -2,14 +2,15 @@
 <!--
   nom du SLD : stations_reparation_velo_pnt
 
-  couche source dans la base :  mobilite_transp.reparation_velo
-  layer cible du style       :  trp_doux.reparation_velo
+  couche source dans la base :  mobilite_transp.v_reparation_velo
+  layer cible du style       :  trp_doux:v_reparation_velo
 
   objet : Affiche les stations de réparation et de gonflage pour vélo sur Rennes Métropole par un symbole ponctuel .
 
   Historique des versions :
   date        |  auteur              |  description
   09/05/2017  |  Arnaud LECLERE      |  version initiale
+  14/06/2017  |  Maël REBOUX         |  mise en forme + changement de couche
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -20,7 +21,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_doux:reparation_velo</se:Name>
+    <se:Name>trp_doux:v_reparation_velo</se:Name>
     <UserStyle>
       <se:Name>stations_reparation_velo_pnt</se:Name>
       <se:FeatureTypeStyle>
