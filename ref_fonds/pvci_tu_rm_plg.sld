@@ -43,7 +43,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
           </ogc:Filter>
-          <se:MaxScaleDenominator>4500</se:MaxScaleDenominator>   
+          <se:MinScaleDenominator>5000</se:MinScaleDenominator>   
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#EDEDED</se:SvgParameter>
