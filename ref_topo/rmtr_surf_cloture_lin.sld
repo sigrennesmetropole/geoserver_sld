@@ -195,8 +195,6 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-<!--                     <se:WellKnownName>wkt://MULTILINESTRING((0 -0.1, 0 0.1),(0 0.1, 0.2 0.1),(0.2 0.1, 0.2 -0.1),(0.2 -0.1, 0 -0.1))</se:WellKnownName>       
-                     <se:WellKnownName>wkt://MULTILINESTRING((0 0.1, 0 0.3),(0 0.3, 0.2 0.3),(0.2 0.3, 0.2 0.1),(0.2 0.1, 0 0.1))-->
                      <se:WellKnownName>square</se:WellKnownName>                       
                      <se:Fill>
                         <se:SvgParameter name="fill">#A500A5</se:SvgParameter>
@@ -241,7 +239,7 @@
                <se:GraphicStroke>
                  <se:Graphic>
                    <se:Mark>
-                     <se:WellKnownName>wkt://MULTILINESTRING((0 -0.1, 0 0.1),(0 0.1, 0.2 0.1),(0.2 0.1, 0.2 -0.1),(0.2 -0.1, 0 -0.1))</se:WellKnownName>                     
+                     <se:WellKnownName>wkt://MULTILINESTRING((0 -0.1, 0 0.1),(0 0.1, 0.2 0.1),(0.2 0.1, 0.2 -0.1),(0.2 -0.1, 0 -0.1))</se:WellKnownName>
                      <se:Stroke>
                         <se:SvgParameter name="stroke">#A500A5</se:SvgParameter>
                         <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
@@ -250,7 +248,7 @@
                    <se:Size>4</se:Size>
                  </se:Graphic>
                </se:GraphicStroke>
-    				<se:SvgParameter name="stroke-dasharray">3 30</se:SvgParameter> 
+               <se:SvgParameter name="stroke-dasharray">3 30</se:SvgParameter> 
              </se:Stroke>
            </se:LineSymbolizer>           
         </se:Rule>
