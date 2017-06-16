@@ -24,11 +24,11 @@
     <se:Name>trp_doux:v_reparation_velo</se:Name>
     <UserStyle>
       <se:Name>stations_reparation_velo_pnt</se:Name>
+      <se:Description>
+        <se:Title>Stations réparation pour vélo</se:Title>
+        <se:Abstract>Style de points représentant les stations de réparation et de gonflage pour vélo sur Rennes Métropole</se:Abstract>
+      </se:Description>
       <se:FeatureTypeStyle>
-        <se:Description>
-          <se:Title>Stations réparation pour vélo</se:Title>
-          <se:Abstract>Style de points représentant les stations de réparation et de gonflage pour vélo sur Rennes Métropole</se:Abstract>
-        </se:Description>
 
         <!-- Etat=En service - gonflage=Non - Réparation=Oui -->
         <se:Rule>
