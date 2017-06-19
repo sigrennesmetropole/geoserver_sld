@@ -1,4 +1,4 @@
-ï»¿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : edi_sfdiv_plg
@@ -12,7 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   28/02/2015  |  Arnaud LECLERE      |  version initiale
-  10/06/2016  |  MaÃ«l REBOUX         |  mise en forme + adaptations pour le cache
+  10/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
   04/05/2017  |  Arnaud LECLERE      |  changement de fonte > cadastre_rm.ttf 
   
 -->
@@ -65,7 +65,7 @@
         
         
         <Rule>
-          <Name>Ã‰tang, lac</Name>
+          <Name>Étang, lac</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
@@ -119,9 +119,9 @@
         </Rule>
         
         
-        <!-- aux Ã©chelles moyennes on va juste mettre un aplat de gris pour tous les types de cimetiÃ¨re -->
+        <!-- aux échelles moyennes on va juste mettre un aplat de gris pour tous les types de cimetière -->
         <Rule>
-          <Name>CimetiÃ¨res</Name>
+          <Name>Cimetières</Name>
             <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
@@ -146,9 +146,9 @@
             </Fill>
           </PolygonSymbolizer>
         </Rule>
-        <!-- cimetiÃ¨re chrÃ©tien -->
+        <!-- cimetière chrétien -->
         <Rule>
-          <Name>CimetiÃ¨re</Name>
+          <Name>Cimetière</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
@@ -166,7 +166,7 @@
               <GraphicFill>
                 <Graphic>
                   <Mark>
-                    <WellKnownName>ttf://cadastre_rm#${'U+0089'}</WellKnownName>
+                    <WellKnownName>ttf://cadastre_rm#${'U+004E'}</WellKnownName>
                     <Stroke>
                       <CssParameter name="stroke">#000000</CssParameter>
                     </Stroke>
@@ -177,9 +177,9 @@
             </Fill>
           </PolygonSymbolizer>
         </Rule>
-        <!-- cimetiÃ¨re israÃ©lite -->
+        <!-- cimetière israélite -->
         <Rule>
-          <Name>CimetiÃ¨re israÃ©lite</Name>
+          <Name>Cimetière israélite</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
@@ -197,9 +197,9 @@
             </Stroke>
           </PolygonSymbolizer>
         </Rule>
-        <!-- cimetiÃ¨re musulman -->
+        <!-- cimetière musulman -->
         <Rule>
-          <Name>CimetiÃ¨re musulman</Name>
+          <Name>Cimetière musulman</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
