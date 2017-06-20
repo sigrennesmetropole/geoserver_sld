@@ -14,7 +14,11 @@
   15/06/2017  |  Arnaud LECLERE      |  version initiale
   
 -->
-<StyledLayerDescriptor version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StyledLayerDescriptor version="1.0.0" 
+  xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+  xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <Name>edi_comm_plg</Name>
     <UserStyle>
@@ -40,41 +44,7 @@
               <CssParameter name="fill">#d0d0d0</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
+                  
         </Rule>
         
         
@@ -94,42 +64,8 @@
               <CssParameter name="fill">#acacac</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
-        
-        
+                
         <Rule>
           <Name>BETTON</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -146,39 +82,6 @@
               <CssParameter name="fill">#bfbfbf</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -198,39 +101,6 @@
               <CssParameter name="fill">#aeaeae</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -250,38 +120,6 @@
               <CssParameter name="fill">#c5c5c5</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -301,38 +139,6 @@
               <CssParameter name="fill">#aeaeae</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -352,38 +158,6 @@
               <CssParameter name="fill">#a8a8a8</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -403,38 +177,6 @@
               <CssParameter name="fill">#a8a8a8</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -454,38 +196,6 @@
               <CssParameter name="fill">#d1d1d1</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -505,30 +215,6 @@
               <CssParameter name="fill">#b6b6b6</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -548,38 +234,6 @@
               <CssParameter name="fill">#b6b6b6</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -599,38 +253,6 @@
               <CssParameter name="fill">#dddddd</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -650,38 +272,6 @@
               <CssParameter name="fill">#b2b2b2</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -701,30 +291,6 @@
               <CssParameter name="fill">#d1d1d1</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -744,38 +310,6 @@
               <CssParameter name="fill">#dadada</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -795,38 +329,6 @@
               <CssParameter name="fill">#c5c5c5</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -846,40 +348,7 @@
               <CssParameter name="fill">#b9b9b9</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
-        
         
         <Rule>
           <Name>LA CHAPELLE THOUARAULT</Name>
@@ -897,30 +366,6 @@
               <CssParameter name="fill">#d1d1d1</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -940,38 +385,6 @@
               <CssParameter name="fill">#b2b2b2</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -991,30 +404,6 @@
               <CssParameter name="fill">#c9c9c9</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1034,30 +423,6 @@
               <CssParameter name="fill">#e2e2e2</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1077,38 +442,6 @@
               <CssParameter name="fill">#aeaeae</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1128,30 +461,6 @@
               <CssParameter name="fill">#dadada</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1171,38 +480,6 @@
               <CssParameter name="fill">#b6b6b6</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1222,30 +499,6 @@
               <CssParameter name="fill">#dddddd</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1265,38 +518,6 @@
               <CssParameter name="fill">#bfbfbf</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1316,30 +537,6 @@
               <CssParameter name="fill">#bfbfbf</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1359,38 +556,6 @@
               <CssParameter name="fill">#d0d0d0</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1410,38 +575,6 @@
               <CssParameter name="fill">#bfbfbf</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1461,38 +594,6 @@
               <CssParameter name="fill">#c5c5c5</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1512,38 +613,6 @@
               <CssParameter name="fill">#bdbdbd</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1563,38 +632,6 @@
               <CssParameter name="fill">#eeeeee</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1614,38 +651,6 @@
               <CssParameter name="fill">#b6b6b6</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1665,38 +670,6 @@
               <CssParameter name="fill">#d0d0d0</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1716,30 +689,6 @@
               <CssParameter name="fill">#b9b9b9</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1759,38 +708,6 @@
               <CssParameter name="fill">#cbcbcb</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1810,38 +727,6 @@
               <CssParameter name="fill">#dddddd</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1861,38 +746,6 @@
               <CssParameter name="fill">#e4e4e4</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1912,38 +765,6 @@
               <CssParameter name="fill">#aeaeae</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -1963,38 +784,6 @@
               <CssParameter name="fill">#aeaeae</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -2014,38 +803,6 @@
               <CssParameter name="fill">#cbcbcb</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -2065,37 +822,6 @@
               <CssParameter name="fill">#b6b6b6</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
         
         
@@ -2115,41 +841,8 @@
               <CssParameter name="fill">#d2d2d2</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-          <!-- affichage nom de la commune -->
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <VendorOption name="conflictResolution">false</VendorOption>
-          </TextSymbolizer>
         </Rule>
-        
-        
+                
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
