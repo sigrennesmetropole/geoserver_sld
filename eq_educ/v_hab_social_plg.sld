@@ -3,8 +3,8 @@
   
   nom du SLD : v_hab_social_plg
   
-  couche source dans la base :  limite_admin.sousquartier
-  layer cible du style       :  ladm_terri:sousquartier
+  couche source dans la base :  serv_equipub.v_hab_social_plg 
+  layer cible du style       :  eq_educ:v_hab_social_plg
   
   objet :
   Style par défaut
@@ -15,13 +15,13 @@
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
-        xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"                           
-        xmlns="http://www.opengis.net/sld" 
-        xmlns:ogc="http://www.opengis.net/ogc" 
-        xmlns:se="http://www.opengis.net/se" 
-        xmlns:xlink="http://www.w3.org/1999/xlink" 
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
+xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+xmlns="http://www.opengis.net/sld" 
+xmlns:ogc="http://www.opengis.net/ogc" 
+xmlns:se="http://www.opengis.net/se" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
   <NamedLayer>
     <se:Name>v_hab_social</se:Name>
     <UserStyle>
