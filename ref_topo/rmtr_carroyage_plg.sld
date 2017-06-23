@@ -71,8 +71,8 @@
         <!-- polygones avec bordures seules pour les petites échelles -->
         <se:Rule>
           <se:Name>Limites des carreaux</se:Name>
-          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:MinScaleDenominator>35000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#888888</se:SvgParameter>
