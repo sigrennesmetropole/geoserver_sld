@@ -1,82 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : rmtr_carroyage
-  
+
   couche source dans la base :  toposurf.rmtr_carroyage
   layer cible du style       :  ref_topo:rmtr_carroyage
-  
-  objet :  Style relatif aux dalles signalant la présence ou non de données du RMTR.
-  
+
+  objet :  Affichage des dalles sans symbologie, seulement les bordures.
+
   Historique des versions :
   date        |  auteur              |  description
   20/03/2017  |  Stephane GELIN      |  version initiale
-  
+  23/06/2017  |  Maël REBOUX         |  style par défaut donc neutre
+
 -->
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
-    <se:Name>rmtr_carroyage</se:Name>
+
+  <NamedLayer>
+    <se:Name>ref_topo:rmtr_carroyage</se:Name>
     <UserStyle>
-     <se:Name>rmtr_carroyage</se:Name>
-     <se:Description>        
+      <se:Name>rmtr_carroyage</se:Name>
+      <se:Description>
         <se:Title>Carroyage RMTR</se:Title>
         <se:Abstract>Style signalant la présence ou non de données du RMTR</se:Abstract>
-     </se:Description>
-     <se:FeatureTypeStyle>
+      </se:Description>
+      <se:FeatureTypeStyle>
+
+        <!-- polygones avec bordures seules pour les très grandes échelles -->
         <se:Rule>
-          <se:Name>RMTR Carroyage</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>presence_donnees</ogc:PropertyName>
-                <ogc:Literal>oui</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>  
+          <se:Name>Limites des carreaux</se:Name>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#9FF781</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill> 
+              <se:SvgParameter name="fill">#888888</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
-            </se:Stroke>            
-          </se:PolygonSymbolizer>   
-        </se:Rule>  
-        
+              <se:SvgParameter name="stroke">#777777</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+
+        <!-- polygones avec bordures seules pour les moyennes et grandes échelles -->
         <se:Rule>
-          <se:Name>RMTR Carroyage</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>presence_donnees</ogc:PropertyName>
-                <ogc:Literal>non</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>  
+          <se:Name>Limites des carreaux</se:Name>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#FA5858</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill> 
+              <se:SvgParameter name="fill">#888888</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.10</se:SvgParameter>
+            </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
-            </se:Stroke>               
-          </se:PolygonSymbolizer>   
-        </se:Rule>          
-     </se:FeatureTypeStyle>  
+              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+
+        <!-- polygones avec bordures seules pour les petites échelles -->
+        <se:Rule>
+          <se:Name>Limites des carreaux</se:Name>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#888888</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.10</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
