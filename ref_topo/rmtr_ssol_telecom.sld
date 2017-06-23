@@ -430,7 +430,9 @@
                   <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
-          </ogc:Filter> 
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>          
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>

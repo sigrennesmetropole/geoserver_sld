@@ -1019,8 +1019,7 @@
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -1139,8 +1138,7 @@
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -1165,8 +1163,7 @@
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>

@@ -392,6 +392,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
@@ -593,6 +596,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
@@ -726,6 +732,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
@@ -907,6 +916,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>

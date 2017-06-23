@@ -375,6 +375,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_hta</ogc:PropertyName>
@@ -416,6 +419,9 @@
                 </ogc:PropertyIsGreaterThan>                  
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
@@ -504,6 +510,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_hta</ogc:PropertyName>
@@ -640,6 +649,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_bt</ogc:PropertyName>
@@ -680,7 +692,10 @@
                   <ogc:Literal>0</ogc:Literal>
                 </ogc:PropertyIsGreaterThan>                  
              </ogc:And>
-          </ogc:Filter> 
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_fourreau</ogc:PropertyName>
@@ -770,6 +785,9 @@
                 </ogc:PropertyIsGreaterThan>                
              </ogc:And>
           </ogc:Filter> 
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>            
           <se:TextSymbolizer>
               <se:Label>
                 <ogc:PropertyName>nb_bt</ogc:PropertyName>
