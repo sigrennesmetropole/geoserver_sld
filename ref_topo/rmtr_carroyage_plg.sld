@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : rmtr_carroyage
+  nom du SLD : rmtr_carroyage_plg
 
   couche source dans la base :  toposurf.rmtr_carroyage
   layer cible du style       :  ref_topo:rmtr_carroyage
@@ -26,10 +26,10 @@
   <NamedLayer>
     <se:Name>ref_topo:rmtr_carroyage</se:Name>
     <UserStyle>
-      <se:Name>rmtr_carroyage</se:Name>
+      <se:Name>rmtr_carroyage_plg</se:Name>
       <se:Description>
-        <se:Title>Carroyage RMTR</se:Title>
-        <se:Abstract>Style signalant la présence ou non de données du RMTR</se:Abstract>
+        <se:Title>Carroyage du RMTR</se:Title>
+        <se:Abstract>Bordures des carreaux du RMTR</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
