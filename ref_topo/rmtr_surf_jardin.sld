@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : rmtr_surf_jardin
-  
+
   couche source dans la base :  toposurf.v_jardin_mat
   layer cible du style       :  ref_topo:rmtr_surf_jardin
-  
+
   objet :  Style relatif aux objets de jardin de surface.
-  
+
   Historique des versions :
   date        |  auteur              |  description
   01/03/2017  |  Stephane GELIN      |  version initiale
-  
+  26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+
 -->
 
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_jardin_mat</se:Name>
+    <se:Name>ref_topo:rmtr_surf_jardin</se:Name>
     <UserStyle>
       <se:Name>rmtr_surf_jardin</se:Name>
-      <se:Description>        
+      <se:Description>
         <se:Title>Jardin</se:Title>
         <se:Abstract>Style des objets de surface de la famille Jardin</se:Abstract>
       </se:Description>
@@ -44,7 +45,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -68,7 +69,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -85,11 +86,11 @@
                      <se:Mark>
                        <se:WellKnownName>shape://dot</se:WellKnownName>
 				     </se:Mark>
-                  <se:Size>2</se:Size>                   
+                  <se:Size>2</se:Size>
                   </se:Graphic>
                </se:GraphicStroke>
-               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>              
-               <se:SvgParameter name="stroke-dasharray">0.2 0.4</se:SvgParameter>              
+               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
+               <se:SvgParameter name="stroke-dasharray">0.2 0.4</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
 -->
@@ -102,7 +103,7 @@
                     <se:WellKnownName>wkt://CIRCULARSTRING(4 1, 7 4, 4 7, 1 4, 4 1)</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
-                    </se:Fill>                     
+                    </se:Fill>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.05</se:SvgParameter>
@@ -114,7 +115,7 @@
               </se:GraphicStroke>
               <se:SvgParameter name="stroke-dasharray">3 10</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>   
+          </se:LineSymbolizer>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
@@ -123,7 +124,7 @@
                     <se:WellKnownName>wkt://CIRCULARSTRING(12 9, 15 12, 12 15, 9 12, 12 9)</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
-                    </se:Fill>                     
+                    </se:Fill>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.05</se:SvgParameter>
@@ -152,40 +153,40 @@
               </se:GraphicStroke>
 
             </se:Stroke>
-          </se:LineSymbolizer>          
-        </se:Rule>      
-      </se:FeatureTypeStyle> 
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <!-- 4960 - Haie - echelle 1 -->
 
-      <se:FeatureTypeStyle>      
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RCTR Surface - Jardin - Haie</se:Name>
           <se:Description>
             <se:Title>RCTR Surface - Jardin - Haie</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-             <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>modele</ogc:PropertyName>
-                  <ogc:Literal>JL_4960</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-             </ogc:And>
-          </ogc:Filter>          
-  
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>JL_4960</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
+
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>150</se:MaxScaleDenominator>          
+          <se:MaxScaleDenominator>150</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
                     <!--                     <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.05 0),(0.05 0, 0.1 -0.05), (0.1 -0.05, 0.15 0), (0.15 0, 0.2 0), (0.2 0, 0.225 -0.025), (0.225 -0.025, 0.25 0), (0.25 0, 0.35 0))</se:WellKnownName>  -->
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>                     
+                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
@@ -195,42 +196,42 @@
                 </se:Graphic>
               </se:GraphicStroke>
 
-              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
 
             </se:Stroke>
-          </se:LineSymbolizer>    
-        </se:Rule>      
-      </se:FeatureTypeStyle> 
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
 
       <!-- 4960 - Haie - echelle 2 -->
 
-      <se:FeatureTypeStyle>      
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RCTR Surface - Jardin - Haie</se:Name>
           <se:Description>
             <se:Title>RCTR Surface - Jardin - Haie</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-             <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>modele</ogc:PropertyName>
-                  <ogc:Literal>JL_4960</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-             </ogc:And>
-          </ogc:Filter>     
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>JL_4960</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <se:MinScaleDenominator>151</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300</se:MaxScaleDenominator>          
+          <se:MaxScaleDenominator>300</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>                     
+                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
@@ -240,41 +241,41 @@
                 </se:Graphic>
               </se:GraphicStroke>
 
-              <se:SvgParameter name="stroke-dasharray">2 4</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">2 4</se:SvgParameter>
 
             </se:Stroke>
-          </se:LineSymbolizer>    
-        </se:Rule>      
-      </se:FeatureTypeStyle>    
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <!-- 4960 - Haie - echelle 3 -->
 
-      <se:FeatureTypeStyle>      
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RCTR Surface - Jardin - Haie</se:Name>
           <se:Description>
             <se:Title>RCTR Surface - Jardin - Haie</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-             <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>modele</ogc:PropertyName>
-                  <ogc:Literal>JL_4960</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-             </ogc:And>
-          </ogc:Filter>     
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>JL_4960</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <se:MinScaleDenominator>301</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>600</se:MaxScaleDenominator>          
+          <se:MaxScaleDenominator>600</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>                     
+                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
@@ -284,41 +285,41 @@
                 </se:Graphic>
               </se:GraphicStroke>
 
-              <se:SvgParameter name="stroke-dasharray">2 3</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">2 3</se:SvgParameter>
 
             </se:Stroke>
-          </se:LineSymbolizer>    
-        </se:Rule>      
-      </se:FeatureTypeStyle>        
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <!-- 4960 - Haie - echelle 4 -->
 
-      <se:FeatureTypeStyle>      
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RCTR Surface - Jardin - Haie</se:Name>
           <se:Description>
             <se:Title>RCTR Surface - Jardin - Haie</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-             <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>modele</ogc:PropertyName>
-                  <ogc:Literal>JL_4960</ogc:Literal>
-                </ogc:PropertyIsEqualTo> 
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>exist_offset</ogc:PropertyName>
-                  <ogc:Literal>1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-             </ogc:And>
-          </ogc:Filter>     
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>JL_4960</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
+          </ogc:Filter>
           <se:MinScaleDenominator>601</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>          
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>                     
+                    <se:WellKnownName>wkt://MULTILINESTRING((0 0, 0.1 -0.2),(0.1 -0.2, 0.2 0),( 0.2 0, 0.4 0))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
@@ -328,14 +329,14 @@
                 </se:Graphic>
               </se:GraphicStroke>
 
-              <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter>
 
             </se:Stroke>
-          </se:LineSymbolizer>    
-        </se:Rule>      
-      </se:FeatureTypeStyle>       
-      
-      
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+
       <!-- 4930 - Limite pelouse massif -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -348,14 +349,14 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>             
+              <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -373,14 +374,14 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">0.08 0.4</se:SvgParameter>              
+              <se:SvgParameter name="stroke-dasharray">0.08 0.4</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -398,7 +399,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -422,7 +423,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -446,7 +447,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -470,7 +471,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -494,7 +495,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -518,7 +519,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -543,7 +544,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -568,7 +569,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>
@@ -579,8 +580,6 @@
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-
-
 
       <!-- 1001 - Souche -->
       <se:FeatureTypeStyle>
@@ -594,7 +593,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#29A500</se:SvgParameter>

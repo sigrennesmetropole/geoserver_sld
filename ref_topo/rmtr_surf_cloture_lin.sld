@@ -27,7 +27,7 @@
     <UserStyle>
       <se:Name>rmtr_surf_cloture_lin</se:Name>
       <se:Description>
-        <se:Title>Jardin</se:Title>
+        <se:Title>Clôture</se:Title>
         <se:Abstract>Style des objets linéaires de surface de la famille Clôture</se:Abstract>
       </se:Description>
 

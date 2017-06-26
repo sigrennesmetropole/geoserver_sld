@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : rmtr_surf_gaz
-  
+
   couche source dans la base :  toposurf.v_gazfl_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_gaz
-  
+  layer cible du style       :  ref_topo:rmtr_surf_gaz
+
   objet :  Style relatif aux objets Gaz de surface.
-  
+
   Historique des versions :
   date        |  auteur              |  description
   01/04/2017  |  Stephane GELIN      |  version initiale
-  
+  26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+
 -->
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
-    <se:Name>v_gazfl_mat</se:Name>
+
+  <NamedLayer>
+    <se:Name>ref_topo:rmtr_surf_gaz</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_gaz</se:Name>
-     <se:Description>        
+      <se:Name>rmtr_surf_gaz</se:Name>
+      <se:Description>
         <se:Title>Gaz</se:Title>
         <se:Abstract>Style des objets de surface de la famille Gaz</se:Abstract>
-     </se:Description>
- 
-    
- <!-- 2451 - Trappe -->
-     <se:FeatureTypeStyle>
+      </se:Description>
+
+
+      <!-- 2451 - Trappe -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Gaz - Trappe </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -44,7 +45,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFBF00</se:SvgParameter>
@@ -52,12 +53,12 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>      
+          </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-             
- <!-- 2431 - Armoire -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 2431 - Armoire -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Gaz - Armoire </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -68,7 +69,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFBF00</se:SvgParameter>
@@ -76,12 +77,12 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>      
+          </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-           
- <!-- 2422 - Coffret mixte (gaz, électricité) -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 2422 - Coffret mixte (gaz, électricité) -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Gaz - Coffret mixte (gaz, électricité) </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -92,7 +93,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFBF00</se:SvgParameter>
@@ -100,12 +101,12 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>      
+          </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-        
- <!-- 2421 - Coffret -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 2421 - Coffret -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Gaz - Coffret </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -116,7 +117,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFBF00</se:SvgParameter>
@@ -124,12 +125,12 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>      
+          </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-     
- <!-- 2411 - Borne -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 2411 - Borne -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Gaz - Borne </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -140,7 +141,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFBF00</se:SvgParameter>
@@ -148,12 +149,12 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>      
+          </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-  
- <!-- 2401 - Vanne d'arrêt -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 2401 - Vanne d'arrêt -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Gaz - Vanne d'arrêt </se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -164,7 +165,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFBF00</se:SvgParameter>
@@ -172,11 +173,11 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
-          </se:LineSymbolizer>      
+          </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
- 
-   
+      </se:FeatureTypeStyle>
+
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

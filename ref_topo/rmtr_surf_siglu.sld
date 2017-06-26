@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : rmtr_surf_siglu
-  
+
   couche source dans la base :  toposurf.v_siglu_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_siglu
-  
+  layer cible du style       :  ref_topo:rmtr_surf_siglu
+
   objet :  Style relatif aux objets Signalisation Lumineuse de surface.
-  
+
   Historique des versions :
   date        |  auteur              |  description
   01/04/2017  |  Stephane GELIN      |  version initiale
-  
+  26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+
 -->
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
-    <se:Name>v_siglu_mat</se:Name>
+
+  <NamedLayer>
+    <se:Name>ref_topo:rmtr_surf_siglu</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_siglu</se:Name>
-     <se:Description>        
+      <se:Name>rmtr_surf_siglu</se:Name>
+      <se:Description>
         <se:Title>Signalisation Lumineuse</se:Title>
         <se:Abstract>Style des objets de surface de la famille Signalisation Lumineuse</se:Abstract>
-     </se:Description>
-    
-   
- <!-- 4620 - Ligne aérienne -->
-     <se:FeatureTypeStyle>
+      </se:Description>
+
+
+      <!-- 4620 - Ligne aérienne -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Ligne aérienne</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -44,7 +45,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
@@ -58,7 +59,7 @@
                 </se:Graphic>
               </se:GraphicStroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">10 50</se:SvgParameter>   
+              <se:SvgParameter name="stroke-dasharray">10 50</se:SvgParameter>
               <se:SvgParameter name="stroke-dashoffset">30</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
@@ -70,10 +71,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-            
- <!-- 4610 - Ouvrage_annexe -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 4610 - Ouvrage_annexe -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Ouvrage_annexe</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -84,7 +85,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -94,10 +95,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                          
- <!-- 0691 - Panneau de signalisation double -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0691 - Panneau de signalisation double -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Panneau de signalisation double</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -108,7 +109,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -118,10 +119,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                       
- <!-- 0681 - Panneau de signalisation -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0681 - Panneau de signalisation -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Panneau de signalisation</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -132,7 +133,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -142,10 +143,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                       
- <!-- 0671 - Caméra de surveillance du trafic -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0671 - Caméra de surveillance du trafic -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Caméra de surveillance du trafic</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -156,7 +157,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -166,10 +167,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                   
- <!-- 0661 - Armoire de signalisation -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0661 - Armoire de signalisation -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Armoire de signalisation</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -180,7 +181,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -190,10 +191,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                   
- <!-- 0651 - Chambre de signalisation -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0651 - Chambre de signalisation -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Chambre de signalisation</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -204,7 +205,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -214,10 +215,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                   
- <!-- 0641 - Regard de signalisation -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0641 - Regard de signalisation -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Regard de signalisation</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -228,7 +229,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -238,10 +239,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-               
- <!-- 0631 - Mat de jalonnement -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0631 - Mat de jalonnement -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Mat de jalonnement</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -252,7 +253,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -262,10 +263,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                
- <!-- 0621 - Panneau lumineux -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0621 - Panneau lumineux -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Panneau lumineux</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -276,7 +277,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -286,10 +287,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-            
- <!-- 0602 - Support de rappel feu -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0602 - Support de rappel feu -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Support de rappel feu</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -300,7 +301,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -310,10 +311,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-        
- <!-- 0601 - Support feu tricolore -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0601 - Support feu tricolore -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - Signalisation Lumineuse - Support feu tricolore</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -324,7 +325,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#FF3F00</se:SvgParameter>
@@ -334,10 +335,8 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-    
- 
- 
+      </se:FeatureTypeStyle>
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

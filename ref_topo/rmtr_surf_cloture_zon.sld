@@ -6,14 +6,16 @@
   couche source dans la base :  toposurf.v_clotu_zon_mat
   layer cible du style       :  ref_topo:rmtr_surf_cloture_zon
 
-  objet :  Style relatif aux objets de clôture (mur) de surface.
+  objet :  Style relatif aux objets de cloture (mur) de surface.
 
   Historique des versions :
   date        |  auteur              |  description
   01/04/2017  |  Stephane GELIN      |  version initiale
-  23/06/2017  |  Maël REBOUX         |  corrections nommage + pretty XML
+  26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
 
 -->
+
+
 <StyledLayerDescriptor version="1.1.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -27,7 +29,7 @@
     <UserStyle>
       <se:Name>rmtr_surf_cloture_zon</se:Name>
       <se:Description>
-        <se:Title>Clôture (mur)</se:Title>
+        <se:Title>Clôture</se:Title>
         <se:Abstract>Style des objets de surface de la famille Clôture (mur)</se:Abstract>
       </se:Description>
 

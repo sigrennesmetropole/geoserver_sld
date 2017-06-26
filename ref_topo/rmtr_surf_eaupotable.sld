@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : rmtr_surf_eaupotable
-  
+
   couche source dans la base :  toposurf.v_eaupo_mat
-  layer cible du style       :  ref_fonds:rmtr_surf_eaupotable
-  
+  layer cible du style       :  ref_topo:rmtr_surf_eaupotable
+
   objet :  Style relatif aux objets Eau Potable de surface.
-  
+
   Historique des versions :
   date        |  auteur              |  description
   01/04/2017  |  Stephane GELIN      |  version initiale
-  
+  26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+
 -->
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
-    <se:Name>v_eaupo_mat</se:Name>
+
+  <NamedLayer>
+    <se:Name>ref_topo:rmtr_surf_eaupotable</se:Name>
     <UserStyle>
-     <se:Name>rmtr_surf_eaupotable</se:Name>
-     <se:Description>        
+      <se:Name>rmtr_surf_eaupotable</se:Name>
+      <se:Description>
         <se:Title>Eau Potable</se:Title>
         <se:Abstract>Style des objets de surface de la famille Eau Potable</se:Abstract>
-     </se:Description>
-      
-<!-- 0191 - Puits -->
-     <se:FeatureTypeStyle>
+      </se:Description>
+
+      <!-- 0191 - Puits -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Puits</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -43,7 +44,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -53,10 +54,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>     
-              
- <!-- 0181 - Borne de puisage -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0181 - Borne de puisage -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Borne de puisage</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -67,7 +68,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -77,10 +78,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                              
- <!-- 0171 - Chambre de vannes AEP -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0171 - Chambre de vannes AEP -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Chambre de vannes AEP</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -91,7 +92,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -101,10 +102,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                          
- <!-- 0162 - Bouche incendie rectangulaire -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0162 - Bouche incendie rectangulaire -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Bouche incendie rectangulaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -115,7 +116,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -125,10 +126,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                          
- <!-- 0161 - Massif incendie -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0161 - Massif incendie -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Massif incendie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -139,7 +140,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -149,10 +150,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                    
- <!-- 0151 - Bouche incendie carrée -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0151 - Bouche incendie carrée -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Bouche incendie carrée</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -163,7 +164,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -173,10 +174,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                                
- <!-- 0141 - Poteau incendie -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0141 - Poteau incendie -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Poteau incendie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -187,7 +188,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -197,10 +198,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                    
- <!-- 0131 - Bouche de lavage -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0131 - Bouche de lavage -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Bouche de lavage</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -211,7 +212,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -221,10 +222,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                       
- <!-- 0121 - Regard carré AEP -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0121 - Regard carré AEP -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Regard carré AEP</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -235,7 +236,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -245,10 +246,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-                 
- <!-- 0111 - Citerneau AEP -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0111 - Citerneau AEP -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Citerneau AEP</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -259,7 +260,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -269,10 +270,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-           
- <!-- 0101 - Bouche à clé AEP -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0101 - Bouche à clé AEP -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Bouche à clé AEP</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -283,7 +284,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -293,10 +294,10 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>  
-     
- <!-- 0091 - coffret -->
-     <se:FeatureTypeStyle>
+      </se:FeatureTypeStyle>
+
+      <!-- 0091 - coffret -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Surface - eau potable - Bouche à clé AEP</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -307,7 +308,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#0000FF</se:SvgParameter>
@@ -317,7 +318,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-     </se:FeatureTypeStyle>       
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
