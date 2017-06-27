@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : metro_station
+  nom du SLD : metro_station_nom
 
   couche source dans la base :  mobilite_transp.metro_station
   layer cible du style       :  trp_coll:mobilite_transp.metro_station
 
   objet :
-  Représentation des stations du Métro du réseau STAR
+  Représentation des stations du Métro du réseau STAR avec le nom des stations
 
   Historique des versions :
   date        |  auteur              |  description
@@ -47,6 +47,39 @@
               <se:Size>12</se:Size>
             </se:Graphic>
           </se:PointSymbolizer> 
+        </se:Rule>          
+      </se:FeatureTypeStyle>
+      <se:FeatureTypeStyle>
+        <se:Rule> 
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+              <se:Label>
+                    <ogc:PropertyName>nom</ogc:PropertyName>
+              </se:Label>                                
+              <se:Font>
+                    <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+                    <se:SvgParameter name="font-size">13</se:SvgParameter>
+                    <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                    <se:SvgParameter name="font-style">normal</se:SvgParameter>
+                    <se:SvgParameter name="font-weight">bold</se:SvgParameter>                    
+              </se:Font> 
+              <se:LabelPlacement>
+                 <se:PointPlacement>
+                   <se:Displacement>
+                     <se:DisplacementX>20</se:DisplacementX>
+                     <se:DisplacementY>-10</se:DisplacementY>
+                   </se:Displacement>
+                   <se:Rotation>
+                     <ogc:Literal>-45</ogc:Literal>
+                   </se:Rotation>                    
+                 </se:PointPlacement>
+              </se:LabelPlacement>   
+              <se:Fill>
+                    <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              </se:Fill>    
+              <se:VendorOption name="conflictResolution">true</se:VendorOption>
+              <se:VendorOption name="labelObstacle">false</se:VendorOption>                
+          </se:TextSymbolizer>  
         </se:Rule>          
       </se:FeatureTypeStyle>
     </UserStyle>
