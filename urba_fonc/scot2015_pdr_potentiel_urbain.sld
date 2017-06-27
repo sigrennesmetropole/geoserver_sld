@@ -78,7 +78,9 @@
               </se:LabelPlacement>              
               <se:Fill>
                     <se:SvgParameter name="fill">#000000</se:SvgParameter>
-              </se:Fill>                            
+              </se:Fill>        
+              <se:VendorOption name="conflictResolution">false</se:VendorOption>
+              <se:VendorOption name="labelObstacle">false</se:VendorOption>                
           </se:TextSymbolizer>  
         </se:Rule>
       </se:FeatureTypeStyle>
@@ -198,7 +200,8 @@
               </se:LabelPlacement>              
               <se:Fill>
                     <se:SvgParameter name="fill">#000000</se:SvgParameter>
-              </se:Fill>                            
+              </se:Fill>   
+              
           </se:TextSymbolizer>  
         </se:Rule>
       </se:FeatureTypeStyle>  
@@ -259,7 +262,9 @@
               </se:LabelPlacement>              
               <se:Fill>
                     <se:SvgParameter name="fill">#000000</se:SvgParameter>
-              </se:Fill>                            
+              </se:Fill> 
+              <se:VendorOption name="conflictResolution">false</se:VendorOption>
+              <se:VendorOption name="labelObstacle">false</se:VendorOption>                
           </se:TextSymbolizer>  
         </se:Rule>
       </se:FeatureTypeStyle>  
