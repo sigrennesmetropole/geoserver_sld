@@ -4,9 +4,9 @@
   nom du SLD : scot2015_pdr_contour_pdr
 
   couche source dans la base :  urba_foncier.pdr_contour_pdr
-  layer cible du style       :  ref_fonds:scot2015_pdr_contour_pdr
+  layer cible du style       :  urba_fonc:scot2015_pdr_contour_pdr
 
-  objet :  Style relatif à l'emprise du Pays de Rennes 
+  objet :  Style relatif à l'emprise du Pays de Rennes
 
   Historique des versions :
   date        |  auteur              |  description
@@ -15,21 +15,21 @@
 -->
 
 
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>scot2015_pdr_contour_pdr</se:Name>
+    <se:Name>urba_fonc:scot2015_pdr_contour_pdr</se:Name>
     <UserStyle>
       <se:Name>Emprise du Pays de Rennes</se:Name>
-      <se:Description>        
+      <se:Description>
         <se:Title>Emprise du Pays de Rennes</se:Title>
         <se:Abstract>Style relatif à l'emprise du Pays de Rennes</se:Abstract>
-      </se:Description>      
+      </se:Description>
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:PolygonSymbolizer>
