@@ -4,7 +4,7 @@
   nom du SLD : v_construction_gris_plg
   
   couche source dans la base :  donnees_gen.v_construction
-  layer cible du style       :  3d_bati:v_construction
+  layer cible du style       :  trid_bati:v_construction
   
   objet :
   Style par défaut
