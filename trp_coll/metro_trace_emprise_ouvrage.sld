@@ -41,8 +41,6 @@
               <ogc:Literal>Station</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -63,7 +61,6 @@
               <ogc:Literal>Tranchée couverte</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -84,7 +81,6 @@
               <ogc:Literal>Tunnel</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -105,7 +101,6 @@
               <ogc:Literal>Viaduc</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -126,7 +121,6 @@
               <ogc:Literal>Zone de transition</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
           <se:PolygonSymbolizer>
             <se:Fill>

@@ -33,7 +33,6 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>

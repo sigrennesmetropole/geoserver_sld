@@ -35,7 +35,18 @@
           <se:PointSymbolizer>
             <se:Graphic>            
               <se:Mark>
-                <se:WellKnownName>ttf://Equipements_PVI#0x0067</se:WellKnownName>  
+                <se:WellKnownName>ttf://Equipements_PVI#0x005C</se:WellKnownName>  
+                <se:Fill>
+                    <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                </se:Fill>                
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer> 
+          <se:PointSymbolizer>
+            <se:Graphic>            
+              <se:Mark>
+                <se:WellKnownName>ttf://Equipements_PVI#0x0058</se:WellKnownName>  
                 <se:Fill>
                     <se:SvgParameter name="fill">#005CE6</se:SvgParameter>
                 </se:Fill>                
@@ -46,7 +57,7 @@
               </se:Mark>
               <se:Size>12</se:Size>
             </se:Graphic>
-          </se:PointSymbolizer> 
+          </se:PointSymbolizer>  
         </se:Rule>          
       </se:FeatureTypeStyle>
     </UserStyle>

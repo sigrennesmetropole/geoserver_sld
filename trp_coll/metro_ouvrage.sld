@@ -15,21 +15,21 @@
 
 
 -->
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>trp_coll:mobilite_transp.metro_ouvrage</se:Name>
     <UserStyle>
       <se:Name>Ouvrages secondaires du Métro</se:Name>
-      <se:Description>        
+      <se:Description>
         <se:Title>Ouvrages secondaires du Métro</se:Title>
         <se:Abstract>Style des ouvrages secondaires du Métro du réseau STAR</se:Abstract>
-      </se:Description>  
+      </se:Description>
 
       <!-- Emergence -->
       <se:FeatureTypeStyle>
@@ -41,8 +41,7 @@
               <ogc:Literal>Emergence</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#686868</se:SvgParameter>
@@ -62,8 +61,7 @@
               <ogc:Literal>Puits de ventilation</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:GraphicFill>
@@ -102,8 +100,7 @@
               <ogc:Literal>Puits d'entrée / sortie du tunnel</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:GraphicFill>
