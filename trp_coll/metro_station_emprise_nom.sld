@@ -25,15 +25,14 @@
   <NamedLayer>
     <se:Name>trp_coll:mobilite_transp.metro_station_emprise</se:Name>
     <UserStyle>
-      <se:Name>Emprise des stations du Métro</se:Name>
+      <se:Name>Emprise des stations du Métro avec nom</se:Name>
       <se:Description>        
-        <se:Title>Emprise des stations du Métro</se:Title>
+        <se:Title>Emprise des stations du Métro avec nom</se:Title>
         <se:Abstract>Style des emprises des stations du Métro du réseau STAR</se:Abstract>
       </se:Description>  
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -47,6 +46,11 @@
         <se:Rule> 
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
+              <se:Geometry>
+                <ogc:Function name="centroid">
+                  <ogc:PropertyName>shape</ogc:PropertyName>
+                </ogc:Function>
+              </se:Geometry>
               <se:Label>
                     <ogc:PropertyName>nom</ogc:PropertyName>
               </se:Label>                                
