@@ -15,21 +15,21 @@
 
 
 -->
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>trp_coll:metro_trace_emprise</se:Name>
     <UserStyle>
       <se:Name>metro_trace_emprise_ouvrage</se:Name>
-      <se:Description>        
+      <se:Description>
         <se:Title>Emprise des lignes du Métro selon type d'ouvrage</se:Title>
         <se:Abstract>Style des emprises des lignes du Métro du réseau STAR selon type d'ouvrage</se:Abstract>
-      </se:Description>  
+      </se:Description>
 
       <!-- Station -->
       <se:FeatureTypeStyle>
@@ -41,7 +41,7 @@
               <ogc:Literal>Station</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>          
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#99FF00</se:SvgParameter>
@@ -61,7 +61,7 @@
               <ogc:Literal>Tranchée couverte</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#1F39FF</se:SvgParameter>
@@ -81,7 +81,7 @@
               <ogc:Literal>Tunnel</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#FFBB00</se:SvgParameter>
@@ -101,7 +101,7 @@
               <ogc:Literal>Viaduc</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#B0B0B0</se:SvgParameter>
@@ -121,7 +121,7 @@
               <ogc:Literal>Zone de transition</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>  
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
