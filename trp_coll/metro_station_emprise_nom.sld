@@ -4,7 +4,7 @@
   nom du SLD : metro_station_emprise_nom
 
   couche source dans la base :  mobilite_transp.metro_station_emprise
-  layer cible du style       :  trp_coll:mobilite_transp.metro_station_emprise
+  layer cible du style       :  trp_coll:metro_station_emprise
 
   objet :
   Représentation des emprises des stations du Métro du réseau STAR avec le nom des stations
@@ -23,9 +23,9 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" 			
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:mobilite_transp.metro_station_emprise</se:Name>
+    <se:Name>trp_coll:metro_station_emprise</se:Name>
     <UserStyle>
-      <se:Name>Emprise des stations du Métro avec nom</se:Name>
+      <se:Name>metro_station_emprise_nom</se:Name>
       <se:Description>        
         <se:Title>Emprise des stations du Métro avec nom</se:Title>
         <se:Abstract>Style des emprises des stations du Métro du réseau STAR</se:Abstract>

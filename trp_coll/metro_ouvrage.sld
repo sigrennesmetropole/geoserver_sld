@@ -4,7 +4,7 @@
   nom du SLD : metro_ouvrage
 
   couche source dans la base :  mobilite_transp.metro_ouvrage
-  layer cible du style       :  trp_coll:mobilite_transp.metro_ouvrage
+  layer cible du style       :  trp_coll:metro_ouvrage
 
   objet :
   Représentation des ouvrages secondaires du Métro du réseau STAR
@@ -23,9 +23,9 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:mobilite_transp.metro_ouvrage</se:Name>
+    <se:Name>trp_coll:metro_ouvrage</se:Name>
     <UserStyle>
-      <se:Name>Ouvrages secondaires du Métro</se:Name>
+      <se:Name>metro_ouvrage</se:Name>
       <se:Description>
         <se:Title>Ouvrages secondaires du Métro</se:Title>
         <se:Abstract>Style des ouvrages secondaires du Métro du réseau STAR</se:Abstract>

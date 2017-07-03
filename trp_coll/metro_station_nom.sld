@@ -4,7 +4,7 @@
   nom du SLD : metro_station_nom
 
   couche source dans la base :  mobilite_transp.metro_station
-  layer cible du style       :  trp_coll:mobilite_transp.metro_station
+  layer cible du style       :  trp_coll:metro_station
 
   objet :
   Représentation des stations du Métro du réseau STAR avec le nom des stations
@@ -23,11 +23,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" 			
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:mobilite_transp.metro_station</se:Name>
+    <se:Name>trp_coll:metro_station</se:Name>
     <UserStyle>
-      <se:Name>Stations du Métro</se:Name>
+      <se:Name>metro_station_nom</se:Name>
       <se:Description>        
-        <se:Title>Stations du Métro</se:Title>
+        <se:Title>Stations du Métro avec nom</se:Title>
         <se:Abstract>Style des stations du Métro du réseau STAR</se:Abstract>
       </se:Description>  
       <se:FeatureTypeStyle>

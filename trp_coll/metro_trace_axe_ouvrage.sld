@@ -4,7 +4,7 @@
   nom du SLD : metro_trace_axe_ouvrage
 
   couche source dans la base :  mobilite_transp.metro_trace_axe
-  layer cible du style       :  trp_coll:mobilite_transp.metro_trace_axe
+  layer cible du style       :  trp_coll:metro_trace_axe
 
   objet :
   Représentation de l'axe des lignes du Métro du réseau STAR selon type d'ouvrage
@@ -23,9 +23,9 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" 			
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:mobilite_transp.metro_trace_axe</se:Name>
+    <se:Name>trp_coll:metro_trace_axe</se:Name>
     <UserStyle>
-      <se:Name>Axe des lignes du Métro selon type d'ouvrage</se:Name>
+      <se:Name>metro_trace_axe_ouvrage</se:Name>
       <se:Description>        
         <se:Title>Axe des lignes du Métro selon type d'ouvrage</se:Title>
         <se:Abstract>Style de l'axe des lignes du Métro du réseau STAR selon type d'ouvrage</se:Abstract>
