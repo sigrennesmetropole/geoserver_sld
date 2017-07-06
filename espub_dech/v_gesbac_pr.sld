@@ -11,10 +11,9 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
+  06/07/2017  |  Maël REBOUX         |  picto plus gros
 
 -->
-
-
 <StyledLayerDescriptor version="1.1.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -25,7 +24,7 @@
   <NamedLayer>
     <se:Name>espub_dech:v_gesbac_pr</se:Name>
     <UserStyle>
-      <se:Name>Localisation des points de présentation des bacs roulants sur Rennes Métropole</se:Name>
+      <se:Name>v_gesbac_pr</se:Name>
       <se:Description>
         <se:Title>Points de regroupement des bacs roulants (PR)</se:Title>
         <se:Abstract>Style relatif à la localisation des points de regroupement des bacs roulants sur Rennes Métropole</se:Abstract>
@@ -45,7 +44,7 @@
                   <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>10</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>

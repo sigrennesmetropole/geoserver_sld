@@ -11,10 +11,9 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
+  06/07/2017  |  Maël REBOUX         |  picto plus gros
 
 -->
-
-
 <StyledLayerDescriptor version="1.1.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -25,10 +24,10 @@
   <NamedLayer>
     <se:Name>espub_dech:v_gesbac_pav</se:Name>
     <UserStyle>
-      <se:Name>Localisation des points d'apport volontaire des déchets ménagers sur Rennes Métropole</se:Name>
+      <se:Name>v_gesbac_pav</se:Name>
       <se:Description>
-        <se:Title>Points d'apport volontaire des déchets ménagers (PAV)</se:Title>
-        <se:Abstract>Style relatif à la localisation des points d'apport volontaire des déchets ménagers sur Rennes Métropole</se:Abstract>
+        <se:Title>Flux sur les points d'apport volontaire des déchets ménagers (PAV)</se:Title>
+        <se:Abstract>Un pictogramme par type de flux présent(s) sur un PAV</se:Abstract>
       </se:Description>
 
       <!-- type de déchets: JM -->
@@ -47,7 +46,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/jm..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -69,7 +68,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/jm.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -91,7 +90,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -113,7 +112,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm.jm..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -135,7 +134,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm.jm.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -157,7 +156,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -179,7 +178,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -201,7 +200,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.jm..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -223,7 +222,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.jm.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -245,7 +244,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -267,7 +266,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm.jm..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -289,7 +288,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm.jm.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -311,7 +310,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -333,7 +332,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -355,7 +354,7 @@
                 <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/ve..gif " />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
