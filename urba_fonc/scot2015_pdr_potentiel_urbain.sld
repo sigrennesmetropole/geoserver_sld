@@ -113,7 +113,8 @@
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#8400A8</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">50</se:SvgParameter>
+                  <se:SvgParameter name="stroke-dasharray">100 70</se:SvgParameter>                  
                 </se:Stroke>
               </se:Mark>
               <se:Size>800</se:Size>
@@ -172,7 +173,8 @@
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#8400A8</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">50</se:SvgParameter>
+                  <se:SvgParameter name="stroke-dasharray">100 70</se:SvgParameter>                  
                 </se:Stroke>
               </se:Mark>
               <se:Size>800</se:Size>
