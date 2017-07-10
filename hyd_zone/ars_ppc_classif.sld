@@ -6,7 +6,7 @@
   couche source dans la base :  hydrographie.ars_ppc
   layer cible du style       :  hyd_zone:ars_ppc
 
-  objet :  Style relatif à la classification des périmètres de captage
+  objet :  Style relatif à la classification des périmètres de captage d'eau potable
 
   Historique des versions :
   date        |  auteur              |  description
@@ -24,10 +24,10 @@
   <NamedLayer>
     <se:Name>hyd_zone:ars_ppc</se:Name>
     <UserStyle>
-      <se:Name>Classification des périmètres de captage</se:Name>
+      <se:Name>Classification des périmètres de captage d'eau potable</se:Name>
       <se:Description>
-        <se:Title>Classification des périmètres de captage</se:Title>
-        <se:Abstract>Style relatif à la classification des périmètres de captage</se:Abstract>
+        <se:Title>Classification des périmètres de captage d'eau potable</se:Title>
+        <se:Abstract>Style relatif à la classification des périmètres de captage d'eau potable</se:Abstract>
       </se:Description>
 
       <!-- Périmètre de Protection Immédiate -->
@@ -44,7 +44,7 @@
             <se:Fill>
               <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
             </se:Fill>
-          </se:PolygonSymbolizer>          
+          </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
 
@@ -62,10 +62,10 @@
             <se:Fill>
               <se:SvgParameter name="fill">#FFAA00</se:SvgParameter>
             </se:Fill>
-          </se:PolygonSymbolizer>          
+          </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-      
+
       <!-- Périmètre de Protection Rapprochée -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -80,10 +80,10 @@
             <se:Fill>
               <se:SvgParameter name="fill">#FFD37F</se:SvgParameter>
             </se:Fill>
-          </se:PolygonSymbolizer>          
+          </se:PolygonSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>      
-      
+      </se:FeatureTypeStyle>
+
       <!-- Périmètre Rapproché Complémentaire -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -98,10 +98,10 @@
             <se:Fill>
               <se:SvgParameter name="fill">#FFFF00</se:SvgParameter>
             </se:Fill>
-          </se:PolygonSymbolizer>          
+          </se:PolygonSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle> 
-      
+      </se:FeatureTypeStyle>
+
       <!-- Périmètre de Protection Etendue -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -116,9 +116,9 @@
             <se:Fill>
               <se:SvgParameter name="fill">#A3FF73</se:SvgParameter>
             </se:Fill>
-          </se:PolygonSymbolizer>          
+          </se:PolygonSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle> 
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

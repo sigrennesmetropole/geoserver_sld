@@ -6,7 +6,7 @@
   couche source dans la base :  hydrographie.ars_ppc
   layer cible du style       :  hyd_zone:ars_ppc
 
-  objet :  Style relatif à l'état des périmètres de captage
+  objet :  Style relatif à l'état des périmètres de captage d'eau potable
 
   Historique des versions :
   date        |  auteur              |  description
@@ -24,10 +24,10 @@
   <NamedLayer>
     <se:Name>hyd_zone:ars_ppc</se:Name>
     <UserStyle>
-      <se:Name>Etat des périmètres de captage</se:Name>
+      <se:Name>Etat des périmètres de captage d'eau potable</se:Name>
       <se:Description>
-        <se:Title>Etat des périmètres de captage</se:Title>
-        <se:Abstract>Style relatif à l'état des périmètres de captage</se:Abstract>
+        <se:Title>Etat des périmètres de captage d'eau potable</se:Title>
+        <se:Abstract>Style relatif à l'état des périmètres de captage d'eau potable</se:Abstract>
       </se:Description>
 
       <!-- Procédure terminée -->
@@ -45,7 +45,7 @@
               <se:SvgParameter name="stroke">#FF00C5</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
-          </se:PolygonSymbolizer>          
+          </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
 
