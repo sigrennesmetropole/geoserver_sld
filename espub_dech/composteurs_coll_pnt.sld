@@ -13,7 +13,7 @@
   date        |  auteur              |  description
   01/12/2016  |  Maël REBOUX         |  version initiale
   06/07/2017  |  Maël REBOUX         |  picot plus gros et jaune
-
+  12/07/2017  |  S GELIN             |  picot image
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -32,16 +32,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Name>Point</se:Name>
           <se:PointSymbolizer>
             <se:Graphic>
-              <se:Mark>
-                <se:WellKnownName>circle</se:WellKnownName>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#E4D01D</se:SvgParameter>
-                </se:Fill>
-                <se:Stroke>
-                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
-                </se:Stroke>
-              </se:Mark>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/compost/Composteur_bois.bmp " />
+                <se:Format>image/bmp</se:Format>
+              </se:ExternalGraphic>
               <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
