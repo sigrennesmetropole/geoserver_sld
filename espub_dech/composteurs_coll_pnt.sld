@@ -33,8 +33,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/compost/Composteur_bois.bmp " />
-                <se:Format>image/bmp</se:Format>
+                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/compost/Composteur_bois.png " />
+                <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
             </se:Graphic>
