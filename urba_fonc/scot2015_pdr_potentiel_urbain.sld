@@ -87,6 +87,66 @@
 
       <!-- Potentiels d'extension: Activités conditionnelles -->
 
+       <!-- représentation sur 1 chiffres -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>ACTIVITES conditionnelles</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>libelle</ogc:PropertyName>
+                <ogc:Literal>ACTIVITES conditionnelles</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike  wildCard="*" singleChar="#" escapeChar="!">
+                <ogc:PropertyName>potentiel</ogc:PropertyName>
+                <ogc:Literal>#</ogc:Literal>
+              </ogc:PropertyIsLike>
+            </ogc:And>
+          </ogc:Filter>
+
+          <se:PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://DejaVu Sans Condensed#0x25A1</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#8400A8</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#8400A8</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">50</se:SvgParameter>
+                  <se:SvgParameter name="stroke-dasharray">100 70</se:SvgParameter>                  
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>800</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+
+          <se:TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Label>
+              <ogc:PropertyName>potentiel</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">550</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:Displacement>
+                  <se:DisplacementX>-180</se:DisplacementX>
+                  <se:DisplacementY>-300</se:DisplacementY>
+                </se:Displacement>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Fill>
+              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+            </se:Fill>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
       <!-- représentation sur 2 chiffres -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -209,6 +269,67 @@
       </se:FeatureTypeStyle>
 
       <!-- Potentiels d'extension: Habitat -->
+
+      <!-- représentation sur 1 chiffres -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>HABITAT</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>libelle</ogc:PropertyName>
+                <ogc:Literal>HABITAT</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsLike  wildCard="*" singleChar="#" escapeChar="!">
+                <ogc:PropertyName>potentiel</ogc:PropertyName>
+                <ogc:Literal>#</ogc:Literal>
+              </ogc:PropertyIsLike>
+            </ogc:And>
+          </ogc:Filter>
+
+          <se:PointSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://DejaVu Sans Condensed#0x25A1</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#E60000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>800</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+
+          <se:TextSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Label>
+              <ogc:PropertyName>potentiel</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">550</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:Displacement>
+                  <se:DisplacementX>-180</se:DisplacementX>
+                  <se:DisplacementY>-300</se:DisplacementY>
+                </se:Displacement>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Fill>
+              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+            <se:VendorOption name="labelObstacle">false</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <!-- représentation sur 2 chiffres -->
       <se:FeatureTypeStyle>
