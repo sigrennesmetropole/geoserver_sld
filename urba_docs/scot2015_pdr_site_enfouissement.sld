@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_site_enfouissement
 
   couche source dans la base :  urba_foncier.pdr_site_enfouissement
-  layer cible du style       :  urba_fonc:scot2015_pdr_site_enfouissement
+  layer cible du style       :  urba_docs:scot2015_pdr_site_enfouissement
 
   objet :  Style relatif aux Sites d'enfouissement des déchets du SCOT 2015
 
@@ -22,7 +22,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_site_enfouissement</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_site_enfouissement</se:Name>
     <UserStyle>
       <se:Name>Sites d'enfouissement des déchets du SCOT 2015</se:Name>
       <se:Description>

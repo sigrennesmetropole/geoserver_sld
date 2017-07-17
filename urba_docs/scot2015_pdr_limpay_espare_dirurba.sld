@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_limpay_espare_dirurba
 
   couche source dans la base :  urba_foncier.pdr_limpay_espare_dirurba
-  layer cible du style       :  urba_fonc:scot2015_pdr_limpay_espare_dirurba
+  layer cible du style       :  urba_docs:scot2015_pdr_limpay_espare_dirurba
 
   objet :  Style relatif aux Limites paysagères et extensions urbaines du SCOT 2015
 
@@ -22,7 +22,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_limpay_espare_dirurba</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_limpay_espare_dirurba</se:Name>
     <UserStyle>
       <se:Name>Limites paysagères et extensions urbaines</se:Name>
       <se:Description>

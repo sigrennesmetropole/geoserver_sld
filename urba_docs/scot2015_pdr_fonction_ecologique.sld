@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_fonction_ecologique
 
   couche source dans la base :  urba_foncier.pdr_fonction_ecologique
-  layer cible du style       :  urba_fonc:scot2015_pdr_fonction_ecologique
+  layer cible du style       :  urba_docs:scot2015_pdr_fonction_ecologique
 
   objet :  Style relatif aux Fonctions écologiques du SCOT 2015
 
@@ -22,7 +22,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_fonction_ecologique</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_fonction_ecologique</se:Name>
     <UserStyle>
       <se:Name>Fonctions écologiques</se:Name>
       <se:Description>

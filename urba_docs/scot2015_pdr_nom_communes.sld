@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_nom_communes
 
   couche source dans la base :  urba_foncier.pdr_nom_communes
-  layer cible du style       :  urba_fonc:scot2015_pdr_nom_communes
+  layer cible du style       :  urba_docs:scot2015_pdr_nom_communes
 
   objet :
   étiquettes des noms des communes de Rennes Métropole
@@ -23,7 +23,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_nom_communes</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_nom_communes</se:Name>
     <UserStyle>
       <se:Name>Nom des communes</se:Name>
       <se:Description>

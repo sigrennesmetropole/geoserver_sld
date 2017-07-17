@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_surface_eau_bois
 
   couche source dans la base :  urba_foncier.pdr_surface_eau_bois
-  layer cible du style       :  urba_fonc:scot2015_pdr_reseau_ecologique
+  layer cible du style       :  urba_docs:scot2015_pdr_reseau_ecologique
 
   objet :  Style relatif aux surfaces en eau et boisées du SCOT 2015
 
@@ -22,7 +22,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_surface_eau_bois</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_surface_eau_bois</se:Name>
     <UserStyle>
       <se:Name>Surfaces en eau et boisées</se:Name>
       <se:Description>

@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_potentiel_urbain
 
   couche source dans la base :  urba_foncier.pdr_potentiel_urbain
-  layer cible du style       :  urba_fonc:scot2015_pdr_potentiel_urbain
+  layer cible du style       :  urba_docs:scot2015_pdr_potentiel_urbain
 
   objet :  Style relatif aux Potentiels d'extension du SCOT 2015
 
@@ -22,7 +22,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_potentiel_urbain</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_potentiel_urbain</se:Name>
     <UserStyle>
       <se:Name>Potentiels d'extension</se:Name>
       <se:Description>

@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_reseau_ecologique
 
   couche source dans la base :  urba_foncier.pdr_reseau_ecologique
-  layer cible du style       :  urba_fonc:scot2015_pdr_reseau_ecologique
+  layer cible du style       :  urba_docs:scot2015_pdr_reseau_ecologique
 
   objet :  Style relatif aux réseaux écologiques du SCOT 2015
 
@@ -22,7 +22,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_reseau_ecologique</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_reseau_ecologique</se:Name>
     <UserStyle>
       <se:Name>Réseaux écologiques du SCOT 2015</se:Name>
       <se:Description>

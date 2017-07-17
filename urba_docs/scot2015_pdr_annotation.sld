@@ -4,7 +4,7 @@
   nom du SLD : scot2015_pdr_annotation
 
   couche source dans la base :  urba_foncier.pdr_annotation
-  layer cible du style       :  urba_fonc:scot2015_pdr_annotation
+  layer cible du style       :  urba_docs:scot2015_pdr_annotation
 
   objet :
   étiquettes Viasilva
@@ -24,7 +24,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:scot2015_pdr_annotation</se:Name>
+    <se:Name>urba_docs:scot2015_pdr_annotation</se:Name>
     <UserStyle>
       <se:Name>Etiquettes Viasilva</se:Name>
       <se:Description>
