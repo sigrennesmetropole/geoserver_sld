@@ -15,6 +15,7 @@
   10/06/2015  |  Stéphane GELIN      |  version initiale
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
   27/03/2017  |  Maël REBOUX         |  rajout title et abstract
+  25/07/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -67,7 +68,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>3</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -116,7 +117,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>

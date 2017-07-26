@@ -16,6 +16,7 @@
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
   31/01/2017  |  Maël REBOUX         |  rajout des voies de desserte locale : principale et secondaire
   27/03/2017  |  Maël REBOUX         |  rajout title et abstract
+  25/07/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -67,7 +68,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
@@ -114,7 +115,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
@@ -210,7 +211,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
@@ -257,7 +258,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
           <LineSymbolizer>
             <Stroke>
@@ -361,7 +362,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -414,7 +415,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -555,7 +556,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -604,7 +605,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -731,7 +732,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -774,7 +775,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -884,7 +885,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -895,7 +896,46 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
+     <FeatureTypeStyle>
+        <Rule>
+          <Name>Mode doux (niveau 1) echelle 1 </Name>
+          <Title>Mode doux (niveau 1) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Mode doux</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>insee_gauche</ogc:PropertyName>
+                <ogc:Literal>35238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>               
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                  <ogc:Literal>Définitif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>8000</MaxScaleDenominator>
 
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#39855F</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
 
       <!-- 37b  symbole Voie secondaire d'agglomeration (niveau 1) echelle 3 -->
 
