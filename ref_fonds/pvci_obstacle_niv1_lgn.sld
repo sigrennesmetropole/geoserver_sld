@@ -53,11 +53,17 @@
       <FeatureTypeStyle>
         
           <Rule>
-            <ogc:Filter>
+            <ogc:Filter>          
+              <ogc:And>
                 <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>niveau</ogc:PropertyName>
                     <ogc:Literal>1</ogc:Literal>
                 </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNotEqualTo>
+                    <ogc:PropertyName>code_insee</ogc:PropertyName>
+                    <ogc:Literal>35238</ogc:Literal>
+                </ogc:PropertyIsNotEqualTo>                
+              </ogc:And>
             </ogc:Filter> 
             
           <!-- plage affichage -->
