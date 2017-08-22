@@ -33,11 +33,10 @@
      </se:Description>
      <se:FeatureTypeStyle>
          <se:Rule>
-          
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-                <se:SvgParameter name="fill">#E3EFCC</se:SvgParameter>
+                <se:SvgParameter name="fill">#F0F0F0</se:SvgParameter>
                 <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
           </se:PolygonSymbolizer>

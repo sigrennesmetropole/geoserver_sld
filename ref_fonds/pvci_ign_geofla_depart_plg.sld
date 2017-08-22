@@ -15,6 +15,7 @@
   01/11/2014  |  Stéphane GELIN      |  version initiale
   29/06/2016  |  Maël REBOUX         |  modification pour site open data + migration données IGN en base
   01/12/2016  |  Maël REBOUX         |  on montre France entière comme décidé en comité de pilotage
+  01/07/2017  |  Stéphane GELIN      |  integration données générales 
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -30,6 +31,8 @@
       <Title>Départements</Title>
       <FeatureTypeStyle>
         <Rule>
+          <MinScaleDenominator>5000</MinScaleDenominator>      
+
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#F0F0F0</CssParameter>

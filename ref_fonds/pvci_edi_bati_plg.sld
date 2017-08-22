@@ -14,6 +14,7 @@
   07/06/2015  |  Catherine MORALES   |  version initiale
   10/01/2017  |  Maël REBOUX         |  UTF-8, commentaires, pretty XML, passage en SE
   12/01/2017  |  Maël REBOUX         |  renforcement visuel aux grandes échelles en montrant les contours, que les bâtis durs aux moyennes et petites échelles
+  01/07/2017  |  Stéphane GELIN      |  integration données générales 
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -33,10 +34,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <se:Name>Bâtiments durs</se:Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_</ogc:PropertyName>
-              <ogc:Literal>01</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_</ogc:PropertyName>
+                <ogc:Literal>01</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>codcomm</ogc:PropertyName>
+                <ogc:Literal>350238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
+            </ogc:And>  
           </ogc:Filter>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -54,10 +61,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <se:Name>Bâtiments légers</se:Name>
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_</ogc:PropertyName>
-              <ogc:Literal>02</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_</ogc:PropertyName>
+                <ogc:Literal>02</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>codcomm</ogc:PropertyName>
+                <ogc:Literal>350238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
+            </ogc:And>  
           </ogc:Filter>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -78,10 +91,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Name>Bâtiments</se:Name>
           <!-- que les bâtiments en dur -->
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_</ogc:PropertyName>
-              <ogc:Literal>01</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_</ogc:PropertyName>
+                <ogc:Literal>01</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>codcomm</ogc:PropertyName>
+                <ogc:Literal>350238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
+            </ogc:And>  
           </ogc:Filter>
           <se:MinScaleDenominator>2200</se:MinScaleDenominator>
           <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
@@ -103,10 +122,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Name>Bâtiments</se:Name>
           <!-- que les bâtiments en dur -->
           <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_</ogc:PropertyName>
-              <ogc:Literal>01</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_</ogc:PropertyName>
+                <ogc:Literal>01</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>codcomm</ogc:PropertyName>
+                <ogc:Literal>350238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
+            </ogc:And>  
           </ogc:Filter>
           <se:MinScaleDenominator>9000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
