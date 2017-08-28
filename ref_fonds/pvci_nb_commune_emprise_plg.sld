@@ -37,6 +37,7 @@
                 <ogc:Literal>1</ogc:Literal>
               </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <MinScaleDenominator>5000</MinScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#E6E6E6</CssParameter>

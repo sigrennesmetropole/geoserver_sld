@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
  
-  nom du SLD : pvci_senscirc_niv_1_lgn
+  nom du SLD : pvci_nb_senscirc_niv_1_lgn
   
   couche source dans la base :  
   layer cible du style       :  ref_fonds : v_troncon_sens_circul_lgn
@@ -56,14 +56,15 @@
                 </ogc:And>
               </ogc:Filter>              
               <MinScaleDenominator>1</MinScaleDenominator>
-              <MaxScaleDenominator>20000</MaxScaleDenominator>
+              <MaxScaleDenominator>9000</MaxScaleDenominator>
            
              <LineSymbolizer>
                <Stroke>
                    <GraphicStroke>
                        <Graphic>
                           <Mark>
-                           <WellKnownName>ttf://Equipements_PVI#${'U+007A'}</WellKnownName>                                									<Fill>
+                           <WellKnownName>ttf://Equipements_PVI#${'U+007A'}</WellKnownName>
+                                <Fill>
                                     <CssParameter name="fill">#333333</CssParameter>
                                 </Fill>
                           </Mark>

@@ -30,6 +30,7 @@
       <Title>Départements</Title>
       <FeatureTypeStyle>
         <Rule>
+          <MinScaleDenominator>5000</MinScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#F3F3F3</CssParameter>

@@ -3,12 +3,12 @@
   
   nom du SLD : pvci_nb_sport_plg
  
-  auteur :   StÈphane GELIN
+  auteur :   St√©phane GELIN
   date :     15/06/2015
   
   couche principale cible du style :  pvci_nb_sport_plg - ref_fonds
 
-  objet : style niveau de gris des terrains de sport de Rennes MÈtropole - Èchelle 1.
+  objet : style niveau de gris des terrains de sport de Rennes M√©tropole - √©chelle 1.
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -29,16 +29,16 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                  <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>materiau</ogc:PropertyName>
-                    <ogc:Literal>synthetique</ogc:Literal>
+                    <ogc:Literal>synth√©tique</ogc:Literal>
                  </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                 </Fill>
            </PolygonSymbolizer>  
         </Rule>
@@ -49,16 +49,16 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                  <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>materiau</ogc:PropertyName>
-                    <ogc:Literal>stabilis</ogc:Literal>
+                    <ogc:Literal>stabilis√©</ogc:Literal>
                  </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                 </Fill>
            </PolygonSymbolizer>  
         </Rule>  
@@ -75,10 +75,10 @@
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                 </Fill>
            </PolygonSymbolizer>  
         </Rule>  
@@ -94,10 +94,10 @@
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -108,16 +108,16 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                  <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>materiau</ogc:PropertyName>
-                    <ogc:Literal>cendree</ogc:Literal>
+                    <ogc:Literal>cendr√©</ogc:Literal>
                  </ogc:PropertyIsEqualTo>            
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -128,16 +128,16 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                  <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>materiau</ogc:PropertyName>
-                    <ogc:Literal>INDETERMINE</ogc:Literal>
+                    <ogc:Literal>ind√©termin√©</ogc:Literal>
                  </ogc:PropertyIsEqualTo>            
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -154,10 +154,10 @@
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -174,10 +174,10 @@
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>11500</MaxScaleDenominator>  
-          <!-- reprÈsentation de la commune -->
+          <!-- repr√©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#FFFFFF</CssParameter>
+                      <CssParameter name="fill">#DCDCDC</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  

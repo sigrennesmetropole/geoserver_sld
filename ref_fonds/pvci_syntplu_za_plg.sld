@@ -13,8 +13,8 @@
   date        |  auteur              |  description
   01/11/2014  |  Stéphane GELIN      |  version initiale
   26/05/2016  |  Maël REBOUX         |  modifications
-  12/01/2017  |  Maël REBOUX         |  ajout d'un niveau pour mieux gérer les étiquettes, affichage des ZA aux plus petites échelles mais atténuées
-  
+  01/07/2017  |  Stéphane GELIN      |  integration données générales 
+  22/08/2017  |  Stéphane GELIN      |  séparation etiquettes et zones   
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -30,6 +30,26 @@
       <Abstract>Ce style est conçu pour afficher les zones artisanales sur Rennes Métropole dans le PVCI.</Abstract>
       <FeatureTypeStyle>
         
+         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- très grandes échelles : polygone gris-bleu -->
+        <Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>affich_pvi</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>5000</MaxScaleDenominator>  
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#B8CCD4</CssParameter>
+              <CssParameter name="fill-opacity">0.2</CssParameter>              
+            </Fill>
+
+          </PolygonSymbolizer>
+        </Rule>
+        
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <!-- grandes et moyennes échelles : polygone gris-bleu -->
         <Rule>
@@ -39,7 +59,7 @@
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>5000</MinScaleDenominator>
           <MaxScaleDenominator>35000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
@@ -72,77 +92,7 @@
             </Stroke>
           </PolygonSymbolizer>
         </Rule>
-        
-        
-        
-        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <!-- les étiquettes des noms des ZA -->
-        
-        <!-- grandes échelles -->
-        <Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>affich_pvi</ogc:PropertyName>
-              <ogc:Literal>1</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
-          <MaxScaleDenominator>9000</MaxScaleDenominator>  
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>nom_zoneza</ogc:PropertyName>
-            </Label>        
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">14</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>        
-          </TextSymbolizer>
-        </Rule>
-        
-        <!-- moyennes échelles -->
-        <Rule>
-          <!-- la requête -->
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>affich_pvi</ogc:PropertyName>
-              <ogc:Literal>1</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <!-- Echelle d'affichage -->
-          <MinScaleDenominator>9000</MinScaleDenominator>
-          <MaxScaleDenominator>35000</MaxScaleDenominator>  
-          <!-- réglages de l'étiquette -->
-          <TextSymbolizer>
-            <Label>
-              <ogc:PropertyName>nom_zoneza</ogc:PropertyName>
-            </Label>        
-            <Font>
-              <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">9</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">normal</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>        
-          </TextSymbolizer>
-        </Rule>
-        
+
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

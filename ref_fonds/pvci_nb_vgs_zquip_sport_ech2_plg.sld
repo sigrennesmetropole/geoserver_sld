@@ -3,12 +3,12 @@
   
   nom du SLD : pvci_nb_vgs_zquip_sport_ech2_plg
  
-  auteur :   Stéphane GELIN
+  auteur :   StÃ©phane GELIN
   date :     10/06/2015
   
   couche principale cible du style :     pvci_vgs_zquip_sport_plg  - ref_fonds
  
-  objet : style niveau de gris des terrains de sport de Rennes Métropole - échelle 2.
+  objet : style niveau de gris des terrains de sport de Rennes MÃ©tropole - Ã©chelle 2.
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -27,7 +27,7 @@
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>24999</MaxScaleDenominator>  
-          <!-- représentation de la commune -->
+          <!-- reprÃ©sentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
                       <CssParameter name="fill">#EDEDED</CssParameter>

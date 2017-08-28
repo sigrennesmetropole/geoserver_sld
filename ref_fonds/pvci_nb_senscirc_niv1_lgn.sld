@@ -51,14 +51,14 @@
                 </ogc:And>
               </ogc:Filter>              
               <MinScaleDenominator>1</MinScaleDenominator>
-              <MaxScaleDenominator>20000</MaxScaleDenominator>
+              <MaxScaleDenominator>9000</MaxScaleDenominator>
            
              <LineSymbolizer>
                <Stroke>
                    <GraphicStroke>
                        <Graphic>
                           <Mark>
-								<WellKnownName>ttf://Equipements_PVI#${'U+007A'}</WellKnownName>
+                                <WellKnownName>ttf://Equipements_PVI#${'U+007A'}</WellKnownName>
                                 <Fill>
                                     <CssParameter name="fill">#333333</CssParameter>
                                 </Fill>
