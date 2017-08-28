@@ -14,7 +14,11 @@
   01/11/2014  |  Stéphane GELIN      |  version initiale
   26/05/2016  |  Maël REBOUX         |  modifications
   01/07/2017  |  Stéphane GELIN      |  integration données générales 
+<<<<<<< HEAD
   22/08/2017  |  Stéphane GELIN      |  séparation etiquettes et zones   
+=======
+  
+>>>>>>> origin/master
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"

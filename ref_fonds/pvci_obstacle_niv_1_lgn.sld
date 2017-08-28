@@ -43,7 +43,7 @@
           <!-- représentation -->
              <LineSymbolizer>
                <Stroke>
-                 <CssParameter name="stroke">#626262</CssParameter>
+                 <CssParameter name="stroke">#FFFFFF</CssParameter>
                  <CssParameter name="stroke-width">1</CssParameter>
                </Stroke>
              </LineSymbolizer>  
@@ -73,7 +73,7 @@
           <!-- représentation -->
              <LineSymbolizer>
                <Stroke>
-                 <CssParameter name="stroke">#000000</CssParameter>
+                 <CssParameter name="stroke">#4E4E4E</CssParameter>
                  <CssParameter name="stroke-width">1</CssParameter>
                </Stroke>
              </LineSymbolizer>  
