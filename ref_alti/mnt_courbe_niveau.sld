@@ -14,88 +14,119 @@
   date        |  auteur              |  description
   09/11/2015  |  Maël REBOUX         |  version initiale
   27/03/2017  |  Maël REBOUX         |  rajout title et abstract
+  04/09/2017  |  Maël REBOUX         |  passage en Style Encoding + followline + plages d'échelles
   
 -->
-<sld:StyledLayerDescriptor
-  version="1.0.0"
-  xmlns:sld="http://www.opengis.net/sld"
-  xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:ogc="http://www.opengis.net/ogc"
-  xmlns:gml="http://www.opengis.net/gml">
-  <sld:NamedLayer>
-    <sld:Name>ref_alti:mnt_courbe_niveau</sld:Name>
-    <sld:UserStyle>
-      <sld:Title>Courbes de niveaux avec étiquettes</sld:Title>
-      <sld:Abstract>Courbes de niveau (isohypses) de couleur bistre avec une étiquette de la valeur de l'altitude.</sld:Abstract>
-      <sld:FeatureTypeStyle>
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <se:Name>ref_alti:mnt_courbe_niveau</se:Name>
+    <UserStyle>
+      <se:Name>mnt_courbe_niveau</se:Name>
+        <se:Description>
+          <se:Title>Courbes de niveaux avec étiquettes</se:Title>
+          <se:Abstract>Courbes de niveau (isohypses) de couleur bistre avec une étiquette de la valeur de l'altitude.</se:Abstract>
+        </se:Description>
+      <se:FeatureTypeStyle>
       
-        <sld:Rule>
-          <sld:Name>10m</sld:Name>
-          <sld:Title>Isolignes 10 m</sld:Title>
-          <!-- filtre sur les isolignes 10 m -->
+        <!-- 10 m -->
+        <se:Rule>
+          <se:Name>10 m</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>m_dix</ogc:PropertyName>
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- étiquettes -->
-          <sld:TextSymbolizer>
-            <sld:Label>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#DDA840</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <!-- l'attribut qui sert d'étiquette -->
+            <se:Label>
               <ogc:PropertyName>altitude</ogc:PropertyName>
-            </sld:Label>
-            <!-- provoque une erreur de validation -->
-            <!--<sld:Fill>
-                <sld:CssParameter name="fill">#dda840</sld:CssParameter>
-            </sld:Fill>-->
-            <sld:Font>
-              <sld:CssParameter name="font-family">Verdana</sld:CssParameter>
-              <sld:CssParameter name="font-size">12</sld:CssParameter>
-              <sld:CssParameter name="font-weight">bold</sld:CssParameter>
-              <sld:CssParameter name="font-color">#dda840</sld:CssParameter> <!-- n'a pas d'incidence -->
-            </sld:Font>
-            <sld:Halo>
-              <sld:Radius>2</sld:Radius>
-            </sld:Halo>
-            <!-- provoque une erreur de validation : réclame un vendor option -->
-            <!--<sld:LabelPlacement>
-              <sld:LinePlacement>
-                <sld:PerpendicularOffset>5</sld:PerpendicularOffset>
-              </sld:LinePlacement>
-            </sld:LabelPlacement>-->
-          </sld:TextSymbolizer>
-          <!-- la ligne bistre épaisse -->
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#dda840</sld:CssParameter>
-              <sld:CssParameter name="stroke-opacity">1</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">1.6</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
+            </se:Label>
+            <!-- réglages de la fonte sauf la couleur et opacité -->
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">14</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>2.0</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <!-- la couleur et l'opacité du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#DDA840</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
+            <se:VendorOption name="conflictResolution">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="maxDisplacement">100</se:VendorOption>
+            <se:VendorOption name="repeat">200</se:VendorOption>
+            
+          </se:TextSymbolizer>
+        </se:Rule>
         
-        <sld:Rule>
-          <sld:Name>2m</sld:Name>
-          <sld:Title>Isolignes 2 m</sld:Title>
-          <!-- filtre sur les isolignes 2 m -->
+        <!-- 2 m -->
+        <se:Rule>
+          <se:Name>2 m</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>m_deux</ogc:PropertyName>
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:LineSymbolizer>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#dda840</sld:CssParameter>
-              <sld:CssParameter name="stroke-opacity">1</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.3</sld:CssParameter>
-            </sld:Stroke>
-          </sld:LineSymbolizer>
-        </sld:Rule>
-        
-      </sld:FeatureTypeStyle>
-    </sld:UserStyle>
-  </sld:NamedLayer>
-</sld:StyledLayerDescriptor>
-
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#DDA840</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <!-- l'attribut qui sert d'étiquette -->
+            <se:Label>
+              <ogc:PropertyName>altitude</ogc:PropertyName>
+            </se:Label>
+            <!-- réglages de la fonte sauf la couleur et opacité -->
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>2.0</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <!-- la couleur et l'opacité du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#DDA840</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
+            <se:VendorOption name="conflictResolution">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="maxDisplacement">100</se:VendorOption>
+            <se:VendorOption name="repeat">200</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      
+      </se:FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
