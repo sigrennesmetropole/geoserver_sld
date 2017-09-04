@@ -5,101 +5,150 @@
   couche source dans la base : rvue SQL sur rva.v_troncon_denom
   layer cible du style : ref_fonds:routes_rn_rd
 
-  objet : Affiche l'étiquetage des routes nationales et départementales. .
+  objet : Affiche l'étiquetage des routes nationales et départementales.
+  
+  /!\  ce style n'est plus conforme StyleEncoding afin de pouvoir créer les boîtes
 
   Historique des versions :
   date        |  auteur              |  description
   23/08/2017  |  Arnaud LECLERE      |  version initiale
+  04/09/2017  |  Maël REBOUX         |  optimisation pour avoir des boîtes
 
 -->
-
-<StyledLayerDescriptor version="1.1.0"
+<StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
     xmlns:ogc="http://www.opengis.net/ogc"
-    xmlns:se="http://www.opengis.net/se"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-
   <NamedLayer>
-    <se:Name>ref_fonds.routes_rn_rd</se:Name>
+    <Name>top25_routes_etq</Name>
     <UserStyle>
-      <se:Name>top25_routes_etq</se:Name>
-      <se:FeatureTypeStyle>
-        <se:Description>
-          <se:Title>Nom des routes</se:Title>
-          <se:Abstract>Etiquettes des noms de routes sur Rennes Métropole.</se:Abstract>
-        </se:Description>
-
+      <Title>Nom des routes principales</Title>
+      <Abstract>Étiquettes des routes nationales et départementales.</Abstract>
+      <FeatureTypeStyle>
+        
+        <!-- pas de ligne apparente : juste l'étiquette -->
+        <!--<Rule>
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#000000</CssParameter>
+              <CssParameter name="stroke-width">2</CssParameter>
+              <CssParameter name="stroke-opacity">0.25</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>-->
+        
         <!-- les RN -->
-        <se:Rule>
+        <Rule>
           <ogc:Filter>
-            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escape="!">
               <ogc:PropertyName>nom</ogc:PropertyName>
               <ogc:Literal>RN *</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
-          <se:TextSymbolizer>
-            <se:Label>
+          <MinScaleDenominator>7500</MinScaleDenominator>
+          <MaxScaleDenominator>137000</MaxScaleDenominator>
+          <TextSymbolizer>
+            <Label>
               <ogc:PropertyName>nom</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans Condensed Bold</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:LinePlacement/>
-            </se:LabelPlacement>
-            <se:Halo>
-              <se:Radius>2</se:Radius>
-              <se:Fill>
-                <se:SvgParameter name="fill">#0000FF</se:SvgParameter>
-              </se:Fill>
-            </se:Halo>
-            <se:VendorOption name="followLine">true</se:VendorOption>
-            <se:VendorOption name="spaceAround">5</se:VendorOption>
-            <se:VendorOption name="group">yes</se:VendorOption>
-            <se:VendorOption name="repeat">200</se:VendorOption>
-            <se:VendorOption name="maxDisplacement">10</se:VendorOption>
-          </se:TextSymbolizer>
-        </se:Rule>
-
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">12</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>
+            </LabelPlacement>
+            <Fill>
+              <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+            <Graphic>
+              <Mark>
+                <WellKnownName>square</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#DE5C38</CssParameter>
+                </Fill>
+                <Stroke>
+                  <CssParameter name="stroke">#2D6917</CssParameter>
+                  <CssParameter name="stroke-width">0.25</CssParameter>
+                </Stroke>
+              </Mark>
+              <Size>24</Size>
+            </Graphic>
+            <!-- ces options permettent d'optimier le placement des étiquettes -->
+            <!-- pb avec followLine : certaines boîtes n'apparaissent plus sur certains tronçons -->
+            <!--<VendorOption name="followLine">true</VendorOption>-->
+            <VendorOption name="group">yes</VendorOption>
+            <VendorOption name="repeat">200</VendorOption>
+            <!-- ces 2 options permettent de dimensionner la boîte -->
+            <VendorOption name="graphic-resize">stretch</VendorOption>
+            <VendorOption name="graphic-margin">3</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+        
+        
         <!-- les RD -->
-        <se:Rule>
+        <Rule>
           <ogc:Filter>
-            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escape="!">
               <ogc:PropertyName>nom</ogc:PropertyName>
               <ogc:Literal>RD *</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
-          <se:TextSymbolizer>
-            <se:Label>
+          <MinScaleDenominator>7500</MinScaleDenominator>
+          <MaxScaleDenominator>69000</MaxScaleDenominator>
+          <TextSymbolizer>
+            <Label>
               <ogc:PropertyName>nom</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans Condensed Bold</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:LinePlacement/>
-            </se:LabelPlacement>
-            <se:Halo>
-              <se:Radius>2</se:Radius>
-              <se:Fill>
-                <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
-              </se:Fill>
-            </se:Halo>
-            <se:VendorOption name="followLine">true</se:VendorOption>
-            <se:VendorOption name="spaceAround">5</se:VendorOption>
-            <se:VendorOption name="group">yes</se:VendorOption>
-            <se:VendorOption name="repeat">200</se:VendorOption>
-          </se:TextSymbolizer>
-        </se:Rule>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">12</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>
+            </LabelPlacement>
+            <Fill>
+              <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+            <Graphic>
+              <Mark>
+                <WellKnownName>square</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#E09D31</CssParameter>
+                </Fill>
+                <Stroke>
+                  <CssParameter name="stroke">#2D6917</CssParameter>
+                  <CssParameter name="stroke-width">0.25</CssParameter>
+                </Stroke>
+              </Mark>
+              <Size>24</Size>
+            </Graphic>
+            <!-- ces options permettent d'optimier le placement des étiquettes -->
+            <!-- pb avec followLine : certaines boîtes n'apparaissent plus sur certains tronçons -->
+            <!--<VendorOption name="followLine">true</VendorOption>-->
+            <VendorOption name="group">yes</VendorOption>
+            <VendorOption name="repeat">200</VendorOption>
+            <!-- ces 2 options permettent de dimensionner la boîte -->
+            <VendorOption name="graphic-resize">stretch</VendorOption>
+            <VendorOption name="graphic-margin">3</VendorOption>
+          </TextSymbolizer>
+        </Rule>
 
-      </se:FeatureTypeStyle>
+      </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
