@@ -2,14 +2,18 @@
 <!--
   
   nom du SLD : pvci_nb_v_troncon_niv0_lgn
-auteur :   Stéphane GELIN
-  date :     15/06/2015
-  couche principale cible du style : pvci_v_troncon_lgn: ref_fonds
- 
-  objet :
-  Style niveau de gris des voies
+
+  couche source dans la base :  rva.v_troncon_lgn
+  layer cible du style       :  ref_fonds:pvci_v_troncon_lgn  utilisÃ© dans les aggregats ref_fonds:pvci / pvci_fond
+
+  objet : affichage niveau de gris des voies de niveau 0 selon la hiÃ©rarchisation
   
+  Historique des versions :
+  date        |  auteur              |  description
+  10/06/2015  |  StÃ©phane GELIN      |  version initiale
+  25/07/2017  |  StÃ©phane GELIN      |  modif echelle affichage pour intÃ©gration DonnÃ©es GÃ©nÃ©rales  
 -->
+
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -44,11 +48,11 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
@@ -66,7 +70,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -99,11 +103,11 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
@@ -120,7 +124,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -157,11 +161,11 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
@@ -169,7 +173,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                        <ogc:Literal>Définitif</ogc:Literal>
+                        <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -178,7 +182,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -210,11 +214,11 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
@@ -222,7 +226,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>etat</ogc:PropertyName>
-                        <ogc:Literal>Définitif</ogc:Literal>
+                        <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -230,7 +234,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -266,7 +270,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Non défini</ogc:Literal>
+                        <ogc:Literal>Non dÃ©fini</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:Or>
@@ -282,7 +286,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -315,7 +319,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Non défini</ogc:Literal>
+                        <ogc:Literal>Non dÃ©fini</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                    </ogc:Or>
                       <ogc:Or>
@@ -330,7 +334,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -370,7 +374,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -379,7 +383,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -417,7 +421,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -426,7 +430,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -467,7 +471,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -523,7 +527,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -565,7 +569,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -605,7 +609,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -614,7 +618,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -652,7 +656,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                       <ogc:PropertyName>etat</ogc:PropertyName>
-                      <ogc:Literal>Définitif</ogc:Literal>
+                      <ogc:Literal>DÃ©finitif</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsNull>
                     <ogc:PropertyName>etat</ogc:PropertyName>
@@ -661,7 +665,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -734,7 +738,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -754,7 +758,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -787,7 +791,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -806,7 +810,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -831,7 +835,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -853,7 +857,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -862,7 +866,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -884,7 +888,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -906,7 +910,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -915,7 +919,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -943,7 +947,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -987,7 +991,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1034,7 +1038,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1078,7 +1082,7 @@ auteur :   Stéphane GELIN
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                        <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                      </ogc:PropertyIsEqualTo>
                      <ogc:PropertyIsEqualTo>
                        <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1111,11 +1115,11 @@ auteur :   Stéphane GELIN
       </FeatureTypeStyle>
       
       
-<!--  28  symbole PROJET voie d'agglomération -->      
+<!--  28  symbole PROJET voie d'agglomÃ©ration -->      
       <FeatureTypeStyle>
          <Rule>
-             <Name>Voie d'agglomération (en projet) </Name>
-             <Title>Voie d'agglomération (en projet) </Title>
+             <Name>Voie d'agglomÃ©ration (en projet) </Name>
+             <Title>Voie d'agglomÃ©ration (en projet) </Title>
              <ogc:Filter>
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
@@ -1129,7 +1133,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                        <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1149,7 +1153,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1178,7 +1182,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                        <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1197,7 +1201,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1222,7 +1226,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1240,7 +1244,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1249,7 +1253,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1271,7 +1275,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1289,7 +1293,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1298,7 +1302,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1322,7 +1326,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1362,7 +1366,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                    <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1394,11 +1398,11 @@ auteur :   Stéphane GELIN
          </Rule>
       </FeatureTypeStyle>
 
-<!--  31  symbole PROJET voie Voie nationale ou régionale -->      
+<!--  31  symbole PROJET voie Voie nationale ou rÃ©gionale -->      
       <FeatureTypeStyle>
          <Rule>
-             <Name>Voie nationale ou régionale (en projet) </Name>
-             <Title>Voie nationale ou régionale (en projet) </Title>
+             <Name>Voie nationale ou rÃ©gionale (en projet) </Name>
+             <Title>Voie nationale ou rÃ©gionale (en projet) </Title>
              <ogc:Filter>
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
@@ -1412,7 +1416,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                        <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1432,7 +1436,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1461,7 +1465,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                        <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1480,7 +1484,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1495,16 +1499,16 @@ auteur :   Stéphane GELIN
       </FeatureTypeStyle>      
 
 
-<!-- 32  symbole Voie nationale ou régionale (niveau 0) echelle 1 -->
+<!-- 32  symbole Voie nationale ou rÃ©gionale (niveau 0) echelle 1 -->
       <FeatureTypeStyle>
          <Rule>
-             <Name>Voie nationale ou régionale (niveau 0) echelle 1 </Name>
-             <Title>Voie nationale ou régionale (niveau 0) echelle 1 </Title>
+             <Name>Voie nationale ou rÃ©gionale (niveau 0) echelle 1 </Name>
+             <Title>Voie nationale ou rÃ©gionale (niveau 0) echelle 1 </Title>
              <ogc:Filter>
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -1517,7 +1521,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1526,7 +1530,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1541,13 +1545,13 @@ auteur :   Stéphane GELIN
       </FeatureTypeStyle>
       <FeatureTypeStyle>
          <Rule>
-             <Name>Voie nationale ou régionale (niveau 0) echelle 1 </Name>
-             <Title>Voie nationale ou régionale (niveau 0) echelle 1 </Title>
+             <Name>Voie nationale ou rÃ©gionale (niveau 0) echelle 1 </Name>
+             <Title>Voie nationale ou rÃ©gionale (niveau 0) echelle 1 </Title>
              <ogc:Filter>
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -1560,7 +1564,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1569,7 +1573,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1592,7 +1596,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -1626,7 +1630,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>
@@ -1686,7 +1690,7 @@ auteur :   Stéphane GELIN
                 </ogc:And>
               </ogc:Filter>
            
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1728,7 +1732,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>           
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1765,7 +1769,7 @@ auteur :   Stéphane GELIN
                </ogc:And>
              </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1799,7 +1803,7 @@ auteur :   Stéphane GELIN
                </ogc:And>
               </ogc:Filter>              
               
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
               <LineSymbolizer>
@@ -1836,7 +1840,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>              
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
              <LineSymbolizer>
@@ -1869,7 +1873,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1877,7 +1881,7 @@ auteur :   Stéphane GELIN
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>              
-              <MinScaleDenominator>1</MinScaleDenominator>
+              <MinScaleDenominator>8000</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
              <LineSymbolizer>
@@ -1888,7 +1892,47 @@ auteur :   Stéphane GELIN
              </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>  
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Mode doux (niveau 0) echelle 1 </Name>
+          <Title>Mode doux (niveau 0) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Mode doux</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>insee_gauche</ogc:PropertyName>
+                <ogc:Literal>35238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                  <ogc:Literal>DÃ©finitif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>8000</MaxScaleDenominator>
 
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#4F4F4F</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+      
 <!-- 37b  symbole Voie secondaire d'agglomeration (niveau 0) echelle 3 -->
 
       <FeatureTypeStyle>
@@ -1908,7 +1952,7 @@ auteur :   Stéphane GELIN
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie communale principale hors agglomération</ogc:Literal>
+                    <ogc:Literal>Voie communale principale hors agglomÃ©ration</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                   <ogc:PropertyIsEqualTo>
@@ -1922,7 +1966,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                           <ogc:PropertyName>etat</ogc:PropertyName>
-                          <ogc:Literal>Définitif</ogc:Literal>
+                          <ogc:Literal>DÃ©finitif</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsNull>
                         <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1956,7 +2000,7 @@ auteur :   Stéphane GELIN
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                        <ogc:Literal>Ceinture de desserte d'agglomération</ogc:Literal>
+                        <ogc:Literal>Ceinture de desserte d'agglomÃ©ration</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>hierarchie</ogc:PropertyName>
@@ -1998,7 +2042,7 @@ auteur :   Stéphane GELIN
                 <ogc:And>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                    <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+                    <ogc:Literal>Voie d'intÃ©rÃªt national ou rÃ©gional</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>mode</ogc:PropertyName>

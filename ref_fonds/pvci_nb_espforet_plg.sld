@@ -3,12 +3,12 @@
 
   nom du SLD : pvci_nb_espforet_plg
 
-  auteur :   Stéphane GELIN, Catherine MORALES, Maël REBOUX
+  auteur :   StÃ©phane GELIN, Catherine MORALES, MaÃ«l REBOUX
   date :     26/05/2016
 
   couche principale cible du style :  ref_fonds:pvci_espforet
 
-  objet : Affichage des zones boisées pour le PVCI en niveaux de gris.
+  objet : Affichage des zones boisÃ©es pour le PVCI en niveaux de gris.
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -20,22 +20,22 @@
   <NamedLayer>
     <Name>pvci_nb_espforet_plg</Name>
     <UserStyle>
-      <Name>zone boisée</Name>
-      <Title>Zone urbaine sur Renne Métropole</Title>
-      <Abstract>Ce style est conçu pour afficher les zones boisées sur Rennes Métropole dans le PVCI en niveaux de gris.</Abstract>
+      <Name>zone boisÃ©e</Name>
+      <Title>Zone urbaine sur Renne MÃ©tropole</Title>
+      <Abstract>Ce style est conÃ§u pour afficher les zones boisÃ©es sur Rennes MÃ©tropole dans le PVCI en niveaux de gris.</Abstract>
       <FeatureTypeStyle>
 
         <Rule>
-          <!-- pas de filtrage attributaire : on montre tout aux plus grandes échelles -->
-          <!-- échelle d'affichage -->
+          <!-- pas de filtrage attributaire : on montre tout aux plus grandes Ã©chelles -->
+          <!-- Ã©chelle d'affichage -->
           <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>100099</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#5E5E5E</CssParameter>
+              <CssParameter name="fill">#696969</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#5E5E5E</CssParameter>
+              <CssParameter name="stroke">#696969</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
         </Rule>
@@ -47,15 +47,15 @@
               <ogc:Literal>Boisement</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- échelle d'affichage -->
+          <!-- Ã©chelle d'affichage -->
           <MinScaleDenominator>100100</MinScaleDenominator>
           <MaxScaleDenominator>150000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#5E5E5E</CssParameter>
+              <CssParameter name="fill">#696969</CssParameter>
             </Fill>
             <Stroke>
-              <CssParameter name="stroke">#5E5E5E</CssParameter>
+              <CssParameter name="stroke">#696969</CssParameter>
             </Stroke>
           </PolygonSymbolizer>
         </Rule>

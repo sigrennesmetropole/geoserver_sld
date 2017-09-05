@@ -14,8 +14,12 @@
   07/06/2015  |  Catherine MORALES   |  version initiale
   10/01/2017  |  Maël REBOUX         |  UTF-8, commentaires, pretty XML, passage en SE
   12/01/2017  |  Maël REBOUX         |  renforcement visuel aux grandes échelles en montrant les contours, que les bâtis durs aux moyennes et petites échelles
+<<<<<<< HEAD
+  01/07/2017  |  Stéphane GELIN      |  integration données générales   
+=======
   01/07/2017  |  Stéphane GELIN      |  integration données générales 
   
+>>>>>>> origin/master
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -72,10 +76,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsNotEqualTo>              
             </ogc:And>  
           </ogc:Filter>
-          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>8000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="fill">#F9F0E5</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
