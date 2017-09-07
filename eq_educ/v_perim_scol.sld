@@ -2734,6 +2734,225 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
+        <!-- Guillevic -->
+        <!-- maternelle -->
+        <se:Rule>
+          <se:Name>École maternelle Guillevic</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
+              <ogc:Literal>796</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="offset">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+                <ogc:Literal>-3</ogc:Literal>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c1aa57</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <!-- élémentaire -->
+        <se:Rule>
+          <se:Name>École élémentaire Guillevic</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
+              <ogc:Literal>795</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="offset">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#c1aa57</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <!-- Quineleu -->
+        <!-- maternelle -->
+        <se:Rule>
+          <se:Name>École maternelle Quineleu</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
+              <ogc:Literal>1212</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="offset">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+                <ogc:Literal>-3</ogc:Literal>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffe41c</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <!-- pas d'élémentaire -->
+        
+        <!-- Saint-Malo -->
+        <!-- maternelle -->
+        <se:Rule>
+          <se:Name>École maternelle Saint-Malo</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
+              <ogc:Literal>1266</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="offset">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+                <ogc:Literal>-3</ogc:Literal>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#f791e9</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <!-- pas d'élémentaire -->
+        
+        <!-- Liberté -->
+        <!-- pas de maternelle -->
+        <!-- élémentaire -->
+        <se:Rule>
+          <se:Name>École élémentaire Liberté</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
+              <ogc:Literal>835</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="offset">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FFF28E</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <!-- Paul Langevin -->
+        <!-- pas de maternelle -->
+        <!-- élémentaire -->
+        <se:Rule>
+          <se:Name>École élémentaire Paul Langevin</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
+              <ogc:Literal>940</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="offset">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FF4B4B</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
