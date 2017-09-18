@@ -89,7 +89,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -102,7 +102,7 @@
                     <se:WellKnownName>wkt://MULTILINESTRING((0 0, 1 1))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
                   <se:Size>3</se:Size>
@@ -137,7 +137,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>
@@ -264,7 +264,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>
@@ -391,7 +391,7 @@
                     <se:WellKnownName>wkt://MULTILINESTRING((0 1, 1 0.2),(0 -1, 1 -0.2))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
                     </se:Stroke>
                   </se:Mark>
@@ -404,7 +404,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter>
@@ -468,7 +468,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">1 1</se:SvgParameter>
@@ -551,7 +551,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter>
@@ -633,7 +633,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -740,7 +740,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -821,7 +821,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">1.4 0.7</se:SvgParameter>
@@ -899,7 +899,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -923,7 +923,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -947,7 +947,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -971,7 +971,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -995,7 +995,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1019,7 +1019,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
             </se:Stroke>
           </se:LineSymbolizer>
@@ -1042,7 +1042,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1066,7 +1066,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1090,7 +1090,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1114,7 +1114,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1138,7 +1138,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
             </se:Stroke>
           </se:LineSymbolizer>
@@ -1163,7 +1163,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
             </se:Stroke>
           </se:LineSymbolizer>
