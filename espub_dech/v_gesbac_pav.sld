@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
-  06/07/2017  |  Maël REBOUX         |  picto plus gros
+  06/07/2017  |  Maël REBOUX         |  picto plus gros, légende
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -33,7 +33,7 @@
       <!-- type de déchets: JM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>JM</se:Name>
+          <se:Name>Journaux magazines</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -55,7 +55,7 @@
       <!-- type de déchets: JM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>JM-VE</se:Name>
+          <se:Name>Journaux magazines, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -77,7 +77,7 @@
       <!-- type de déchets: MM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>MM</se:Name>
+          <se:Name>Emballages et papier</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -99,7 +99,7 @@
       <!-- type de déchets: MM-JM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>MM-JM</se:Name>
+          <se:Name>Emballages et papier, Journaux magazines</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -121,7 +121,7 @@
       <!-- type de déchets: MM-JM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>MM-JM-VE</se:Name>
+          <se:Name>Emballages et papier, Journaux magazines, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -143,7 +143,7 @@
       <!-- type de déchets: MM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>MM-VE</se:Name>
+          <se:Name>Emballages et papier, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -165,7 +165,7 @@
       <!-- type de déchets: OM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM</se:Name>
+          <se:Name>Ordures ménagères</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -187,7 +187,7 @@
       <!-- type de déchets: OM-JM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-JM</se:Name>
+          <se:Name>Ordures ménagères, Journaux magazines</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -209,7 +209,7 @@
       <!-- type de déchets: OM-JM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-JM-VE</se:Name>
+          <se:Name>Ordures ménagères, Journaux magazines, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -231,7 +231,7 @@
       <!-- type de déchets: OM-MM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-MM</se:Name>
+          <se:Name>Ordures ménagères, Emballages et papier</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -253,7 +253,7 @@
       <!-- type de déchets: OM-MM-JM -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-MM-JM</se:Name>
+          <se:Name>Ordures ménagères, Emballages et papier, Journaux magazines</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -275,7 +275,7 @@
       <!-- type de déchets: OM-MM-JM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-MM-JM-VE</se:Name>
+          <se:Name>Ordures ménagères, Emballages et papier, Journaux magazines, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -297,7 +297,7 @@
       <!-- type de déchets: OM-MM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-MM-VE</se:Name>
+          <se:Name>Ordures ménagères, Emballages et papier, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -319,7 +319,7 @@
       <!-- type de déchets: OM-VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>OM-VE</se:Name>
+          <se:Name>Ordures ménagères, Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>
@@ -341,7 +341,7 @@
       <!-- type de déchets: VE -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>VE</se:Name>
+          <se:Name>Verre</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>code_carto</ogc:PropertyName>

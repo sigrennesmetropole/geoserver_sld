@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
-  06/07/2017  |  Maël REBOUX         |  picto plus gros
+  06/07/2017  |  Maël REBOUX         |  picto plus gros, légende
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -31,7 +31,7 @@
       </se:Description>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Point</se:Name>
+          <se:Name></se:Name>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
