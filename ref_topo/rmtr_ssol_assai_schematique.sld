@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : rmtr_ssol_assai
+  nom du SLD : rmtr_ssol_assai_schematique
 
-  couche source dans la base :  topossol.v_assai_mat
-  layer cible du style       :  ref_topo:rmtr_ssol_assai
+  couche source dans la base :  topossol.v_assai_schematique_mat
+  layer cible du style       :  ref_topo:rmtr_ssol_assai_schematique
 
-  objet :  Style relatif aux objets d'assainissement de sous sol.
+  objet :  Style relatif aux objets d'assainissement schématiques de sous sol.
 
   Historique des versions :
   date        |  auteur              |  description
-  15/03/2017  |  Stephane GELIN      |  version initiale
-  26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+  11/09/2017  |  Stephane GELIN      |  version initiale
 
 -->
 
@@ -24,19 +23,20 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_topo:rmtr_ssol_assai</se:Name>
+    <se:Name>ref_topo:rmtr_ssol_assai_schematique</se:Name>
     <UserStyle>
-      <se:Name>rmtr_ssol_assai</se:Name>
+      <se:Name>rmtr_ssol_assai_schematique</se:Name>
       <se:Description>
-        <se:Title>Assainissement de sous sol</se:Title>
-        <se:Abstract>Style des objets de réseau de sous sol de la famille Assainissement</se:Abstract>
+        <se:Title>Assainissement schématique de sous sol</se:Title>
+        <se:Abstract>Style des objets de réseau de sous sol de la famille Assainissement schématique</se:Abstract>
       </se:Description>
+
 
 
       <!-- Réseaux abandonnées -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Surface - Assainissement - Réseaux abandonnées</se:Name>
+          <se:Name>RMTR Surface - Assainissement schématique - Réseaux abandonnées</se:Name>
 
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
@@ -76,7 +76,7 @@
       <!-- 7351 - Chambre de forme complexe -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Chambre de forme complexe</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Chambre de forme complexe</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -89,7 +89,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -102,7 +102,7 @@
                     <se:WellKnownName>wkt://MULTILINESTRING((0 0, 1 1))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
                   <se:Size>3</se:Size>
@@ -118,7 +118,7 @@
       <!-- 7360 - Fourreau en attente -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 1</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Fourreau en attente - echelle 1</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -137,7 +137,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>
@@ -146,7 +146,7 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 1</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Fourreau en attente - echelle 1</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -245,7 +245,7 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 2</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Fourreau en attente - echelle 2</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -264,7 +264,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">0.3 0.3</se:SvgParameter>
@@ -272,7 +272,7 @@
           </se:LineSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Fourreau en attente - echelle 2</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Fourreau en attente - echelle 2</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -373,7 +373,7 @@
       <!-- 7356 - Drain -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Drain</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Drain</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -391,7 +391,7 @@
                     <se:WellKnownName>wkt://MULTILINESTRING((0 1, 1 0.2),(0 -1, 1 -0.2))</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
                     </se:Stroke>
                   </se:Mark>
@@ -404,7 +404,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter>
@@ -449,7 +449,7 @@
       <!-- 7340 - Conduite indéterminée -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite indéterminée</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite indéterminée</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -468,7 +468,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">1 1</se:SvgParameter>
@@ -477,7 +477,7 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite indéterminée</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite indéterminée</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -532,7 +532,7 @@
       <!-- 7330 - Conduite galerie -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite galerie</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite galerie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -551,7 +551,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">2 1</se:SvgParameter>
@@ -560,7 +560,7 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite galerie</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite galerie</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -614,7 +614,7 @@
       <!-- 7320 - Conduite unitaire -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite unitaire</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite unitaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -633,7 +633,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -721,7 +721,7 @@
       <!-- 7310 - Conduite eau usée -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite eau usée</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite eau usée</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -740,7 +740,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -802,7 +802,7 @@
       <!-- 7300 - Conduite eau pluviale -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Conduite eau pluviale</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Conduite eau pluviale</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -821,7 +821,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">1.4 0.7</se:SvgParameter>
@@ -886,7 +886,7 @@
       <!-- 3397 - Regard borgne -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Regard borgne</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Regard borgne</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -899,7 +899,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -910,7 +910,7 @@
       <!-- 3372 - Déversoir d'orage -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Déversoir d'orage</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Déversoir d'orage</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -923,7 +923,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -934,7 +934,7 @@
       <!-- 3371 - Vanne -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Vanne</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Vanne</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -947,7 +947,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -958,7 +958,7 @@
       <!-- 3342 - Exutoire -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Exutoire</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Exutoire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -971,7 +971,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -982,7 +982,7 @@
       <!-- 3321 - Cheminée carré -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Cheminée carré</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Cheminée carré</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -995,7 +995,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1006,7 +1006,7 @@
       <!-- 3311 - Citerneau carré -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Citerneau carré</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Citerneau carré</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1019,7 +1019,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
             </se:Stroke>
           </se:LineSymbolizer>
@@ -1029,7 +1029,7 @@
       <!-- 3391 - Radier -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Radier</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Radier</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1042,7 +1042,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1053,7 +1053,7 @@
       <!-- 3361 - Changement matériaux -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Changement matériaux</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Changement matériaux</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1066,7 +1066,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1077,7 +1077,7 @@
       <!-- 3351 - Cône de réduction -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Cône de réduction</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Cône de réduction</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1090,7 +1090,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1101,7 +1101,7 @@
       <!-- 3341 - Extrémité de conduite -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Extrémité de conduite</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Extrémité de conduite</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1114,7 +1114,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
@@ -1125,7 +1125,7 @@
       <!-- 3331 - Cheminée circulaire -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Cheminée circulaire</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Cheminée circulaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1138,7 +1138,7 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
             </se:Stroke>
           </se:LineSymbolizer>
@@ -1150,7 +1150,7 @@
       <!-- 3301 - Citerneau circulaire -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>RMTR Sous sol - Assainissement - Citerneau circulaire</se:Name>
+          <se:Name>RMTR Sous sol - Assainissement schématique - Citerneau circulaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>modele</ogc:PropertyName>
@@ -1163,13 +1163,12 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
 
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-
 
     </UserStyle>
   </NamedLayer>
