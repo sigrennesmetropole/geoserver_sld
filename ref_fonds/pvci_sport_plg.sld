@@ -34,7 +34,7 @@ date :     07/06/2015
           </ogc:Filter> 
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
@@ -54,7 +54,7 @@ date :     07/06/2015
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la DCDED3-->
            <PolygonSymbolizer>
                 <Fill>
@@ -74,7 +74,7 @@ date :     07/06/2015
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
@@ -93,11 +93,11 @@ date :     07/06/2015
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#E1E1E1</CssParameter>
+                      <CssParameter name="fill">#F0F0F0</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -113,11 +113,11 @@ date :     07/06/2015
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#E1E1E1</CssParameter>
+                      <CssParameter name="fill">#F0F0F0</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -133,11 +133,11 @@ date :     07/06/2015
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#E1E1E1</CssParameter>
+                      <CssParameter name="fill">#F0F0F0</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  
@@ -153,11 +153,11 @@ date :     07/06/2015
           </ogc:Filter>
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>11500</MaxScaleDenominator>  
+            <MaxScaleDenominator>20000</MaxScaleDenominator>  
           <!-- représentation de la commune -->
            <PolygonSymbolizer>
                 <Fill>
-                      <CssParameter name="fill">#E1E1E1</CssParameter>
+                      <CssParameter name="fill">#F0F0F0</CssParameter>
                       <CssParameter name="Stroke">#CCCCCC</CssParameter>
                </Fill>
            </PolygonSymbolizer>  

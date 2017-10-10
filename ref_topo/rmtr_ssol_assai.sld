@@ -13,6 +13,7 @@
   15/03/2017  |  Stephane GELIN      |  version initiale
   26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
   19/09/2017  |  Stephane GELIN      |  corrections conduite unitaire (distinction circulaire ou non)
+  03/10/2017  |  Stephane GELIN      |  corrections conduite refoulement ou non
 -->
 
 <StyledLayerDescriptor version="1.1.0"
@@ -52,7 +53,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
@@ -85,7 +86,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -260,7 +261,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>401</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -287,7 +288,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>401</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- Etiquette -->
           <se:TextSymbolizer>
@@ -382,7 +383,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
@@ -464,7 +465,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -492,7 +493,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- Etiquette -->
           <se:TextSymbolizer>
@@ -547,7 +548,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -575,7 +576,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- Etiquette -->
           <se:TextSymbolizer>
@@ -629,7 +630,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -656,12 +657,16 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>forme</ogc:PropertyName>
                 <ogc:Literal>cir</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>    
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>               
             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- représentation symbole sur ligne  -->
           <se:TextSymbolizer>
@@ -680,7 +685,7 @@
             <se:VendorOption name="repeat">100</se:VendorOption>
           </se:TextSymbolizer>
 
-          <!-- Etiquette  -->
+          <!-- Etiquette  (sans refoulement) -->
           <se:TextSymbolizer>
             <se:Label>
                 UNIT
@@ -722,6 +727,91 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7320</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>forme</ogc:PropertyName>
+                <ogc:Literal>cir</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>     
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsEqualTo>               
+            </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+          <!-- représentation symbole sur ligne  -->
+          <se:TextSymbolizer>
+            <se:Label>U</se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial Black</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#C917D6</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="repeat">100</se:VendorOption>
+          </se:TextSymbolizer>
+
+          <!-- Etiquette (refoulement) -->
+          <se:TextSymbolizer>
+            <se:Label>
+                UNIT  REF
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>hauteur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+				 *
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>      
+      
       <!-- 7320b - Conduite unitaire (circulaire)-->
 
       <se:FeatureTypeStyle>
@@ -739,12 +829,16 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>forme</ogc:PropertyName>
                 <ogc:Literal>cir</ogc:Literal>
-              </ogc:PropertyIsEqualTo>                
+              </ogc:PropertyIsEqualTo>         
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo> 
             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- représentation symbole sur ligne  -->
           <se:TextSymbolizer>
@@ -797,6 +891,84 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
+      <!-- Refoulement -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7320</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>forme</ogc:PropertyName>
+                <ogc:Literal>cir</ogc:Literal>
+              </ogc:PropertyIsEqualTo>  
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsEqualTo>               
+            </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+          <!-- représentation symbole sur ligne  -->
+          <se:TextSymbolizer>
+            <se:Label>U</se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial Black</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#C917D6</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="repeat">100</se:VendorOption>
+          </se:TextSymbolizer>
+
+          <!-- Etiquette  -->
+          <se:TextSymbolizer>
+            <se:Label>
+                UNIT  REF
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
       <!-- 7310 - Conduite eau usée -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -815,7 +987,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -826,6 +998,7 @@
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
+
       <se:FeatureTypeStyle>
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -838,11 +1011,15 @@
                 <ogc:PropertyName>exist_offset</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
               </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>               
             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- Etiquette -->
           <se:TextSymbolizer>
@@ -878,6 +1055,62 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7310</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsEqualTo>               
+            </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+          <!-- Etiquette -->
+          <se:TextSymbolizer>
+            <se:Label>
+                EU  REF
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
       <!-- 7300 - Conduite eau pluviale -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -896,7 +1129,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -921,11 +1154,15 @@
                 <ogc:PropertyName>exist_offset</ogc:PropertyName>
                 <ogc:Literal>0</ogc:Literal>
               </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
           <!-- Etiquette -->
           <se:TextSymbolizer>
@@ -961,7 +1198,63 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7300</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsEqualTo>                
+            </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
+          <!-- Etiquette -->
+          <se:TextSymbolizer>
+            <se:Label>
+                EP  REF
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      
       <!-- 3397 - Regard borgne -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -974,7 +1267,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -998,7 +1291,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1022,7 +1315,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1046,7 +1339,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1070,7 +1363,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1094,7 +1387,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1117,7 +1410,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1141,7 +1434,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1165,7 +1458,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1189,7 +1482,7 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
@@ -1213,12 +1506,11 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
-
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -1238,12 +1530,11 @@
           </ogc:Filter>
           <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
-
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>

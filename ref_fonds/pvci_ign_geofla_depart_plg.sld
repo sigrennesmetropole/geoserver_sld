@@ -16,6 +16,7 @@
   29/06/2016  |  Maël REBOUX         |  modification pour site open data + migration données IGN en base
   01/12/2016  |  Maël REBOUX         |  on montre France entière comme décidé en comité de pilotage
   01/07/2017  |  Stéphane GELIN      |  integration données générales 
+  02/10/2017  |  Stéphane GELIN      |  rajout fond blanc en dessous du 1/5000ème
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -46,6 +47,16 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
+      <FeatureTypeStyle>
+        <Rule>
+          <MaxScaleDenominator>5000</MaxScaleDenominator>      
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+          </PolygonSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>      
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : dg_itopo
+  nom du SLD : dg_itopo_negatif
   
-  couche source dans la base :  donnees_gen.v_ilot_topo
-  layer cible du style       :  ref_fonds:dg_ilot_topo
+  couche source dans la base :  donnees_gen.v_ilot_topo_negatif
+  layer cible du style       :  ref_fonds : v_ilot_topo_negatif
   
-  objet :  Style relatif aux ilots topographiques de Rennes Métropole.
+  objet :  Style relatif à l'inverse des ilots topographiques de Rennes Métropole.
   
   Historique des versions :
   date        |  auteur              |  description
@@ -24,7 +24,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
  <NamedLayer>
-    <se:Name>dg_ilot_topo</se:Name>
+    <se:Name>v_ilot_topo</se:Name>
     <UserStyle>
      <se:Name>dg_itopo</se:Name>
      <se:Description>        
@@ -37,7 +37,7 @@
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-                <se:SvgParameter name="fill">#E3EFCC</se:SvgParameter>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
                 <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
           </se:PolygonSymbolizer>

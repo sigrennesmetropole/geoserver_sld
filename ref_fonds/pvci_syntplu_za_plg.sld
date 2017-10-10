@@ -14,11 +14,7 @@
   01/11/2014  |  Stéphane GELIN      |  version initiale
   26/05/2016  |  Maël REBOUX         |  modifications
   01/07/2017  |  Stéphane GELIN      |  integration données générales 
-<<<<<<< HEAD
   22/08/2017  |  Stéphane GELIN      |  séparation etiquettes et zones   
-=======
-  
->>>>>>> origin/master
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -44,11 +40,10 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MinScaleDenominator>1</MinScaleDenominator>
-          <MaxScaleDenominator>5000</MaxScaleDenominator>  
+          <MaxScaleDenominator>10000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#B8CCD4</CssParameter>
-              <CssParameter name="fill-opacity">0.2</CssParameter>              
+              <CssParameter name="fill">#D0C4E5</CssParameter>
             </Fill>
 
           </PolygonSymbolizer>
@@ -63,15 +58,13 @@
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <MinScaleDenominator>5000</MinScaleDenominator>
+          <MinScaleDenominator>10000</MinScaleDenominator>
           <MaxScaleDenominator>35000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#B8CCD4</CssParameter>
+              <CssParameter name="fill">#D0C4E5</CssParameter>
             </Fill>
-            <Stroke>
-              <CssParameter name="stroke">#B8CCD4</CssParameter>
-            </Stroke>
+
           </PolygonSymbolizer>
         </Rule>
         
@@ -87,13 +80,8 @@
           <MaxScaleDenominator>273000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#B8CCD4</CssParameter>
-              <CssParameter name="fill-opacity">0.5</CssParameter>
+              <CssParameter name="fill">#D0C4E5</CssParameter>
             </Fill>
-            <Stroke>
-              <CssParameter name="stroke">#B8CCD4</CssParameter>
-              <CssParameter name="stroke-opacity">0</CssParameter>
-            </Stroke>
           </PolygonSymbolizer>
         </Rule>
 

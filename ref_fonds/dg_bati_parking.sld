@@ -44,7 +44,7 @@
           <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-                <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
                 <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
           </se:PolygonSymbolizer>

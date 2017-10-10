@@ -43,14 +43,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
           </ogc:Filter>
-          <se:MinScaleDenominator>5000</se:MinScaleDenominator>   
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#EDEDED</se:SvgParameter>
+              <se:SvgParameter name="fill">#E4E4E4</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#EAE5DE</se:SvgParameter>
+              <se:SvgParameter name="stroke">#E4E4E4</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
@@ -75,11 +74,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>   
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#EAE5DE</se:SvgParameter>
+              <se:SvgParameter name="fill">#E4E4E4</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#EAE5DE</se:SvgParameter>
+              <se:SvgParameter name="stroke">#E4E4E4</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
@@ -104,11 +103,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>   
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="fill">#E4E4E4</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="stroke">#E4E4E4</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
