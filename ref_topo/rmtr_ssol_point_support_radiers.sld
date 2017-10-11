@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : RMTR_ssol_point_support_radiers
+  nom du SLD : rmtr_ssol_point_support_radiers
 
   couche source dans la base :  topossol.point_support
   layer cible du style       :  ref_topo:rmtr_ssol_point_support
@@ -24,7 +24,7 @@
   <NamedLayer>
     <se:Name>ref_topo:rmtr_ssol_point_support</se:Name>
     <UserStyle>
-      <se:Name>RMTR_ssol_point_support_radiers</se:Name>
+      <se:Name>rmtr_ssol_point_support_radiers</se:Name>
       <se:Description>
         <se:Title>Côtes radiers</se:Title>
         <se:Abstract>Style relatif aux cotes altimétriques des radiers des tampons d'assainissement</se:Abstract>
