@@ -43,9 +43,9 @@
           <MaxScaleDenominator>10000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#D0C4E5</CssParameter>
+              <CssParameter name="fill">#BCCAD1</CssParameter>
+<!-- violet             <CssParameter name="fill">#D0C4E5</CssParameter>	-->
             </Fill>
-
           </PolygonSymbolizer>
         </Rule>
         
@@ -62,9 +62,9 @@
           <MaxScaleDenominator>35000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#D0C4E5</CssParameter>
+              <CssParameter name="fill">#BCCAD1</CssParameter>
+<!-- violet             <CssParameter name="fill">#D0C4E5</CssParameter>	-->
             </Fill>
-
           </PolygonSymbolizer>
         </Rule>
         
@@ -80,7 +80,8 @@
           <MaxScaleDenominator>273000</MaxScaleDenominator>  
           <PolygonSymbolizer>
             <Fill>
-              <CssParameter name="fill">#D0C4E5</CssParameter>
+              <CssParameter name="fill">#BCCAD1</CssParameter>
+<!-- violet             <CssParameter name="fill">#D0C4E5</CssParameter>	-->
             </Fill>
           </PolygonSymbolizer>
         </Rule>

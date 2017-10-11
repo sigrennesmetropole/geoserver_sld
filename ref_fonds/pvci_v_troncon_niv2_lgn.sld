@@ -320,7 +320,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -402,7 +402,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">3.5</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -490,7 +490,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#004DA8</CssParameter>
+              <CssParameter name="stroke">#6699CD</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -560,7 +560,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#004DA8</CssParameter>
+              <CssParameter name="stroke">#6699CD</CssParameter>
               <CssParameter name="stroke-width">3.5</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -737,7 +737,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">3</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -780,7 +780,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">3</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -817,7 +817,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#004DA8</CssParameter>
+              <CssParameter name="stroke">#6699CD</CssParameter>
               <CssParameter name="stroke-width">3</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>

@@ -43,7 +43,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#eddc73</se:SvgParameter>
+              <se:SvgParameter name="stroke">#F8EC00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">2.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
@@ -135,7 +135,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FF623F</se:SvgParameter>
+              <se:SvgParameter name="stroke">#FFA77F</se:SvgParameter>
               <se:SvgParameter name="stroke-width">4.2</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
@@ -157,7 +157,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>550000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FF8F3F</se:SvgParameter>
+              <se:SvgParameter name="stroke">#FFA77F</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3.4</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.8</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
@@ -233,7 +233,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#004DA8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#6699CD</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.75</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
@@ -260,7 +260,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#004DA8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#6699CD</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.75</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
@@ -288,7 +288,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:MaxScaleDenominator>550000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#5086C4</se:SvgParameter>
+              <se:SvgParameter name="stroke">#6699CD</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.75</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>

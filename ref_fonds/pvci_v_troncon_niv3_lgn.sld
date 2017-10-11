@@ -15,7 +15,6 @@
   10/06/2015  |  Stéphane GELIN      |  version initiale
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
   27/03/2017  |  Maël REBOUX         |  rajout title et abstract
-  25/07/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -68,7 +67,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>3</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -117,12 +116,12 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">4</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -204,7 +203,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">3.5</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -286,7 +285,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#F84931</CssParameter>
+              <CssParameter name="stroke">#FFA77F</CssParameter>
               <CssParameter name="stroke-width">2</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -348,7 +347,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#004DA8</CssParameter>
+              <CssParameter name="stroke">#6699CD</CssParameter>
               <CssParameter name="stroke-width">3</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
