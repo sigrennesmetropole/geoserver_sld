@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   18/09/2017  |  S GELIN             |  version initiale
   13/10/2017  |  S GELIN             |  rajout des noms des sites en-dessous du 1/10000
+  16/10/2017  | Maël REBOUX          |  modification fonte + taille des étiquettes
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -63,14 +64,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:And>
           </ogc:Filter>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-
           <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>nom_pvci</ogc:PropertyName>
             </se:Label>
             <se:Font>
-              <se:SvgParameter name="font-family">Arial Narrow</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">12</se:SvgParameter>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">bold</se:SvgParameter>
@@ -84,7 +84,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </se:PointPlacement>
             </se:LabelPlacement>
             <se:Halo>
-              <se:Radius>2</se:Radius>
+              <se:Radius>1.5</se:Radius>
               <se:Fill>
                 <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
               </se:Fill>
