@@ -10,7 +10,8 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  18/09/2017  |  S GELIN         |  version initiale
+  18/09/2017  |  S GELIN             |  version initiale
+  13/10/2017  |  S GELIN             |  rajout des noms des sites en-dessous du 1/9000
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -23,7 +24,78 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Title>Equipements de Rennes Métropole</se:Title>
         <se:Abstract>Représentation et étiquettes des équipements sur Rennes Métropole</se:Abstract>
       </se:Description>
-      
+
+      <!-- Etiquette -->      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Etiquette</se:Name>  
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+           <ogc:And>
+             <ogc:PropertyIsEqualTo>
+               <ogc:PropertyName>etat_site</ogc:PropertyName>
+               <ogc:Literal>actif</ogc:Literal>
+             </ogc:PropertyIsEqualTo>
+             <ogc:PropertyIsNull>
+               <ogc:PropertyName>id_site_pere</ogc:PropertyName>
+             </ogc:PropertyIsNull>  
+             <ogc:Or>
+               <ogc:PropertyIsNotEqualTo>
+                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
+                 <ogc:Literal>51</ogc:Literal>
+               </ogc:PropertyIsNotEqualTo>
+               <ogc:PropertyIsNotEqualTo>
+                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
+                 <ogc:Literal>56</ogc:Literal>
+               </ogc:PropertyIsNotEqualTo>  
+               <ogc:PropertyIsNotEqualTo>
+                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
+                 <ogc:Literal>89</ogc:Literal>
+               </ogc:PropertyIsNotEqualTo>   
+               <ogc:PropertyIsNotEqualTo>
+                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
+                 <ogc:Literal>90</ogc:Literal>
+               </ogc:PropertyIsNotEqualTo>  
+               <ogc:PropertyIsNotEqualTo>
+                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
+                 <ogc:Literal>94</ogc:Literal>
+               </ogc:PropertyIsNotEqualTo>                 
+             </ogc:Or>             
+           </ogc:And>          
+          </ogc:Filter>             
+          <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
+
+          <se:TextSymbolizer>
+            <se:Label>
+                <ogc:PropertyName>nom_pvci</ogc:PropertyName>
+            </se:Label>                
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial Narrow</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>              
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>-0.3</se:AnchorPointX>
+                  <se:AnchorPointY>1</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>              
+            <se:Halo>
+              <se:Radius>2</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+            </se:Fill>
+          </se:TextSymbolizer>             
+        </se:Rule>
+      </se:FeatureTypeStyle>
+          
       
       <!-- Mairie -->      
       <se:FeatureTypeStyle>
@@ -214,7 +286,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            </ogc:And>          
           </ogc:Filter>        
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
                 <se:Graphic>
                   <se:Mark>
@@ -2635,7 +2707,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            </ogc:And>          
           </ogc:Filter>        
           <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
                 <se:Graphic>
                   <se:Mark>
@@ -2743,7 +2815,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
            </ogc:And>          
           </ogc:Filter>        
           <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
                 <se:Graphic>
                   <se:Mark>
@@ -3922,5 +3994,3 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
-       
-  
