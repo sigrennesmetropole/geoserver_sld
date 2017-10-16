@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   18/09/2017  |  S GELIN             |  version initiale
-  13/10/2017  |  S GELIN             |  rajout des noms des sites en-dessous du 1/9000
+  13/10/2017  |  S GELIN             |  rajout des noms des sites en-dessous du 1/10000
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -62,7 +62,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
 
           <se:TextSymbolizer>
             <se:Label>
@@ -122,8 +122,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -181,7 +179,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
@@ -236,8 +233,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -335,7 +330,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -459,8 +453,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -545,7 +537,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
@@ -615,7 +606,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -728,7 +718,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -850,7 +839,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -988,7 +976,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -1062,7 +1049,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
@@ -1122,7 +1108,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -1240,7 +1225,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -1386,7 +1370,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -1564,7 +1547,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -1722,7 +1704,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -1884,7 +1865,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2054,7 +2034,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2179,7 +2158,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2282,7 +2260,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2388,7 +2365,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2494,7 +2470,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2600,7 +2575,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2706,7 +2680,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2760,7 +2733,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2814,7 +2786,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2868,7 +2839,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -2980,7 +2950,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3102,7 +3071,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3224,7 +3192,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3402,7 +3369,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3574,7 +3540,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3680,7 +3645,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3786,7 +3750,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -3898,7 +3861,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
