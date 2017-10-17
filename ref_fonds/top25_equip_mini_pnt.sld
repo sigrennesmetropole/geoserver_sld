@@ -35,7 +35,8 @@
             <se:Abstract>Nom abrégé des équipements publics principaux des communes de Rennes Métropole</se:Abstract>
           </se:Description>
           
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>67000</se:MaxScaleDenominator>
           
           <se:TextSymbolizer>
               

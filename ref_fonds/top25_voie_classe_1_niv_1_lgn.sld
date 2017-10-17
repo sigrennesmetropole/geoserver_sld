@@ -45,8 +45,9 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>       
           
-          <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+            <!-- plage affichage -->
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>
@@ -73,8 +74,8 @@
           </ogc:Filter> 
 
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>

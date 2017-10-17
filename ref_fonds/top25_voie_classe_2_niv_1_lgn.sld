@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : top25_voie_classe_2_niv_1_lgn
@@ -46,7 +46,8 @@
           </ogc:Filter> 
           
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>
@@ -73,7 +74,8 @@
           </ogc:Filter>        
 
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>

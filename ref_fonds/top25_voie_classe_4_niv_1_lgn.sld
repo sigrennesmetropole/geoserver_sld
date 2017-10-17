@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : top25_voie_classe_4_niv1_lgn
+  nom du SLD : top25_voie_classe_4_niv_1_lgn
   
   couche source dans la base :  rva.v_troncon_lgn
   layer cible du style       :  ref_fonds:vgs_troncon_automixte_classe4
   
-  objet : Voie de desserte locale - niveau 1
+  objet : Voie de desserte locale - niveau -1
 	
   Historique des versions :
   date        |  auteur              |  description
@@ -26,29 +26,29 @@
     <se:Name>ref_fonds:vgs_troncon_automixte_classe4</se:Name>
 
     <UserStyle>
-      <se:Name>top25_voie_classe_4_niv1_lgn</se:Name>
+      <se:Name>top25_voie_classe_4_niv_1_lgn</se:Name>
 
       <se:Description>
         <se:Title>Voie de desserte locale</se:Title>
-        <se:Abstract>Style de lignes aux couleurs de voies de dessertes locales de niveaux 1.</se:Abstract>
+        <se:Abstract>Style de lignes aux couleurs de voies de dessertes locales de niveaux -1.</se:Abstract>
       </se:Description> 
 
       <se:FeatureTypeStyle>
 
         <se:Rule>
-          <se:Name>Voies grises - niveau 1</se:Name>
+          <se:Name>Voies grises - niveau -1</se:Name>
 
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>niveau</ogc:PropertyName>
-              <ogc:Literal>1</ogc:Literal>
+              <ogc:Literal>-1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>       
+          </ogc:Filter>         
           
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
-          
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9c9c9c</se:SvgParameter>
@@ -64,19 +64,19 @@
       <se:FeatureTypeStyle>
       
         <se:Rule>
-          <se:Name>Voies blanches - niveau 1</se:Name>
+          <se:Name>Voies blanches - niveau -1</se:Name>
 
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>niveau</ogc:PropertyName>
-              <ogc:Literal>1</ogc:Literal>
+              <ogc:Literal>-1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>   
+          </ogc:Filter>        
           
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
-
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>

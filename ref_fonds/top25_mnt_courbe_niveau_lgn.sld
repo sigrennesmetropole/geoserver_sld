@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
-  17/10/2017  |  Maël REBOUX         |  mise en forme + moins visible à petite échelle
+  17/10/2017  |  Maël REBOUX         |  mise en forme + m
 
 -->
 <StyledLayerDescriptor version="1.1.0"

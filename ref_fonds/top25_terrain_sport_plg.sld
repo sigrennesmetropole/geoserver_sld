@@ -40,8 +40,8 @@
           
               
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
           
               <se:PolygonSymbolizer>                               
                      <se:Fill>

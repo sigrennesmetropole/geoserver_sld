@@ -39,7 +39,8 @@
           <se:Name>Couche des surfaces urbanisées (tâche urbaine) sur Rennes Métropole</se:Name>  
 
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
 
           <se:PolygonSymbolizer>                               
             <se:Fill>

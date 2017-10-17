@@ -40,8 +40,8 @@
           <se:Name>Lignes électriques</se:Name>
 
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
 
           <se:LineSymbolizer>
             <se:Stroke>

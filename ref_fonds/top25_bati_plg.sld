@@ -36,7 +36,7 @@
 
         <se:Rule>
 
-          <!-- filtre bâtis durs -->
+          <!-- filtre bâtiss durs -->
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_</ogc:PropertyName>
@@ -45,8 +45,8 @@
           </ogc:Filter>  
           
           <!-- plage affichage -->
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
+      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+      <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>        
 
           <!-- polygone gris foncé avec bordure noire -->
 
