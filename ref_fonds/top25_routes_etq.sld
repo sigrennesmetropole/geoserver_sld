@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   23/08/2017  |  Arnaud LECLERE      |  version initiale
   04/09/2017  |  Maël REBOUX         |  optimisation pour avoir des boîtes
+  16/10/2017  |  Maël REBOUX         |  taille et visibilité aux petites échelles
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -39,7 +40,7 @@
           </LineSymbolizer>
         </Rule>-->
         
-        <!-- les RN -->
+        <!-- les RN aux moyennes échelles -->
         <Rule>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escape="!">
@@ -48,14 +49,14 @@
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <MinScaleDenominator>7500</MinScaleDenominator>
-          <MaxScaleDenominator>137000</MaxScaleDenominator>
+          <MaxScaleDenominator>69000</MaxScaleDenominator>
           <TextSymbolizer>
             <Label>
               <ogc:PropertyName>nom</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">12</CssParameter>
+              <CssParameter name="font-size">10</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -80,7 +81,61 @@
                   <CssParameter name="stroke-width">0.25</CssParameter>
                 </Stroke>
               </Mark>
-              <Size>24</Size>
+              <Size>20</Size>
+            </Graphic>
+            <!-- ces options permettent d'optimier le placement des étiquettes -->
+            <!-- pb avec followLine : certaines boîtes n'apparaissent plus sur certains tronçons -->
+            <!--<VendorOption name="followLine">true</VendorOption>-->
+            <VendorOption name="group">yes</VendorOption>
+            <VendorOption name="repeat">200</VendorOption>
+            <!-- ces 2 options permettent de dimensionner la boîte -->
+            <VendorOption name="graphic-resize">stretch</VendorOption>
+            <VendorOption name="graphic-margin">3</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+        
+        <!-- les RN aux petites échelles -->
+        <Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escape="!">
+              <ogc:PropertyName>nom</ogc:PropertyName>
+              <ogc:Literal>RN *</ogc:Literal>
+            </ogc:PropertyIsLike>
+          </ogc:Filter>
+          <MinScaleDenominator>69000</MinScaleDenominator>
+          <MaxScaleDenominator>137000</MaxScaleDenominator>
+          <TextSymbolizer>
+            <Label>
+              <ogc:PropertyName>nom</ogc:PropertyName>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">8</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>
+            </LabelPlacement>
+            <Fill>
+              <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+            <Graphic>
+              <Mark>
+                <WellKnownName>square</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#DE5C38</CssParameter>
+                </Fill>
+                <Stroke>
+                  <CssParameter name="stroke">#2D6917</CssParameter>
+                  <CssParameter name="stroke-width">0.25</CssParameter>
+                </Stroke>
+              </Mark>
+              <Size>15</Size>
             </Graphic>
             <!-- ces options permettent d'optimier le placement des étiquettes -->
             <!-- pb avec followLine : certaines boîtes n'apparaissent plus sur certains tronçons -->
@@ -94,7 +149,8 @@
         </Rule>
         
         
-        <!-- les RD -->
+        
+        <!-- les RD aux moyennes échelles -->
         <Rule>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escape="!">
@@ -110,7 +166,7 @@
             </Label>
             <Font>
               <CssParameter name="font-family">Arial</CssParameter>
-              <CssParameter name="font-size">12</CssParameter>
+              <CssParameter name="font-size">10</CssParameter>
               <CssParameter name="font-weight">bold</CssParameter>
             </Font>
             <LabelPlacement>
@@ -135,7 +191,7 @@
                   <CssParameter name="stroke-width">0.25</CssParameter>
                 </Stroke>
               </Mark>
-              <Size>24</Size>
+              <Size>20</Size>
             </Graphic>
             <!-- ces options permettent d'optimier le placement des étiquettes -->
             <!-- pb avec followLine : certaines boîtes n'apparaissent plus sur certains tronçons -->
@@ -147,6 +203,10 @@
             <VendorOption name="graphic-margin">3</VendorOption>
           </TextSymbolizer>
         </Rule>
+        
+        
+        <!-- pas de RD aux petites échelles -->
+
 
       </FeatureTypeStyle>
     </UserStyle>
