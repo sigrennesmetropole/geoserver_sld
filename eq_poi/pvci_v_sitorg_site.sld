@@ -10,9 +10,9 @@
 
   Historique des versions :
   date        |  auteur              |  description
-  18/09/2017  |  S GELIN             |  version initiale
-  13/10/2017  |  S GELIN             |  rajout des noms des sites en-dessous du 1/10000
-  16/10/2017  | Maël REBOUX          |  modification fonte + taille des étiquettes
+  18/09/2017  |  Stéphane GELIN      |  version initiale
+  13/10/2017  |  Stéphane GELIN      |  rajout des noms des sites en-dessous du 1/10000
+  16/10/2017  |  Maël REBOUX         |  modification fonte + taille des étiquettes
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -23,13 +23,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:Name>pvci_v_sitorg_site</se:Name>
       <se:Description>
         <se:Title>Equipements de Rennes Métropole</se:Title>
-        <se:Abstract>Représentation et étiquettes des équipements sur Rennes Métropole</se:Abstract>
+        <se:Abstract>Symboles et étiquettes des sites et organismes sur Rennes Métropole.</se:Abstract>
       </se:Description>
 
       <!-- Etiquette avec nom des sites -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Etiquette</se:Name>
+          <se:Name>Étiquette</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:And>
               <ogc:PropertyIsEqualTo>
@@ -92,6 +92,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Fill>
               <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
             </se:Fill>
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+            <se:VendorOption name="spaceAround">10</se:VendorOption>
           </se:TextSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
