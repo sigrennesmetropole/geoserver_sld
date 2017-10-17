@@ -24,7 +24,6 @@
 
   <NamedLayer>
     <se:Name>ref_fonds:pvci_tu_rm</se:Name>
-
     <UserStyle>
       <se:Name>top25_tache_urbaine_plg</se:Name>
       <se:Description>

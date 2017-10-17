@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_hydro_plg
 
-  couche source dans la base : donnees_gen.v_hydro
-  couche reference : ref_fonds:pvci_hydrographie_plg
+  couche source dans la base :  donnees_gen.v_hydro
+  layer cible du style       :  ref_fonds:v_hydro
 
   objet : Permet d'afficher l'hydrographie de Rennes Métropole par un polygone bleu clair
 
@@ -23,7 +23,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>Hydrographie</se:Name>
+    <se:Name>ref_fonds:v_hydro</se:Name>
     <UserStyle>
       <se:Name>top25_hydro_plg</se:Name>
       <se:Description>

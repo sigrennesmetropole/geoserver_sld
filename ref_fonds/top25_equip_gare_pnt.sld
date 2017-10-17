@@ -3,8 +3,8 @@
 
   nom du SLD : top25_equip_gare_pnt
 
-  couche source dans la base : serv_equipub.audiar_equipements
-  layer cible du style :  ref_fonds.audiar_equipement
+  couche source dans la base :  serv_equipub.audiar_equipements
+  layer cible du style       :  ref_fonds:audiar_equipement
 
   objet : Affiche les haltes et gares sncf par un symbole ponctuel .
 
@@ -23,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds.audiar_equipement</se:Name>
+    <se:Name>ref_fonds:audiar_equipement</se:Name>
     <UserStyle>
       <se:Name>top25_equip_gare_pnt</se:Name>
       <se:Description>

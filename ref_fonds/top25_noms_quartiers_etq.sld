@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_noms_quartiers_etq
 
-  couche source dans la base : rva.v_voie
-  layer cible du style : ref_fonds:v_voie_lgn
+  couche source dans la base :  limite_admin.sousquartier
+  layer cible du style       :  ref_fonds:sousquartier
 
   objet : Permet d'afficher le nom des quartiers de la ville de Rennes
 
@@ -22,7 +22,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds:limite_admin</se:Name>
+    <se:Name>ref_fonds:sousquartier</se:Name>
     <UserStyle>
       <se:Name>top25_noms_quartiers_etq</se:Name>
       <se:Description>

@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_stations_metro_pnt
 
-  couche source dans la base : bdu.mobilite_transp
-  layer cible du style :  ref_fonds:stations_metro
+  couche source dans la base :  mobilite_transp.metro_station
+  layer cible du style       :  ref_fonds:stations_metro
 
   objet : Affiche les stations de métro par un symbole ponctuel.
 

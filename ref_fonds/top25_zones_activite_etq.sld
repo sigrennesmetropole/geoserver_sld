@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_zones_activite_etq
 
-  couche source dans la base : bdu:economie.audiar_actrm_syntplu
-  layer cible du style : ref_fonds:audiar_actrm_syntplu
+  couche source dans la base :  economie.audiar_actrm_syntplu
+  layer cible du style :        ref_fonds:audiar_actrm_syntplu
 
   objet : Permet d'afficher les zones d'activité sur Rennes Métropole
 

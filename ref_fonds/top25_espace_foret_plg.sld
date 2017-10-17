@@ -3,8 +3,8 @@
 
   nom du SLD : top25_espace_foret_plg
 
-  couche source dans la base :  bdu.pat_naturel.audiar_espforet
-  couche reference : ref_fonds:pvci_espforet
+  couche source dans la base :  pat_naturel.audiar_espforet
+  layer cible du style       :  ref_fonds:pvci_espforet
 
 
   objet : Permet d'afficher les espaces boisés sur Rennes Métropole

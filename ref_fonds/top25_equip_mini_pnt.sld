@@ -3,7 +3,7 @@
 
   nom du SLD : top25_equip_mini_pnt
 
-  couche source dans la base :  bdu.serv_equipub.audiar_equipement
+  couche source dans la base :  serv_equipub.audiar_equipement
   layer cible du style       :  ref_fonds:equipements_minimum
 
   objet : Nom d'équipements publics principaux en abrégé des communes de Rennes Métropole

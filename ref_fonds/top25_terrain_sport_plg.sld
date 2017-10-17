@@ -3,7 +3,7 @@
 
   nom du SLD : top25_terrain_sport_plg
 
-  couche source dans la base :  bdu.donnees_gen.v_sport_jeu
+  couche source dans la base :  donnees_gen.v_sport_jeu
   layer cible du style       :  ref_fonds:v_sport_jeu
 
   objet :  Style représentant l'emprise des terrains de sports sur Rennes Métropole.

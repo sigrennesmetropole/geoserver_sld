@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_hydro_etq
 
-  couche source dans la base : donnees_gen.v_hydro
-  layer cible du style : ref_fonds.v_hydro_plg
+  couche source dans la base :  donnees_gen.v_hydro
+  layer cible du style       :  ref_fonds:v_hydro
 
   objet : Permet d'afficher le nom des cours d'eau sur Rennes Métropole
 
@@ -22,7 +22,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds.v_hydro_plg</se:Name>
+    <se:Name>ref_fonds:v_hydro</se:Name>
     <UserStyle>
       <se:Name>top25_hydro_etq</se:Name>
       <se:Description>

@@ -3,7 +3,7 @@
   nom du SLD : top25_commune_contour_lgn
 
   couche source dans la base :  limite_admin.commune_contour
-  layer cible du style : ref_fonds:pvci_commune_contour
+  layer cible du style       :  ref_fonds:pvci_commune_contour
 
   objet : Affiche les limites communales par un trait en points gris
 
@@ -22,7 +22,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>Limites communales</se:Name>
+    <se:Name>ref_fonds:pvci_commune_contour</se:Name>
     <UserStyle>
       <se:Name>top25_commune_contour_lgn</se:Name>
       <se:Description>

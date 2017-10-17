@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_lieux_dits_etq
 
-  couche source dans la base : rva.v_voie_lgn
-  layer cible du style : ref_fonds:v_voie_lgn
+  couche source dans la base :  rva.v_voie_lgn
+  layer cible du style       :  ref_fonds:v_voie_lgn
 
   objet : Permet d'afficher le nom des lieux-dits sur Rennes Métropole
 

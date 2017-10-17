@@ -3,7 +3,7 @@
 
   nom du SLD : top25_fond_departemental_plg
 
-  couche source dans la base :  bdu.limite_admin.ign_geofla_depart
+  couche source dans la base :  limite_admin.ign_geofla_depart
   layer cible du style       :  ref_fonds:ign_geofla_depart
 
   objet :  Style de fond relatif à l'emprise du département 35.

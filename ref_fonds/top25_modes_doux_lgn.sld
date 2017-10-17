@@ -3,8 +3,8 @@
 
   nom du SLD : top25_modes_doux_lgn
 
-  couche source dans la base :  rva.troncon_voies
-  layer cible du style       :  ref_fonds:v_modes_doux
+  couche source dans la base :  vue SQL sur rva.v_troncon_lgn
+  layer cible du style       :  ref_fonds:vgs_troncon_modesdoux
 
   objet :  Style relatif aux modes doux.
 
@@ -24,7 +24,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds:v_modes_doux</se:Name>
+    <se:Name>ref_fonds:vgs_troncon_modesdoux</se:Name>
     <UserStyle>
       <se:Name>top25_modes_doux_lgn</se:Name>
       <se:Description>

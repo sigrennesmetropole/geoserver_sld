@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_routes_etq
 
-  couche source dans la base : rvue SQL sur rva.v_troncon_denom
-  layer cible du style : ref_fonds:routes_rn_rd
+  couche source dans la base :  vue SQL sur rva.v_troncon_denom
+  layer cible du style       :  ref_fonds:routes_rn_rd
 
   objet : Affiche l'étiquetage des routes nationales et départementales.
   
@@ -24,7 +24,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <Name>top25_routes_etq</Name>
+    <Name>ref_fonds:routes_rn_rd</Name>
     <UserStyle>
       <Title>Nom des routes principales</Title>
       <Abstract>Étiquettes des routes nationales et départementales.</Abstract>

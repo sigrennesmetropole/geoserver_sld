@@ -3,7 +3,7 @@
 
   nom du SLD : top25_lignes_elect_lgn
 
-  couche source dans la base :  reseaux.erdf_reseau_distrib
+  couche source dans la base :  reseaux.rte_bretagne_ligne
   layer cible du style       :  ref_fonds:rte_bretagne_ligne
 
   objet :  Style relatif aux lignes électriques.

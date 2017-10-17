@@ -4,7 +4,7 @@
   nom du SLD : top25_sfdiv_plg
 
   couche source dans la base :  cadastre.edi_sfdiv
-  layer cible du style       :  ref_fond:edi_sfdiv
+  layer cible du style       :  ref_fonds:edi_sfdiv
 
   objet : Style relatif aux cimetières chrétiens présents au sein du cadastre.
 
@@ -25,7 +25,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>Cimetières chrétiens</se:Name>
+    <se:Name>ref_fonds:edi_sfdiv</se:Name>
     <UserStyle>
       <se:Name>top25_sfdiv_plg</se:Name>
       <se:Description>
