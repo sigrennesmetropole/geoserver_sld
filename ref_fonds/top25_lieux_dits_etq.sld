@@ -11,7 +11,6 @@
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  échelle + mise en forme
-  17/10/2017  |  Maël REBOUX         |  mise en forme
 
 -->
 <StyledLayerDescriptor version="1.1.0"
