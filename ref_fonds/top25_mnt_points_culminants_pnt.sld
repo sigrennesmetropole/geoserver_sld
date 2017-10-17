@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   09/02/2017  |  Arnaud LECLERE      |  version initiale
+  17/10/2017  |  Maël REBOUX         |  fonte sans empatement
  
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -64,8 +65,8 @@
             </se:Label>
 
             <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans Book</se:SvgParameter>
-              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">9</se:SvgParameter>
               <se:SvgParameter name="font-style">italic</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>      
               <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
