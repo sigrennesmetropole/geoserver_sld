@@ -27,21 +27,17 @@
 
     <UserStyle>
       <se:Name>top25_mnt_points_culminants_pnt</se:Name>  
-
       <se:Description>
-        <se:Title>Points culminants : points et étiquettes</se:Title>
-        <se:Abstract>Style de points et d'étiquettes.</se:Abstract>
+        <se:Title>Points culminants du MNT</se:Title>
+        <se:Abstract>Points et étiquettes localisant les points culminants du modèle numérique de terrain.</se:Abstract>
       </se:Description> 
       <se:FeatureTypeStyle>
 
         <se:Rule>
-
+        
           <se:Name>Points culminants</se:Name>
-
-          <!-- plage affichage -->
           <se:MinScaleDenominator>8500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
-
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -56,14 +52,12 @@
           </se:PointSymbolizer>
 
           <se:TextSymbolizer>
-
             <se:Label>
               <ogc:Function name="numberFormat">
                 <ogc:Literal>##</ogc:Literal>
                 <ogc:PropertyName>z</ogc:PropertyName>
               </ogc:Function> 
             </se:Label>
-
             <se:Font>
               <se:SvgParameter name="font-family">Arial</se:SvgParameter>
               <se:SvgParameter name="font-size">9</se:SvgParameter>
@@ -71,7 +65,6 @@
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>      
               <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
             </se:Font>
-
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
@@ -84,15 +77,14 @@
                 </se:Displacement>
               </se:PointPlacement>
             </se:LabelPlacement>
-
             <se:Halo>
               <se:Radius>1</se:Radius>
               <se:Fill>
                 <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
               </se:Fill>
             </se:Halo>
-
           </se:TextSymbolizer>
+          
         </se:Rule>
 
       </se:FeatureTypeStyle>
