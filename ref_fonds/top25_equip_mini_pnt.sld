@@ -11,46 +11,40 @@
   Historique des versions :
   date        |  auteur              |  description
   23/08/2017  |  arnaud LECLERE      |  version initiale
-  
+  17/10/2017  |  Maël REBOUX         |  mise en forme
+
 -->
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
+
   <NamedLayer>
     <se:Name>ref_fonds:equipements_minimum</se:Name>
-    
     <UserStyle>
       <se:Name>top25_equip_mini_pnt</se:Name>
-      
-        <se:FeatureTypeStyle>
-          
-        <se:Rule> 
-          <se:Description>
-            <se:Title>top25_equip_mini_pnt</se:Title>       
-            <se:Abstract>Nom abrégé des équipements publics principaux des communes de Rennes Métropole</se:Abstract>
-          </se:Description>
-          
-      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-      <se:MaxScaleDenominator>67000</se:MaxScaleDenominator>
-          
+      <se:Description>
+        <se:Title>top25_equip_mini_pnt</se:Title>
+        <se:Abstract>Nom abrégé des équipements publics principaux des communes de Rennes Métropole</se:Abstract>
+      </se:Description>
+      <se:FeatureTypeStyle>
+
+        <se:Rule>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>67000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
-              
             <se:Label>
               <ogc:PropertyName>nom</ogc:PropertyName>
             </se:Label>
-            
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
               <se:SvgParameter name="font-size">11</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">bold</se:SvgParameter>
             </se:Font>
-            
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
@@ -67,6 +61,7 @@
             </se:Halo>
           </se:TextSymbolizer>
         </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

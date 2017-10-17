@@ -16,6 +16,7 @@
   16/10/2017  |  Maël REBOUX         |  taille et visibilité aux petites échelles
 
 -->
+
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"

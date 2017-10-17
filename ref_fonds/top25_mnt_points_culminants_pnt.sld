@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : top25_mnt_points_culminants_pnt
-    
-  couche source dans la base :  ref_alti.mnt_point_culminant 
-  layer cible du style       :  ref_fonds:mnt_point_culminant 
-  
+
+  couche source dans la base :  ref_alti.mnt_point_culminant
+  layer cible du style       :  ref_fonds:mnt_point_culminant
+
   objet : Points culminants
-	
+
   Historique des versions :
   date        |  auteur              |  description
   09/02/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  fonte sans empatement + échelle
- 
+
 -->
-<StyledLayerDescriptor version="1.1.0" 
-    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
-    xmlns="http://www.opengis.net/sld" 
-    xmlns:ogc="http://www.opengis.net/ogc" 
-    xmlns:se="http://www.opengis.net/se" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 			
+<StyledLayerDescriptor version="1.1.0"
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+    xmlns="http://www.opengis.net/sld"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:se="http://www.opengis.net/se"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
     <se:Name>ref_fonds:mnt_point_culminant</se:Name>
-
     <UserStyle>
-      <se:Name>top25_mnt_points_culminants_pnt</se:Name>  
+      <se:Name>top25_mnt_points_culminants_pnt</se:Name>
       <se:Description>
         <se:Title>Points culminants du MNT</se:Title>
         <se:Abstract>Points et étiquettes localisant les points culminants du modèle numérique de terrain.</se:Abstract>
-      </se:Description> 
+      </se:Description>
       <se:FeatureTypeStyle>
 
         <se:Rule>
-        
           <se:Name>Points culminants</se:Name>
           <se:MinScaleDenominator>8500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -50,20 +48,19 @@
               <se:Size>3</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-
           <se:TextSymbolizer>
             <se:Label>
               <ogc:Function name="numberFormat">
                 <ogc:Literal>##</ogc:Literal>
                 <ogc:PropertyName>z</ogc:PropertyName>
-              </ogc:Function> 
+              </ogc:Function>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Arial</se:SvgParameter>
               <se:SvgParameter name="font-size">9</se:SvgParameter>
               <se:SvgParameter name="font-style">italic</se:SvgParameter>
-              <se:SvgParameter name="font-weight">normal</se:SvgParameter>      
-              <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>              
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+              <se:SvgParameter name="fill">#4e4e4e</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:PointPlacement>
@@ -84,7 +81,6 @@
               </se:Fill>
             </se:Halo>
           </se:TextSymbolizer>
-          
         </se:Rule>
 
       </se:FeatureTypeStyle>

@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
-  17/10/2017  |  Maël REBOUX         |  mise en forme + m
+  17/10/2017  |  Maël REBOUX         |  mise en forme
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,10 +24,8 @@
 
   <NamedLayer>
     <se:Name>ref_fonds:mnt_courbe_niveau</se:Name>
-
     <UserStyle>
       <se:Name>top25_mnt_courbe_niveau_lgn</se:Name>
-
       <se:Description>
         <se:Title>Courbe de niveau : lignes bistres</se:Title>
         <se:Abstract>Style de lignes de couleurs bistres.</se:Abstract>
@@ -52,7 +50,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-        
+
         <se:Rule>
           <se:Name>10m</se:Name>
           <ogc:Filter>
@@ -71,7 +69,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-        
+
 
       </se:FeatureTypeStyle>
     </UserStyle>
