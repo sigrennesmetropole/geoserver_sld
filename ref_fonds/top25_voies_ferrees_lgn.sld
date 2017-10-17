@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
+  16/10/2017  |  Maël REBOUX         |  petites échelles
     
 -->
 
@@ -27,21 +28,18 @@
 
     <UserStyle>   
       <se:Name>top25_voies_ferrees_lgn</se:Name>
-
       <se:Description>
         <se:Title>Voies ferrées</se:Title>
         <se:Abstract>Style avec des lignes tiretés gris clairs.</se:Abstract>
       </se:Description>
 
       <se:FeatureTypeStyle>
-
+      
+        <!-- alternance noir et blanc -->
         <se:Rule>
-
           <se:Name>Voies ferrées</se:Name>
-
-          <!-- plage affichage -->
           <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#1a1a1a</se:SvgParameter>
@@ -50,7 +48,6 @@
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
-
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
@@ -60,7 +57,21 @@
               <se:SvgParameter name="stroke-dasharray">18 16</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
-
+        </se:Rule>
+        
+        <!-- ligne grise + fine -->
+        <se:Rule>
+          <se:Name>Voies ferrées</se:Name>
+          <se:MinScaleDenominator>69000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#6D6D6D</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
         </se:Rule>
 
       </se:FeatureTypeStyle>
