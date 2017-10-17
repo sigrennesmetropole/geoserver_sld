@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   09/02/2017  |  Arnaud LECLERE      |  version initiale
-  17/10/2017  |  Maël REBOUX         |  fonte sans empatement
+  17/10/2017  |  Maël REBOUX         |  fonte sans empatement + échelle
  
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -37,7 +37,7 @@
         
           <se:Name>Points culminants</se:Name>
           <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>34900</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
