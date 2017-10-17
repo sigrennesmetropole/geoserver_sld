@@ -22,8 +22,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>pvci_v_sitorg_site</se:Name>
       <se:Description>
-        <se:Title>Equipements de Rennes Métropole</se:Title>
-        <se:Abstract>Symboles et étiquettes des sites et organismes sur Rennes Métropole.</se:Abstract>
+        <se:Title>Équipements de Rennes Métropole - PVCI</se:Title>
+        <se:Abstract>Symboles et étiquettes des sites et organismes sur Rennes Métropole - sélection pour le Plan de Ville Communal et Intercommunal.</se:Abstract>
       </se:Description>
 
       <!-- Etiquette avec nom des sites -->
