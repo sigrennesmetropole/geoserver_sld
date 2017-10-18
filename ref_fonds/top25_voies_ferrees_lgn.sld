@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
   16/10/2017  |  Maël REBOUX         |  petites échelles
+  18/10/2017  |  Maël REBOUX         |  homogénéisation + style plus topographique
 
 -->
 
@@ -29,43 +30,51 @@
       <se:Name>top25_voies_ferrees_lgn</se:Name>
       <se:Description>
         <se:Title>Voies ferrées</se:Title>
-        <se:Abstract>Style avec des lignes tiretés gris clairs.</se:Abstract>
+        <se:Abstract>Lignes grises à noires</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
-        <!-- alternance noir et blanc -->
+        <!-- ligne gris foncé assez fine -->
         <se:Rule>
           <se:Name>Voies ferrées</se:Name>
           <se:MinScaleDenominator>8500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#1a1a1a</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+              <se:SvgParameter name="stroke">#222222</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.85</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
+        </se:Rule>
+        
+        <!-- ligne grise -->
+        <se:Rule>
+          <se:Name>Voies ferrées</se:Name>
+          <se:MinScaleDenominator>18000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">mitre</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">butt</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">18 16</se:SvgParameter>
+              <se:SvgParameter name="stroke">#4F4F4F</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-
-        <!-- ligne grise + fine -->
+        
+        <!-- ligne noire + fine -->
         <se:Rule>
           <se:Name>Voies ferrées</se:Name>
           <se:MinScaleDenominator>69000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#6D6D6D</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
