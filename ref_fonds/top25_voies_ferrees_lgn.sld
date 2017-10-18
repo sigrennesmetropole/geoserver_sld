@@ -37,7 +37,7 @@
         <!-- ligne gris foncé assez fine -->
         <se:Rule>
           <se:Name>Voies ferrées</se:Name>
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>

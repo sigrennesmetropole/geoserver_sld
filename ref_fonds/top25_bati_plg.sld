@@ -41,7 +41,7 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>15000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>

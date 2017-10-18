@@ -34,7 +34,7 @@
 
         <se:Rule>
           <se:Name>Points culminants</se:Name>
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>

@@ -38,7 +38,7 @@
               <ogc:Literal>Lieu-dit</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>

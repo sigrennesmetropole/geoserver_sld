@@ -35,7 +35,7 @@
 
         <se:Rule>
           <se:Name>Couche de fond affichant le contour des terrains de sports sur RM</se:Name>
-          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
