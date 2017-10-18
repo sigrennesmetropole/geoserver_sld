@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   18/01/2017  |  Arnaud LECLERE      |  version initiale
+  18/10/2017  |  Maël REBOUX         |  mise en forme
  
 -->
 
@@ -24,31 +25,25 @@
 
   <NamedLayer>
     <se:Name>ref_fonds:vgs_troncon_automixte_classe0</se:Name>
-
     <UserStyle>
       <se:Name>top25_voie_classe_0_niv3_lgn</se:Name>
-
       <se:Description>
         <se:Title>Voie d'intérêt national ou régional</se:Title>
         <se:Abstract>Style de lignes aux couleurs de voies régionales ou nationales de niveaux 3.</se:Abstract>
       </se:Description> 
 
+      
       <se:FeatureTypeStyle>
-
         <se:Rule>
           <se:Name>Voies grises - niveau 3</se:Name>
-
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>niveau</ogc:PropertyName>
               <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>    
-          
-          <!-- plage affichage -->
-      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
-
+          </ogc:Filter>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9c9c9c</se:SvgParameter>
@@ -58,25 +53,18 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-        
       </se:FeatureTypeStyle>
-
       <se:FeatureTypeStyle>
-      
         <se:Rule>
           <se:Name>Voies rouges - niveau 3</se:Name>
-
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>niveau</ogc:PropertyName>
               <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-          </ogc:Filter>    
-          
-          <!-- plage affichage -->
-      <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-      <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
-          
+          </ogc:Filter>
+          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#de5c38</se:SvgParameter>
@@ -85,10 +73,10 @@
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
-
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-      </se:FeatureTypeStyle>       
+      
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
