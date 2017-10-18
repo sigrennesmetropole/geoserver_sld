@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  mise en forme
+  18/10/2017  |  Maël REBOUX         |  Dégradé de noir selon les échelles
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -31,7 +32,7 @@
         <se:Abstract>Bâtiments du cadastre.</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
-
+        
         <se:Rule>
           <!-- filtre bâtis durs -->
           <ogc:Filter>
@@ -40,14 +41,76 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
-          <!-- polygone gris foncé avec bordure noire -->
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>15000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#3c3c3c</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>01</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>15000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#4c4c4c</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>01</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>25000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>45000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#5f5f5f</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
             </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type_</ogc:PropertyName>
+              <ogc:Literal>01</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>35000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#888888</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
