@@ -12,7 +12,7 @@
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  mise en forme
-  18/10/2017  |  Maël REBOUX         |  Dégradé de noir selon les échelles
+  18/10/2017  |  Maël REBOUX         |  Dégradé de noir selon les échelles + visibilité en complément de la tâche urbaine
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -70,6 +70,7 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
@@ -90,6 +91,7 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
@@ -101,15 +103,16 @@
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>35000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>45000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#888888</se:SvgParameter>
+              <se:SvgParameter name="fill">#aaaaaa</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
