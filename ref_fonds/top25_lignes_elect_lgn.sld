@@ -36,7 +36,7 @@
         <se:Rule>
           <se:Name>Lignes électriques</se:Name>
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#6c6c6c</se:SvgParameter>
@@ -63,6 +63,21 @@
                 </se:Graphic>
               </se:GraphicStroke>
               <se:SvgParameter name="stroke-dasharray">4 40</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+        
+        <!-- on ne montre qu'une ligne à partir d'un certain seuil -->
+        <se:Rule>
+          <se:Name>Lignes électriques</se:Name>
+          <se:MinScaleDenominator>35000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#6c6c6c</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
