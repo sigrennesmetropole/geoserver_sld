@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   18/01/2017  |  Arnaud LECLERE      |  version initiale
-  18/10/2017  |  Maël REBOUX         |  mise en forme
+  18/10/2017  |  Maël REBOUX         |  mise en forme + visibilité aux petites échelles
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -31,7 +31,8 @@
         <se:Abstract>Style de lignes aux couleurs de voies inter quartiers de niveaux 0.</se:Abstract>
       </se:Description>
 
-
+      
+      <!-- moyennes échelles -->
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Voies grises - niveau 0</se:Name>
@@ -42,7 +43,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9c9c9c</se:SvgParameter>
@@ -63,7 +64,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffef71</se:SvgParameter>
@@ -74,6 +75,9 @@
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
+      
+      
+      <!-- petites échelles : on ne montre rien -->
 
 
     </UserStyle>
