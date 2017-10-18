@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   10/02/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  mise en forme
+  18/10/2017  |  Maël REBOUX         |  correction échelle visibilité
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -28,14 +29,14 @@
       <se:Name>top25_terrain_sport_plg</se:Name>
       <se:Description>
         <se:Title>Emprise des terrains des sports sur Rennes Métropole : polygone transparent et bordure fine grise</se:Title>
-        <se:Abstract>Polygone blanc et bordure grise</se:Abstract>
+        <se:Abstract>Polygone transparent et bordure grise</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
         <se:Rule>
           <se:Name>Couche de fond affichant le contour des terrains de sports sur RM</se:Name>
-          <se:MinScaleDenominator>7500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          <se:MinScaleDenominator>8500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
