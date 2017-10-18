@@ -34,11 +34,11 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Voies grises - niveau 2</se:Name>
+          <se:Name>Voies grises - niveau 3</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>niveau</ogc:PropertyName>
-              <ogc:Literal>2</ogc:Literal>
+              <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
@@ -55,11 +55,11 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Voies oranges - niveau 2</se:Name>
+          <se:Name>Voies oranges - niveau 3</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>niveau</ogc:PropertyName>
-              <ogc:Literal>2</ogc:Literal>
+              <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
