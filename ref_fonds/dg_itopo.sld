@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
-  18/10/2017  |  Maël REBOUX         |  mise en forme
+  18/10/2017  |  Maël REBOUX         |  mise en forme + bordure à zéro
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -39,6 +39,10 @@
               <se:SvgParameter name="fill">#E3EFCC</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
