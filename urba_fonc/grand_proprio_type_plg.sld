@@ -14,6 +14,7 @@
   18/12/2015  |  Maël REBOUX         |  version initiale
   08/08/2016  |  Maël REBOUX         |  passage de SLD à SE
   13/10/2016  |  Maël REBOUX         |  rajout département région état
+  23/10/2017  |  Maël REBOUX         |  rajout Établissement public de santé (EPS)
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -129,7 +130,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         
         <se:Rule>
-          <se:Name>Etat</se:Name>
+          <se:Name>État</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -149,7 +150,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         
         <se:Rule>
-          <se:Name>Etablissement public foncier (EPF)</se:Name>
+          <se:Name>Établissement public foncier (EPF)</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -159,6 +160,26 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#e8beff</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>Établissement public de santé (EPS)</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:Literal>EPS</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#98e600</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
