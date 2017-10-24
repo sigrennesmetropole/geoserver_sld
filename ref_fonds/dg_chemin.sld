@@ -36,7 +36,7 @@
              <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
              <se:PolygonSymbolizer>
                   <se:Fill>
-                        <se:SvgParameter name="fill">#F0FFE9</se:SvgParameter>
+                        <se:SvgParameter name="fill">#FFF8D1</se:SvgParameter>
                   </se:Fill>
              </se:PolygonSymbolizer>  
          </se:Rule>
