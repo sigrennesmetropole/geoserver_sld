@@ -4,13 +4,14 @@
   nom du SLD : dg_ouvrage
 
   couche source dans la base :  donnees_gen.v_ouvrage
-  layer cible du style       :  ref_fonds : v_ouvrage
+  layer cible du style       :  ref_fonds:v_ouvrage
 
-  objet :  Style relatif aux ouvrages de Rennes.
+  objet :  Style relatif aux ouvrages de Rennes : bâtiment abritant ascenceurs, ouvrages métro, etc
 
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  atténuation
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -35,8 +36,9 @@
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#545454</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.75</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
