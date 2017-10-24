@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  1 seule règle + gestion des échelles
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -22,38 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_arbre_orn</se:Name>
-    <UserStyle>
-      <se:Name>dg_arbre</se:Name>
-      <se:Description>
-        <se:Title>arbres</se:Title>
-        <se:Abstract>Style des arbres d'ornement de Rennes</se:Abstract>
-      </se:Description>
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-          <se:PointSymbolizer>
-            <se:Graphic>
-              <se:Mark>
-                <se:WellKnownName>circle</se:WellKnownName>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#80BA84</se:SvgParameter>
-                </se:Fill>
-                <se:Stroke>
-                  <se:SvgParameter name="stroke">#80BA84</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-                </se:Stroke>
-              </se:Mark>
-              <se:Size>4</se:Size>
-            </se:Graphic>
-          </se:PointSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-    </UserStyle>
-  </NamedLayer>
-
-  <NamedLayer>
-    <se:Name>v_arbre_ali</se:Name>
+    <se:Name>ARBRE</se:Name>
     <UserStyle>
       <se:Name>dg_arbre</se:Name>
       <se:Description>
@@ -61,7 +31,53 @@
         <se:Abstract>Style des arbres d'alignement de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
+
+        <!-- grandes échelles -->
         <se:Rule>
+          <se:MaxScaleDenominator>1500</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#80BA84</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>9</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+
+        <!-- moyennes échelles -->
+        <se:Rule>
+          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#80BA84</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>6</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+
+        <!-- petites échelles -->
+        <se:Rule>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -69,16 +85,18 @@
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#80BA84</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
-                  <se:SvgParameter name="stroke">#80BA84</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                  <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
               <se:Size>4</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
