@@ -30,6 +30,7 @@
         <se:Abstract>Style niveau de gris des haies de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
+
         <se:Rule>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -40,6 +41,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
