@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : dg_itopo_negatif
+  nom du SLD : dg_itopo_negatif_fond_intra
   
   couche source dans la base :  donnees_gen.ilot_topo_negatif
   layer cible du style       :  ref_fonds:dg_ilot_topo_negatif
   
-  objet :  Style relatif à l'inverse des ilots topographiques, pour simuler l'emprise des voies
+  objet :  gestion différenciée de la couche dg_itopo_negatif entre les secteurs intra et extra rocade /!\ cf ordre dans l'aggrégat
   
   Historique des versions :
   date        |  auteur              |  description
-  01/07/2017  |  Stephane GELIN      |  version initiale
-  19/10/2017  |  Maël REBOUX         |  gestion d'une largeur selon l'échelle
+  24/10/2017  |  Maël REBOUX         |  differenciation secteurs intra / extra rocade
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -25,26 +24,20 @@
   <NamedLayer>
     <se:Name>ref_fonds:dg_ilot_topo_negatif</se:Name>
     <UserStyle>
-      <se:Name>dg_itopo_negatif</se:Name>
+      <se:Name>dg_itopo_negatif_fond_intra</se:Name>
       <se:Description>        
-        <se:Title>Emprise des voies</se:Title>
+        <se:Title>complément des ilots topo sur secteur intra rocade : blanc large</se:Title>
         <se:Abstract/>
       </se:Description>
-      <se:FeatureTypeStyle>
 
-        <!-- secteur 2 = extra-rocade : on affiche l'emprise la plus petite en blanc -->
+      <!-- secteur 1 = intra-rocade : il n'y a que le buffer large. On l'affiche en blanc -->
+      <se:FeatureTypeStyle> 
         <se:Rule>
           <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>secteur</ogc:PropertyName>
-                <ogc:Literal>2</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>type</ogc:PropertyName>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>secteur</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>4500</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -58,8 +51,8 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-
       </se:FeatureTypeStyle> 
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
