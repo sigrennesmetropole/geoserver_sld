@@ -4,13 +4,14 @@
   nom du SLD : dg_nb_bapri_p
 
   couche source dans la base :  donnees_gen.v_bapri_p
-  layer cible du style       :  ref_fonds : v_bapri_p
+  layer cible du style       :  ref_fonds:dg_bapri_p
 
   objet :  Style niveau de gris relatif aux Porches des bâtiments privés de Rennes.
 
   Historique des versions :
   date        |  auteur              |  description
   23/08/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_bapri_p</se:Name>
+    <se:Name>ref_fonds:dg_bapri_p</se:Name>
     <UserStyle>
       <se:Name>dg_bapri_p</se:Name>
       <se:Description>
