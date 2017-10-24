@@ -13,8 +13,6 @@
   01/07/2017  |  Stephane GELIN      |  version initiale
   
 -->
-
-
 <StyledLayerDescriptor version="1.1.0" 
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
     xmlns="http://www.opengis.net/sld" 
@@ -22,28 +20,28 @@
     xmlns:se="http://www.opengis.net/se" 
     xmlns:xlink="http://www.w3.org/1999/xlink" 			
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  
- <NamedLayer>
+
+  <NamedLayer>
     <se:Name>v_voie_second</se:Name>
     <UserStyle>
-     <se:Name>dg_voie_second</se:Name>
-     <se:Description>        
+      <se:Name>dg_voie_second</se:Name>
+      <se:Description>        
         <se:Title>voie secondaire</se:Title>
         <se:Abstract>Style des voies secondaires de Rennes</se:Abstract>
-     </se:Description>
+      </se:Description>
       <se:FeatureTypeStyle>
-         <se:Rule>
-             <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-             <se:LineSymbolizer>
-               <se:Stroke>
-                 <se:SvgParameter name="stroke">#828282</se:SvgParameter>
-                 <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-               </se:Stroke>
-             </se:LineSymbolizer>
-       
-         </se:Rule>
-      </se:FeatureTypeStyle>
 
+        <se:Rule>
+          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#828282</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
