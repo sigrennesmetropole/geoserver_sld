@@ -4,13 +4,14 @@
   nom du SLD : dg_haie
 
   couche source dans la base :  donnees_gen.v_haies
-  layer cible du style       :  ref_fonds : v_haies
+  layer cible du style       :  ref_fonds:dg_haies
 
   objet :  Style relatif aux haies de Rennes.
 
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_haies</se:Name>
+    <se:Name>ref_fonds:dg_haies</se:Name>
     <UserStyle>
       <se:Name>dg_haie</se:Name>
       <se:Description>
@@ -30,6 +31,7 @@
         <se:Abstract>Style des haies de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
+
         <se:Rule>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -39,6 +41,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

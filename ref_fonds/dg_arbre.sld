@@ -4,14 +4,14 @@
   nom du SLD : dg_arbre
 
   couche source dans la base :  donnees_gen.v_arbre_orn  et  donnees_gen.v_arbre_ali
-  layer cible du style       :  ref_fonds : v_arbre_orn  et  v_arbre_ali
+  layer cible du style       :  ref_fonds:dg_arbre_orn  et  ref_fonds:dg_arbre_ali
 
   objet :  Style relatif aux arbres de Rennes.
 
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
-  24/10/2017  |  Maël REBOUX         |  1 seule règle + gestion des échelles
+  24/10/2017  |  Maël REBOUX         |  1 seule règle + gestion des échelles +  correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"

@@ -4,13 +4,14 @@
   nom du SLD : dg_voie_secondaire
   
   couche source dans la base :  donnees_gen.v_voie_second
-  layer cible du style       :  ref_fonds : v_voie_second
+  layer cible du style       :  ref_fonds:dg_voie_second
   
   objet :  Style relatif aux voies secondaires de Rennes.
   
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_voie_second</se:Name>
+    <se:Name>ref_fonds:dg_voie_second</se:Name>
     <UserStyle>
       <se:Name>dg_voie_second</se:Name>
       <se:Description>        

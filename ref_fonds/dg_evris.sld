@@ -4,13 +4,14 @@
   nom du SLD : dg_evris
 
   couche source dans la base :  donnees_gen.v_evris
-  layer cible du style       :  ref_fonds : v_evris
+  layer cible du style       :  ref_fonds:dg_evris
 
   objet :  Style relatif aux espaces verts publics de Rennes.
 
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_evris</se:Name>
+    <se:Name>ref_fonds:dg_evris</se:Name>
     <UserStyle>
       <se:Name>dg_evris</se:Name>
       <se:Description>
@@ -30,6 +31,7 @@
         <se:Abstract>Style des espaces verts publics de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
+
         <se:Rule>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -37,9 +39,9 @@
               <se:SvgParameter name="fill">#D4DDA2</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
-
           </se:PolygonSymbolizer>
         </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

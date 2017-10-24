@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
   18/10/2017  |  Maël REBOUX         |  mise en forme + bordure à zéro
+  24/10/2017  |  Maël REBOUX         |  correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -23,7 +24,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>dg_ilot_topo</se:Name>
+    <se:Name>ref_fonds:dg_ilot_topo</se:Name>
     <UserStyle>
       <se:Name>dg_itopo</se:Name>
       <se:Description>

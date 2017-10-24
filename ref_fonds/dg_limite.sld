@@ -4,7 +4,7 @@
   nom du SLD : dg_limite
 
   couche source dans la base :  donnees_gen.v_limite
-  layer cible du style       :  ref_fonds : v_limite
+  layer cible du style       :  ref_fonds:dg_limite
 
   objet :  Style relatif aux limites entre habitations de Rennes.
 
@@ -12,6 +12,8 @@
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
   25/08/2017  |  Stephane GELIN      |  filtre Rennes
+  24/10/2017  |  Maël REBOUX         |  correction des sources
+  
 -->
 <StyledLayerDescriptor version="1.1.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -22,7 +24,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_limite</se:Name>
+    <se:Name> ref_fonds:dg_limite</se:Name>
     <UserStyle>
       <se:Name>dg_limite</se:Name>
       <se:Description>
@@ -30,6 +32,7 @@
         <se:Abstract>Style des limites de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
+
         <se:Rule>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
@@ -45,6 +48,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

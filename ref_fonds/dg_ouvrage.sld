@@ -4,14 +4,14 @@
   nom du SLD : dg_ouvrage
 
   couche source dans la base :  donnees_gen.v_ouvrage
-  layer cible du style       :  ref_fonds:v_ouvrage
+  layer cible du style       :  ref_fonds:dg_ouvrage
 
   objet :  Style relatif aux ouvrages de Rennes : bâtiment abritant ascenceurs, ouvrages métro, etc
 
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
-  24/10/2017  |  Maël REBOUX         |  atténuation
+  24/10/2017  |  Maël REBOUX         |  atténuation + correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -23,15 +23,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_ouvrage</se:Name>
+    <se:Name>ref_fonds:dg_ouvrage</se:Name>
     <UserStyle>
       <se:Name>dg_ouvrage</se:Name>
       <se:Description>
         <se:Title>ouvrage</se:Title>
         <se:Abstract>Style des ouvrages de Rennes</se:Abstract>
       </se:Description>
-
       <se:FeatureTypeStyle>
+
         <se:Rule>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -42,8 +42,8 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
 
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

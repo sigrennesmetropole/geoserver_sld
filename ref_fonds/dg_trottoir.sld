@@ -4,13 +4,14 @@
   nom du SLD : dg_trottoir
   
   couche source dans la base :  donnees_gen.v_trottoir
-  layer cible du style       :  ref_fonds : v_trottoir
+  layer cible du style       :  ref_fonds:dg_trottoir
   
   objet :  Style relatif aux trottoirs de Rennes.
   
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_trottoir</se:Name>
+    <se:Name>ref_fonds:dg_trottoir</se:Name>
     <UserStyle>
       <se:Name>dg_trottoir</se:Name>
       <se:Description>        

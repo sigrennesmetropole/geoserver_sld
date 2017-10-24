@@ -4,13 +4,14 @@
   nom du SLD : dg_sport_h
   
   couche source dans la base :  donnees_gen.v_sport_h
-  layer cible du style       :  ref_fonds : v_sport_h
+  layer cible du style       :  ref_fonds:dg_sport_h
   
   objet :  Style relatif aux détails des enceintes sportives de Rennes.
   
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_sport_h</se:Name>
+    <se:Name>ref_fonds:dg_sport_h</se:Name>
     <UserStyle>
       <se:Name>dg_sport_h</se:Name>
       <se:Description>        
