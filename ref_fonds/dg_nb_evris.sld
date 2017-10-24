@@ -30,8 +30,8 @@
         <se:Abstract>Style niveau de gris des espaces verts publics de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
-
         <se:Rule>
+
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
