@@ -3,12 +3,12 @@
   
   nom du SLD : pvciweb_vgs_syntplu_ZA_plg
  
-  auteur :   Stéphane GELIN
+  auteur :   StÃ©phane GELIN
   date :     10/01/2016
   
   couche principale cible du style :  pvci_vgs_syntplu_ZA_plg - ref_fonds
  
-  objet : style web zones artisanales de Rennes Métropole.
+  objet : style web zones artisanales de Rennes MÃ©tropole.
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -26,7 +26,7 @@
           <!-- Echelle d'affichage -->
             <MinScaleDenominator>1</MinScaleDenominator>
             <MaxScaleDenominator>100099</MaxScaleDenominator>  
-          <!-- représentation des ZA -->
+          <!-- reprÃ©sentation des ZA -->
            <PolygonSymbolizer>
                 <Fill>
                       <CssParameter name="fill">#E0E6E9</CssParameter>
