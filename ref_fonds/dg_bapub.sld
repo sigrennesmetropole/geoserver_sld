@@ -31,6 +31,8 @@
         <se:Abstract>Style des bâtiments publics de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
+        
+        <!-- moyennes-petites échelles -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
@@ -47,9 +49,8 @@
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
-
-      <se:FeatureTypeStyle>
+        
+        <!-- moyennes-grandes échelles -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
@@ -65,6 +66,7 @@
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
+        
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

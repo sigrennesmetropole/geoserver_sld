@@ -31,7 +31,8 @@
         <se:Abstract>Style des bâtiments légers de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
-
+        
+        <!-- moyennes-grandes échelles uniquement -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>

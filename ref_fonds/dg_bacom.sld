@@ -30,8 +30,9 @@
         <se:Title>bâtiments commerciaux</se:Title>
         <se:Abstract>Style des bâtiments commerciaux de Rennes</se:Abstract>
       </se:Description>
-
       <se:FeatureTypeStyle>
+        
+        <!-- moyennes-petites échelles -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
@@ -51,9 +52,8 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
-
-      <se:FeatureTypeStyle>
+        
+        <!-- moyennes-grandes échelles -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
@@ -74,6 +74,7 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+        
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
