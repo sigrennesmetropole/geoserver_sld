@@ -16,6 +16,7 @@
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
   27/03/2017  |  Maël REBOUX         |  rajout title et abstract
   25/07/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
+  25/10/2017  |  Maël REBOUX         |  les modes doux en projet ne s'affichaient pas < 8000
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -1833,7 +1834,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>

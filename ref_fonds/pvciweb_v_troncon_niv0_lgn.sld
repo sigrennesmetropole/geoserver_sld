@@ -12,6 +12,8 @@
   date        |  auteur              |  description
   10/01/2016  |  Stéphane GELIN      |  version initiale
   29/08/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
+  25/10/2017  |  Maël REBOUX         |  les modes doux ne s'affichaient pas < 8000
+  
 -->
 
 <StyledLayerDescriptor version="1.0.0"
@@ -1828,7 +1830,7 @@
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>              
-              <MinScaleDenominator>8000</MinScaleDenominator>
+              <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
              <LineSymbolizer>
@@ -1880,6 +1882,46 @@
              </LineSymbolizer>
          </Rule>
       </FeatureTypeStyle>  
+      <FeatureTypeStyle>
+        <Rule>
+          <Name>Mode doux (niveau 0) echelle 1 </Name>
+          <Title>Mode doux (niveau 0) echelle 1 </Title>
+          <ogc:Filter>
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>mode</ogc:PropertyName>
+                <ogc:Literal>Mode doux</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>niveau</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>insee_gauche</ogc:PropertyName>
+                <ogc:Literal>35238</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                  <ogc:Literal>Définitif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>etat</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Or>
+            </ogc:And>
+          </ogc:Filter>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>8000</MaxScaleDenominator>
+
+          <LineSymbolizer>
+            <Stroke>
+              <CssParameter name="stroke">#39855F</CssParameter>
+              <CssParameter name="stroke-width">1</CssParameter>
+            </Stroke>
+          </LineSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
 
 <!-- 37b  symbole Voie secondaire d'agglomeration (niveau 0) echelle 3 -->
 
