@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
   24/10/2017  |  Maël REBOUX         |  correction des sources
+  25/10/2017  |  Maël REBOUX         |  homogénéisation avec pvci_edi_bati
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -62,12 +63,16 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>9000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 

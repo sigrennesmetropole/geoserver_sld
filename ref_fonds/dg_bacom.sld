@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
   24/10/2017  |  Maël REBOUX         |  correction des sources
+  25/10/2017  |  Maël REBOUX         |  homogénéisation avec pvci_edi_bati
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -72,6 +73,24 @@
               <se:SvgParameter name="stroke">#7C7C7C</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <!-- petites échelles : on atténue -->
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code_insee</ogc:PropertyName>
+              <ogc:Literal>35238</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>20000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#A0A0A0</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+            </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
         
