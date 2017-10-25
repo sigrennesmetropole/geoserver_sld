@@ -32,27 +32,6 @@
       </se:Description>
       <se:FeatureTypeStyle>
         
-        <!-- moyennes-petites échelles -->
-        <se:Rule>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>code_insee</ogc:PropertyName>
-              <ogc:Literal>35238</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#C5C8DA</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#B0B4CB</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        
         <!-- moyennes-grandes échelles -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -70,6 +49,27 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#7C7C7C</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <!-- moyennes-petites échelles -->
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code_insee</ogc:PropertyName>
+              <ogc:Literal>35238</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#C5C8DA</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#B0B4CB</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>

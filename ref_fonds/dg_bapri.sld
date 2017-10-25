@@ -31,25 +31,7 @@
         <se:Abstract>Style des bâtiments privés de Rennes</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
-      
-        <!-- moyennes-petites échelles -->
-        <se:Rule>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>code_insee</ogc:PropertyName>
-              <ogc:Literal>35238</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
-            </se:Fill>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        
+
         <!-- moyennes-grandes échelles -->
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -70,7 +52,25 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
+
+        <!-- moyennes-petites échelles -->
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>code_insee</ogc:PropertyName>
+              <ogc:Literal>35238</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#E6D7C3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
