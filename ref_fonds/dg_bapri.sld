@@ -4,13 +4,14 @@
   nom du SLD : dg_bapri
 
   couche source dans la base :  donnees_gen.v_bapri
-  layer cible du style       :  ref_fonds : v_bapri
+  layer cible du style       :  ref_fonds:dg_bapri
 
   objet :  Style relatif aux bâtiments privés de Rennes.
 
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stephane GELIN      |  version initiale
+  24/10/2017  |  Maël REBOUX         |  correction des sources
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -22,7 +23,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>v_bapri</se:Name>
+    <se:Name>ref_fonds:dg_bapri</se:Name>
     <UserStyle>
       <se:Name>dg_bapri</se:Name>
       <se:Description>
