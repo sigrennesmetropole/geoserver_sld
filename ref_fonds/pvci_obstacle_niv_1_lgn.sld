@@ -50,36 +50,7 @@
          </Rule>
         
       </FeatureTypeStyle>
-      
-      <FeatureTypeStyle>
-        
-          <Rule>
-            <ogc:Filter>          
-              <ogc:And>
-                <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>niveau</ogc:PropertyName>
-                    <ogc:Literal>-1</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsNotEqualTo>
-                    <ogc:PropertyName>code_insee</ogc:PropertyName>
-                    <ogc:Literal>35238</ogc:Literal>
-                </ogc:PropertyIsNotEqualTo>              
-              </ogc:And>
-            </ogc:Filter>
-            
-          <!-- plage affichage -->
-            <MinScaleDenominator>1</MinScaleDenominator>
-            <MaxScaleDenominator>8000</MaxScaleDenominator>
-          <!-- représentation -->
-             <LineSymbolizer>
-               <Stroke>
-                 <CssParameter name="stroke">#4E4E4E</CssParameter>
-                 <CssParameter name="stroke-width">1</CssParameter>
-               </Stroke>
-             </LineSymbolizer>  
-         </Rule>
-        
-      </FeatureTypeStyle>      
+  
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
