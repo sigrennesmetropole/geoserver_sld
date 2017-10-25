@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
   nom du SLD : pvci_v_troncon_niv3_lgn
@@ -67,7 +67,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>3</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -116,7 +116,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>

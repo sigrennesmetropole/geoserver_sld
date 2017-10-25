@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : pvci_v_troncon_niv0_lgn
@@ -1418,16 +1418,10 @@
                 <ogc:PropertyName>sens_circule</ogc:PropertyName>
                 <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie structurant l'aire urbaine</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1467,16 +1461,10 @@
                 <ogc:PropertyName>sens_circule</ogc:PropertyName>
                 <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie structurant l'aire urbaine</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>etat</ogc:PropertyName>
