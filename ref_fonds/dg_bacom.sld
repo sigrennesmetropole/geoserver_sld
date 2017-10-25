@@ -40,15 +40,14 @@
               <ogc:Literal>35238</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#A0A0A0</se:SvgParameter>
+              <se:SvgParameter name="fill">#C5C8DA</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#7C7C7C</se:SvgParameter>
+              <se:SvgParameter name="stroke">#B0B4CB</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
@@ -62,14 +61,15 @@
               <ogc:Literal>35238</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+          <se:MinScaleDenominator>9000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#C5C8DA</se:SvgParameter>
+              <se:SvgParameter name="fill">#A0A0A0</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#B0B4CB</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7C7C7C</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
