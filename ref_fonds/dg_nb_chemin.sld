@@ -35,8 +35,10 @@
         <se:Rule>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#ECECEC</se:SvgParameter>
+            </se:Fill>          
             <se:Stroke>
-              <se:SvgParameter name="fill">#AFAFAF</se:SvgParameter>
               <se:SvgParameter name="stroke">#A2A2A2</se:SvgParameter>                
             </se:Stroke>
           </se:PolygonSymbolizer>
