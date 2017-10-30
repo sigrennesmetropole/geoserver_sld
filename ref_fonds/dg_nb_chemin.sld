@@ -36,9 +36,8 @@
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#AFAFAF</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">0.08 0.4</se:SvgParameter>
+              <se:SvgParameter name="fill">#AFAFAF</se:SvgParameter>
+              <se:SvgParameter name="stroke">#A2A2A2</se:SvgParameter>                
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
