@@ -28,6 +28,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
 
         <!-- les séquences : étiquettes noires -->
         <se:Rule>
+          <se:Name>étiquette noire = séquence</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>seq_grp</ogc:PropertyName>
@@ -81,6 +82,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
         <!-- les groupes : étiquettes bleues -->
         <se:Rule>
+          <se:Name>étiquette bleue = groupe</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>seq_grp</ogc:PropertyName>
