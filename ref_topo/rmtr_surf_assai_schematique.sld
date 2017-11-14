@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   11/09/2017  |  Stephane GELIN      |  version initiale
-
+  14/11/2017  |  Stephane GELIN      |  intégration nouveaux modeles
 -->
 
 <StyledLayerDescriptor version="1.1.0"
@@ -31,6 +31,181 @@
         <se:Abstract>Style des objets de surface de la famille Assainissement schématique</se:Abstract>
       </se:Description>
 
+
+      <!-- BTSE - Bassin Tampon à sec -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement schématique - Bassin tampon à sec</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_BTSE</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Bassin Tampon à sec
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer> 
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <!-- BTEA - Bassin Tampon en eau -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement schématique - Bassin tampon en eau</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_BTEA</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Bassin Tampon en eau
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer> 
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      <!-- BTSU - Bassin Tampon de surface -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Surface - Assainissement schématique - Bassin tampon de surface</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_BTSU</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Bassin Tampon de surface
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer> 
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
       <!-- 4740 - Bassin tampon -->
       <se:FeatureTypeStyle>
         <se:Rule>

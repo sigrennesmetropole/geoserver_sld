@@ -14,6 +14,7 @@
   26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
   19/09/2017  |  Stephane GELIN      |  corrections conduite unitaire (distinction circulaire ou non)
   03/10/2017  |  Stephane GELIN      |  corrections conduite refoulement ou non
+  14/11/2017  |  Stephane GELIN      |  rajout nouveau modele
 -->
 
 <StyledLayerDescriptor version="1.1.0"
@@ -33,6 +34,262 @@
         <se:Abstract>Style des objets de réseau de sous sol de la famille Assainissement</se:Abstract>
       </se:Description>
 
+     <!-- Chambre à sable -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Chambre à sable</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_CHSA</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Chambre à sable
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer>           
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+     <!-- Stockage structures alvéolaires -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Stockage structures alvéolaires</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_STAL</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Stockage structures alvéolaires
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer>          
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+     <!-- Stockage tuyaux surdimensionné -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Stockage tuyaux surdimensionné</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_STTS</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Stockage tuyaux surdimensionné
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer>           
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+     <!-- Bassin Tampon souterrain -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Bassin Tampon souterrain</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_7354</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.4 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:TextSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>
+            <se:Label>
+              Bassin Tampon souterrain
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer>            
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+     <!-- Dessableur -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RMTR Sous sol - Assainissement - Dessableur</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>GZ_7353</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.04</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.8 0.6</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <!-- Réseaux abandonnées -->
       <se:FeatureTypeStyle>
