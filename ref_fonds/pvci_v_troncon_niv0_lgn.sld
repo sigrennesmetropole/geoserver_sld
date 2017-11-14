@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : pvci_v_troncon_niv0_lgn
@@ -16,6 +16,7 @@
   10/01/2017  |  Maël REBOUX         |  nettoyage divers, ventilation des routes nationales entre les niveaux, modification des seuils pour s'articuluer avec les routes principales OSM
   27/03/2017  |  Maël REBOUX         |  rajout title et abstract
   25/07/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
+  25/10/2017  |  Maël REBOUX         |  les modes doux en projet ne s'affichaient pas < 8000
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -1418,16 +1419,10 @@
                 <ogc:PropertyName>sens_circule</ogc:PropertyName>
                 <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie structurant l'aire urbaine</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1467,16 +1462,10 @@
                 <ogc:PropertyName>sens_circule</ogc:PropertyName>
                 <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
               </ogc:PropertyIsNotEqualTo>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>hierarchie</ogc:PropertyName>
-                  <ogc:Literal>Voie structurant l'aire urbaine</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Or>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>hierarchie</ogc:PropertyName>
+                <ogc:Literal>Voie d'intérêt national ou régional</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
                   <ogc:PropertyName>etat</ogc:PropertyName>
@@ -1845,7 +1834,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>

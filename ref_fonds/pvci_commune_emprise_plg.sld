@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
   nom du SLD : pvci_commune_emprise_plg
@@ -12,7 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/11/2014  |  Stéphane GELIN      |  version initiale
-  29/06/2016  |  Maël REBOUX         |  modification pour site open data + migration données en base + simplification
+  29/06/2016  |  Maël REBOUX         |  modification pour site open data + migration données en base + simplifcation
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -37,6 +37,7 @@
                 <ogc:Literal>1</ogc:Literal>
               </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <MinScaleDenominator>5000</MinScaleDenominator>          
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#E3EFCC</CssParameter>

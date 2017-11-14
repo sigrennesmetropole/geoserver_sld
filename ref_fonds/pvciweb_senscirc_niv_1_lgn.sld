@@ -2,7 +2,7 @@
 <!--
   
   nom du SLD : pvciweb_senscirc_niv_1_lgn
-  auteur :   Stéphane GELIN
+  auteur :   StÃ©phane GELIN
   date :     10/01/2016
   couche principale cible du style : v_troncon_sens_circul_lgn: ref_fonds
  
@@ -40,11 +40,11 @@
                   <ogc:Or>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens de numÃ©risation</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                       <ogc:PropertyIsEqualTo>
                         <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                        <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
+                        <ogc:Literal>Dans le sens inverse de numÃ©risation</ogc:Literal>
                       </ogc:PropertyIsEqualTo>
                   </ogc:Or>
                 </ogc:And>

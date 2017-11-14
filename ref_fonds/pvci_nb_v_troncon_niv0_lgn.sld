@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   10/06/2015  |  Stéphane GELIN      |  version initiale
   25/07/2017  |  Stéphane GELIN      |  modif echelle affichage pour intégration Données Générales  
+  25/10/2017  |  Maël REBOUX         |  les modes doux en projet ne s'affichaient pas < 8000
 -->
 
 <StyledLayerDescriptor version="1.0.0"
@@ -1840,7 +1841,7 @@
                   </ogc:Or>
                 </ogc:And>
               </ogc:Filter>              
-              <MinScaleDenominator>8000</MinScaleDenominator>
+              <MinScaleDenominator>1</MinScaleDenominator>
               <MaxScaleDenominator>20000</MaxScaleDenominator>
            
              <LineSymbolizer>
