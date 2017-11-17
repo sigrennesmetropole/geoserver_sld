@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   30/08/2017  |  Maël REBOUX         |  version initiale
+  17/11/2017  |  Maël REBOUX         |  adapatation à la nouvelle vue en base
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -32,7 +33,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <ogc:Filter>
             <ogc:PropertyIsNotEqualTo>
               <ogc:PropertyName>denomination</ogc:PropertyName>
-              <ogc:Literal>inconnu</ogc:Literal>
+              <ogc:Literal>Inconnu</ogc:Literal>
             </ogc:PropertyIsNotEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
@@ -73,7 +74,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <ogc:Filter>
             <ogc:PropertyIsNotEqualTo>
               <ogc:PropertyName>denomination</ogc:PropertyName>
-              <ogc:Literal>inconnu</ogc:Literal>
+              <ogc:Literal>Inconnu</ogc:Literal>
             </ogc:PropertyIsNotEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2200</se:MinScaleDenominator>
