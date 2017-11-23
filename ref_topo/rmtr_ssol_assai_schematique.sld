@@ -84,7 +84,8 @@
             </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
-            </se:Fill>            
+            </se:Fill>    
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>            
           </se:TextSymbolizer>          
         </se:Rule>
       </se:FeatureTypeStyle>
@@ -142,7 +143,8 @@
             </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
-            </se:Fill>            
+            </se:Fill>        
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>            
           </se:TextSymbolizer>          
         </se:Rule>
       </se:FeatureTypeStyle>
@@ -200,7 +202,8 @@
             </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
-            </se:Fill>            
+            </se:Fill>      
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>            
           </se:TextSymbolizer>           
         </se:Rule>
       </se:FeatureTypeStyle>
@@ -258,7 +261,8 @@
             </se:Halo>
             <se:Fill>
               <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
-            </se:Fill>            
+            </se:Fill>       
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>            
           </se:TextSymbolizer>          
         </se:Rule>
       </se:FeatureTypeStyle>

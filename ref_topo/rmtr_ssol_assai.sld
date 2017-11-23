@@ -870,6 +870,7 @@
       </se:FeatureTypeStyle>
 
       <!-- 7320a - Conduite unitaire (autre que circulaire)-->
+      
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Sous sol - Assainissement - Conduite unitaire autre que circulaire</se:Name>
@@ -899,6 +900,7 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
+                <!-- Symbole + Etiquette dont hauteur différent de 0 -->      
       <se:FeatureTypeStyle>
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -918,14 +920,17 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
                 <ogc:Literal>ref</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>               
+              </ogc:PropertyIsNotEqualTo>   
+              <ogc:PropertyIsGreaterThan>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsGreaterThan>              
             </ogc:And>
           </ogc:Filter>
-          <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
-          <!-- représentation symbole sur ligne  -->
+                  <!-- représentation symbole sur ligne  -->
           <se:TextSymbolizer>
             <se:Label>U</se:Label>
             <se:Font>
@@ -942,7 +947,7 @@
             <se:VendorOption name="repeat">100</se:VendorOption>
           </se:TextSymbolizer>
 
-          <!-- Etiquette  (sans refoulement) -->
+                    <!-- Etiquette  (sans refoulement) -->
           <se:TextSymbolizer>
             <se:Label>
                 UNIT
@@ -1003,14 +1008,17 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
                 <ogc:Literal>ref</ogc:Literal>
-              </ogc:PropertyIsEqualTo>               
+              </ogc:PropertyIsEqualTo>                 
+              <ogc:PropertyIsGreaterThan>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsGreaterThan>                   
             </ogc:And>
           </ogc:Filter>
-          <!-- Echelle d'affichage -->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
 
-          <!-- représentation symbole sur ligne  -->
+                  <!-- représentation symbole sur ligne  -->
           <se:TextSymbolizer>
             <se:Label>U</se:Label>
             <se:Font>
@@ -1027,7 +1035,7 @@
             <se:VendorOption name="repeat">100</se:VendorOption>
           </se:TextSymbolizer>
 
-          <!-- Etiquette (refoulement) -->
+                  <!-- Etiquette (refoulement) -->
           <se:TextSymbolizer>
             <se:Label>
                 UNIT  REF
@@ -1068,6 +1076,166 @@
           </se:TextSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>      
+
+                <!-- Symbole + Etiquette dont hauteur = 0 -->      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7320</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>forme</ogc:PropertyName>
+                <ogc:Literal>cir</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>    
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>                 
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+              </ogc:PropertyIsNull>                   
+            </ogc:And>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+                  <!-- représentation symbole sur ligne  -->
+          <se:TextSymbolizer>
+            <se:Label>U</se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial Black</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#C917D6</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="repeat">100</se:VendorOption>
+          </se:TextSymbolizer>
+
+                    <!-- Etiquette  (sans refoulement) -->
+          <se:TextSymbolizer>
+            <se:Label>
+                UNIT  
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7320</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>forme</ogc:PropertyName>
+                <ogc:Literal>cir</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>     
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsEqualTo>       
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+              </ogc:PropertyIsNull>                
+            </ogc:And>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+                  <!-- représentation symbole sur ligne  -->
+          <se:TextSymbolizer>
+            <se:Label>U</se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial Black</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#C917D6</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="repeat">100</se:VendorOption>
+          </se:TextSymbolizer>
+
+                  <!-- Etiquette (refoulement) -->
+          <se:TextSymbolizer>
+            <se:Label>
+                UNIT  REF  
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle> 
+
       
       <!-- 7320b - Conduite unitaire (circulaire)-->
 
