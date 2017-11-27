@@ -15,6 +15,7 @@
   08/08/2016  |  Maël REBOUX         |  passage de SLD à SE
   13/10/2016  |  Maël REBOUX         |  rajout département région état
   23/10/2017  |  Maël REBOUX         |  rajout Établissement public de santé (EPS)
+  27/11/2017  |  Maël REBOUX         |  rajout SBAFER
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -200,6 +201,26 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#9cd6c1</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>SBAFER</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:Literal>SBAFER</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#ff73df</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
