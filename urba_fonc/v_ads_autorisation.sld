@@ -41,6 +41,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#7E9DBC</se:SvgParameter>
@@ -86,6 +88,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#7E9DBC</se:SvgParameter>
@@ -131,6 +134,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#7E9DBC</se:SvgParameter>
@@ -176,6 +180,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#EF7C80</se:SvgParameter>
@@ -221,6 +226,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#EF7C80</se:SvgParameter>
@@ -266,6 +272,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#EF7C80</se:SvgParameter>
@@ -311,6 +318,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#763F10</se:SvgParameter>
@@ -356,6 +364,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#763F10</se:SvgParameter>
@@ -401,6 +410,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:PropertyIsEqualTo>             
             </ogc:And>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#763F10</se:SvgParameter>
@@ -441,6 +451,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 <ogc:Literal>PD</ogc:Literal>
               </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#91D859</se:SvgParameter>

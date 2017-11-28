@@ -35,6 +35,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>          
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#6CCD2C</se:SvgParameter>
@@ -59,6 +60,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>            
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#F35314</se:SvgParameter>
