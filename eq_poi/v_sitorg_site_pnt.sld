@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   22/05/2017  |  Maël REBOUX         |  version initiale
+  28/11/2017  |  Maël REBOUX         |  on ne montre que les sites actifs
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -29,6 +30,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- le rond -->
         <se:Rule>
           <se:Name>Site</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat_site</ogc:PropertyName>
+              <ogc:Literal>actif</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>4500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
@@ -50,6 +57,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         <!-- l'étiquette -->
         <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat_site</ogc:PropertyName>
+              <ogc:Literal>actif</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>4500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
@@ -95,6 +108,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- le rond -->
         <se:Rule>
           <se:Name>Site</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat_site</ogc:PropertyName>
+              <ogc:Literal>actif</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MaxScaleDenominator>4500</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -115,6 +134,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         <!-- l'étiquette -->
         <se:Rule>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat_site</ogc:PropertyName>
+              <ogc:Literal>actif</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MaxScaleDenominator>4500</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
