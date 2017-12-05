@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
+  05/12/2017  |  Stéphane GELIN      |  chgt symbole
 
 
 -->
@@ -32,7 +33,17 @@
       
       <se:FeatureTypeStyle>
         <se:Rule>
-    
+
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pf_dv/Composteur_bois.png " />
+                <se:Format>image/png</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>20</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+<!--          
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -48,7 +59,7 @@
               <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
-
+-->
         </se:Rule>
       </se:FeatureTypeStyle>
       
