@@ -15,6 +15,7 @@
   10/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
   16/06/2016  |  Maël REBOUX         |  rajout d'un MaxScale très élevé car cette valeur apparaît dans les capacités et 
                                         pour que Mapfishapp laisse afficher cette couche à de petites échelles cf https://github.com/camptocamp/georchestra-rennes-configuration/issues/382
+  16/06/2016  |  Maël REBOUX         |  style basé sur codecomm au lieu du nom
   
 -->
 <StyledLayerDescriptor version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -29,8 +30,8 @@
           <Name>ACIGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ACIGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -76,8 +77,8 @@
           <Name>BECHEREL</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BECHEREL</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350022</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -121,8 +122,8 @@
           <Name>BETTON</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BETTON</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350024</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -166,8 +167,8 @@
           <Name>BOURGBARRE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BOURGBARRE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350032</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -211,8 +212,8 @@
           <Name>BRECE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BRECE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350039</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -256,8 +257,8 @@
           <Name>BRUZ</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BRUZ</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350047</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -301,8 +302,8 @@
           <Name>CESSON-SEVIGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CESSON-SEVIGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350051</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -346,8 +347,8 @@
           <Name>CHANTEPIE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHANTEPIE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350055</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -391,8 +392,8 @@
           <Name>CHARTRES-DE-BRETAGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHARTRES-DE-BRETAGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350066</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -436,8 +437,8 @@
           <Name>CHAVAGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHAVAGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350076</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -473,8 +474,8 @@
           <Name>CHEVAIGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHEVAIGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350079</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -518,8 +519,8 @@
           <Name>CINTRE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CINTRE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350080</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -563,8 +564,8 @@
           <Name>CLAYES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CLAYES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350081</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -608,8 +609,8 @@
           <Name>CORPS-NUDS</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CORPS-NUDS</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350088</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -645,8 +646,8 @@
           <Name>GEVEZE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>GEVEZE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350120</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -690,8 +691,8 @@
           <Name>LA CHAPELLE CHAUSSEE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LA CHAPELLE CHAUSSEE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350058</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -735,8 +736,8 @@
           <Name>LA CHAPELLE DES FOUGERETZ</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LA CHAPELLE DES FOUGERETZ</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350059</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -780,8 +781,8 @@
           <Name>LA CHAPELLE THOUARAULT</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LA CHAPELLE THOUARAULT</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350065</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -817,8 +818,8 @@
           <Name>LAILLE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LAILLE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350139</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -862,8 +863,8 @@
           <Name>LANGAN</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LANGAN</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350144</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -899,8 +900,8 @@
           <Name>LE RHEU</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LE RHEU</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350240</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -936,8 +937,8 @@
           <Name>LE VERGER</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LE VERGER</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350351</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -981,8 +982,8 @@
           <Name>L'HERMITAGE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>L'HERMITAGE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350131</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1018,8 +1019,8 @@
           <Name>MINIAC-SOUS-BECHEREL</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>MINIAC-SOUS-BECHEREL</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350180</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1063,8 +1064,8 @@
           <Name>MONTGERMONT</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>MONTGERMONT</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350189</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1100,8 +1101,8 @@
           <Name>MORDELLES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>MORDELLES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350196</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1145,8 +1146,8 @@
           <Name>NOUVOITOU</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>NOUVOITOU</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350204</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1182,8 +1183,8 @@
           <Name>NOYAL-CHATILLON-SUR-SEICHE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>NOYAL-CHATILLON-SUR-SEICHE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350206</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1227,8 +1228,8 @@
           <Name>ORGERES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ORGERES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350208</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1272,8 +1273,8 @@
           <Name>PACE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>PACE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350210</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1317,8 +1318,8 @@
           <Name>PARTHENAY-DE-BRETAGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>PARTHENAY-DE-BRETAGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350216</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1362,8 +1363,8 @@
           <Name>PONT PEAN</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>PONT PEAN</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350363</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1407,8 +1408,8 @@
           <Name>RENNES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>RENNES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350238</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1452,8 +1453,8 @@
           <Name>ROMILLE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ROMILLE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350245</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1497,8 +1498,8 @@
           <Name>SAINT-ARMEL</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-ARMEL</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350250</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1534,8 +1535,8 @@
           <Name>SAINT-ERBLON</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-ERBLON</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350266</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1579,8 +1580,8 @@
           <Name>SAINT-GILLES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-GILLES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350275</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1624,8 +1625,8 @@
           <Name>SAINT-GREGOIRE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-GREGOIRE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350278</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1669,8 +1670,8 @@
           <Name>SAINT-SULPICE-LA-FORET</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-SULPICE-LA-FORET</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350315</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1714,8 +1715,8 @@
           <Name>ST JACQUES DE LA LANDE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ST JACQUES DE LA LANDE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350281</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1759,8 +1760,8 @@
           <Name>THORIGNE FOUILLARD</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>THORIGNE FOUILLARD</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350334</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1804,8 +1805,8 @@
           <Name>VERN-SUR-SEICHE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>VERN-SUR-SEICHE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350352</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
@@ -1848,8 +1849,8 @@
           <Name>VEZIN-LE-COQUET</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>VEZIN-LE-COQUET</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350353</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- plage affichage -->
