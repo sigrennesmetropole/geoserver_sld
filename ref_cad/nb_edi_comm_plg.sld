@@ -8,11 +8,13 @@
   objet :
   Style relatif aux 43 communes de Rennes Métropole.
   Il reprend la représentation/style de réseau carto.
+  /!\ style SLD et non pas SE
 
   Historique des versions :
   date        |  auteur              |  description
   15/06/2017  |  Arnaud LECLERE      |  version initiale
   19/12/2017  |  Maël REBOUX         |  homogénéisation le style couleurs (style basé sur codecomm au lieu du nom)
+  20/12/2017  |  Maël REBOUX         |  homogénéisation cadastres couleur et N&B
   
 -->
 <StyledLayerDescriptor version="1.0.0" 
@@ -23,7 +25,7 @@
   <NamedLayer>
     <Name>edi_comm_plg</Name>
     <UserStyle>
-      <Name>Communes du cadastre de Rennes Métropole</Name>
+      <Name>Communes du cadastre N et B de Rennes Métropole</Name>
       <FeatureTypeStyle>
       
       

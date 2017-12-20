@@ -7,10 +7,12 @@
   layer cible du style       :  ref_cad:edi_comm_plg
 
   objet : étiquettes des noms des communes de Rennes Métropole
+  /!\ style SLD et non pas SE
 
   Historique des versions :
   date        |  auteur              |  description
   20/06/2017  |  Arnaud LECLERE      |  version initiale
+  20/12/2017  |  Maël REBOUX         |  homogénéisation cadastres couleur et N&B
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -20,16 +22,15 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <Name>ref_cad:edi_comm_plg</Name>
+    <Name>edi_comm_plg</Name>
     <UserStyle>
-      <Name>nb_edi_comm_etq</Name>
-      <Title>Noms des communes de Rennes Métropole</Title>
+      <Name>Noms des communes</Name>
       <FeatureTypeStyle>
+      
+      
         <Rule>
-     
-          
-          <MinScaleDenominator>9000</MinScaleDenominator>
-          <MaxScaleDenominator>273000</MaxScaleDenominator>
+          <MinScaleDenominator>69000</MinScaleDenominator>
+          <MaxScaleDenominator>250000</MaxScaleDenominator>
           <TextSymbolizer>
           <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
              afin de ne pas avoir +ieurs étiquettes dans le cache -->
@@ -61,8 +62,53 @@
                 <CssParameter name="fill">#FFFFFF</CssParameter>
               </Fill>
             </Halo>
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="autoWrap">100</VendorOption>
           </TextSymbolizer>
         </Rule>
+        
+        <Rule>
+          <MinScaleDenominator>35000</MinScaleDenominator>
+          <MaxScaleDenominator>69000</MaxScaleDenominator>
+          <TextSymbolizer>
+          <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
+             afin de ne pas avoir +ieurs étiquettes dans le cache -->
+            <Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </Geometry>
+            <Label>
+              <ogc:PropertyName>nomcomm</ogc:PropertyName>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">DejaVu Sans</CssParameter>
+              <CssParameter name="font-size">14</CssParameter>
+              <CssParameter name="font-style">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>
+            </LabelPlacement>
+            <Halo>
+              <Radius>1</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+              </Fill>
+            </Halo>
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="autoWrap">100</VendorOption>
+          </TextSymbolizer>
+        </Rule>
+        
+        
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

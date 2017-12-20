@@ -8,6 +8,7 @@
   objet :
   Style relatif aux 43 communes de Rennes Métropole.
   Il reprend la représentation/style de réseau carto.
+  /!\ style SLD et non pas SE
 
   Historique des versions :
   date        |  auteur              |  description
@@ -16,6 +17,7 @@
   16/06/2016  |  Maël REBOUX         |  rajout d'un MaxScale très élevé car cette valeur apparaît dans les capacités et 
                                         pour que Mapfishapp laisse afficher cette couche à de petites échelles cf https://github.com/camptocamp/georchestra-rennes-configuration/issues/382
   19/12/2017  |  Maël REBOUX         |  style basé sur codecomm au lieu du nom + autowarp + homogénérisation avec hors communes + factorisation
+  20/12/2017  |  Maël REBOUX         |  homogénéisation cadastres couleur et N&B + étiquettes gérées avec style distinct dans l'aggrégat
   
 -->
 <StyledLayerDescriptor version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -24,48 +26,6 @@
     <UserStyle>
       <Name>Communes du cadastre de Rennes Métropole</Name>
       <FeatureTypeStyle>
-      
-      
-        <Rule>
-          <Name>Communes de Rennes Métropole : étiquettes</Name>
-          <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>140000</MaxScaleDenominator>
-          <TextSymbolizer>
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-              <CssParameter name="font-color">#787878</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <VendorOption name="conflictResolution">false</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-      
       
       
         <Rule>
