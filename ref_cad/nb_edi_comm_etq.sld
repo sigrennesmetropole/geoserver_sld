@@ -29,46 +29,6 @@
       
       
         <Rule>
-          <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>250000</MaxScaleDenominator>
-          <TextSymbolizer>
-          <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
-             afin de ne pas avoir +ieurs étiquettes dans le cache -->
-            <Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>shape</ogc:PropertyName>
-              </ogc:Function>
-            </Geometry>
-            <Label>
-              <ogc:PropertyName>nomcomm</ogc:PropertyName>
-            </Label>
-            <Font>
-              <CssParameter name="font-family">DejaVu Sans</CssParameter>
-              <CssParameter name="font-size">11</CssParameter>
-              <CssParameter name="font-style">normal</CssParameter>
-              <CssParameter name="font-weight">bold</CssParameter>
-            </Font>
-            <LabelPlacement>
-              <PointPlacement>
-                <AnchorPoint>
-                  <AnchorPointX>0.5</AnchorPointX>
-                  <AnchorPointY>0.5</AnchorPointY>
-                </AnchorPoint>
-              </PointPlacement>
-            </LabelPlacement>
-            <Halo>
-              <Radius>1</Radius>
-              <Fill>
-                <CssParameter name="fill">#FFFFFF</CssParameter>
-              </Fill>
-            </Halo>
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <VendorOption name="conflictResolution">false</VendorOption>
-            <VendorOption name="autoWrap">100</VendorOption>
-          </TextSymbolizer>
-        </Rule>
-        
-        <Rule>
           <MinScaleDenominator>35000</MinScaleDenominator>
           <MaxScaleDenominator>69000</MaxScaleDenominator>
           <TextSymbolizer>
@@ -80,7 +40,7 @@
               </ogc:Function>
             </Geometry>
             <Label>
-              <ogc:PropertyName>nomcomm</ogc:PropertyName>
+              <ogc:PropertyName>nomcom</ogc:PropertyName>
             </Label>
             <Font>
               <CssParameter name="font-family">DejaVu Sans</CssParameter>
@@ -107,7 +67,46 @@
             <VendorOption name="autoWrap">100</VendorOption>
           </TextSymbolizer>
         </Rule>
-        
+      
+        <Rule>
+          <MinScaleDenominator>69000</MinScaleDenominator>
+          <MaxScaleDenominator>250000</MaxScaleDenominator>
+          <TextSymbolizer>
+          <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
+             afin de ne pas avoir +ieurs étiquettes dans le cache -->
+            <Geometry>
+              <ogc:Function name="centroid">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </Geometry>
+            <Label>
+              <ogc:PropertyName>nomcom</ogc:PropertyName>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">DejaVu Sans</CssParameter>
+              <CssParameter name="font-size">11</CssParameter>
+              <CssParameter name="font-style">normal</CssParameter>
+              <CssParameter name="font-weight">bold</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.5</AnchorPointY>
+                </AnchorPoint>
+              </PointPlacement>
+            </LabelPlacement>
+            <Halo>
+              <Radius>1</Radius>
+              <Fill>
+                <CssParameter name="fill">#FFFFFF</CssParameter>
+              </Fill>
+            </Halo>
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <VendorOption name="conflictResolution">false</VendorOption>
+            <VendorOption name="autoWrap">100</VendorOption>
+          </TextSymbolizer>
+        </Rule>
         
       </FeatureTypeStyle>
     </UserStyle>
