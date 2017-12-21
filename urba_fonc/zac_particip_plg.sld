@@ -3,8 +3,8 @@
 
   nom du SLD : zac_particip_plg
 
-  couche source dans la base :  urba_foncier.zac
-  layer cible du style       :  urba_fonc:zac
+  couche source dans la base :  urba_foncier.zac_particip
+  layer cible du style       :  urba_fonc:zac_particip
 
   objet : style avec polygone hachuré bleu
 
@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
   14/03/2017  |  Maël REBOUX         |  mise en forme
+  21/12/2017  |  Maël REBOUX         |  correction nom de la couche en base
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
