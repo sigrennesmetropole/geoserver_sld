@@ -26,84 +26,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Abstract>Symboles et étiquettes des sites et organismes sur Rennes Métropole - sélection pour le Plan de Ville Communal et Intercommunal.</se:Abstract>
       </se:Description>
 
-<<<<<<< HEAD
-      <!-- Etiquette -->      
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>Etiquette</se:Name>  
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-           <ogc:And>
-             <ogc:PropertyIsEqualTo>
-               <ogc:PropertyName>etat_site</ogc:PropertyName>
-               <ogc:Literal>actif</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
-             <ogc:PropertyIsNull>
-               <ogc:PropertyName>id_site_pere</ogc:PropertyName>
-             </ogc:PropertyIsNull>  
-             <ogc:Or>
-               <ogc:PropertyIsNotEqualTo>
-                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-                 <ogc:Literal>51</ogc:Literal>
-               </ogc:PropertyIsNotEqualTo>
-               <ogc:PropertyIsNotEqualTo>
-                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-                 <ogc:Literal>56</ogc:Literal>
-               </ogc:PropertyIsNotEqualTo>  
-               <ogc:PropertyIsNotEqualTo>
-                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-                 <ogc:Literal>89</ogc:Literal>
-               </ogc:PropertyIsNotEqualTo>   
-               <ogc:PropertyIsNotEqualTo>
-                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-                 <ogc:Literal>90</ogc:Literal>
-               </ogc:PropertyIsNotEqualTo>  
-               <ogc:PropertyIsNotEqualTo>
-                 <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-                 <ogc:Literal>94</ogc:Literal>
-               </ogc:PropertyIsNotEqualTo>                 
-             </ogc:Or>             
-           </ogc:And>          
-          </ogc:Filter>             
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-
-          <se:TextSymbolizer>
-            <se:Label>
-                <ogc:PropertyName>nom_pvci</ogc:PropertyName>
-            </se:Label>                
-            <se:Font>
-              <se:SvgParameter name="font-family">Arial Narrow</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-weight">bold</se:SvgParameter>              
-            </se:Font>
-            <se:LabelPlacement>
-              <se:PointPlacement>
-                <se:AnchorPoint>
-                  <se:AnchorPointX>-0.3</se:AnchorPointX>
-                  <se:AnchorPointY>1</se:AnchorPointY>
-                </se:AnchorPoint>
-              </se:PointPlacement>
-            </se:LabelPlacement>              
-            <se:Halo>
-              <se:Radius>2</se:Radius>
-              <se:Fill>
-                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-              </se:Fill>
-            </se:Halo>
-            <se:Fill>
-              <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
-            </se:Fill>
-          </se:TextSymbolizer>             
-        </se:Rule>
-      </se:FeatureTypeStyle>
-          
-      
-      <!-- Mairie -->      
-=======
       <!-- Etiquette avec nom des sites -->
->>>>>>> b93d24754187f963afa6b83d6e108c6f1564f3f6
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Étiquette</se:Name>
@@ -361,8 +284,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
-<<<<<<< HEAD
-=======
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -374,7 +295,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Size>12</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
->>>>>>> b93d24754187f963afa6b83d6e108c6f1564f3f6
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -2748,24 +2668,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <se:Name>Parking</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-<<<<<<< HEAD
-           <ogc:And>
-             <ogc:PropertyIsEqualTo>
-               <ogc:PropertyName>etat_site</ogc:PropertyName>
-               <ogc:Literal>actif</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
-             <ogc:PropertyIsNull>
-               <ogc:PropertyName>id_site_pere</ogc:PropertyName>
-             </ogc:PropertyIsNull>              
-             <ogc:PropertyIsEqualTo>
-               <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-               <ogc:Literal>89</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
-           </ogc:And>          
-          </ogc:Filter>        
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-=======
             <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>etat_site</ogc:PropertyName>
@@ -2796,7 +2698,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Size>15</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
->>>>>>> b93d24754187f963afa6b83d6e108c6f1564f3f6
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
@@ -2873,24 +2774,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <se:Name>Parking vélo</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-<<<<<<< HEAD
-           <ogc:And>
-             <ogc:PropertyIsEqualTo>
-               <ogc:PropertyName>etat_site</ogc:PropertyName>
-               <ogc:Literal>actif</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
-             <ogc:PropertyIsNull>
-               <ogc:PropertyName>id_site_pere</ogc:PropertyName>
-             </ogc:PropertyIsNull>              
-             <ogc:PropertyIsEqualTo>
-               <ogc:PropertyName>id_specialite_principale</ogc:PropertyName>
-               <ogc:Literal>94</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
-           </ogc:And>          
-          </ogc:Filter>        
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-=======
             <ogc:And>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>etat_site</ogc:PropertyName>
@@ -2921,7 +2804,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Size>15</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
->>>>>>> b93d24754187f963afa6b83d6e108c6f1564f3f6
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
