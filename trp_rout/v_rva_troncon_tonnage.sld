@@ -35,7 +35,7 @@
 
         <!-- ligne bleue -->
         <se:Rule>
-          <se:Name>Itinéraires des convois exceptionnels : réseau 120 tonnes</se:Name>
+          <se:Name>réseau 120 tonnes</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tonnage</ogc:PropertyName>
@@ -53,7 +53,7 @@
 
         <!-- ligne rouge -->
         <se:Rule>
-          <se:Name>Itinéraires des convois exceptionnels : réseau 94 tonnes</se:Name>
+          <se:Name>réseau 94 tonnes</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tonnage</ogc:PropertyName>
@@ -71,7 +71,7 @@
 
         <!-- ligne verte -->
         <se:Rule>
-          <se:Name>Itinéraires des convois exceptionnels : réseau 72 tonnes</se:Name>
+          <se:Name>réseau 72 tonnes</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>tonnage</ogc:PropertyName>

@@ -51,24 +51,6 @@
           </se:LineSymbolizer>
         </se:Rule>
 
-        <!-- ligne jaune -->
-        <se:Rule>
-          <se:Name>Voie de distribution</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>hierarchie_dv</ogc:PropertyName>
-              <ogc:Literal>Voie de distribution</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffff00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-
         <!-- ligne rouge -->
         <se:Rule>
           <se:Name>Voie structurante</se:Name>
@@ -82,6 +64,24 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff0000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+
+        <!-- ligne jaune -->
+        <se:Rule>
+          <se:Name>Voie de distribution</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>hierarchie_dv</ogc:PropertyName>
+              <ogc:Literal>Voie de distribution</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ffff00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
