@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : rva_troncon_tonnage_lgn
+  nom du SLD : v_rva_troncon_tonnage
 
-  couche source dans la base :  trp_rout.v_rva_troncon_tonnage
-  layer cible du style       :  mobilite_transp:v_rva_troncon_tonnage
+  couche source dans la base :  mobilite_transp.v_rva_troncon_tonnage
+  layer cible du style       :  trp_rout:v_rva_troncon_tonnage
 
   objet : Affiche les itinéraires des convois exceptionnels selon leur tonnage.
 
   Historique des versions :
   date        |  auteur              |  description
   23/11/2017  |  Arnaud LECLERE      |  version initiale
+  22/12/2017  |  Maël REBOUX         |  renommage, mise en forme
 
 -->
 
@@ -23,86 +24,71 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>trp_rout.v_rva_troncon_tonnage</se:Name>
+    <se:Name>trp_rout:v_rva_troncon_tonnage</se:Name>
     <UserStyle>
-      <se:Name>rva_troncon_tonnage_lgn</se:Name>
+      <se:Name>v_rva_troncon_tonnage</se:Name>
       <se:Description>
         <se:Title>Itinéraires des convois exceptionnels selon leur tonnage</se:Title>
         <se:Abstract>Lignes rouges et bleues</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
-        
         <!-- ligne bleue -->
         <se:Rule>
-          <se:Name>Itinéraires des convois exceptionnels : réseau 120 tonnes</se:Name>         
-          
-            <ogc:Filter>
-                <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>tonnage</ogc:PropertyName>
-                <ogc:Literal>120</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+          <se:Name>Itinéraires des convois exceptionnels : réseau 120 tonnes</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>tonnage</ogc:PropertyName>
+              <ogc:Literal>120</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
-      <!-- plage affichage -->
-      <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
-
+          <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#73b2ff</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-             </se:Stroke>
+            </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-      
+
         <!-- ligne rouge -->
         <se:Rule>
-          <se:Name>Itinéraires des convois exceptionnels : réseau 94 tonnes</se:Name>         
-          
-            <ogc:Filter>
-                <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>tonnage</ogc:PropertyName>
-                <ogc:Literal>94</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+          <se:Name>Itinéraires des convois exceptionnels : réseau 94 tonnes</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>tonnage</ogc:PropertyName>
+              <ogc:Literal>94</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
-      <!-- plage affichage -->
-      <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
-          
+          <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff0000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-             </se:Stroke>
+            </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-        
-          
-        
-          <!-- ligne verte -->
+
+        <!-- ligne verte -->
         <se:Rule>
           <se:Name>Itinéraires des convois exceptionnels : réseau 72 tonnes</se:Name>
-          
-            <ogc:Filter>
-                <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>tonnage</ogc:PropertyName>
-                <ogc:Literal>72</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>tonnage</ogc:PropertyName>
+              <ogc:Literal>72</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
-      <!-- plage affichage -->
-      <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
-
+          <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#a3ff73</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-             </se:Stroke>
+            </se:Stroke>
           </se:LineSymbolizer>
-        </se:Rule>   
-        
-        
-       </se:FeatureTypeStyle>
+        </se:Rule>
+
+
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
