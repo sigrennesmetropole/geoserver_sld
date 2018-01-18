@@ -11,7 +11,8 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  14/11/2016  |  Léo Petipas         |  version initiale
+  14/11/2016  |  Léo PETIPAS         |  version initiale
+  17/01/2018  |  Maël REBOUX         |  différenciation des types de poste
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -26,15 +27,49 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- point rond rouge avec bordure noire -->
+        <!-- poste normal = tête de réseau, on le montre comme le réseau -->
         <se:Rule>
-          <se:Name>Point</se:Name>
+          <se:Name>Poste normal</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type</ogc:PropertyName>
+                <ogc:Literal>poste normal</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ffaa00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <!-- poste client = on le montre comme les branchements -->
+        <se:Rule>
+          <se:Name>Poste client</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type</ogc:PropertyName>
+                <ogc:Literal>poste client</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffaa00</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
