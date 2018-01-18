@@ -42,14 +42,15 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#ffaa00</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
-                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                  <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">2</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>18</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
