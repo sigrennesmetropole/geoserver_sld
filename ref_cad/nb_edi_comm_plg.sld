@@ -8,10 +8,13 @@
   objet :
   Style relatif aux 43 communes de Rennes Métropole.
   Il reprend la représentation/style de réseau carto.
+  /!\ style SLD et non pas SE
 
   Historique des versions :
   date        |  auteur              |  description
   15/06/2017  |  Arnaud LECLERE      |  version initiale
+  19/12/2017  |  Maël REBOUX         |  homogénéisation le style couleurs (style basé sur codecomm au lieu du nom)
+  20/12/2017  |  Maël REBOUX         |  homogénéisation cadastres couleur et N&B
   
 -->
 <StyledLayerDescriptor version="1.0.0" 
@@ -22,7 +25,7 @@
   <NamedLayer>
     <Name>edi_comm_plg</Name>
     <UserStyle>
-      <Name>Communes du cadastre de Rennes Métropole</Name>
+      <Name>Communes du cadastre N et B de Rennes Métropole</Name>
       <FeatureTypeStyle>
       
       
@@ -30,21 +33,16 @@
           <Name>ACIGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ACIGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
-          
-          <!-- représentation de la commune -->
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d0d0d0</CssParameter>
             </Fill>
           </PolygonSymbolizer>
-                  
         </Rule>
         
         
@@ -52,31 +50,28 @@
           <Name>BECHEREL</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BECHEREL</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350022</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#acacac</CssParameter>
             </Fill>
           </PolygonSymbolizer>
         </Rule>
-                
+        
+        
         <Rule>
           <Name>BETTON</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BETTON</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350024</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#bfbfbf</CssParameter>
@@ -89,13 +84,11 @@
           <Name>BOURGBARRE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BOURGBARRE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350032</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#aeaeae</CssParameter>
@@ -108,13 +101,11 @@
           <Name>BRECE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BRECE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350039</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#c5c5c5</CssParameter>
@@ -127,13 +118,11 @@
           <Name>BRUZ</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>BRUZ</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350047</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#aeaeae</CssParameter>
@@ -146,13 +135,11 @@
           <Name>CESSON-SEVIGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CESSON-SEVIGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350051</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#a8a8a8</CssParameter>
@@ -165,13 +152,11 @@
           <Name>CHANTEPIE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHANTEPIE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350055</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#a8a8a8</CssParameter>
@@ -184,13 +169,11 @@
           <Name>CHARTRES-DE-BRETAGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHARTRES-DE-BRETAGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350066</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d1d1d1</CssParameter>
@@ -203,13 +186,11 @@
           <Name>CHAVAGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHAVAGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350076</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b6b6b6</CssParameter>
@@ -222,13 +203,11 @@
           <Name>CHEVAIGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CHEVAIGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350079</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b6b6b6</CssParameter>
@@ -241,13 +220,11 @@
           <Name>CINTRE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CINTRE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350080</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#dddddd</CssParameter>
@@ -260,13 +237,11 @@
           <Name>CLAYES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CLAYES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350081</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b2b2b2</CssParameter>
@@ -279,13 +254,11 @@
           <Name>CORPS-NUDS</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>CORPS-NUDS</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350088</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d1d1d1</CssParameter>
@@ -298,13 +271,11 @@
           <Name>GEVEZE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>GEVEZE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350120</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#dadada</CssParameter>
@@ -317,13 +288,11 @@
           <Name>LA CHAPELLE CHAUSSEE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LA CHAPELLE CHAUSSEE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350058</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#c5c5c5</CssParameter>
@@ -336,13 +305,11 @@
           <Name>LA CHAPELLE DES FOUGERETZ</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LA CHAPELLE DES FOUGERETZ</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350059</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b9b9b9</CssParameter>
@@ -350,17 +317,16 @@
           </PolygonSymbolizer>
         </Rule>
         
+        
         <Rule>
           <Name>LA CHAPELLE THOUARAULT</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LA CHAPELLE THOUARAULT</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350065</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d1d1d1</CssParameter>
@@ -373,13 +339,11 @@
           <Name>LAILLE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LAILLE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350139</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b2b2b2</CssParameter>
@@ -392,13 +356,11 @@
           <Name>LANGAN</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LANGAN</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350144</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#c9c9c9</CssParameter>
@@ -411,13 +373,11 @@
           <Name>LE RHEU</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LE RHEU</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350240</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#e2e2e2</CssParameter>
@@ -430,13 +390,11 @@
           <Name>LE VERGER</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>LE VERGER</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350351</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#aeaeae</CssParameter>
@@ -449,13 +407,11 @@
           <Name>L'HERMITAGE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>L'HERMITAGE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350131</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#dadada</CssParameter>
@@ -468,13 +424,11 @@
           <Name>MINIAC-SOUS-BECHEREL</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>MINIAC-SOUS-BECHEREL</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350180</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b6b6b6</CssParameter>
@@ -487,13 +441,11 @@
           <Name>MONTGERMONT</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>MONTGERMONT</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350189</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#dddddd</CssParameter>
@@ -506,13 +458,11 @@
           <Name>MORDELLES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>MORDELLES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350196</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#bfbfbf</CssParameter>
@@ -525,13 +475,11 @@
           <Name>NOUVOITOU</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>NOUVOITOU</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350204</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#bfbfbf</CssParameter>
@@ -544,13 +492,11 @@
           <Name>NOYAL-CHATILLON-SUR-SEICHE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>NOYAL-CHATILLON-SUR-SEICHE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350206</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d0d0d0</CssParameter>
@@ -563,13 +509,11 @@
           <Name>ORGERES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ORGERES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350208</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#bfbfbf</CssParameter>
@@ -582,13 +526,11 @@
           <Name>PACE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>PACE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350210</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#c5c5c5</CssParameter>
@@ -601,13 +543,11 @@
           <Name>PARTHENAY-DE-BRETAGNE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>PARTHENAY-DE-BRETAGNE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350216</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#bdbdbd</CssParameter>
@@ -620,13 +560,11 @@
           <Name>PONT PEAN</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>PONT PEAN</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350363</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#eeeeee</CssParameter>
@@ -639,13 +577,11 @@
           <Name>RENNES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>RENNES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350238</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b6b6b6</CssParameter>
@@ -658,13 +594,11 @@
           <Name>ROMILLE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ROMILLE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350245</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d0d0d0</CssParameter>
@@ -677,13 +611,11 @@
           <Name>SAINT-ARMEL</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-ARMEL</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350250</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b9b9b9</CssParameter>
@@ -696,13 +628,11 @@
           <Name>SAINT-ERBLON</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-ERBLON</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350266</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#cbcbcb</CssParameter>
@@ -715,13 +645,11 @@
           <Name>SAINT-GILLES</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-GILLES</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350275</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#dddddd</CssParameter>
@@ -734,13 +662,11 @@
           <Name>SAINT-GREGOIRE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-GREGOIRE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350278</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#e4e4e4</CssParameter>
@@ -753,13 +679,11 @@
           <Name>SAINT-SULPICE-LA-FORET</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>SAINT-SULPICE-LA-FORET</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350315</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#aeaeae</CssParameter>
@@ -772,13 +696,11 @@
           <Name>ST JACQUES DE LA LANDE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>ST JACQUES DE LA LANDE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350281</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#aeaeae</CssParameter>
@@ -791,13 +713,11 @@
           <Name>THORIGNE FOUILLARD</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>THORIGNE FOUILLARD</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350334</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#cbcbcb</CssParameter>
@@ -810,13 +730,11 @@
           <Name>VERN-SUR-SEICHE</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>VERN-SUR-SEICHE</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350352</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#b6b6b6</CssParameter>
@@ -829,13 +747,11 @@
           <Name>VEZIN-LE-COQUET</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomcom</ogc:PropertyName>
-              <ogc:Literal>VEZIN-LE-COQUET</ogc:Literal>
+              <ogc:PropertyName>id_comm</ogc:PropertyName>
+              <ogc:Literal>350353</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <!-- plage affichage -->
           <MinScaleDenominator>69000</MinScaleDenominator>
-          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#d2d2d2</CssParameter>
