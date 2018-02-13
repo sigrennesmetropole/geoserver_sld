@@ -12,7 +12,7 @@
   date        |  auteur              |  description
   04/12/2017  |  Arnaud LECLERE      |  version initiale
   22/12/2017  |  Maël REBOUX         |  renommage, mise en forme
-
+  13/02/2018  |  S GELIN             |  prise en compte nouvelle structure
 -->
 
 <StyledLayerDescriptor version="1.1.0"
@@ -33,6 +33,24 @@
       </se:Description>
       <se:FeatureTypeStyle>
 
+        <!-- ligne Gris foncé -->
+        <se:Rule>
+          <se:Name>Route Nationale</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>hierarchie_dv</ogc:PropertyName>
+              <ogc:Literal>Route nationale</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>545979</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+        
         <!-- ligne bleue -->
         <se:Rule>
           <se:Name>Voie de transit</se:Name>
