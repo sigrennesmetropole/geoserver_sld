@@ -57,6 +57,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 <ogc:PropertyName>sens_circule</ogc:PropertyName>
                 <ogc:Literal>Dans le sens inverse de numérisation</ogc:Literal>
               </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type</ogc:PropertyName>
+                <ogc:Literal>Rond-point</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>              
             </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -68,7 +72,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                   <se:Mark>
                     <se:WellKnownName>ttf://Equipements_PVI#${'U+0079'}</se:WellKnownName>
                     <se:Fill>
-                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                      <se:SvgParameter name="fill">#000000</se:SvgParameter>
                     </se:Fill>
                   </se:Mark>
                   <se:Size>10</se:Size>
@@ -97,6 +101,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 <ogc:PropertyName>sens_circule</ogc:PropertyName>
                 <ogc:Literal>Dans le sens de numérisation</ogc:Literal>
               </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type</ogc:PropertyName>
+                <ogc:Literal>Rond-point</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>               
             </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -108,7 +116,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                   <se:Mark>
                     <se:WellKnownName>ttf://Equipements_PVI#${'U+007A'}</se:WellKnownName>
                     <se:Fill>
-                      <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                      <se:SvgParameter name="fill">#000000</se:SvgParameter>
                     </se:Fill>
                   </se:Mark>
                   <se:Size>10</se:Size>

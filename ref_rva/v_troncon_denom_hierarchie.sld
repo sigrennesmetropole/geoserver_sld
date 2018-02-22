@@ -1680,38 +1680,8 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#AB9874</CssParameter>
-              <CssParameter name="stroke-width">3</CssParameter>
-              <CssParameter name="stroke-linejoin">round</CssParameter>
-              <CssParameter name="stroke-linecap">round</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>
-      <FeatureTypeStyle>
-        <Rule>
-          <Name>Voie circulation interdite echelle 1 </Name>
-          <Title>Voie circulation interdite echelle 1 </Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>mode</ogc:PropertyName>
-                <ogc:Literal>Automobile</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>sens_circule</ogc:PropertyName>
-                <ogc:Literal>Interdit dans les 2 sens</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>
-
-          <MinScaleDenominator>8000</MinScaleDenominator>
-          <MaxScaleDenominator>20000</MaxScaleDenominator>
-
-          <LineSymbolizer>
-            <Stroke>
               <CssParameter name="stroke">#CCCCCC</CssParameter>
-              <CssParameter name="stroke-width">2</CssParameter>
+              <CssParameter name="stroke-width">3</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
             </Stroke>
@@ -1742,7 +1712,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
+          <MinScaleDenominator>8000</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1790,43 +1760,8 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      <FeatureTypeStyle>
-        <Rule>
-          <Name>Mode doux echelle 1 </Name>
-          <Title>Mode doux echelle 1 </Title>
-          <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>mode</ogc:PropertyName>
-                <ogc:Literal>Mode doux</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>insee_gauche</ogc:PropertyName>
-                <ogc:Literal>35238</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>              
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>etat</ogc:PropertyName>
-                  <ogc:Literal>Définitif</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsNull>
-                  <ogc:PropertyName>etat</ogc:PropertyName>
-                </ogc:PropertyIsNull>
-              </ogc:Or>
-            </ogc:And>
-          </ogc:Filter>
-          <MinScaleDenominator>1</MinScaleDenominator>
-          <MaxScaleDenominator>8000</MaxScaleDenominator>
-
-          <LineSymbolizer>
-            <Stroke>
-              <CssParameter name="stroke">#39855F</CssParameter>
-              <CssParameter name="stroke-width">1</CssParameter>
-            </Stroke>
-          </LineSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>
       
+   
       <!-- 37b  symbole Voie secondaire d'agglomeration echelle 3 -->
 
       <FeatureTypeStyle>

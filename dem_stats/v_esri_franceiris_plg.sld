@@ -12,6 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   15/11/2016  |  Léo Petipas         |  version initiale
+  06/12/2017  |  S GELIN             |  chgt valeur opacité  
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -32,7 +33,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#505050</se:SvgParameter>
-							<se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+							<se:SvgParameter name="fill-opacity">0.2</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
