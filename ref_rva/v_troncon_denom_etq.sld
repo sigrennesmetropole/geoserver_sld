@@ -78,7 +78,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsNotEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2200</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>9000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>90000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <!-- l'attribut qui sert d'étiquette -->
             <se:Label>
