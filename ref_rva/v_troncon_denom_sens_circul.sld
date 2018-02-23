@@ -10,7 +10,7 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  04/12/2017  |  S GELIN             |  version initiale
+  23/02/2017  |  S GELIN             |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -20,8 +20,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>v_troncon_denom_sens_circul</se:Name>
       <se:Description>
-        <se:Title>Sens de circulation des tronçons de voie</se:Title>
-        <se:Abstract>Style faisant apparaître les sens de circulation des tronçons des voies</se:Abstract>
+        <se:Title>Sens de circulation</se:Title>
+        <se:Abstract>Style faisant apparaître les sens de circulation des tronçons des voies.</se:Abstract>
       </se:Description>
 
       <!--  symbole ligne -->
@@ -39,13 +39,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:LineSymbolizer>           
         </se:Rule>
       </se:FeatureTypeStyle>
-      
+
       <!--  symbole sens unique - sens inverse numerisation -->
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>sens unique </se:Name>
           <se:Description>
-              <se:Title>sens unique </se:Title>
+            <se:Title>sens unique </se:Title>
           </se:Description>    
           <ogc:Filter>
             <ogc:And>
@@ -89,7 +89,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <se:Name>sens unique </se:Name>
           <se:Description>
-              <se:Title>sens unique </se:Title>
+            <se:Title>sens unique </se:Title>
           </se:Description>  
           <ogc:Filter>
             <ogc:And>
@@ -127,7 +127,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-      
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

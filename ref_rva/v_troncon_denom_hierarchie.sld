@@ -10,7 +10,7 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  04/12/2017  |  S GELIN             |  version initiale
+  23/02/2017  |  S GELIN             |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -23,8 +23,8 @@
     <Name>ref_rva:v_troncon_denom</Name>
     <UserStyle>
       <Name>v_troncon_denom_hierarchie</Name>
-      <Title>Hierarchie des tronçons de voie</Title>
-      <Abstract>Style faisant apparaître la hierarchie des tronçons des voies</Abstract>
+      <Title>Hiérarchisation</Title>
+      <Abstract>Style faisant apparaître la hiérarchie des tronçons des voies.</Abstract>
 
 
       <!--  18  symbole PROJET voirie mixte  -->
@@ -429,7 +429,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke">#444444</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -475,7 +475,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#FFFFFF</CssParameter>
+              <CssParameter name="stroke">#444444</CssParameter>
               <CssParameter name="stroke-width">1</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
