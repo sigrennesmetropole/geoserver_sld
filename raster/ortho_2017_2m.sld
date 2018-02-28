@@ -20,7 +20,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:Name>ortho_2017_2m</se:Name>
         <se:Description>
           <se:Title>Style pour l'ortho 2017 2 m</se:Title>
-          <se:Abstract>Style avec plage de visibilité de l'ortho 2017 2 m pour les petites
+          <se:Abstract>Style avec plage de visibilité de l'ortho 2017 2 m pour les petites échelles.</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
