@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : v_troncon_denom_hierarchie
-  
+
   couche source dans la base :  rva.v_troncon_denom
   layer cible du style       :  ref_rva:v_troncon_denom
-  
-  objet :  Style faisant apparaître la hierarchie des tronçons des voies
-  
+
+  objet :  Style faisant apparaître la hierarchie des tronçons des voies - copie du style du PVCI
+
   Historique des versions :
   date        |  auteur              |  description
-  23/02/2017  |  S GELIN             |  version initiale
-  
+  05/03/2018  |  S GELIN             |  version initiale
+
 -->
 <StyledLayerDescriptor version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
@@ -429,7 +429,7 @@
 
           <LineSymbolizer>
             <Stroke>
-              <CssParameter name="stroke">#444444</CssParameter>
+              <CssParameter name="stroke">#FFFFFF</CssParameter>
               <CssParameter name="stroke-width">2.5</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -476,7 +476,6 @@
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#444444</CssParameter>
-<<<<<<< HEAD
               <CssParameter name="stroke-width">2</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -520,8 +519,6 @@
           <LineSymbolizer>
             <Stroke>
               <CssParameter name="stroke">#FFFFFF</CssParameter>
-=======
->>>>>>> 7071f132019b89f82376b2de8e09baae29320d37
               <CssParameter name="stroke-width">1</CssParameter>
               <CssParameter name="stroke-linejoin">round</CssParameter>
               <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1834,8 +1831,8 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
-   
+
+
       <!-- 37b  symbole Voie secondaire d'agglomeration echelle 3 -->
 
       <FeatureTypeStyle>
@@ -1959,7 +1956,7 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
-      
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
