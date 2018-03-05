@@ -72,7 +72,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -126,7 +126,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -184,7 +184,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -236,7 +236,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -288,7 +288,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -336,7 +336,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -381,7 +381,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -424,7 +424,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -559,7 +559,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -601,7 +601,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -646,7 +646,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -689,7 +689,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -807,7 +807,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -859,7 +859,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -911,7 +911,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -960,7 +960,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1178,7 +1178,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1226,7 +1226,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1274,7 +1274,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1319,7 +1319,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1439,7 +1439,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1481,7 +1481,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1523,7 +1523,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1562,7 +1562,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1671,7 +1671,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1713,7 +1713,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1746,7 +1746,7 @@
             </ogc:And>
           </ogc:Filter>
 
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1783,7 +1783,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
@@ -1820,7 +1820,7 @@
               </ogc:Or>
             </ogc:And>
           </ogc:Filter>
-          <MinScaleDenominator>8000</MinScaleDenominator>
+          <MinScaleDenominator>1</MinScaleDenominator>
           <MaxScaleDenominator>20000</MaxScaleDenominator>
 
           <LineSymbolizer>
