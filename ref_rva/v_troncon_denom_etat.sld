@@ -10,7 +10,7 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  22/12/2017  |  S GELIN             |  version initiale
+  23/02/2017  |  S GELIN             |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -23,27 +23,26 @@
     <Name>ref_rva:v_troncon_denom</Name>
     <UserStyle>
       <Name>v_troncon_denom_hierarchie</Name>
-      <Title>Etat des tronçons de voie</Title>
-      <Abstract>Style faisant apparaître l'état des tronçons des voies</Abstract>
+      <Title>État des tronçons de voie</Title>
+      <Abstract>Style faisant apparaître l'état des tronçons des voies.</Abstract>
 
 
       <!--  Etat définitif  -->
-
       <FeatureTypeStyle>
         <Rule>
-          <Name>Etat définitif</Name>
-          <Title>Etat définitif</Title>
+          <Name>État définitif</Name>
+          <Title>État définitif</Title>
           <ogc:Filter>
-             <ogc:Or>          
-             <ogc:PropertyIsNotEqualTo>
+            <ogc:Or>          
+              <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>etat</ogc:PropertyName>
                 <ogc:Literal>Projet</ogc:Literal>
-             </ogc:PropertyIsNotEqualTo>
-             <ogc:PropertyIsNotEqualTo>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>etat</ogc:PropertyName>
                 <ogc:Literal>Chantier</ogc:Literal>
-             </ogc:PropertyIsNotEqualTo>             
-             </ogc:Or>             
+              </ogc:PropertyIsNotEqualTo>             
+            </ogc:Or>             
           </ogc:Filter>
           <MaxScaleDenominator>500000</MaxScaleDenominator>            
           <LineSymbolizer>
@@ -59,15 +58,15 @@
 
 
       <!--  Etat Projet -->
-     <FeatureTypeStyle>
+      <FeatureTypeStyle>
         <Rule>
-          <Name>Etat Projet</Name>
-          <Title>Etat Projet</Title>
+          <Name>État projet</Name>
+          <Title>État projet</Title>
           <ogc:Filter>
-             <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>etat</ogc:PropertyName>
-                <ogc:Literal>Projet</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat</ogc:PropertyName>
+              <ogc:Literal>Projet</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MaxScaleDenominator>500000</MaxScaleDenominator>            
           <LineSymbolizer>
@@ -80,17 +79,17 @@
           </LineSymbolizer>
         </Rule>
       </FeatureTypeStyle>
- 
+
       <!--  Etat Chantier -->
-     <FeatureTypeStyle>
+      <FeatureTypeStyle>
         <Rule>
-          <Name>Etat Chantier</Name>
-          <Title>Etat Chantier</Title>
+          <Name>État Chantier</Name>
+          <Title>État chantier</Title>
           <ogc:Filter>
-             <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>etat</ogc:PropertyName>
-                <ogc:Literal>Chantier</ogc:Literal>
-             </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat</ogc:PropertyName>
+              <ogc:Literal>Chantier</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <MaxScaleDenominator>500000</MaxScaleDenominator>          
           <LineSymbolizer>
@@ -102,6 +101,7 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>
+
       </FeatureTypeStyle>     
     </UserStyle>
   </NamedLayer>
