@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   01/05/2017  |  Stephane GELIN      |  version initiale
   26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+  05/03/2017  |  Stephane GELIN      |  modification du chevauchement
 
 -->
 
