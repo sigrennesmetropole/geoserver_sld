@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : plu_prescription_pct_nb
+  nom du SLD : plu_prescription_pnt_nb
   
   couche source dans la base :  urba_foncier.plu_prescription_pct
   layer cible du style       :  urba_docs:plu_prescription_pct
@@ -29,7 +29,7 @@
   <NamedLayer>
     <se:Name>urba_docs:plu_prescription_pct</se:Name>
     <UserStyle>
-      <se:Name>plu_prescription_pct_nb</se:Name>
+      <se:Name>plu_prescription_pnt_nb</se:Name>
       <se:Description>
         <se:Title>Symbologie Rennes Métropole en noir et blanc</se:Title>
         <se:Abstract>Symbologie Rennes Métropole en noir et blanc des prescriptions ponctuelles du plan local d'urbanisme intercommunal.</se:Abstract>
