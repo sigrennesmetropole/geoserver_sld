@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   11/09/2017  |  Maël REBOUX         |  version initiale
+  16/03/2018  |  Maël REBOUX         |  correction à cause du changement de type de id_rm
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -33,10 +34,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:PropertyIsNull>
                 <ogc:PropertyName>note_finale</ogc:PropertyName>
               </ogc:PropertyIsNull>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>id_rm</ogc:PropertyName>
-                <ogc:Literal></ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>id_rm</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Not>
             </ogc:And>
           </ogc:Filter>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
