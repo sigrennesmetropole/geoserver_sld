@@ -3,8 +3,8 @@
 
   nom du SLD : deci_pei_type_pnt
 
-  couche source dans la base :  sec_civile.deci_pei
-  layer cible du style       :  risque_secu.deci_pei
+  couche source dans la base :  risque_secu.deci_pei
+  layer cible du style       :  sec_civile.deci_pei
 
   objet :
   Style par défaut
