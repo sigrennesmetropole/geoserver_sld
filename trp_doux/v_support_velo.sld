@@ -12,7 +12,7 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  12/03/2018  |  S GELIN         |  version initiale qui affichait tous les objets
+  12/03/2018  |  S GELIN             |  version initiale qui affiche tous les objets
 
   
 -->
@@ -40,7 +40,7 @@
                   <se:SvgParameter name="stroke">#A900E6</se:SvgParameter>
                 </se:Stroke>                
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>12</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
