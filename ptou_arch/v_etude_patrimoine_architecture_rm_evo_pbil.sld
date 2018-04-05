@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : v_etude_patrimoine_architecture_rm_evo_pbil
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   05/01/2018  |  Maël REBOUX         |  version initiale
+  16/03/2018  |  Maël REBOUX         |  correction à cause du changement de type de id_rm
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -170,12 +171,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <ogc:Filter>
             <ogc:And>
               <ogc:PropertyIsNull>
-                <ogc:PropertyName>evolution_note_pbil</ogc:PropertyName>
+                <ogc:PropertyName>note_finale</ogc:PropertyName>
               </ogc:PropertyIsNull>
-              <ogc:PropertyIsNotEqualTo>
-                <ogc:PropertyName>id_rm</ogc:PropertyName>
-                <ogc:Literal></ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>
+              <ogc:Not>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>id_rm</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+              </ogc:Not>
             </ogc:And>
           </ogc:Filter>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
