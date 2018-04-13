@@ -36,7 +36,7 @@
         <se:Rule>
           <se:Name>Jardins partagés</se:Name>
 
-          <se:MaxScaleDenominator>4265</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>4300</se:MaxScaleDenominator>
           
           <se:PolygonSymbolizer>
           
@@ -57,7 +57,7 @@
         <!-- polygone remplacé par un point -->
         
       <se:Rule>
-		<se:MinScaleDenominator>4265</se:MinScaleDenominator>
+		<se:MinScaleDenominator>4300</se:MinScaleDenominator>
         
         <se:PointSymbolizer>
  
