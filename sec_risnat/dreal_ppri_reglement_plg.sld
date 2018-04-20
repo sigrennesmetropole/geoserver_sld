@@ -12,6 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   15/11/2016  |  Léo Petipas         |  version initiale
+  20/04/2018  |  S Gelin             |  correction police ESRi
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -170,8 +171,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
       </se:FeatureTypeStyle>
 
-      <se:FeatureTypeStyle>
         <!-- polygone rouge avec pointille rouge -->
+      <se:FeatureTypeStyle>      
         <se:Rule>
           <se:Name>Zone rouge en pointillés</se:Name>
           <ogc:Filter>
@@ -186,28 +187,33 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:GraphicFill>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>ttf://ESRI Default Marker#0x00C7</se:WellKnownName>
+                    <se:WellKnownName>ttf://Equipements_PVI#U+005C</se:WellKnownName>
+                    <se:Fill>
+                       <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
+                    </se:Fill>                    
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#ff0000</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>20</se:Size>
+                  <se:Size>5</se:Size>
                 </se:Graphic>
               </se:GraphicFill>
             </se:Fill>
+        
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff0000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
+            <se:VendorOption name="graphic-margin">4</se:VendorOption>            
           </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
 
-      <se:FeatureTypeStyle>
 
         <!-- polygone avec trame rouge -->
+      <se:FeatureTypeStyle>      
         <se:Rule>
           <se:Name>Zone rouge tramée</se:Name>
           <ogc:Filter>
