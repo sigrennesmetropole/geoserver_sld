@@ -3,7 +3,7 @@
   
   nom du SLD : pvci_denomination_voie_etq
 
-  couche source dans la base :  rva.v_adresse_pnt
+  couche source dans la base :  rva.v_denomination_voie
   layer cible du style       :  ref_fonds:pvci_denomination_voie_etq  utilisé dans les aggrégats ref_fonds: pvci / pvci_fond / pvci_nb / pvci_toponymie
   
   objet :
@@ -30,10 +30,16 @@
 
         <Rule>     
           <ogc:Filter>
-            <ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyName>denomination</ogc:PropertyName>
-              <ogc:Literal>Inconnu</ogc:Literal>
-            </ogc:PropertyIsNotEqualTo>
+            <ogc:And>             
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>denomination</ogc:PropertyName>
+                <ogc:Literal>Inconnu</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>denomination</ogc:PropertyName>
+                <ogc:Literal>Rond-point</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>               
           </ogc:Filter>
 
           <MinScaleDenominator>1</MinScaleDenominator>

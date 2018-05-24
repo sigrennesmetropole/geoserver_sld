@@ -31,10 +31,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <!--<se:Name>Nom des voies aux grandes échelles</se:Name>-->
           <ogc:Filter>
-            <ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyName>denomination</ogc:PropertyName>
-              <ogc:Literal>Inconnu</ogc:Literal>
-            </ogc:PropertyIsNotEqualTo>
+            <ogc:And>             
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>denomination</ogc:PropertyName>
+                <ogc:Literal>Inconnu</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>denomination</ogc:PropertyName>
+                <ogc:Literal>Rond-point</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>               
           </ogc:Filter>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
@@ -72,10 +78,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <!--<se:Name>Nom des voies aux moyennes échelles</se:Name>-->
           <ogc:Filter>
-            <ogc:PropertyIsNotEqualTo>
-              <ogc:PropertyName>denomination</ogc:PropertyName>
-              <ogc:Literal>Inconnu</ogc:Literal>
-            </ogc:PropertyIsNotEqualTo>
+            <ogc:And>             
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>denomination</ogc:PropertyName>
+                <ogc:Literal>Inconnu</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>denomination</ogc:PropertyName>
+                <ogc:Literal>Rond-point</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+            </ogc:And>               
           </ogc:Filter>
           <se:MinScaleDenominator>2200</se:MinScaleDenominator>
           <se:MaxScaleDenominator>90000</se:MaxScaleDenominator>
