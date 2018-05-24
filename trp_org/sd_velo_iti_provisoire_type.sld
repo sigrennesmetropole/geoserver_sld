@@ -6,7 +6,7 @@
   couche source dans la base :  mobilite_transp.sd_velo_iti_provisoire
   layer cible du style       :  trp_org:sd_velo_iti_provisoire
 
-  objet :  Style relatif aux types d'itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
+  objet :  Style relatif au type d'itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
 
   Historique des versions :
   date        |  auteur              |  description
@@ -25,10 +25,10 @@
   <NamedLayer>
     <se:Name>trp_org:sd_velo_iti_provisoire</se:Name>
     <UserStyle>
-      <se:Name>Schéma directeur vélo 2018 : Types des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
+      <se:Name>Schéma directeur vélo 2018 : Type des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
       <se:Description>
-        <se:Title>Schéma directeur vélo 2018 : Types des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
-        <se:Abstract>Style relatif aux types des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
+        <se:Title>Schéma directeur vélo 2018 : Type des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
+        <se:Abstract>Style relatif au type des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
       </se:Description>
       
       
