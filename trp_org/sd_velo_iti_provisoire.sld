@@ -6,11 +6,12 @@
   couche source dans la base :  mobilite_transp.sd_velo_iti_provisoire
   layer cible du style       :  trp_org:sd_velo_iti_provisoire
 
-  objet :  Style relatif aux Itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
+  objet :  Style relatif à l'état des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
 
   Historique des versions :
   date        |  auteur              |  description
   28/07/2017  |  Stéphane GELIN      |  version initiale
+  23/05/2018  |  Arnaud LECLERE      |  version modifiée
 
 -->
 
@@ -25,11 +26,28 @@
   <NamedLayer>
     <se:Name>trp_org:sd_velo_iti_provisoire</se:Name>
     <UserStyle>
-      <se:Name>Schéma directeur vélo 2018 : Itinéraires PROVISOIRES ET NON VALIDES</se:Name>
+      <se:Name>Schéma directeur vélo 2018 : Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
       <se:Description>
-        <se:Title>Schéma directeur vélo 2018 : Itinéraires PROVISOIRES ET NON VALIDES</se:Title>
-        <se:Abstract>Style relatif aux Itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
+        <se:Title>Schéma directeur vélo 2018 : Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
+        <se:Abstract>Style relatif à l'état des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
       </se:Description>
+      
+       <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Non renseigné</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsNull>
+              <ogc:PropertyName>etat</ogc:PropertyName>
+            </ogc:PropertyIsNull>
+          </ogc:Filter>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#E8BEFF</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -85,22 +103,7 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>non renseigné</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsNull>
-              <ogc:PropertyName>etat</ogc:PropertyName>
-            </ogc:PropertyIsNull>
-          </ogc:Filter>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#E8BEFF</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
+     
 
     </UserStyle>
   </NamedLayer>
