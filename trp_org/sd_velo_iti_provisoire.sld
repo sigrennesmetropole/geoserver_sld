@@ -6,12 +6,13 @@
   couche source dans la base :  mobilite_transp.sd_velo_iti_provisoire
   layer cible du style       :  trp_org:sd_velo_iti_provisoire
 
-  objet :  Style relatif à l'état des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
+  objet :  Style relatif aux états des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
 
   Historique des versions :
   date        |  auteur              |  description
   28/07/2017  |  Stéphane GELIN      |  version initiale
-  23/05/2018  |  Arnaud LECLERE      |  version modifiée
+  23/05/2018  |  Arnaud LECLERE      |  version initiale
+
 
 -->
 
@@ -29,12 +30,12 @@
       <se:Name>Schéma directeur vélo 2018 : Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
       <se:Description>
         <se:Title>Schéma directeur vélo 2018 : Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
-        <se:Abstract>Style relatif à l'état des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
+        <se:Abstract>Style relatif aux états ds itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
       </se:Description>
       
        <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Non renseigné</se:Name>
+          <se:Name>Etat : Non renseigné</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsNull>
               <ogc:PropertyName>etat</ogc:PropertyName>
@@ -51,7 +52,7 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>A améliorer</se:Name>
+          <se:Name>Etat : A améliorer</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etat</ogc:PropertyName>
@@ -69,7 +70,7 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>A créer</se:Name>
+          <se:Name>Etat : A créer</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etat</ogc:PropertyName>
@@ -87,7 +88,7 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Réalisé</se:Name>
+          <se:Name>Etat : Réalisé</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etat</ogc:PropertyName>
@@ -101,9 +102,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
-
-     
+      </se:FeatureTypeStyle>    
 
     </UserStyle>
   </NamedLayer>
