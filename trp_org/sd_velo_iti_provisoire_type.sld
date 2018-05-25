@@ -27,7 +27,7 @@
     <UserStyle>
       <se:Name>Type des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
       <se:Description>
-        <se:Title>Schéma directeur vélo 2018 : Type des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
+        <se:Title>Type des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
         <se:Abstract>Style relatif au type des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
       </se:Description>
       
