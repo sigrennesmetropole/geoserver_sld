@@ -27,7 +27,7 @@
   <NamedLayer>
     <se:Name>trp_org:sd_velo_iti_provisoire</se:Name>
     <UserStyle>
-      <se:Name>Schéma directeur vélo 2018 : Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
+      <se:Name>Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
       <se:Description>
         <se:Title>Schéma directeur vélo 2018 : Etat des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
         <se:Abstract>Style relatif aux états ds itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
