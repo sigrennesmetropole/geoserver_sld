@@ -1453,6 +1453,14 @@
               <ogc:Function name="numberFormat">
                 <ogc:Literal>#</ogc:Literal>
                 <ogc:Mul>
+                  <ogc:PropertyName>hauteur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+			 *              
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
                   <ogc:PropertyName>largeur</ogc:PropertyName>
                   <ogc:Literal>1000</ogc:Literal>
                 </ogc:Mul>
