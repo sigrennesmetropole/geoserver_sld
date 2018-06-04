@@ -1395,6 +1395,7 @@
       </se:FeatureTypeStyle>
       
       <!-- 7310 - Conduite eau usée -->
+       
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>RMTR Sous sol - Assainissement - Conduite eau usée</se:Name>
@@ -1424,6 +1425,7 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
+      <!-- Symbole + Etiquette dont hauteur différent de 0 -->      
       <se:FeatureTypeStyle>
         <se:Rule>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -1439,7 +1441,11 @@
               <ogc:PropertyIsNotEqualTo>
                 <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
                 <ogc:Literal>ref</ogc:Literal>
-              </ogc:PropertyIsNotEqualTo>               
+              </ogc:PropertyIsNotEqualTo>   
+              <ogc:PropertyIsGreaterThan>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsGreaterThan>                
             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
@@ -1503,7 +1509,138 @@
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
                 <ogc:Literal>ref</ogc:Literal>
-              </ogc:PropertyIsEqualTo>               
+              </ogc:PropertyIsEqualTo>   
+              <ogc:PropertyIsGreaterThan>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsGreaterThan>               
+            </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+          <!-- Etiquette -->
+          <se:TextSymbolizer>
+            <se:Label>
+                EU  REF
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>hauteur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+			 *                  
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <!-- Symbole + Etiquette dont hauteur = 0 -->      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7310</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>   
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+              </ogc:PropertyIsNull>                  
+            </ogc:And>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+
+          <!-- Etiquette -->
+          <se:TextSymbolizer>
+            <se:Label>
+                EU
+              <ogc:Function name="numberFormat">
+                <ogc:Literal>#</ogc:Literal>
+                <ogc:Mul>
+                  <ogc:PropertyName>largeur</ogc:PropertyName>
+                  <ogc:Literal>1000</ogc:Literal>
+                </ogc:Mul>
+              </ogc:Function>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7f3f00</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+            </se:Font>
+            <se:Halo>
+              <se:Radius>4</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#7f3f00</se:SvgParameter>
+            </se:Fill>
+            <se:VendorOption name="underlineText">true</se:VendorOption>
+            <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>modele</ogc:PropertyName>
+                <ogc:Literal>GL_7310</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>exist_offset</ogc:PropertyName>
+                <ogc:Literal>0</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_ecoulement</ogc:PropertyName>
+                <ogc:Literal>ref</ogc:Literal>
+              </ogc:PropertyIsEqualTo>          
+              <ogc:PropertyIsNull>
+                <ogc:PropertyName>hauteur</ogc:PropertyName>
+              </ogc:PropertyIsNull>                
             </ogc:And>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
