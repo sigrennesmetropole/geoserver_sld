@@ -28,7 +28,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- croisillon rouge = rayon de 500 m -->
         <se:Rule>
-          <se:Name>Inscrit</se:Name>
+          <se:Name>Rayon de 500 m</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_serv</ogc:PropertyName>
