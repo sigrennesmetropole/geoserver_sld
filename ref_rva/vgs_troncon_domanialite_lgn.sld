@@ -27,6 +27,7 @@
 
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <!-- les routes -->
+        
         <!-- route : Public national -->
         <se:Rule>
           <se:Name>route : public national</se:Name>
@@ -64,6 +65,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+        
         <!-- route : Public régional -->
         <se:Rule>
           <se:Name>route : public régional</se:Name>
@@ -101,6 +103,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+        
         <!-- route : Public départemental -->
         <se:Rule>
           <se:Name>route : public départemental</se:Name>
@@ -138,6 +141,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+        
         <!-- route : Public intercommunal -->
         <se:Rule>
           <se:Name>route : public intercommunal</se:Name>
@@ -175,6 +179,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+        
         <!-- route : Public communal -->
         <se:Rule>
           <se:Name>route : public communal</se:Name>
@@ -212,6 +217,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+        
         <!-- route : Privé communal -->
         <se:Rule>
           <se:Name>route : privé communal</se:Name>
@@ -249,6 +255,7 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
+        
         <!-- route : Privé -->
         <se:Rule>
           <se:Name>route : privé</se:Name>
@@ -295,7 +302,61 @@
           </se:LineSymbolizer>
         </se:Rule>
         
-        
+        <!-- route : non renseigné -->
+        <se:Rule>
+          <se:Name>route : Non renseigné</se:Name>
+          <ogc:Filter>
+            <ogc:Or>
+              <ogc:And>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>domaine</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>mode</ogc:PropertyName>
+                  <ogc:Literal>Automobile</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>domaine</ogc:PropertyName>
+                  <ogc:Literal>Non renseigné</ogc:Literal>
+                </ogc:PropertyIsEqualTo>   
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>mode</ogc:PropertyName>
+                  <ogc:Literal>Automobile</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>              
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>domaine</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>mode</ogc:PropertyName>
+                  <ogc:Literal>Mixte</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>              
+              <ogc:And>              
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>domaine</ogc:PropertyName>
+                  <ogc:Literal>Non renseigné</ogc:Literal>
+                </ogc:PropertyIsEqualTo>   
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>mode</ogc:PropertyName>
+                  <ogc:Literal>Mixte</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+            </ogc:Or>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ABABAB</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>        
         
         
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -486,7 +547,43 @@
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-        
+         <!-- modes doux : Non renseigné -->
+        <se:Rule>
+          <se:Name>modes doux : Non renseigné</se:Name>
+          <ogc:Filter>
+            <ogc:Or>          
+              <ogc:And>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>domaine</ogc:PropertyName>
+                  <ogc:Literal>Non renseigné</ogc:Literal>
+                </ogc:PropertyIsEqualTo>   
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>mode</ogc:PropertyName>
+                  <ogc:Literal>Mode doux</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>
+              <ogc:And>
+                <ogc:PropertyIsNull>
+                  <ogc:PropertyName>domaine</ogc:PropertyName>
+                </ogc:PropertyIsNull>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>mode</ogc:PropertyName>
+                  <ogc:Literal>Mode doux</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:And>    
+            </ogc:Or>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ABABAB</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">6 10</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>       
         
       </se:FeatureTypeStyle>
     </UserStyle>
