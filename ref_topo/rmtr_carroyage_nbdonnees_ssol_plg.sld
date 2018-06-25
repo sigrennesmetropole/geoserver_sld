@@ -202,7 +202,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#888888</se:SvgParameter>
@@ -226,7 +226,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsBetween>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#d9fbff</se:SvgParameter>
@@ -250,7 +250,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsBetween>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#adcfff</se:SvgParameter>
@@ -274,7 +274,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsBetween>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#598bd1</se:SvgParameter>
@@ -293,7 +293,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsGreaterThan>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#2f5e9e</se:SvgParameter>
