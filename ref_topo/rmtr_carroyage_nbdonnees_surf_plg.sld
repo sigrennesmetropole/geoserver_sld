@@ -15,6 +15,7 @@
   25/04/2017  |  Maël REBOUX         |  version initiale
   20/06/2017  |  Maël REBOUX         |  resserrement à 4 classes + ajout d'un zoom min + affichage seulement du contour des dalles aux très grandes échelles
   23/06/2017  |  Maël REBOUX         |  modification du nom de l'attribut + modification des classes suite nouvel attribut + changement nom SLD
+  25/06/2018  |  Maël REBOUX         |  ajustement des échelles de visibilité pour une meilleure expérience de navigation dans les projets RMTR
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -34,7 +35,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <se:Rule>
           <se:Name>Limites des carreaux</se:Name>
-          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#888888</se:SvgParameter>
@@ -61,7 +63,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -90,7 +92,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:UpperBoundary>
             </ogc:PropertyIsBetween>
           </ogc:Filter>
-          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -119,7 +121,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:UpperBoundary>
             </ogc:PropertyIsBetween>
           </ogc:Filter>
-          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -148,7 +150,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:UpperBoundary>
             </ogc:PropertyIsBetween>
           </ogc:Filter>
-          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -172,7 +174,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>501</ogc:Literal>
             </ogc:PropertyIsGreaterThan>
           </ogc:Filter>
-          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
