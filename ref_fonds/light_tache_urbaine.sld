@@ -29,16 +29,10 @@
           <se:Title>Couche des surfaces urbanisées (tâche urbaine)</se:Title>
           <se:Abstract>Couche des surfaces urbanisées (tâche urbaine)</se:Abstract>
         </se:Description>
-        <se:FeatureTypeStyle>
         
+        <se:FeatureTypeStyle>
           <se:Rule>
             <se:Name>Tâche urbaine</se:Name>
-            <ogc:Filter>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>utypo2</ogc:PropertyName>
-                <ogc:Literal>H</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Filter>
             <se:MinScaleDenominator>1</se:MinScaleDenominator>
             <se:MaxScaleDenominator>2000000</se:MaxScaleDenominator>
             <se:PolygonSymbolizer>
@@ -47,8 +41,8 @@
               </se:Fill>
             </se:PolygonSymbolizer>
           </se:Rule>
-
         </se:FeatureTypeStyle>
+        
       </UserStyle>
     </NamedLayer>
   </StyledLayerDescriptor>

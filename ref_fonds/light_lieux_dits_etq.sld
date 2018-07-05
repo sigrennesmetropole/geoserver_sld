@@ -73,48 +73,6 @@
           </se:TextSymbolizer>
         </se:Rule>
         
-        
-        <!-- plage d'échelles 2 -->
-        <se:Rule>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>Lieu-dit</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>25000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
-          <se:TextSymbolizer>
-            <se:Label>
-              <ogc:PropertyName>denomination</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">SansSerif</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:PointPlacement>
-                <se:AnchorPoint>
-                  <se:AnchorPointX>0.5</se:AnchorPointX>
-                  <se:AnchorPointY>0.5</se:AnchorPointY>
-                </se:AnchorPoint>
-              </se:PointPlacement>
-            </se:LabelPlacement>
-            <se:Halo>
-              <se:Radius>1</se:Radius>
-              <se:Fill>
-                <se:SvgParameter name="fill">#F2F3F0</se:SvgParameter>
-              </se:Fill>
-            </se:Halo>
-            <se:Fill>
-              <se:SvgParameter name="fill">#758191</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
-            <VendorOption name="autoWrap">120</VendorOption>
-          </se:TextSymbolizer>
-        </se:Rule>
-        
 
       </se:FeatureTypeStyle>
     </UserStyle>
