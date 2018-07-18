@@ -2,12 +2,15 @@
 <!--
   
   nom du SLD : pvciweb_senscirc_niv1_lgn
-  auteur :   Stéphane GELIN
-  date :     10/01/2016
-  couche principale cible du style : v_troncon_sens_circul_lgn: ref_fonds
+
+  couche source dans la base :  rva.v_troncon_lgn
+  layer cible du style       :  ref_fonds:v_troncon_sens_circul_lgn
  
-  objet :
-  Style des sens de circulation web
+  objet : Style des sens de circulation web
+  
+  Historique des versions :
+  10/01/2016  |  Stéphane GELIN      |  version initiale
+  18/07/2018  |  Maël REBOUX         |  correction référence fonte ESRI
   
 -->   
 <StyledLayerDescriptor version="1.0.0"
@@ -51,7 +54,7 @@
                    <GraphicStroke>
                        <Graphic>
                           <Mark>
-                             <WellKnownName>ttf://ESRI Arrowhead#63</WellKnownName>
+                             <WellKnownName>ttf://Equipements_PVI#${'U+0079'}</WellKnownName>
                                 <Fill>
                                     <CssParameter name="fill">#F88B8B</CssParameter>
                                 </Fill>
