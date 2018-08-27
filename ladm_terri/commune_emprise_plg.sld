@@ -12,6 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   15/11/2016  |  Léo Petipas         |  version initiale
+  27/08/2018  |  Maël REBOUX         |  modification abstract et title
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -21,8 +22,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>commune_emprise_plg</se:Name>
         <se:Description>
-          <se:Title>Style par défaut</se:Title>
-          <se:Abstract>Style par défaut</se:Abstract>
+          <se:Title>toutes les communes</se:Title>
+          <se:Abstract>toutes les communes</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
