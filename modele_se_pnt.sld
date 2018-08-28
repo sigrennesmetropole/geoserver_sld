@@ -29,6 +29,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- point rond rouge avec bordure noire -->
         <se:Rule>
           <se:Name>Point</se:Name>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>

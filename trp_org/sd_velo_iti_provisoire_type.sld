@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   23/05/2018  |  Arnaud LECLERE      |  version initiale
+  13/07/2018  |  Maël REBOUX         |  correction coquille
 
 -->
 
@@ -30,8 +31,8 @@
         <se:Title>Type des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
         <se:Abstract>Style relatif au type des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
       </se:Description>
-      
-      
+
+
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Type : Non renseigné</se:Name>
@@ -48,8 +49,9 @@
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-      
-       <se:FeatureTypeStyle>
+
+
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Type : Liaison principale</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -73,7 +75,7 @@
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>Liaison alternativer</ogc:Literal>
+              <ogc:Literal>Liaison alternative</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:LineSymbolizer>
@@ -85,18 +87,16 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
-     
+
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Type : Liaison secondaire</se:Name>
-        
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
               <ogc:Literal>Liaison secondaire</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-           </ogc:Filter>
+          </ogc:Filter>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffff73</se:SvgParameter>
@@ -105,18 +105,17 @@
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-      
+
+
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Type : Liaison non retenue</se:Name>
-        
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
               <ogc:Literal>Liaison non retenue</ogc:Literal>
             </ogc:PropertyIsEqualTo>
-           </ogc:Filter>
+          </ogc:Filter>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E8BEFF</se:SvgParameter>

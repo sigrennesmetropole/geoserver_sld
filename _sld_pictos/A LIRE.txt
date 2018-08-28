@@ -1,0 +1,8 @@
+﻿
+Les pictos stockés ici le sont pour le suivi de version via git.
+
+Il faut les dupliquer dans 
+V:\Gestionnaires\Sig\Dossiers\geOrchestra\Ressources sur public\app\georchestra\sld_pictos\
+
+et les téléverser par FTP sur le serveur "public" dans le répertoire
+/app/georchestra/sld_pictos
