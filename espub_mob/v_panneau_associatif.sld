@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : v_panneau_associatif_pnt
+  nom du SLD : v_panneau_associatif
   
-  couche source dans la base :  serv_equipub.v_panneau_associatif
-  layer cible du style       :  eq_poi:v_panneau_associatif
+  couche source dans la base :  espace_public.v_panneau_associatif
+  layer cible du style       :  espub_mob:v_panneau_associatif
   
   objet :  point des panneaux d'affichage associatif sur le territoire de la Ville de Rennes.
   
   Historique des versions :
   date        |  auteur              |  description
-  28/08/2018  |  S GELIN         |  version initiale
+  28/08/2018  |  S GELIN             |  version initiale
+  10/10/2018  |  Maël REBOUX         |  changement de source de données
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -27,7 +28,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
 
         <se:Rule>
           <se:Name>Panneau Associatif</se:Name>
-          <se:MinScaleDenominator>4500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -41,7 +41,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                   <se:SvgParameter name="stroke">#FF00C5</se:SvgParameter>
                   <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
                 </se:Stroke>
-         
               </se:Mark>
               <se:Size>10</se:Size>
             </se:Graphic>
