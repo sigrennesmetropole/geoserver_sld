@@ -4,7 +4,7 @@
   nom du SLD : v_marche_emplacement_vdr
   
   couche source dans la base :  espace_public.v_marche_emplacement_vdr
-  layer cible du style       :  espub_autr.v_marche_emplacement_vdr
+  layer cible du style       :  espub_autr:v_marche_emplacement_vdr
   
   objet : polygone transparent à bordure noire + étiquettes du n° d'emplacement aux très petites échelles.
   
@@ -16,7 +16,7 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>espub_autr.v_marche_emplacement_vdr</se:Name>
+    <se:Name>espub_autr:v_marche_emplacement_vdr</se:Name>
     <UserStyle>
       <se:Name>v_marche_emplacement_vdr</se:Name>
         <se:Description>
@@ -51,7 +51,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
