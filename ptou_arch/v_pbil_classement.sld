@@ -1,24 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : pbil_classement
+  nom du SLD : v_pbil_classement
   
-  couche source dans la base :  pat_tourisme.pbil
-  layer cible du style       :  ptou_arch:pbil
+  couche source dans la base :  pat_tourisme.v_pbil
+  layer cible du style       :  ptou_arch:v_pbil
   
   objet : style montrant la note / le classement pour le PLU
   
   Historique des versions :
   date        |  auteur              |  description
   18/07/2017  |  Maël REBOUX         |  version initiale
+  22/10/2017  |  Maël REBOUX         |  utilisation de v_pbil au lieu de pbil
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>ptou_arch:pbil</se:Name>
+    <se:Name>ptou_arch:v_pbil</se:Name>
     <UserStyle>
-      <se:Name>pbil_classement</se:Name>
+      <se:Name>v_pbil_classement</se:Name>
         <se:Description>
           <se:Title>Classement du bâtiment pour le PLUi</se:Title>
           <se:Abstract>Rond de couleur avec une couleur par note de 0 à 3.</se:Abstract>
