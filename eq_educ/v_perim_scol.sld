@@ -1,4 +1,4 @@
-Ôªø<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : v_perim_scol
@@ -7,14 +7,15 @@
   layer cible du style       :  eq_educ:v_perim_scol
   
   objet : ce style permet de distinguer 2 variables :
-   - le type d'√©cole : maternelle (rond) / √©l√©mentaire (carr√©)
-   - l'√©cole de rattachement (couleur)
+   - le type d'Ècole : maternelle (rond) / ÈlÈmentaire (carrÈ)
+   - l'Ècole de rattachement (couleur)
    
-   Les 2 symboles sont d√©cal√©es en X pour les voir appara√Ætre.
+   Les 2 symboles sont dÈcalÈes en X pour les voir apparaÓtre.
   
   Historique des versions :
   date        |  auteur              |  description
-  07/09/2017  |  Ma√´l REBOUX         |  version initiale
+  07/09/2017  |  MaÎl REBOUX         |  version initiale
+  23/10/2018  |  S. GELIN      	     |  modif suite chgt structure
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -24,19 +25,19 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>v_perim_scol</se:Name>
         <se:Description>
-          <se:Title>Type et nom de l'√©cole de rattachement √† l'adresse</se:Title>
-          <se:Abstract>ce style permet de distinguer 2 variables : le type d'√©cole et l'√©cole de rattachement</se:Abstract>
+          <se:Title>Type et nom de l'Ècole de rattachement ‡ l'adresse</se:Title>
+          <se:Abstract>ce style permet de distinguer 2 variables : le type d'Ècole et l'Ècole de rattachement</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
         
-        <!-- Andr√©e Chedid -->
+        <!-- AndrÈe Chedid -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Andr√©e Chedid</se:Name>
+          <se:Name>…cole maternelle AndrÈe Chedid</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1074</ogc:Literal>
+              <ogc:Literal>sitorg_61</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -64,13 +65,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Andr√©e Chedid</se:Name>
+          <se:Name>…cole ÈlÈmentaire AndrÈe Chedid</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1073</ogc:Literal>
+              <ogc:Literal>sitorg_60</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -102,11 +103,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Guyenne -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Guyenne</se:Name>
+          <se:Name>…cole maternelle Guyenne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>595</ogc:Literal>
+              <ogc:Literal>sitorg_5013</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -134,13 +135,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Guyenne</se:Name>
+          <se:Name>…cole ÈlÈmentaire Guyenne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>594</ogc:Literal>
+              <ogc:Literal>sitorg_5014</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -172,11 +173,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jean Moulin -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Jean Moulin</se:Name>
+          <se:Name>…cole maternelle Jean Moulin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>725</ogc:Literal>
+              <ogc:Literal>sitorg_4118</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -204,13 +205,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Jean Moulin</se:Name>
+          <se:Name>…cole ÈlÈmentaire Jean Moulin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>724</ogc:Literal>
+              <ogc:Literal>sitorg_4117</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -242,11 +243,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Moulin du Comte -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Moulin du Comte</se:Name>
+          <se:Name>…cole maternelle Moulin du Comte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>868</ogc:Literal>
+              <ogc:Literal>sitorg_4198</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -274,13 +275,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Moulin du Comte</se:Name>
+          <se:Name>…cole ÈlÈmentaire Moulin du Comte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>867</ogc:Literal>
+              <ogc:Literal>sitorg_4197</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -309,14 +310,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Champion de Cic√© -->
+        <!-- Champion de CicÈ -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Champion de Cic√©</se:Name>
+          <se:Name>…cole maternelle Champion de CicÈ</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>219</ogc:Literal>
+              <ogc:Literal>sitorg_646</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -344,13 +345,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Champion de Cic√©</se:Name>
+          <se:Name>…cole ÈlÈmentaire Champion de CicÈ</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>218</ogc:Literal>
+              <ogc:Literal>sitorg_640</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -382,11 +383,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Marie Pape-Carpantier -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Marie Pape-Carpantier</se:Name>
+          <se:Name>…cole maternelle Marie Pape-Carpantier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>950</ogc:Literal>
+              <ogc:Literal>sitorg_4248</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -414,13 +415,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Marie Pape-Carpantier</se:Name>
+          <se:Name>…cole ÈlÈmentaire Marie Pape-Carpantier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>949</ogc:Literal>
+              <ogc:Literal>sitorg_4247</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -452,11 +453,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Mauconseil -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Mauconseil</se:Name>
+          <se:Name>…cole maternelle Mauconseil</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>322</ogc:Literal>
+              <ogc:Literal>sitorg_1163</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -484,13 +485,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Marie Mauconseil</se:Name>
+          <se:Name>…cole ÈlÈmentaire Marie Mauconseil</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>322</ogc:Literal>
+              <ogc:Literal>sitorg_1162</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -519,14 +520,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
 
-        <!-- Cl√©menceau -->
+        <!-- ClÈmenceau -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Cl√©menceau</se:Name>
+          <se:Name>…cole maternelle ClÈmenceau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>475</ogc:Literal>
+              <ogc:Literal>sitorg_3960</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -554,13 +555,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Cl√©menceau</se:Name>
+          <se:Name>…cole ÈlÈmentaire ClÈmenceau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>553</ogc:Literal>
+              <ogc:Literal>sitorg_4014</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -589,14 +590,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Cl√¥teaux -->
+        <!-- ClÙteaux -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Cl√¥teaux</se:Name>
+          <se:Name>…cole maternelle ClÙteaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>173</ogc:Literal>
+              <ogc:Literal>sitorg_416</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -624,13 +625,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Cl√¥teaux</se:Name>
+          <se:Name>…cole ÈlÈmentaire ClÙteaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>566</ogc:Literal>
+              <ogc:Literal>sitorg_4024</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -659,14 +660,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Jacques Pr√©vert -->
+        <!-- Jacques PrÈvert -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Jacques Pr√©vert</se:Name>
+          <se:Name>…cole maternelle Jacques PrÈvert</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>27</ogc:Literal>
+              <ogc:Literal>sitorg_940</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -694,13 +695,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Jacques Pr√©vert</se:Name>
+          <se:Name>…cole ÈlÈmentaire Jacques PrÈvert</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>26</ogc:Literal>
+              <ogc:Literal>sitorg_876</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -732,11 +733,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Pascal Lafaye -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Pascal Lafaye</se:Name>
+          <se:Name>…cole maternelle Pascal Lafaye</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1111</ogc:Literal>
+              <ogc:Literal>sitorg_85</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -764,13 +765,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Pascal Lafaye</se:Name>
+          <se:Name>…cole ÈlÈmentaire Pascal Lafaye</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1110</ogc:Literal>
+              <ogc:Literal>sitorg_84</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -802,11 +803,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Oscar Leroux -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Oscar Leroux</se:Name>
+          <se:Name>…cole maternelle Oscar Leroux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>271</ogc:Literal>
+              <ogc:Literal>sitorg_950</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -834,13 +835,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Oscar Leroux</se:Name>
+          <se:Name>…cole ÈlÈmentaire Oscar Leroux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1013</ogc:Literal>
+              <ogc:Literal>sitorg_15</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -872,11 +873,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Villeneuve -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Villeneuve</se:Name>
+          <se:Name>…cole maternelle Villeneuve</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>563</ogc:Literal>
+              <ogc:Literal>sitorg_4021</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -904,13 +905,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Andr√©e Chedid</se:Name>
+          <se:Name>Ecole ÈlÈmentaire Villeneuve</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>562</ogc:Literal>
+              <ogc:Literal>sitorg_4020</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -941,13 +942,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- Albert de Mun -->
         <!-- pas de maternelle -->
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Albert de Mun</se:Name>
+          <se:Name>…cole ÈlÈmentaire Albert de Mun</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>16</ogc:Literal>
+              <ogc:Literal>sitorg_368</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -979,11 +980,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Carle Bahon -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Carle Bahon</se:Name>
+          <se:Name>…cole maternelle Carle Bahon</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>462</ogc:Literal>
+              <ogc:Literal>sitorg_3951</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1011,13 +1012,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Carle Bahon</se:Name>
+          <se:Name>…cole ÈlÈmentaire Carle Bahon</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>461</ogc:Literal>
+              <ogc:Literal>sitorg_3950</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1049,11 +1050,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Marc Sangnier -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Marc Sangnier</se:Name>
+          <se:Name>…cole maternelle Marc Sangnier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>937</ogc:Literal>
+              <ogc:Literal>sitorg_4239</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1081,16 +1082,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'√©l√©mentaire -->
+        <!-- pas d'ÈlÈmentaire -->
         
         <!-- Henri Wallon -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Henri Wallon</se:Name>
+          <se:Name>…cole maternelle Henri Wallon</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>662</ogc:Literal>
+              <ogc:Literal>sitorg_4080</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1118,16 +1119,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'√©l√©mentaire -->
+        <!-- pas d'ÈlÈmentaire -->
       
-        <!-- Torign√© -->
+        <!-- TorignÈ -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Torign√©</se:Name>
+          <se:Name>…cole maternelle TorignÈ</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1360</ogc:Literal>
+              <ogc:Literal>sitorg_260</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1155,13 +1156,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Torign√©</se:Name>
+          <se:Name>…cole ÈlÈmentaire TorignÈ</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1359</ogc:Literal>
+              <ogc:Literal>sitorg_258</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1193,11 +1194,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Volga -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Volga</se:Name>
+          <se:Name>…cole maternelle Volga</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1441</ogc:Literal>
+              <ogc:Literal>sitorg_315</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1225,13 +1226,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Volga</se:Name>
+          <se:Name>…cole ÈlÈmentaire Volga</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1440</ogc:Literal>
+              <ogc:Literal>sitorg_314</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1260,14 +1261,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- L√©on Grimault -->
+        <!-- LÈon Grimault -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle L√©on Grimault</se:Name>
+          <se:Name>…cole maternelle LÈon Grimault</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>822</ogc:Literal>
+              <ogc:Literal>sitorg_4170</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1295,13 +1296,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire L√©on Grimault</se:Name>
+          <se:Name>…cole ÈlÈmentaire LÈon Grimault</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>821</ogc:Literal>
+              <ogc:Literal>sitorg_4169</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1333,11 +1334,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Robert Doisneau -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Robert Doisneau</se:Name>
+          <se:Name>…cole maternelle Robert Doisneau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1206</ogc:Literal>
+              <ogc:Literal>sitorg_143</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1365,13 +1366,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Robert Doisneau</se:Name>
+          <se:Name>…cole ÈlÈmentaire Robert Doisneau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1205</ogc:Literal>
+              <ogc:Literal>sitorg_142</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1403,11 +1404,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Poterie -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Poterie</se:Name>
+          <se:Name>…cole maternelle Poterie</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1405</ogc:Literal>
+              <ogc:Literal>sitorg_292</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1435,13 +1436,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Poterie</se:Name>
+          <se:Name>…cole ÈlÈmentaire Poterie</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1404</ogc:Literal>
+              <ogc:Literal>sitorg_291</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1470,14 +1471,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Ch√¢teaugiron - Le Landry -->
+        <!-- Ch‚teaugiron - Le Landry -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Ch√¢teaugiron - Le Landry</se:Name>
+          <se:Name>…cole maternelle Ch‚teaugiron - Le Landry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>259</ogc:Literal>
+              <ogc:Literal>sitorg_871</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1505,13 +1506,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Ch√¢teaugiron - Le Landry</se:Name>
+          <se:Name>…cole ÈlÈmentaire Ch‚teaugiron - Le Landry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>257</ogc:Literal>
+              <ogc:Literal>sitorg_861</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1543,11 +1544,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- de l'Ille -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle de l'Ille</se:Name>
+          <se:Name>…cole maternelle de l'Ille</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1395</ogc:Literal>
+              <ogc:Literal>sitorg_282</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1575,13 +1576,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire de l'Ille</se:Name>
+          <se:Name>…cole ÈlÈmentaire de l'Ille</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1394</ogc:Literal>
+              <ogc:Literal>sitorg_281</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1612,13 +1613,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- Contour Saint-Aubin -->
         <!-- pas de maternelle -->
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Contour Saint-Aubin</se:Name>
+          <se:Name>…cole ÈlÈmentaire Contour Saint-Aubin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>983</ogc:Literal>
+              <ogc:Literal>sitorg_4270</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1650,11 +1651,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jean Zay -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Jean Zay</se:Name>
+          <se:Name>…cole maternelle Jean Zay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1279</ogc:Literal>
+              <ogc:Literal>sitorg_193</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1682,13 +1683,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Jean Zay</se:Name>
+          <se:Name>…cole ÈlÈmentaire Jean Zay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1278</ogc:Literal>
+              <ogc:Literal>sitorg_192</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1720,11 +1721,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Duchesse Anne -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle L√©on Grimault</se:Name>
+          <se:Name>Ecole maternelle Duchesse Anne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1043</ogc:Literal>
+              <ogc:Literal>sitorg_38</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1752,13 +1753,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Duchesse Anne</se:Name>
+          <se:Name>…cole ÈlÈmentaire Duchesse Anne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>375</ogc:Literal>
+              <ogc:Literal>sitorg_3895</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1790,11 +1791,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Louise Michel -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Louise Michel</se:Name>
+          <se:Name>…cole maternelle Louise Michel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1358</ogc:Literal>
+              <ogc:Literal>sitorg_257</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1822,13 +1823,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Louise Michel</se:Name>
+          <se:Name>…cole ÈlÈmentaire Louise Michel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1357</ogc:Literal>
+              <ogc:Literal>sitorg_256</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1860,11 +1861,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Faux-Pont -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Faux-Pont</se:Name>
+          <se:Name>…cole maternelle Faux-Pont</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>430</ogc:Literal>
+              <ogc:Literal>sitorg_3930</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1892,16 +1893,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'√©l√©mentaire -->
+        <!-- pas d'ÈlÈmentaire -->
         
         <!-- Colombier -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Colombier</se:Name>
+          <se:Name>…cole maternelle Colombier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>351</ogc:Literal>
+              <ogc:Literal>sitorg_2308</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1929,13 +1930,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Colombier</se:Name>
+          <se:Name>…cole ÈlÈmentaire Colombier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>350</ogc:Literal>
+              <ogc:Literal>sitorg_1177</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1967,11 +1968,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Pablo Picasso -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Pablo Picasso</se:Name>
+          <se:Name>…cole maternelle Pablo Picasso</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1070</ogc:Literal>
+              <ogc:Literal>sitorg_58</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -1999,13 +2000,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Pablo Picasso</se:Name>
+          <se:Name>…cole ÈlÈmentaire Pablo Picasso</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1069</ogc:Literal>
+              <ogc:Literal>sitorg_56</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2037,11 +2038,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Marcel Pagnol -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Marcel Pagnol</se:Name>
+          <se:Name>…cole maternelle Marcel Pagnol</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>732</ogc:Literal>
+              <ogc:Literal>sitorg_4124</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2069,13 +2070,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Marcel Pagnol</se:Name>
+          <se:Name>…cole ÈlÈmentaire Marcel Pagnol</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>731</ogc:Literal>
+              <ogc:Literal>sitorg_4123</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2104,14 +2105,14 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Tr√©gain -->
+        <!-- TrÈgain -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Tr√©gain</se:Name>
+          <se:Name>…cole maternelle TrÈgain</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1379</ogc:Literal>
+              <ogc:Literal>sitorg_274</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2139,13 +2140,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Tr√©gain</se:Name>
+          <se:Name>…cole ÈlÈmentaire TrÈgain</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1378</ogc:Literal>
+              <ogc:Literal>sitorg_273</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2177,11 +2178,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Camille Claudel -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Camille Claudel</se:Name>
+          <se:Name>…cole maternelle Camille Claudel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>376</ogc:Literal>
+              <ogc:Literal>sitorg_3896</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2209,13 +2210,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Camille Claudel</se:Name>
+          <se:Name>…cole ÈlÈmentaire Camille Claudel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>374</ogc:Literal>
+              <ogc:Literal>sitorg_3894</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2247,11 +2248,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jean Rostand -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Jean Rostand</se:Name>
+          <se:Name>…cole maternelle Jean Rostand</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>361</ogc:Literal>
+              <ogc:Literal>sitorg_3886</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2279,13 +2280,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Jean Rostand</se:Name>
+          <se:Name>…cole ÈlÈmentaire Jean Rostand</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>360</ogc:Literal>
+              <ogc:Literal>sitorg_3885</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2317,11 +2318,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Gantelles -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Gantelles</se:Name>
+          <se:Name>…cole maternelle Gantelles</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>415</ogc:Literal>
+              <ogc:Literal>sitorg_3921</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2349,13 +2350,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Gantelles</se:Name>
+          <se:Name>…cole ÈlÈmentaire Gantelles</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>414</ogc:Literal>
+              <ogc:Literal>sitorg_3920</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2387,11 +2388,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jules Isaac -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Jules Isaac</se:Name>
+          <se:Name>…cole maternelle Jules Isaac</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>979</ogc:Literal>
+              <ogc:Literal>sitorg_4266</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2419,13 +2420,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Jules Isaac</se:Name>
+          <se:Name>…cole ÈlÈmentaire Jules Isaac</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>978</ogc:Literal>
+              <ogc:Literal>sitorg_4265</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2457,11 +2458,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Joseph Lotte -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Joseph Lotte</se:Name>
+          <se:Name>…cole maternelle Joseph Lotte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>739</ogc:Literal>
+              <ogc:Literal>sitorg_4128</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2489,13 +2490,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Joseph Lotte</se:Name>
+          <se:Name>…cole ÈlÈmentaire Joseph Lotte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>738</ogc:Literal>
+              <ogc:Literal>sitorg_4127</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2527,11 +2528,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Sonia Delaunay -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Sonia Delaunay</se:Name>
+          <se:Name>…cole maternelle Sonia Delaunay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>947</ogc:Literal>
+              <ogc:Literal>sitorg_4245</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2559,13 +2560,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Sonia Delaunay</se:Name>
+          <se:Name>…cole ÈlÈmentaire Sonia Delaunay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>946</ogc:Literal>
+              <ogc:Literal>sitorg_4244</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2597,11 +2598,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Nelson Mandela -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Nelson Mandela</se:Name>
+          <se:Name>…cole maternelle Nelson Mandela</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>2955</ogc:Literal>
+              <ogc:Literal>sitorg_1111</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2629,13 +2630,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Nelson Mandela</se:Name>
+          <se:Name>…cole ÈlÈmentaire Nelson Mandela</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>2956</ogc:Literal>
+              <ogc:Literal>sitorg_1112</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2667,11 +2668,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jules Ferry -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Jules Ferry</se:Name>
+          <se:Name>…cole maternelle Jules Ferry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>403</ogc:Literal>
+              <ogc:Literal>sitorg_3914</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2699,13 +2700,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Jules Ferry</se:Name>
+          <se:Name>…cole ÈlÈmentaire Jules Ferry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>402</ogc:Literal>
+              <ogc:Literal>sitorg_3913</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2737,11 +2738,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Guillevic -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Guillevic</se:Name>
+          <se:Name>…cole maternelle Guillevic</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>796</ogc:Literal>
+              <ogc:Literal>sitorg_4157</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2769,13 +2770,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Guillevic</se:Name>
+          <se:Name>…cole ÈlÈmentaire Guillevic</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>795</ogc:Literal>
+              <ogc:Literal>sitorg_4156</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2807,11 +2808,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Quineleu -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Quineleu</se:Name>
+          <se:Name>…cole maternelle Quineleu</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1212</ogc:Literal>
+              <ogc:Literal>sitorg_148</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2839,16 +2840,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'√©l√©mentaire -->
+        <!-- pas d'ÈlÈmentaire -->
         
         <!-- Saint-Malo -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>√âcole maternelle Saint-Malo</se:Name>
+          <se:Name>…cole maternelle Saint-Malo</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>1266</ogc:Literal>
+              <ogc:Literal>sitorg_183</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2876,17 +2877,17 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'√©l√©mentaire -->
+        <!-- pas d'ÈlÈmentaire -->
         
-        <!-- Libert√© -->
+        <!-- LibertÈ -->
         <!-- pas de maternelle -->
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Libert√©</se:Name>
+          <se:Name>…cole ÈlÈmentaire LibertÈ</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>835</ogc:Literal>
+              <ogc:Literal>sitorg_4177</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
@@ -2917,13 +2918,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
         <!-- Paul Langevin -->
         <!-- pas de maternelle -->
-        <!-- √©l√©mentaire -->
+        <!-- ÈlÈmentaire -->
         <se:Rule>
-          <se:Name>√âcole √©l√©mentaire Paul Langevin</se:Name>
+          <se:Name>…cole ÈlÈmentaire Paul Langevin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
-              <ogc:Literal>940</ogc:Literal>
+              <ogc:Literal>sitorg_4241</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>18000</se:MaxScaleDenominator>
