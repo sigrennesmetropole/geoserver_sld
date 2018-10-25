@@ -7,14 +7,14 @@
   layer cible du style       :  eq_educ:v_perim_scol
   
   objet : ce style permet de distinguer 2 variables :
-   - le type d'Ècole : maternelle (rond) / ÈlÈmentaire (carrÈ)
-   - l'Ècole de rattachement (couleur)
+   - le type d'√©cole : maternelle (rond) / √©l√©mentaire (carr√©)
+   - l'√©cole de rattachement (couleur)
    
-   Les 2 symboles sont dÈcalÈes en X pour les voir apparaÓtre.
+   Les 2 symboles sont d√©cal√©es en X pour les voir appara√Ætre.
   
   Historique des versions :
   date        |  auteur              |  description
-  07/09/2017  |  MaÎl REBOUX         |  version initiale
+  07/09/2017  |  Ma√´l REBOUX         |  version initiale
   23/10/2018  |  S. GELIN      	     |  modif suite chgt structure
   
 -->
@@ -25,15 +25,15 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>v_perim_scol</se:Name>
         <se:Description>
-          <se:Title>Type et nom de l'Ècole de rattachement ‡ l'adresse</se:Title>
-          <se:Abstract>ce style permet de distinguer 2 variables : le type d'Ècole et l'Ècole de rattachement</se:Abstract>
+          <se:Title>Type et nom de l'√©cole de rattachement √† l'adresse</se:Title>
+          <se:Abstract>ce style permet de distinguer 2 variables : le type d'√©cole et l'√©cole de rattachement</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
         
-        <!-- AndrÈe Chedid -->
+        <!-- Andr√©e Chedid -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle AndrÈe Chedid</se:Name>
+          <se:Name>√âcole maternelle Andr√©e Chedid</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -65,9 +65,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire AndrÈe Chedid</se:Name>
+          <se:Name>√âcole √©l√©mentaire Andr√©e Chedid</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -103,7 +103,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Guyenne -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Guyenne</se:Name>
+          <se:Name>√âcole maternelle Guyenne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -135,9 +135,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Guyenne</se:Name>
+          <se:Name>√âcole √©l√©mentaire Guyenne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -173,7 +173,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jean Moulin -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Jean Moulin</se:Name>
+          <se:Name>√âcole maternelle Jean Moulin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -205,9 +205,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Jean Moulin</se:Name>
+          <se:Name>√âcole √©l√©mentaire Jean Moulin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -243,7 +243,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Moulin du Comte -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Moulin du Comte</se:Name>
+          <se:Name>√âcole maternelle Moulin du Comte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -275,9 +275,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Moulin du Comte</se:Name>
+          <se:Name>√âcole √©l√©mentaire Moulin du Comte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -310,10 +310,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Champion de CicÈ -->
+        <!-- Champion de Cic√© -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Champion de CicÈ</se:Name>
+          <se:Name>√âcole maternelle Champion de Cic√©</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -345,9 +345,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Champion de CicÈ</se:Name>
+          <se:Name>√âcole √©l√©mentaire Champion de Cic√©</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -383,7 +383,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Marie Pape-Carpantier -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Marie Pape-Carpantier</se:Name>
+          <se:Name>√âcole maternelle Marie Pape-Carpantier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -415,9 +415,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Marie Pape-Carpantier</se:Name>
+          <se:Name>√âcole √©l√©mentaire Marie Pape-Carpantier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -453,7 +453,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Mauconseil -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Mauconseil</se:Name>
+          <se:Name>√âcole maternelle Mauconseil</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -485,9 +485,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Marie Mauconseil</se:Name>
+          <se:Name>√âcole √©l√©mentaire Marie Mauconseil</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -520,10 +520,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
 
-        <!-- ClÈmenceau -->
+        <!-- Cl√©menceau -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle ClÈmenceau</se:Name>
+          <se:Name>√âcole maternelle Cl√©menceau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -555,9 +555,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire ClÈmenceau</se:Name>
+          <se:Name>√âcole √©l√©mentaire Cl√©menceau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -590,10 +590,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- ClÙteaux -->
+        <!-- Cl√¥teaux -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle ClÙteaux</se:Name>
+          <se:Name>√âcole maternelle Cl√¥teaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -625,9 +625,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire ClÙteaux</se:Name>
+          <se:Name>√âcole √©l√©mentaire Cl√¥teaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -660,10 +660,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Jacques PrÈvert -->
+        <!-- Jacques Pr√©vert -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Jacques PrÈvert</se:Name>
+          <se:Name>√âcole maternelle Jacques Pr√©vert</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -695,9 +695,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Jacques PrÈvert</se:Name>
+          <se:Name>√âcole √©l√©mentaire Jacques Pr√©vert</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -733,7 +733,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Pascal Lafaye -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Pascal Lafaye</se:Name>
+          <se:Name>√âcole maternelle Pascal Lafaye</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -765,9 +765,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Pascal Lafaye</se:Name>
+          <se:Name>√âcole √©l√©mentaire Pascal Lafaye</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -803,7 +803,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Oscar Leroux -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Oscar Leroux</se:Name>
+          <se:Name>√âcole maternelle Oscar Leroux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -835,9 +835,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Oscar Leroux</se:Name>
+          <se:Name>√âcole √©l√©mentaire Oscar Leroux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -873,7 +873,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Villeneuve -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Villeneuve</se:Name>
+          <se:Name>√âcole maternelle Villeneuve</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -905,9 +905,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>Ecole ÈlÈmentaire Villeneuve</se:Name>
+          <se:Name>Ecole √©l√©mentaire Villeneuve</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -942,9 +942,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- Albert de Mun -->
         <!-- pas de maternelle -->
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Albert de Mun</se:Name>
+          <se:Name>√âcole √©l√©mentaire Albert de Mun</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -980,7 +980,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Carle Bahon -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Carle Bahon</se:Name>
+          <se:Name>√âcole maternelle Carle Bahon</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1012,9 +1012,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Carle Bahon</se:Name>
+          <se:Name>√âcole √©l√©mentaire Carle Bahon</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1050,7 +1050,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Marc Sangnier -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Marc Sangnier</se:Name>
+          <se:Name>√âcole maternelle Marc Sangnier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1082,12 +1082,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'ÈlÈmentaire -->
+        <!-- pas d'√©l√©mentaire -->
         
         <!-- Henri Wallon -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Henri Wallon</se:Name>
+          <se:Name>√âcole maternelle Henri Wallon</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1119,12 +1119,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'ÈlÈmentaire -->
+        <!-- pas d'√©l√©mentaire -->
       
-        <!-- TorignÈ -->
+        <!-- Torign√© -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle TorignÈ</se:Name>
+          <se:Name>√âcole maternelle Torign√©</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1156,9 +1156,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire TorignÈ</se:Name>
+          <se:Name>√âcole √©l√©mentaire Torign√©</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1194,7 +1194,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Volga -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Volga</se:Name>
+          <se:Name>√âcole maternelle Volga</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1226,9 +1226,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Volga</se:Name>
+          <se:Name>√âcole √©l√©mentaire Volga</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1261,10 +1261,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- LÈon Grimault -->
+        <!-- L√©on Grimault -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle LÈon Grimault</se:Name>
+          <se:Name>√âcole maternelle L√©on Grimault</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1296,9 +1296,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire LÈon Grimault</se:Name>
+          <se:Name>√âcole √©l√©mentaire L√©on Grimault</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1334,7 +1334,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Robert Doisneau -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Robert Doisneau</se:Name>
+          <se:Name>√âcole maternelle Robert Doisneau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1366,9 +1366,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Robert Doisneau</se:Name>
+          <se:Name>√âcole √©l√©mentaire Robert Doisneau</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1404,7 +1404,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Poterie -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Poterie</se:Name>
+          <se:Name>√âcole maternelle Poterie</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1436,9 +1436,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Poterie</se:Name>
+          <se:Name>√âcole √©l√©mentaire Poterie</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1471,10 +1471,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
       
-        <!-- Ch‚teaugiron - Le Landry -->
+        <!-- Ch√¢teaugiron - Le Landry -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Ch‚teaugiron - Le Landry</se:Name>
+          <se:Name>√âcole maternelle Ch√¢teaugiron - Le Landry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1506,9 +1506,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Ch‚teaugiron - Le Landry</se:Name>
+          <se:Name>√âcole √©l√©mentaire Ch√¢teaugiron - Le Landry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1544,7 +1544,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- de l'Ille -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle de l'Ille</se:Name>
+          <se:Name>√âcole maternelle de l'Ille</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1576,9 +1576,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire de l'Ille</se:Name>
+          <se:Name>√âcole √©l√©mentaire de l'Ille</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1613,9 +1613,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <!-- Contour Saint-Aubin -->
         <!-- pas de maternelle -->
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Contour Saint-Aubin</se:Name>
+          <se:Name>√âcole √©l√©mentaire Contour Saint-Aubin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1651,7 +1651,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jean Zay -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Jean Zay</se:Name>
+          <se:Name>√âcole maternelle Jean Zay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1683,9 +1683,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Jean Zay</se:Name>
+          <se:Name>√âcole √©l√©mentaire Jean Zay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1753,9 +1753,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Duchesse Anne</se:Name>
+          <se:Name>√âcole √©l√©mentaire Duchesse Anne</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1791,7 +1791,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Louise Michel -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Louise Michel</se:Name>
+          <se:Name>√âcole maternelle Louise Michel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1823,9 +1823,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Louise Michel</se:Name>
+          <se:Name>√âcole √©l√©mentaire Louise Michel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1861,7 +1861,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Faux-Pont -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Faux-Pont</se:Name>
+          <se:Name>√âcole maternelle Faux-Pont</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1893,12 +1893,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'ÈlÈmentaire -->
+        <!-- pas d'√©l√©mentaire -->
         
         <!-- Colombier -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Colombier</se:Name>
+          <se:Name>√âcole maternelle Colombier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1930,9 +1930,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Colombier</se:Name>
+          <se:Name>√âcole √©l√©mentaire Colombier</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -1968,7 +1968,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Pablo Picasso -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Pablo Picasso</se:Name>
+          <se:Name>√âcole maternelle Pablo Picasso</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2000,9 +2000,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Pablo Picasso</se:Name>
+          <se:Name>√âcole √©l√©mentaire Pablo Picasso</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2038,7 +2038,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Marcel Pagnol -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Marcel Pagnol</se:Name>
+          <se:Name>√âcole maternelle Marcel Pagnol</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2070,9 +2070,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Marcel Pagnol</se:Name>
+          <se:Name>√âcole √©l√©mentaire Marcel Pagnol</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2105,10 +2105,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- TrÈgain -->
+        <!-- Tr√©gain -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle TrÈgain</se:Name>
+          <se:Name>√âcole maternelle Tr√©gain</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2140,9 +2140,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire TrÈgain</se:Name>
+          <se:Name>√âcole √©l√©mentaire Tr√©gain</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2178,7 +2178,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Camille Claudel -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Camille Claudel</se:Name>
+          <se:Name>√âcole maternelle Camille Claudel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2210,9 +2210,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Camille Claudel</se:Name>
+          <se:Name>√âcole √©l√©mentaire Camille Claudel</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2248,7 +2248,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jean Rostand -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Jean Rostand</se:Name>
+          <se:Name>√âcole maternelle Jean Rostand</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2280,9 +2280,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Jean Rostand</se:Name>
+          <se:Name>√âcole √©l√©mentaire Jean Rostand</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2318,7 +2318,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Gantelles -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Gantelles</se:Name>
+          <se:Name>√âcole maternelle Gantelles</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2350,9 +2350,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Gantelles</se:Name>
+          <se:Name>√âcole √©l√©mentaire Gantelles</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2388,7 +2388,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jules Isaac -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Jules Isaac</se:Name>
+          <se:Name>√âcole maternelle Jules Isaac</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2420,9 +2420,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Jules Isaac</se:Name>
+          <se:Name>√âcole √©l√©mentaire Jules Isaac</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2458,7 +2458,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Joseph Lotte -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Joseph Lotte</se:Name>
+          <se:Name>√âcole maternelle Joseph Lotte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2490,9 +2490,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Joseph Lotte</se:Name>
+          <se:Name>√âcole √©l√©mentaire Joseph Lotte</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2528,7 +2528,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Sonia Delaunay -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Sonia Delaunay</se:Name>
+          <se:Name>√âcole maternelle Sonia Delaunay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2560,9 +2560,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Sonia Delaunay</se:Name>
+          <se:Name>√âcole √©l√©mentaire Sonia Delaunay</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2598,7 +2598,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Nelson Mandela -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Nelson Mandela</se:Name>
+          <se:Name>√âcole maternelle Nelson Mandela</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2630,9 +2630,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Nelson Mandela</se:Name>
+          <se:Name>√âcole √©l√©mentaire Nelson Mandela</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2668,7 +2668,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Jules Ferry -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Jules Ferry</se:Name>
+          <se:Name>√âcole maternelle Jules Ferry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2700,9 +2700,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Jules Ferry</se:Name>
+          <se:Name>√âcole √©l√©mentaire Jules Ferry</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2738,7 +2738,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Guillevic -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Guillevic</se:Name>
+          <se:Name>√âcole maternelle Guillevic</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2770,9 +2770,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Guillevic</se:Name>
+          <se:Name>√âcole √©l√©mentaire Guillevic</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2808,7 +2808,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <!-- Quineleu -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Quineleu</se:Name>
+          <se:Name>√âcole maternelle Quineleu</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2840,12 +2840,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'ÈlÈmentaire -->
+        <!-- pas d'√©l√©mentaire -->
         
         <!-- Saint-Malo -->
         <!-- maternelle -->
         <se:Rule>
-          <se:Name>…cole maternelle Saint-Malo</se:Name>
+          <se:Name>√âcole maternelle Saint-Malo</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2877,13 +2877,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        <!-- pas d'ÈlÈmentaire -->
+        <!-- pas d'√©l√©mentaire -->
         
-        <!-- LibertÈ -->
+        <!-- Libert√© -->
         <!-- pas de maternelle -->
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire LibertÈ</se:Name>
+          <se:Name>√âcole √©l√©mentaire Libert√©</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
@@ -2918,9 +2918,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
         <!-- Paul Langevin -->
         <!-- pas de maternelle -->
-        <!-- ÈlÈmentaire -->
+        <!-- √©l√©mentaire -->
         <se:Rule>
-          <se:Name>…cole ÈlÈmentaire Paul Langevin</se:Name>
+          <se:Name>√âcole √©l√©mentaire Paul Langevin</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>id_ec_georm</ogc:PropertyName>
