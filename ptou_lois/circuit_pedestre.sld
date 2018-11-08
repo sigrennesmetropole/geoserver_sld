@@ -50,7 +50,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
        
          <!-- Circuit Rustique d'Activités Physique Aménagé (CRAPA) -->
         <se:Rule>
-          <se:Name>Chemin de randonnée</se:Name>
+          <se:Name>Circuit Rustique d'Activités Physique Aménagé (CRAPA)</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -71,7 +71,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
          <!-- Parcours de jogging -->
         <se:Rule>
-          <se:Name>Chemin de randonnée</se:Name>
+          <se:Name>Parcours de jogging</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
