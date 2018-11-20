@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
   06/07/2017  |  Maël REBOUX         |  picto plus gros, légende
+  20/11/2018  |  Maël REBOUX         |  http -> https + changement url
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -43,7 +44,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/jm..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/jm..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -65,7 +66,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/jm.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/jm.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -87,7 +88,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/mm..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -109,7 +110,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm.jm..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/mm.jm..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -131,7 +132,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm.jm.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/mm.jm.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -153,7 +154,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/mm.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/mm.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -175,7 +176,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -197,7 +198,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.jm..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.jm..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -219,7 +220,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.jm.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.jm.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -241,7 +242,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.mm..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -263,7 +264,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm.jm..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.mm.jm..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -285,7 +286,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm.jm.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.mm.jm.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -307,7 +308,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.mm.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.mm.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -329,7 +330,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/om.ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/om.ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>
@@ -351,7 +352,7 @@
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pav/ve..gif " />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/pav/ve..gif" />
                 <se:Format>image/gif</se:Format>
               </se:ExternalGraphic>
               <se:Size>20</se:Size>

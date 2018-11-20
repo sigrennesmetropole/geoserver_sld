@@ -12,7 +12,7 @@
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
   05/12/2017  |  Stéphane GELIN      |  chgt symbole
-
+  20/11/2018  |  Maël REBOUX         |  http -> https + style avec un carré rouge
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -33,33 +33,24 @@
       
       <se:FeatureTypeStyle>
         <se:Rule>
-
-          <se:PointSymbolizer>
-            <se:Graphic>
-              <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/donnees/dechets/pf_dv/Composteur_bois.png " />
-                <se:Format>image/png</se:Format>
-              </se:ExternalGraphic>
-              <se:Size>20</se:Size>
-            </se:Graphic>
-          </se:PointSymbolizer>
-<!--          
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>circle</se:WellKnownName>
+                <se:WellKnownName>square</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
               <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
--->
         </se:Rule>
       </se:FeatureTypeStyle>
       
