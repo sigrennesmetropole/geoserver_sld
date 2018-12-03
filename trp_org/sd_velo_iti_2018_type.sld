@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : sd_velo_iti_provisoire_type
+  nom du SLD : sd_velo_iti_2018_type
 
-  couche source dans la base :  mobilite_transp.sd_velo_iti_provisoire
-  layer cible du style       :  trp_org:sd_velo_iti_provisoire
+  couche source dans la base :  mobilite_transp.sd_velo_iti_2018
+  layer cible du style       :  trp_org:sd_velo_iti_2018
 
-  objet :  Style relatif aux types d'itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole
+  objet :  Style relatif aux types d'itinéraires du schéma directeur vélo (2018) de Rennes Métropole
 
   Historique des versions :
   date        |  auteur              |  description
   23/05/2018  |  Arnaud LECLERE      |  version initiale
   13/07/2018  |  Maël REBOUX         |  correction coquille
+  03/12/2018  |  Maël REBOUX         |  renommage des couches
 
 -->
-
 <StyledLayerDescriptor version="1.1.0"
     xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
     xmlns="http://www.opengis.net/sld"
@@ -26,16 +26,15 @@
   <NamedLayer>
     <se:Name>trp_org:sd_velo_iti_provisoire</se:Name>
     <UserStyle>
-      <se:Name>Type des itinéraires PROVISOIRES ET NON VALIDES</se:Name>
+      <se:Name>sd_velo_iti_2018_type</se:Name>
       <se:Description>
-        <se:Title>Type des itinéraires PROVISOIRES ET NON VALIDES</se:Title>
-        <se:Abstract>Style relatif au type des itinéraires PROVISOIRES ET NON VALIDES du schéma directeur vélo (2018) de Rennes Métropole</se:Abstract>
+        <se:Title>Type d'itinéraires</se:Title>
+        <se:Abstract>Liaisons principales / secondaires / alternative / non retenue</se:Abstract>
       </se:Description>
-
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Type : Non renseigné</se:Name>
+          <se:Name>Non renseigné</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsNull>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -50,10 +49,9 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
-
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Type : Liaison principale</se:Name>
+          <se:Name>Liaison principale</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -71,7 +69,7 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Type : Liaison alternative</se:Name>
+          <se:Name>Liaison alternative</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -87,10 +85,9 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
-
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Type : Liaison secondaire</se:Name>
+          <se:Name>Liaison secondaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
@@ -106,10 +103,9 @@
         </se:Rule>
       </se:FeatureTypeStyle>
 
-
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Type : Liaison non retenue</se:Name>
+          <se:Name>Liaison non retenue</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
