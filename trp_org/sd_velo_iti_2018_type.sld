@@ -12,7 +12,7 @@
   date        |  auteur              |  description
   23/05/2018  |  Arnaud LECLERE      |  version initiale
   13/07/2018  |  Maël REBOUX         |  correction coquille
-  03/12/2018  |  Maël REBOUX         |  renommage des couches
+  03/12/2018  |  Maël REBOUX         |  renommage des couches + évolution style
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -31,25 +31,9 @@
         <se:Title>Type d'itinéraires</se:Title>
         <se:Abstract>Liaisons principales / secondaires / alternative / non retenue</se:Abstract>
       </se:Description>
-
       <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>Non renseigné</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsNull>
-              <ogc:PropertyName>type</ogc:PropertyName>
-            </ogc:PropertyIsNull>
-          </ogc:Filter>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#E8BEFF</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
 
-      <se:FeatureTypeStyle>
+        <!-- bleu pétant -->
         <se:Rule>
           <se:Name>Liaison principale</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -58,34 +42,17 @@
               <ogc:Literal>Liaison principale</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FF5500</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke">#019aff</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
-
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>Liaison alternative</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>Liaison alternative</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#FFAA00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-
-      <se:FeatureTypeStyle>
+        
+        <!-- vert pétant -->
         <se:Rule>
           <se:Name>Liaison secondaire</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -94,16 +61,36 @@
               <ogc:Literal>Liaison secondaire</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#ffff73</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke">#84e31f</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
-
-      <se:FeatureTypeStyle>
+        
+        <!-- orange clair -->
+        <se:Rule>
+          <se:Name>Liaison alternative</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:Literal>Liaison alternative</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#eca24d</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+        
+        <!-- violet -->
         <se:Rule>
           <se:Name>Liaison non retenue</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -112,15 +99,36 @@
               <ogc:Literal>Liaison non retenue</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#E8BEFF</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke">#b665fc</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-      </se:FeatureTypeStyle>
 
+        <!-- gris -->
+        <se:Rule>
+          <se:Name>Non renseigné</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsNull>
+              <ogc:PropertyName>type</ogc:PropertyName>
+            </ogc:PropertyIsNull>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#969696</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+
+      </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
