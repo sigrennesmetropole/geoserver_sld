@@ -14,6 +14,7 @@
   01/12/2016  |  Maël REBOUX         |  version initiale
   06/07/2017  |  Maël REBOUX         |  picto plus gros et jaune
   12/07/2017  |  Stéphane GELIN      |  picto image
+  20/11/2018  |  Maël REBOUX         |  http -> https
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -33,7 +34,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/composteurs/composteur_bois.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/espub_dech/composteurs/composteur_bois.png" />
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>40</se:Size>

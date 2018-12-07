@@ -12,7 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   28/02/2015  |  Arnaud LECLERE      |  version initiale
-  10/06/2016  |  Maël REBOUX         |  mise en forme + adaptations pour le cache
+  10/06/2016  |  MaÃ«l REBOUX         |  mise en forme + adaptations pour le cache
   04/05/2017  |  Arnaud LECLERE      |  changement de fonte > cadastre_rm.ttf 
   
 -->
@@ -65,7 +65,7 @@
         
         
         <Rule>
-          <Name>Étang, lac</Name>
+          <Name>Ã‰tang, lac</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
@@ -119,9 +119,9 @@
         </Rule>
         
         
-        <!-- aux échelles moyennes on va juste mettre un aplat de gris pour tous les types de cimetière -->
+        <!-- aux Ã©chelles moyennes on va juste mettre un aplat de gris pour tous les types de cimetiÃ¨re -->
         <Rule>
-          <Name>Cimetières</Name>
+          <Name>CimetiÃ¨res</Name>
             <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
               <ogc:Or>
                 <ogc:PropertyIsEqualTo>
@@ -146,9 +146,9 @@
             </Fill>
           </PolygonSymbolizer>
         </Rule>
-        <!-- cimetière chrétien -->
+        <!-- cimetiÃ¨re chrÃ©tien -->
         <Rule>
-          <Name>Cimetière</Name>
+          <Name>CimetiÃ¨re</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
@@ -177,9 +177,9 @@
             </Fill>
           </PolygonSymbolizer>
         </Rule>
-        <!-- cimetière israélite -->
+        <!-- cimetiÃ¨re israÃ©lite -->
         <Rule>
-          <Name>Cimetière israélite</Name>
+          <Name>CimetiÃ¨re israÃ©lite</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>
@@ -197,9 +197,9 @@
             </Stroke>
           </PolygonSymbolizer>
         </Rule>
-        <!-- cimetière musulman -->
+        <!-- cimetiÃ¨re musulman -->
         <Rule>
-          <Name>Cimetière musulman</Name>
+          <Name>CimetiÃ¨re musulman</Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>symbol</ogc:PropertyName>

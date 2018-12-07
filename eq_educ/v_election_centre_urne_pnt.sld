@@ -14,6 +14,7 @@
   date        |  auteur              |  description
   20/02/2017  |  Maël REBOUX         |  version initiale
   23/10/2018  |  Maël REBOUX         |  remplacement SVG par image PNG car GeoServer 2.12 sur nouveau public ne digère pas le SVG. Cause inconnue.
+  20/11/2018  |  Maël REBOUX         |  http -> https + modif url
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -34,7 +35,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="http://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/urne_vote_france.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/eq_educ/urne_vote_france.png" />
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>40</se:Size>

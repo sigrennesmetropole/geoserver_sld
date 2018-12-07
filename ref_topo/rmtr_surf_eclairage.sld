@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   01/04/2017  |  Stephane GELIN      |  version initiale
   26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+  20/11/2018  |  Maël REBOUX         |  svg -> png + changement url
 
 -->
 
@@ -48,13 +49,13 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:GraphicStroke>
-                <se:Graphic>
-                  <se:ExternalGraphic>
-                    <se:OnlineResource xlink:type="simple" xlink:href="http://sigweb/test/symb/ligne_aerienne.svg"/>
-                    <se:Format>image/svg+xml</se:Format>
-                  </se:ExternalGraphic>
-                  <se:Size>10</se:Size>
-                </se:Graphic>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/georchestra/sld_pictos/ref_topo/ligne_aerienne.png" />
+                <se:Format>image/png</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>10</se:Size>
+            </se:Graphic>
               </se:GraphicStroke>
               <se:SvgParameter name="stroke">#FF7F00</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">10 50</se:SvgParameter>
