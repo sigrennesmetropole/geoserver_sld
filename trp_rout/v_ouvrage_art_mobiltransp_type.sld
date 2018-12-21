@@ -30,6 +30,42 @@
         <se:Title>Type d'ouvrages et gestionnaire</se:Title>
         <se:Abstract>Style relatif au type d'ouvrages et gestionnaire des ouvrages d'art principalement liés à la voirie sur l'ensemble du territoire de Rennes Métropole</se:Abstract>
       </se:Description>
+
+      <!-- Etiquettes  -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Étiquette</se:Name>
+
+          <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>id_oa</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
+              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            </se:Font>
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>-0.5</se:AnchorPointX>
+                  <se:AnchorPointY>1</se:AnchorPointY>
+                </se:AnchorPoint>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>1.5</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>     
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>            
+          </se:TextSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
       
       <!-- Aménagement hydraulique - DIRO -->
       <se:FeatureTypeStyle>
