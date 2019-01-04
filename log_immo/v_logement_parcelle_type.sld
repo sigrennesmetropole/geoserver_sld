@@ -20,7 +20,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>v_logement_parcelle_type</se:Name>
         <se:Description>
-          <se:Title>Programmes en cours de commercialisation uniquement</se:Title>
+          <se:Title>Nombre et type de logement à la parcelle</se:Title>
           <se:Abstract>Ce style permet de voir le type de logement à la parcelle</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
