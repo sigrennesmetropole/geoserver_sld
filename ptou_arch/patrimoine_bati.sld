@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : v_etude_patrimoine_architecture_tout
+  nom du SLD : patrimoine_bati
   
-  couche source dans la base :  pat_tourisme.v_etude_patrimoine_architecture
-  layer cible du style       :  ptou_arch:v_etude_patrimoine_architecture
+  couche source dans la base :  pat_tourisme.v_patrimoine_bati
+  layer cible du style       :  ptou_arch:v_patrimoine_bati
   
-  objet : montrer tous les polygones de la couche
+  objet : style très simple
   
   Historique des versions :
   date        |  auteur              |  description
@@ -16,23 +16,23 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>ptou_arch:v_etude_patrimoine_architecture</se:Name>
+    <se:Name>ptou_arch:v_patrimoine_bati</se:Name>
     <UserStyle>
-      <se:Name>v_etude_patrimoine_architecture_tout</se:Name>
+      <se:Name>patrimoine_bati</se:Name>
         <se:Description>
-          <se:Title>Tous les enregistrements</se:Title>
-          <se:Abstract>Ce style permet de voir tous les enregistrements de la couche. Cela peut rendre la carte très dure à lire compte-tenu des nombreux polygones superposés.</se:Abstract>
+          <se:Title>Style simple</se:Title>
+          <se:Abstract>Simple aplat de couleur grise.</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- polygone gris très transparent avec bordure noire fine -->
+        <!-- polygone gris avec bordure noire fine -->
         <se:Rule>
           <!--<se:Name>Polygone</se:Name>-->
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#505050</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.15</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.75</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
