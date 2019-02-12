@@ -2,16 +2,17 @@
 
 <!--
 
-  nom du SLD : plu_rennes_zon_plg
+  nom du SLD : plu_rennes_zone_urba
 
-  couche source dans la base :  urba_foncier.plu_rennes_zonage_plg
-  layer cible du style       :  urba_docs:plu_rennes_zonage_plg
+  couche source dans la base :  urba_foncier.plu_rennes_zone_urba
+  layer cible du style       :  urba_docs:plu_rennes_zone_urba
 
-  objet : style relatif aux zonages des documents d'urbanisme numérisés - CNIG 2014
+  objet : style relatif aux zonages des documents d'urbanisme du PLU de Rennes
 
   Historique des versions :
   date        |  auteur              |  description
   14/01/2019  |  arnaud LECLERE      |  version initiale
+  12/02/2019  |  Maël REBOUX         |  renommage du style du même nom que le layer
 
 -->
 
@@ -24,10 +25,10 @@
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>urba_docs:plu_rennes_zonage_plg</se:Name>
+    <se:Name>urba_docs:plu_rennes_zone_urba</se:Name>
 
     <UserStyle>
-      <se:Name>plu_rennes_zon_plg</se:Name>
+      <se:Name>plu_rennes_zone_urba</se:Name>
 
       <se:Description>
         <se:Title>Zonage des documents d'urbanisme numérisés - CNIG 2014</se:Title>
