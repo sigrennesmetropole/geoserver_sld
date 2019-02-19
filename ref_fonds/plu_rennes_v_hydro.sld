@@ -4,7 +4,7 @@
   nom du SLD : plu_rennes_v_hydro
  
   couche source dans la base :  donnees_gen.v_hydro
-  layer cible du style       :  urba_docs :v_hydro
+  layer cible du style       :  ref_fonds :v_hydro
   
   objet : style niveau de gris de l'hydrographie de Rennes Metropole.
 
@@ -24,7 +24,7 @@
     <UserStyle>
       <se:Name>hydrographie</se:Name>
       <se:Description>        
-        <se:Title>hydrographie</se:Title>
+        <se:Title>PLU Rennes - hydrographie</se:Title>
         <se:Abstract>style niveau de gris de l'hydrographie de Rennes Metropole</se:Abstract>
       </se:Description>      
       <se:FeatureTypeStyle>
@@ -36,7 +36,7 @@
           <!-- representation de la commune -->
            <se:PolygonSymbolizer>
                 <se:Fill>
-                      <se:SvgParameter name="fill">#CCCCCC</se:SvgParameter>
+                      <se:SvgParameter name="fill">#D8D7D7</se:SvgParameter>
                 </se:Fill>
            </se:PolygonSymbolizer>  
          </se:Rule>

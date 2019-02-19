@@ -4,7 +4,7 @@
   nom du SLD : plu_rennes_v_batiment
 
   couche source dans la base :  donnees_gen.v_batiment
-  layer cible du style       :  urba_docs:v_batiment
+  layer cible du style       :  ref_fonds:v_batiment
 
   objet :  Style relatif aux bâtiments de Rennes.
 
@@ -22,7 +22,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>urba_docs:v_batiment</se:Name>
+    <se:Name>ref_fonds:v_batiment</se:Name>
     <UserStyle>
       <se:Name>plu_rennes_v_batiment</se:Name>
       <se:Description>
@@ -33,10 +33,10 @@
 
         <se:Rule>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#BDBDBD</se:SvgParameter>
+              <se:SvgParameter name="fill">#929292</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
