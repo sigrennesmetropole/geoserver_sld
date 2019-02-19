@@ -98,7 +98,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <!-- réglages de la fonte sauf la couleur et opacité -->
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
-              <se:SvgParameter name="font-size">13</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">bold</se:SvgParameter>
             </se:Font>
