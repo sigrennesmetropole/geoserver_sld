@@ -3,14 +3,15 @@
 
   nom du SLD : plu_rennes_hauteurs
 
-  couche source dans la base :   urba_foncier.plu_rennes_hauteurs
-  layer cible du style       :  urba_docs:plu_rennes_hauteurs
+  couche source dans la base :   urba_foncier.v_plu_rennes_prescription_surf
+  layer cible du style       :   urba_docs:plu_rennes_hauteurs
 
-  objet :  Style relatif aux bâtiments de Rennes.
+  objet :  carte thématique PLU hauteurs
 
   Historique des versions :
   date        |  auteur              |  description
-  06/02/2019  |  Stephane GELIN      |  version initiale
+  19/02/2019  |  Stephane GELIN      |  version initiale
+  19/02/2019  |  Maël REBOUX         |  correction sources + trait rouge un peu plus large
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -31,15 +32,15 @@
       </se:Description>
       <se:FeatureTypeStyle>
 
-      <!-- H=RL -->
+        <!-- H=RL -->
         <se:Rule>
-          <se:Name>H=RL</se:Name>        
+          <se:Name>H=RL</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=RL</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=RL</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -49,20 +50,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+1+C -->
+        <!-- H=R+1+C -->
         <se:Rule>
-          <se:Name>H=R+1+C</se:Name>        
+          <se:Name>H=R+1+C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+1+C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+1+C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -72,20 +73,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R*+1+A/C -->
+        <!-- H=R*+1+A/C -->
         <se:Rule>
-          <se:Name>H=R*+1+A/C</se:Name>        
+          <se:Name>H=R*+1+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R*+1+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R*+1+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -95,20 +96,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+1+A/C -->
+        <!-- H=R+1+A/C -->
         <se:Rule>
-          <se:Name>H=R+1+A/C</se:Name>        
+          <se:Name>H=R+1+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+1+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+1+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -118,20 +119,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+1+A/C/P -->
+        <!-- H=R+1+A/C/P -->
         <se:Rule>
-          <se:Name>H=R+1+A/C/P</se:Name>        
+          <se:Name>H=R+1+A/C/P</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+1+A/C/P</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+1+A/C/P</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -141,20 +142,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+2+C -->
+        <!-- H=R+2+C -->
         <se:Rule>
-          <se:Name>H=R+2+C</se:Name>        
+          <se:Name>H=R+2+C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+2+C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+2+C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -164,20 +165,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+2+A/C -->
+        <!-- H=R+2+A/C -->
         <se:Rule>
-          <se:Name>H=R+2+A/C</se:Name>        
+          <se:Name>H=R+2+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+2+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+2+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -187,20 +188,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+2+A/C/P -->
+        <!-- H=R+2+A/C/P -->
         <se:Rule>
-          <se:Name>H=R+2+A/C/P</se:Name>        
+          <se:Name>H=R+2+A/C/P</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+2+A/C/P</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+2+A/C/P</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -210,20 +211,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+3+A/C -->
+        <!-- H=R+3+A/C -->
         <se:Rule>
-          <se:Name>H=R+3+A/C</se:Name>        
+          <se:Name>H=R+3+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+3+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+3+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -233,20 +234,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+3+A/C/P -->
+        <!-- H=R+3+A/C/P -->
         <se:Rule>
-          <se:Name>H=R+3+A/C/P</se:Name>        
+          <se:Name>H=R+3+A/C/P</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+3+A/C/P</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+3+A/C/P</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -256,20 +257,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+4+A/C -->
+        <!-- H=R+4+A/C -->
         <se:Rule>
-          <se:Name>H=R+4+A/C</se:Name>        
+          <se:Name>H=R+4+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+4+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+4+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -279,20 +280,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+4+A/C/P -->
+        <!-- H=R+4+A/C/P -->
         <se:Rule>
-          <se:Name>H=R+4+A/C/P</se:Name>        
+          <se:Name>H=R+4+A/C/P</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+4+A/C/P</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+4+A/C/P</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -302,20 +303,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+5+A/C -->
+        <!-- H=R+5+A/C -->
         <se:Rule>
-          <se:Name>H=R+5+A/C</se:Name>        
+          <se:Name>H=R+5+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+5+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+5+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -325,20 +326,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+5+A/C/P -->
+        <!-- H=R+5+A/C/P -->
         <se:Rule>
-          <se:Name>H=R+5+A/C/P</se:Name>        
+          <se:Name>H=R+5+A/C/P</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+5+A/C/P</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+5+A/C/P</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -348,20 +349,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+6 -->
+        <!-- H=R+6 -->
         <se:Rule>
-          <se:Name>H=R+6</se:Name>        
+          <se:Name>H=R+6</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+6</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+6</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -371,20 +372,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+7+A/C -->
+        <!-- H=R+7+A/C -->
         <se:Rule>
-          <se:Name>H=R+7+A/C</se:Name>        
+          <se:Name>H=R+7+A/C</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+7+A/C</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+7+A/C</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -394,20 +395,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=R+7+A/C/P -->
+        <!-- H=R+7+A/C/P -->
         <se:Rule>
-          <se:Name>H=R+7+A/C/P</se:Name>        
+          <se:Name>H=R+7+A/C/P</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=R+7+A/C/P</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=R+7+A/C/P</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -417,20 +418,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=15m -->
+        <!-- H=15m -->
         <se:Rule>
-          <se:Name>H=15m</se:Name>        
+          <se:Name>H=15m</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=15m</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=15m</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -440,20 +441,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H=20m -->
+        <!-- H=20m -->
         <se:Rule>
-          <se:Name>H=20m</se:Name>        
+          <se:Name>H=20m</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=20m</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=20m</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -463,20 +464,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
- 
-      <!-- H=21m -->
+
+        <!-- H=21m -->
         <se:Rule>
-          <se:Name>H=21m</se:Name>        
+          <se:Name>H=21m</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H=21m</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H=21m</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -486,20 +487,20 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
-      <!-- H = 46,30m IGN 69 -->
+        <!-- H = 46,30m IGN 69 -->
         <se:Rule>
-          <se:Name>H = 46,30m IGN 69</se:Name>        
+          <se:Name>H = 46,30m IGN 69</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>num</ogc:PropertyName>
-                <ogc:Literal>H = 46,30m IGN 69</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-          </ogc:Filter>        
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>num</ogc:PropertyName>
+              <ogc:Literal>H = 46,30m IGN 69</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
           <se:MinScaleDenominator>0</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -509,11 +510,11 @@
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.85</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-                                               
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
