@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
   nom du SLD : plu_rennes_v_troncon_denom_etq
   
   couche source dans la base :  rva.v_troncon_denom
-  layer cible du style       :  ref_rva:v_troncon_denom
+  layer cible du style       :  ref_fonds:v_troncon_denom
   
   objet :  style faisant apparaître uniquement les étiquettes des voies
   
@@ -16,7 +16,7 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_docs:v_troncon_denom</se:Name>
+    <se:Name>ref_fonds:v_troncon_denom</se:Name>
     <UserStyle>
       <se:Name>plu_rennes_v_troncon_denom_etq</se:Name>
       <se:Description>
@@ -89,7 +89,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:And>               
           </ogc:Filter>
           <se:MinScaleDenominator>2200</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>90000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <!-- l'attribut qui sert d'étiquette -->
             <se:Label>
