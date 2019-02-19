@@ -13,6 +13,7 @@
   22/01/2019  |  Maël REBOUX         |  version initiale
   24/01/2019  |  Arnaud LECLERE      |  ajout typologie
   19/02/2019  |  Maël REBOUX         |  toute la typologie sauf les zonages qui a un style spécifique pour pouvoir être utilisé à part
+  19/02/2019  |  Maël REBOUX         |  rajout cartouche sur équipement intérêt général
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -236,6 +237,23 @@
             <!-- ne pas gérer les conflits de positionnement = superposer -->
             <se:VendorOption name="conflictResolution">false</se:VendorOption>
           </se:TextSymbolizer>
+          <!-- le cartouche -->
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://plui_rm#${'U+0038'}</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+                  <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>40</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
         </se:Rule>
 
 
@@ -298,6 +316,7 @@
             <!-- ne pas gérer les conflits de positionnement = superposer -->
             <se:VendorOption name="conflictResolution">false</se:VendorOption>
           </se:TextSymbolizer>
+          <!-- le cartouche -->
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
