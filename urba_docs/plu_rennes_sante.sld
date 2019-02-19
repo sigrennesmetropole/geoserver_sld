@@ -4,7 +4,7 @@
   nom du SLD : plu_rennes_sante
   
   couche source dans la base :   urba_foncier.v_plu_rennes_prescription_surf
-  layer cible du style       :  urba_docs::plu_rennes_sante
+  layer cible du style       :  urba_docs:v_plu_rennes_sante
   
   objet : Style pour Zones de vigilance aux abords des infrastructures terrestres - PLU de Rennes
   
@@ -16,7 +16,7 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_docs:plu_rennes_sante</se:Name>
+    <se:Name>urba_docs:v_plu_rennes_sante</se:Name>
     <UserStyle>
       <se:Name>plu_rennes_sante</se:Name>
         <se:Description>
