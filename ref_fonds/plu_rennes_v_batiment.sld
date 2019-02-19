@@ -36,11 +36,11 @@
           <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#929292</se:SvgParameter>
+              <se:SvgParameter name="fill">#BEBDBD</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#7C7C7C</se:SvgParameter>
+              <se:SvgParameter name="stroke">#ABABAB</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>

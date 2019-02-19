@@ -80,12 +80,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 <ogc:Literal>2</ogc:Literal>
               </se:Radius>
               <se:Fill>
-                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                <se:SvgParameter name="fill">#000000</se:SvgParameter>
               </se:Fill>
             </se:Halo>
             <!-- couleur de police du texte -->
             <se:Fill>
-              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
             </se:Fill>
           </se:TextSymbolizer>
         </se:Rule>
@@ -148,12 +148,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 <ogc:Literal>2</ogc:Literal>
               </se:Radius>
               <se:Fill>
-                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                <se:SvgParameter name="fill">#000000</se:SvgParameter>
               </se:Fill>
             </se:Halo>
             <!-- couleur de police du texte -->
             <se:Fill>
-              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
             </se:Fill>
           </se:TextSymbolizer>
         </se:Rule>
