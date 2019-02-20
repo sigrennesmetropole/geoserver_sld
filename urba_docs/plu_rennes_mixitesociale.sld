@@ -55,7 +55,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>   
             <se:Stroke>
               <se:SvgParameter name="stroke">#287430</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">8</se:SvgParameter>
             </se:Stroke>            
           </se:PolygonSymbolizer> 
         </se:Rule>
@@ -73,7 +73,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>   
             <se:Stroke>
               <se:SvgParameter name="stroke">#734293</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">8</se:SvgParameter>
             </se:Stroke>           
           </se:PolygonSymbolizer> 
         </se:Rule>

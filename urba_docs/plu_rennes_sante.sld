@@ -22,44 +22,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Description>
           <se:Title>Zones de vigilance aux abords des infrastructures terrestres</se:Title>
         </se:Description>
-      <se:FeatureTypeStyle>
-      
-        <se:Rule>
-          <se:Name>Zone de vigilance de 100 m de part et d'autre de l'axe de catégorie 1</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
-              <ogc:Literal>99018</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>          
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>   
-            <se:Fill>
-              <se:SvgParameter name="fill">#73B2FF</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>   
-            </se:Fill>            
-          </se:PolygonSymbolizer> 
-        </se:Rule>
-
-        <se:Rule>
-          <se:Name>Zone de vigilance de 75 m de part et d'autre de l'axe de catégorie 2</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
-              <ogc:Literal>99019</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>          
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>   
-            <se:Fill>
-              <se:SvgParameter name="fill">#E8BEFF</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>   
-            </se:Fill>             
-          </se:PolygonSymbolizer> 
-        </se:Rule>
-
+        
+      <se:FeatureTypeStyle>  
         <se:Rule>
           <se:Name>Zone de vigilance de 50 m de part et d'autre de l'axe de catégorie 3</se:Name>
           <ogc:Filter>
@@ -77,8 +41,48 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Fill>             
           </se:PolygonSymbolizer> 
         </se:Rule>
-                
+      </se:FeatureTypeStyle>        
+
+      <se:FeatureTypeStyle>      
+        <se:Rule>
+          <se:Name>Zone de vigilance de 75 m de part et d'autre de l'axe de catégorie 2</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
+              <ogc:Literal>99019</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>          
+          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>   
+            <se:Fill>
+              <se:SvgParameter name="fill">#E8BEFF</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>   
+            </se:Fill>             
+          </se:PolygonSymbolizer> 
+        </se:Rule>
       </se:FeatureTypeStyle>
+      
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Zone de vigilance de 100 m de part et d'autre de l'axe de catégorie 1</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
+              <ogc:Literal>99018</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>          
+          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>   
+            <se:Fill>
+              <se:SvgParameter name="fill">#73B2FF</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>   
+            </se:Fill>            
+          </se:PolygonSymbolizer> 
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
