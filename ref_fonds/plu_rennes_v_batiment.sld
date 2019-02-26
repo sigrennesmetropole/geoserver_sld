@@ -32,8 +32,8 @@
       <se:FeatureTypeStyle>
 
         <se:Rule>
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>30000</se:MaxScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#BEBDBD</se:SvgParameter>

@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   08/02/2019  |  S GELIN             |  version initiale
+  26/02/2019  |  Maël REBOUX         |  rajout d'une échelle
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -28,13 +29,26 @@
       
         <se:Rule>
           <se:Name>Contour des communes de Rennes MÃ©tropole</se:Name>
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
            <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">4</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">30 5 5 5</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>Contour des communes de Rennes MÃ©tropole</se:Name>
+          <se:MinScaleDenominator>150000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+           <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>

@@ -22,6 +22,7 @@
   Historique des versions :
   date        |  auteur              |  description
   18/02/2019  |  S GELIN             |  version initiale
+  26/02/2019  |  Maël REBOUX         |  rajout d'une échelle
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -32,14 +33,14 @@
                        xmlns:xlink="http://www.w3.org/1999/xlink" 
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>plu_rennes_fond_habillage</se:Name>
+    <se:Name>ref_fonds:plu_rennes_fond_habillage</se:Name>
     <UserStyle>
       <se:Name>plu_rennes_habillage</se:Name>
       <se:FeatureTypeStyle>
       
         <se:Rule>
-          <se:Name>Habillage des voies de Rennes</se:Name>
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:Name>Habillage linéaire</se:Name>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
            <se:LineSymbolizer>
             <se:Stroke>
@@ -47,14 +48,31 @@
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
-
           <se:PolygonSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ABABAB</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.1</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>   
-        </se:Rule>          
+        </se:Rule>       
+
+        <se:Rule>
+          <se:Name>Habillage linéaire</se:Name>
+          <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>20000</se:MaxScaleDenominator>
+           <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ABABAB</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:PolygonSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ABABAB</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.01</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>   
+        </se:Rule>  
 
       </se:FeatureTypeStyle>
     </UserStyle>
