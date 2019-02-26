@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   24/01/2019  |  Maël REBOUX         |  version initiale dérivée de la version sans étiquette
+  26/02/2019  |  Maël REBOUX         |  note_finale -> classement_final + changement de couleurs
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -19,47 +20,40 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <se:Name>ptou_arch:v_patrimoine_bati</se:Name>
     <UserStyle>
       <se:Name>patrimoine_bati_classement_etq</se:Name>
-        <se:Description>
-          <se:Title>Classement des bâtiments avec étiquette</se:Title>
-          <se:Abstract>Ce style permet de voir uniquement les bâtiments étudiés dans le cadre du PLUi. Les couleurs correspondent à la note finale du classement. Le n° de bâtiment apparaît à partir du 1/2500</se:Abstract>
-        </se:Description>
+      <se:Description>
+        <se:Title>Classement des bâtiments avec étiquette</se:Title>
+        <se:Abstract>Ce style permet de voir uniquement les bâtiments étudiés dans le cadre du PLUi. Les couleurs correspondent à la note finale du classement. Le n° de bâtiment apparaît à partir du 1/2500</se:Abstract>
+      </se:Description>
       <se:FeatureTypeStyle>
-        
-        <!-- null = pas de note -->
+
+        <!-- null = pas de note = gris -->
         <se:Rule>
           <se:Name>Pas de note</se:Name>
           <ogc:Filter>
-            <ogc:And>
-              <ogc:PropertyIsNull>
-                <ogc:PropertyName>note_finale</ogc:PropertyName>
-              </ogc:PropertyIsNull>
-              <ogc:Not>
-                <ogc:PropertyIsNull>
-                  <ogc:PropertyName>id_rm</ogc:PropertyName>
-                </ogc:PropertyIsNull>
-              </ogc:Not>
-            </ogc:And>
+            <ogc:PropertyIsNull>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
+            </ogc:PropertyIsNull>
           </ogc:Filter>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#c1c1c1</se:SvgParameter>
+              <se:SvgParameter name="fill">#808080</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#730000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
-        <!-- 0 -->
+
+        <!-- 0 = blanc -->
         <se:Rule>
           <se:Name>0</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note_finale</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -70,87 +64,87 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#730000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
-        <!-- 1 = rose pâle-->
+
+        <!-- 1 = vert pâle-->
         <se:Rule>
           <se:Name>1 *</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note_finale</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#ffbebe</se:SvgParameter>
+              <se:SvgParameter name="fill">#b2df8a</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#730000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
-        <!-- 2 = rouge-orange-->
+
+        <!-- 2 = orangé-->
         <se:Rule>
           <se:Name>2 **</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note_finale</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#ff5500</se:SvgParameter>
+              <se:SvgParameter name="fill">#fdbf6f</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#730000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
-        <!-- 3 = marron-->
+
+        <!-- 3 = rouge-rosé-->
         <se:Rule>
           <se:Name>3 ***</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note_finale</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#a83800</se:SvgParameter>
+              <se:SvgParameter name="fill">#e63970</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#730000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
+
         <!-- étiquette -->
         <se:Rule>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-           <se:TextSymbolizer>
+          <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>id_rm</ogc:PropertyName>
             </se:Label>
@@ -167,7 +161,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                   <se:AnchorPointY>0.5</se:AnchorPointY>
                 </se:AnchorPoint>
                 <se:Displacement>
-                  <se:DisplacementX>30</se:DisplacementX>
+                  <se:DisplacementX>0</se:DisplacementX>
                   <se:DisplacementY>0</se:DisplacementY>
                 </se:Displacement>
               </se:PointPlacement>
@@ -188,8 +182,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:VendorOption name="conflictResolution">true</se:VendorOption>
           </se:TextSymbolizer>       
         </se:Rule>
-        
-      
+
+
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
