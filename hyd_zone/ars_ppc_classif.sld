@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/07/2017  |  Stéphane GELIN      |  version initiale
+  01/03/2019  |  Stéphane GELIN      |  modif représentation
 
 -->
 
@@ -42,8 +43,12 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+              <se:SvgParameter name="fill">#6677CD</se:SvgParameter>
             </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#002673</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+            </se:Stroke>            
           </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
@@ -60,30 +65,27 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#FFAA00</se:SvgParameter>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://horline</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#003296</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>6</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
             </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#002673</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+            </se:Stroke>            
           </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-
-      <!-- Périmètre de Protection Rapprochée -->
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>Périmètre de Protection Rapprochée</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>perimetre</ogc:PropertyName>
-              <ogc:Literal>PPR</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#FFD37F</se:SvgParameter>
-            </se:Fill>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-
+      
       <!-- Périmètre Rapproché Complémentaire -->
       <se:FeatureTypeStyle>
         <se:Rule>
@@ -95,9 +97,25 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#FFFF00</se:SvgParameter>
-            </se:Fill>
+              <se:Fill>
+                 <se:GraphicFill>
+                     <se:Graphic>
+                             <se:Mark>
+                                      <se:WellKnownName>ttf://Wingdings 2#0xE8</se:WellKnownName>
+                                      <se:Fill>
+                                            <se:SvgParameter name="fill">#004DA8</se:SvgParameter>
+                                      </se:Fill>
+                             </se:Mark>
+                             <se:Size>10</se:Size>
+                     </se:Graphic>
+                 </se:GraphicFill>
+              </se:Fill>
+              
+              <se:Stroke>
+                <se:SvgParameter name="stroke">#002673</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              </se:Stroke>
+              <se:VendorOption name="graphic-margin">3</se:VendorOption>              
           </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
@@ -113,10 +131,27 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#A3FF73</se:SvgParameter>
-            </se:Fill>
+              <se:Fill>
+                 <se:GraphicFill>
+                     <se:Graphic>
+                             <se:Mark>
+                                      <se:WellKnownName>ttf://Wingdings 2#0xC2</se:WellKnownName>
+                                      <se:Fill>
+                                            <se:SvgParameter name="fill">#444F89</se:SvgParameter>
+                                      </se:Fill>                                      
+                             </se:Mark>
+                             <se:Size>5</se:Size>
+                     </se:Graphic>
+                 </se:GraphicFill>
+              </se:Fill>
+              
+              <se:Stroke>
+                <se:SvgParameter name="stroke">#002673</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              </se:Stroke>
+             <se:VendorOption name="graphic-margin">6</se:VendorOption>              
           </se:PolygonSymbolizer>
+
         </se:Rule>
       </se:FeatureTypeStyle>
     </UserStyle>

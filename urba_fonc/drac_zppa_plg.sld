@@ -12,7 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   03/11/2016  |  Maël REBOUX          |  version initiale
-  
+  01/03/2019  |  S GELIN              |  modif style
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -21,26 +21,64 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>drac_zppa_plg</se:Name>
         <se:Description>
-          <se:Title>Polygones mauves</se:Title>
-          <!--<se:Abstract>Explications plus détaillées sur le style</se:Abstract>-->
+          <se:Title>Zones de Présomption de Prescriptions Archéologiques (ZPPA)</se:Title>
         </se:Description>
       <se:FeatureTypeStyle>
 
-        <!-- polygone mauve avec bordure grise fine -->
         <se:Rule>
-          <!--<se:Name>Nom de la classe d'objet filtrés selon un attribut</se:Name>-->
-          <!--<se:Description>
-            <se:Title>Si nécessaire : une description plus détaillé (remplace le name dans la légende générée</se:Title>
-          </se:Description>-->
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>insee</ogc:PropertyName>
+              <ogc:Literal>35238</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>            
+
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#E7CFFC</se:SvgParameter>
+              <se:SvgParameter name="fill">#F5A27A</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#505050</se:SvgParameter>
+              <se:SvgParameter name="stroke">#F46666</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
+
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>n_zone</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">Arial</se:SvgParameter>
+              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">bold</se:SvgParameter>
+            
+            </se:Font>
+         
+            <se:LabelPlacement>
+              <!-- centré / centré -->
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+                <se:Displacement>
+                  <se:DisplacementX>0</se:DisplacementX>
+                  <se:DisplacementY>0</se:DisplacementY>
+                </se:Displacement>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <se:Halo>
+              <se:Radius>0.5</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <se:Fill>
+              <se:SvgParameter name="fill">#8400A8</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
+            </se:Fill>            
+          </se:TextSymbolizer>          
         </se:Rule>
         
 			</se:FeatureTypeStyle>
