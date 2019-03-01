@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   22/10/2017  |  Maël REBOUX         |  version initiale dérivée de v_pbil_classement
   25/10/2018  |  Maël REBOUX         |  renommage attribut classement -> note
+  26/02/2019  |  Maël REBOUX         |  note_finale -> classement_final + changement de couleurs
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -31,7 +32,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Name>Déclassé</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -60,7 +61,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Name>1 étoile / *</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -71,7 +72,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#33a02c</se:SvgParameter>
+                  <se:SvgParameter name="fill">#b2df8a</se:SvgParameter>
                   <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
@@ -84,12 +85,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- 2 = orange -->
+        <!-- 2 = orangé -->
         <se:Rule>
           <se:Name>2 étoiles / **</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -100,7 +101,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#ff7f00</se:SvgParameter>
+                  <se:SvgParameter name="fill">#fdbf6f</se:SvgParameter>
                   <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
@@ -113,12 +114,12 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- 3 = rouge -->
+        <!-- 3 = rouge-rosé -->
         <se:Rule>
           <se:Name>3 étoiles / ***</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>note</ogc:PropertyName>
+              <ogc:PropertyName>classement_final</ogc:PropertyName>
               <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -129,7 +130,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#e31a1c</se:SvgParameter>
+                  <se:SvgParameter name="fill">#e63970</se:SvgParameter>
                   <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
