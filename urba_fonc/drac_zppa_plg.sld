@@ -49,7 +49,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">Arial</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-size">16</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">bold</se:SvgParameter>
             
@@ -69,7 +69,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </se:PointPlacement>
             </se:LabelPlacement>
             <se:Halo>
-              <se:Radius>0.5</se:Radius>
+              <se:Radius>1</se:Radius>
               <se:Fill>
                 <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
               </se:Fill>
@@ -77,7 +77,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Fill>
               <se:SvgParameter name="fill">#8400A8</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>            
+            </se:Fill>
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>           
           </se:TextSymbolizer>          
         </se:Rule>
         
