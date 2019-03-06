@@ -6,11 +6,12 @@
   couche source dans la base :  urba_foncier.peb
   layer cible du style       :  urba_docs:peb
   
-  objet : zonages des nuisances en dB
+  objet : Périmètres des nuisances dues au bruit des aéronefs du Plan d'Exposition au Bruit (PEB)
   
   Historique des versions :
   date        |  auteur              |  description
   21/03/2017  |  Arnaud LECLERE      |  version initiale
+  05/03/2019  |  S GELIN             |  modif représentation  
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -26,106 +27,164 @@
     <UserStyle>
       <se:Name>peb_typepeb_plg</se:Name>
         <se:Description>
-          <se:Title>Zonages des nuisances en dB</se:Title>
-          <se:Abstract>Zonages des nuisances en dB</se:Abstract>
+          <se:Title>Périmètres des nuisances dues au bruit des aéronefs du Plan d'Exposition au Bruit (PEB)</se:Title>
+          <se:Abstract>Périmètres des nuisances dues au bruit des aéronefs du Plan d'Exposition au Bruit (PEB)</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- 1 règle par valeur de l'attribut typepeb -->
+        <!-- Plan d'exposition au bruit des aérodromes (catégorie 1 - Lden 70) -->
         <se:Rule>
-          
-          <se:Name>Ldem 50 à 55</se:Name>
-          
+          <se:Name>Plan d'exposition au bruit des aérodromes (catégorie 1 - Lden 70)</se:Name>
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>categorieval</ogc:PropertyName>
-              <ogc:Literal>Ldem 50 à 55</ogc:Literal>
+              <ogc:PropertyName>categorie</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#e0e0ff</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
+          <se:PolygonSymbolizer>
+              <se:Fill>
+                 <se:GraphicFill>
+                     <se:Graphic>
+                             <se:Mark>
+                                      <se:WellKnownName>ttf://Wingdings 2#0xC9</se:WellKnownName>
+                                      <se:Fill>
+                                            <se:SvgParameter name="fill">#E60000</se:SvgParameter>
+                                      </se:Fill>
+                                      <se:Stroke>
+                                        <se:SvgParameter name="stroke">#E60000</se:SvgParameter>
+                                        <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                                      </se:Stroke>                                        
+                             </se:Mark>
+                             <se:Size>7</se:Size>
+                     </se:Graphic>
+                 </se:GraphicFill>
+              </se:Fill>
+              <se:VendorOption name="graphic-margin">2</se:VendorOption>              
+          </se:PolygonSymbolizer>          
         </se:Rule>
-        
+
+        <!-- Plan d'exposition au bruit des aérodromes (catégorie 2 - Lden 62) -->
          <se:Rule>
-          
-          <se:Name>Ldem 55 à 62</se:Name>
-          
+          <se:Name>Plan d'exposition au bruit des aérodromes (catégorie 2 - Lden 62)</se:Name>
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>categorieval</ogc:PropertyName>
-              <ogc:Literal>Ldem 55 à 62</ogc:Literal>
+              <ogc:PropertyName>categorie</ogc:PropertyName>
+              <ogc:Literal>2</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#9aa4e3</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke">#FFA600</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
+          <se:PolygonSymbolizer>
+              <se:Fill>
+                 <se:GraphicFill>
+                     <se:Graphic>
+                             <se:Mark>
+                                      <se:WellKnownName>ttf://Wingdings 2#0xC9</se:WellKnownName>
+                                      <se:Fill>
+                                            <se:SvgParameter name="fill">#FFA600</se:SvgParameter>
+                                      </se:Fill>
+                                      <se:Stroke>
+                                        <se:SvgParameter name="stroke">#FFA600</se:SvgParameter>
+                                        <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                                      </se:Stroke>                                        
+                             </se:Mark>
+                             <se:Size>7</se:Size>
+                     </se:Graphic>
+                 </se:GraphicFill>
+              </se:Fill>
+              <se:VendorOption name="graphic-margin">2</se:VendorOption>              
+          </se:PolygonSymbolizer>  
         </se:Rule>
-        
+
+        <!-- Plan d'exposition au bruit des aérodromes (catégorie 3 - Lden 55) -->
          <se:Rule>
-          
-          <se:Name>Ldem 62 à 70</se:Name>
-          
+          <se:Name>Plan d'exposition au bruit des aérodromes (catégorie 3 - Lden 55)</se:Name>
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>categorieval</ogc:PropertyName>
-              <ogc:Literal>Ldem 62 à 70</ogc:Literal>
+              <ogc:PropertyName>categorie</ogc:PropertyName>
+              <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#6580c9</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke">#55FF00</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
+          <se:PolygonSymbolizer>
+              <se:Fill>
+                 <se:GraphicFill>
+                     <se:Graphic>
+                             <se:Mark>
+                                      <se:WellKnownName>ttf://Wingdings 2#0xC9</se:WellKnownName>
+                                      <se:Fill>
+                                            <se:SvgParameter name="fill">#55FF00</se:SvgParameter>
+                                      </se:Fill>
+                                      <se:Stroke>
+                                        <se:SvgParameter name="stroke">#55FF00</se:SvgParameter>
+                                        <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                                      </se:Stroke>                                        
+                             </se:Mark>
+                             <se:Size>7</se:Size>
+                     </se:Graphic>
+                 </se:GraphicFill>
+              </se:Fill>
+              <se:VendorOption name="graphic-margin">2</se:VendorOption>              
+          </se:PolygonSymbolizer> 
         </se:Rule>
-        
+
+        <!-- Plan d'exposition au bruit des aérodromes (catégorie 4 - Lden 50) -->
          <se:Rule>
-          
-          <se:Name>Ldem 70</se:Name>
-          
+          <se:Name>Plan d'exposition au bruit des aérodromes (catégorie 4 - Lden 50)</se:Name>
            <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>categorieval</ogc:PropertyName>
-              <ogc:Literal>Ldem 70</ogc:Literal>
+              <ogc:PropertyName>categorie</ogc:PropertyName>
+              <ogc:Literal>4</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
           <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#416cb0</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke">#00A9E6</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
+          <se:PolygonSymbolizer>
+              <se:Fill>
+                 <se:GraphicFill>
+                     <se:Graphic>
+                             <se:Mark>
+                                      <se:WellKnownName>ttf://Wingdings 2#0xC9</se:WellKnownName>
+                                      <se:Fill>
+                                            <se:SvgParameter name="fill">#00A9E6</se:SvgParameter>
+                                      </se:Fill>
+                                      <se:Stroke>
+                                        <se:SvgParameter name="stroke">#00A9E6</se:SvgParameter>
+                                        <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                                      </se:Stroke>                                        
+                             </se:Mark>
+                             <se:Size>7</se:Size>
+                     </se:Graphic>
+                 </se:GraphicFill>
+              </se:Fill>
+              <se:VendorOption name="graphic-margin">2</se:VendorOption>              
+          </se:PolygonSymbolizer> 
         </se:Rule>
       
       </se:FeatureTypeStyle>

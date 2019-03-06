@@ -36,6 +36,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#F5A27A</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.4</se:SvgParameter>            
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#F46666</se:SvgParameter>

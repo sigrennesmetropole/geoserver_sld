@@ -20,7 +20,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>zac_plu</se:Name>
       <se:Description>
-        <se:Title>style PLU de Rennes</se:Title>
+        <se:Title>Localisation des ZAC</se:Title>
         <se:Abstract>Style avec hachurage pour le PLU de Rennes.</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
@@ -28,12 +28,18 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Rule>
           <se:PolygonSymbolizer>
             <se:Fill>
+              <se:SvgParameter name="fill">#A80084</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.2</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>             
+          <se:PolygonSymbolizer>
+            <se:Fill>
               <se:GraphicFill>
                 <se:Graphic>
                   <se:Mark>
                     <se:WellKnownName>shape://slash</se:WellKnownName>
                     <se:Stroke>
-                      <se:SvgParameter name="stroke">#BF338A</se:SvgParameter>
+                      <se:SvgParameter name="stroke">#73004C</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">1</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
@@ -45,7 +51,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </se:GraphicFill>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#BF338A</se:SvgParameter>
+              <se:SvgParameter name="stroke">#73004C</se:SvgParameter>
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
