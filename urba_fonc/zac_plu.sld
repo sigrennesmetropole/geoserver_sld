@@ -20,7 +20,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>zac_plu</se:Name>
       <se:Description>
-        <se:Title>Localisation des ZAC</se:Title>
+        <se:Title>Style PLU Rennes</se:Title>
         <se:Abstract>Style avec hachurage pour le PLU de Rennes.</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
