@@ -36,14 +36,12 @@
       
        <se:FeatureTypeStyle>
           <se:Rule>
-            <se:Name>Servitudes relatives à l'établissement des lignes électriques souterraines (dont htb) - générateur</se:Name>
             <ogc:Filter>
                   <ogc:PropertyIsEqualTo>
                     <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
                     <ogc:Literal>99098</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
             </ogc:Filter>
-
             <se:LineSymbolizer>
                <se:Stroke>
                  <se:SvgParameter name="stroke">#DF0029</se:SvgParameter>
@@ -51,6 +49,16 @@
                  <se:SvgParameter name="stroke-dasharray">10 5</se:SvgParameter>
                </se:Stroke>
             </se:LineSymbolizer> 
+          </se:Rule>            
+          <se:Rule>
+            <se:Name>Servitudes relatives à l'établissement des lignes électriques souterraines (dont htb) - générateur</se:Name>
+            <ogc:Filter>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+                    <ogc:Literal>99098</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
             <se:LineSymbolizer>
               <se:Stroke>
                 <se:GraphicStroke>
@@ -95,6 +103,23 @@
               </se:Stroke>
             </se:LineSymbolizer>                
           </se:Rule>
+ 
+
+          <se:Rule>
+            <se:Name>Servitudes relatives à l'établissement des lignes électriques aériennes (dont htb) - générateur</se:Name>
+            <ogc:Filter>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+                    <ogc:Literal>99096</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:LineSymbolizer>
+               <se:Stroke>
+                 <se:SvgParameter name="stroke">#A80000</se:SvgParameter>
+                 <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+               </se:Stroke>
+            </se:LineSymbolizer> 
+          </se:Rule>
           
           <se:Rule>
             <se:Name>Servitudes relatives à l'établissement des lignes électriques aériennes (dont htb) - générateur</se:Name>
@@ -104,13 +129,7 @@
                     <ogc:Literal>99096</ogc:Literal>
                   </ogc:PropertyIsEqualTo>
             </ogc:Filter>
-
-            <se:LineSymbolizer>
-               <se:Stroke>
-                 <se:SvgParameter name="stroke">#A80000</se:SvgParameter>
-                 <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-               </se:Stroke>
-            </se:LineSymbolizer> 
+            <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
             <se:LineSymbolizer>
               <se:Stroke>
                 <se:GraphicStroke>
