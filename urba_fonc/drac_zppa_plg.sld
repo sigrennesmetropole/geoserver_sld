@@ -26,12 +26,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:FeatureTypeStyle>
 
         <se:Rule>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>insee</ogc:PropertyName>
-              <ogc:Literal>35238</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>            
 
           <se:PolygonSymbolizer>
             <se:Fill>
