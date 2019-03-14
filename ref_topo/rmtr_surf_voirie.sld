@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   08/02/2017  |  Stephane GELIN      |  version initiale
   26/06/2017  |  Stephane GELIN      |  corrections nommage + pretty XML
+  13/03/2019  |  Stephane GELIN      |  rajout modele VL_6100
   
 -->
 
@@ -32,6 +33,31 @@
         <se:Title>Voirie</se:Title>
         <se:Abstract>Style des objets de surface de la famille Voirie</se:Abstract>
       </se:Description>
+
+      <!-- 6100 - Bord de chaussée -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>RCTR Surface - Voirie - Bord de chaussée</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>modele</ogc:PropertyName>
+              <ogc:Literal>VL_6100</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <!-- Echelle d'affichage -->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
+          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.02</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">0.8 0.5 0.1 0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
 
       <!-- 6090 - Détection mal-voyants -->
       <se:FeatureTypeStyle>
