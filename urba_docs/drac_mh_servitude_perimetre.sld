@@ -12,6 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   01/03/2019  |  Arnaud LECLERE      |  version initiale
+  04/03/2019  |  Arnaud LECLERE      |  Ajout transparence
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -36,9 +37,10 @@
           <se:Name>Périmètres de servitudes</se:Name>
               <se:PolygonSymbolizer>
                   <se:Fill>
-                      <se:SvgParameter name="fill">#fffed1</se:SvgParameter>                 
-                  </se:Fill>  
-              </se:PolygonSymbolizer>
+                      <se:SvgParameter name="fill">#fffed1</se:SvgParameter>   
+                      <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+                  </se:Fill>
+          </se:PolygonSymbolizer>
           
           <se:PolygonSymbolizer>
             <se:Fill>
