@@ -3,7 +3,7 @@
 
   nom du SLD : pvci_ign_geofla_depart_plg
 
-  couche source dans la base :  limite_admin.ign_geofla_depart 
+  couche source dans la base :  limite_admin.ign_geofla_depart
   layer cible du style       :  ref_fonds:pvci_ign_geofla_depart
 
   objet :
@@ -15,8 +15,9 @@
   01/11/2014  |  Stéphane GELIN      |  version initiale
   29/06/2016  |  Maël REBOUX         |  modification pour site open data + migration données IGN en base
   01/12/2016  |  Maël REBOUX         |  on montre France entière comme décidé en comité de pilotage
-  01/07/2017  |  Stéphane GELIN      |  integration données générales 
+  01/07/2017  |  Stéphane GELIN      |  integration données générales
   02/10/2017  |  Stéphane GELIN      |  rajout fond blanc en dessous du 1/5000ème
+  18/03/2019  |  Maël REBOUX         |  mise en forme
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -31,9 +32,20 @@
       <Name>departements</Name>
       <Title>Départements</Title>
       <FeatureTypeStyle>
-        <Rule>
-          <MinScaleDenominator>5000</MinScaleDenominator>      
 
+        <Rule>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>5000</MaxScaleDenominator>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+          </PolygonSymbolizer>
+        </Rule>
+
+        <Rule>
+          <MinScaleDenominator>5000</MinScaleDenominator>
+          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#F0F0F0</CssParameter>
@@ -46,17 +58,8 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>
+
       </FeatureTypeStyle>
-      <FeatureTypeStyle>
-        <Rule>
-          <MaxScaleDenominator>5000</MaxScaleDenominator>      
-          <PolygonSymbolizer>
-            <Fill>
-              <CssParameter name="fill">#FFFFFF</CssParameter>
-            </Fill>
-          </PolygonSymbolizer>
-        </Rule>
-      </FeatureTypeStyle>      
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
