@@ -178,7 +178,7 @@
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
-              <ogc:Literal>24001</ogc:Literal>
+              <ogc:Literal>99056</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
@@ -383,7 +383,7 @@
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
-              <ogc:Literal>24005</ogc:Literal>
+              <ogc:Literal>99054</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
@@ -408,7 +408,7 @@
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>stypepsc_rm</ogc:PropertyName>
-              <ogc:Literal>24006</ogc:Literal>
+              <ogc:Literal>99055</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
