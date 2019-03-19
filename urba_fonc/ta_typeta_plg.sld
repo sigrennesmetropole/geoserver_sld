@@ -6,12 +6,13 @@
   couche source dans la base :  urba_foncier.ta
   layer cible du style       :  urba_fonc:ta
 
-  objet : style basé sur l'attribut typeta
+  objet : style basé sur l'attribut typeta. On utilise des FeatureTypeStyle distincts car les périmètres communaux doivent être au-dessus des périmètres départementaux
 
   Historique des versions :
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
   14/03/2017  |  Maël REBOUX         |  mise en forme
+  19/03/2019  |  Maël REBOUX         |  gestion des superpositions à la demande de DDS
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -24,31 +25,21 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         <se:Title>Type de périmètre pour la taxe d'aménagement</se:Title>
         <se:Abstract>Sectorisé / communal / départemental</se:Abstract>
       </se:Description>
-      <se:FeatureTypeStyle>
 
-        <!-- 1 règle par typeta -->
+
+      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Secteur</se:Name>
+          <se:Name>Périmètre départemental</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typeta</ogc:PropertyName>
-              <ogc:Literal>Secteur</ogc:Literal>
+              <ogc:Literal>Périmètre départemental</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:GraphicFill>
-                <se:Graphic>
-                  <se:Mark>
-                    <se:WellKnownName>shape://times</se:WellKnownName>
-                    <se:Stroke>
-                      <se:SvgParameter name="stroke">#ff00c5</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-                    </se:Stroke>
-                  </se:Mark>
-                  <se:Size>12</se:Size>
-                </se:Graphic>
-              </se:GraphicFill>
+              <se:SvgParameter name="fill">#ffe3e3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
@@ -57,7 +48,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
+
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Périmètre communal</se:Name>
           <ogc:Filter>
@@ -88,19 +82,32 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
+
+      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Périmètre départemental</se:Name>
+          <se:Name>Secteur</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typeta</ogc:PropertyName>
-              <ogc:Literal>Périmètre départemental</ogc:Literal>
+              <ogc:Literal>Secteur</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#ffe3e3</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://times</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#ff00c5</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>12</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
@@ -109,8 +116,9 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-
       </se:FeatureTypeStyle>
+
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
