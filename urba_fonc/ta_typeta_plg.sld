@@ -6,13 +6,13 @@
   couche source dans la base :  urba_foncier.ta
   layer cible du style       :  urba_fonc:ta
 
-  objet : style basé sur l'attribut typeta
+  objet : style basé sur l'attribut typeta. On utilise des FeatureTypeStyle distincts car les périmètres communaux doivent être au-dessus des périmètres départementaux
 
   Historique des versions :
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
   14/03/2017  |  Maël REBOUX         |  mise en forme
-  11/03/2019  |  S GELIN             |  modif symbologie
+  19/03/2019  |  Maël REBOUX         |  gestion des superpositions à la demande de DDS
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -23,79 +23,37 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:Name>ta_typeta_plg</se:Name>
       <se:Description>
         <se:Title>Type de périmètre pour la taxe d'aménagement</se:Title>
-        <se:Abstract>Sectorisé / intercommunal</se:Abstract>
+        <se:Abstract>Sectorisé / communal / départemental</se:Abstract>
       </se:Description>
+
+
       <se:FeatureTypeStyle>
-
-        <!-- Taxes d'Aménagement sectorisées: TA Barre Thomas -->
         <se:Rule>
-          <se:Name>Taxe d'Aménagement (TA) sectorisée "Barre Thomas" créée par délibération du Conseil de Rennes Métropole du 24/11/2016 (taux de 6%)</se:Name>
+          <se:Name>Périmètre départemental</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomta</ogc:PropertyName>
-              <ogc:Literal>Barre Thomas</ogc:Literal>
+              <ogc:PropertyName>typeta</ogc:PropertyName>
+              <ogc:Literal>Périmètre départemental</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#FF7F7F</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+              <se:SvgParameter name="fill">#ffe3e3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#A80000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.8</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1</se:SvgParameter>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-        <!-- Taxes d'Aménagement sectorisées: TA Loges-Logettes -->
-        <se:Rule>
-          <se:Name>Taxe d'Aménagement (TA) sectorisée "Loges-Logettes" créée par délibération du Conseil de Rennes Métropole du 24/11/2016 (taux de 20%)</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomta</ogc:PropertyName>
-              <ogc:Literal>Loges Logettes</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#C29ED7</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#73004C</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.8</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
 
-        <!-- Taxes d'Aménagement sectorisées: TA ligne B du métro -->
+      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Taxe d'Aménagement (TA) sectorisée aux abords des stations et ligne b du métro créée par délibération du Conseil de Rennes Métropole du 19/11/2015 (taux de 6%)</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nomta</ogc:PropertyName>
-              <ogc:Literal>ligne B du métro</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#FFD37F</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#734C00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.8</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-       
-        <!-- Taxe d'Aménagement intercommunale -->
-        <se:Rule>
-          <se:Name>Taxe d'Aménagement (TA) intercommunale créée par délibération du Conseil de Rennes Métropole du 19/11/2015 (taux de 5%)</se:Name>
+          <se:Name>Périmètre communal</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>typeta</ogc:PropertyName>
@@ -104,18 +62,63 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#FFFFBE</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.7</se:SvgParameter>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#ff00c5</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>16</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#FFFFBE</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.8</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1</se:SvgParameter>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-                
       </se:FeatureTypeStyle>
+
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Secteur</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>typeta</ogc:PropertyName>
+              <ogc:Literal>Secteur</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://times</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#ff00c5</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>12</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#6e6e6e</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>

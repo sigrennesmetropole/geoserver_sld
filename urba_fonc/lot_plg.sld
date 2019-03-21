@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   02/03/2017  |  Arnaud LECLERE      |  version initiale
   14/03/2017  |  Maël REBOUX         |  mise en forme
+  18/03/2019  |  Maël REBOUX         |  modif du titre
 
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
@@ -21,8 +22,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
     <UserStyle>
       <se:Name>lot_plg</se:Name>
       <se:Description>
-        <se:Title>Style par défaut</se:Title>
-        <se:Abstract>Style par défaut pour les lotissements</se:Abstract>
+        <se:Title>Localisation des lotissements</se:Title>
+        <se:Abstract>polygone bordeaux avec étiquette pour le nom du lotissement</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 

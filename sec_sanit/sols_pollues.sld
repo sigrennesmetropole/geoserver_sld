@@ -1,41 +1,43 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : ta_taux_plg
+  nom du SLD : sols_pollues
   
-  couche source dans la base :  urba_foncier.ta
-  layer cible du style       :  urba_fonc:ta
+  couche source dans la base :  risque_secu.sols_pollues
+  layer cible du style       :  sec_sanit:sols_pollues
   
-  objet : style basé sur l'attribut taux
+  objet :  style basique
   
   Historique des versions :
   date        |  auteur              |  description
-  02/03/2017  |  Arnaud LECLERE      |  version initiale
+  21/03/2019  |  Maël REBOUX         |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_fonc:ta</se:Name>
+    <se:Name>sec_sanit:sols_pollues</se:Name>
     <UserStyle>
-      <se:Name>ta_taux_plg</se:Name>
+      <se:Name>sols_pollues</se:Name>
         <se:Description>
-          <se:Title>Taux pour la taxe d'aménagement</se:Title>
-          <se:Abstract>Couleurs en fonction de la valeur du taux de la taxe d'aménagement.</se:Abstract>
+          <se:Title>Polygones marron clairs</se:Title>
+          <se:Abstract>Styles basique. Attention : les polygones peuvent se superposer.</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- 1 règle par taux -> pas possible en l'état : c'est du texte ! -->
+        <!-- Polygones marron clairs avec bordure noire fine -->
         <se:Rule>
-          <!--<se:Name>taux</se:Name>-->
+          <!--<se:Name>Polygone</se:Name>-->
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#505050</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+              <se:SvgParameter name="fill">#BF891C</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>

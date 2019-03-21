@@ -15,6 +15,7 @@
   01/11/2014  |  Stéphane GELIN      |  version initiale
   29/06/2016  |  Maël REBOUX         |  modification pour site open data + migration données IGN en base
   01/12/2016  |  Maël REBOUX         |  on montre France entière comme décidé en comité de pilotage
+  18/03/2019  |  Maël REBOUX         |  correction seuil minimal affichage car comme première couche agrégat n'était pas visible < 1/5000
 
 -->
 <StyledLayerDescriptor version="1.0.0"
@@ -29,8 +30,20 @@
       <Name>departements</Name>
       <Title>Départements</Title>
       <FeatureTypeStyle>
+
+        <Rule>
+          <MinScaleDenominator>1</MinScaleDenominator>
+          <MaxScaleDenominator>5000</MaxScaleDenominator>
+          <PolygonSymbolizer>
+            <Fill>
+              <CssParameter name="fill">#FFFFFF</CssParameter>
+            </Fill>
+          </PolygonSymbolizer>
+        </Rule>
+
         <Rule>
           <MinScaleDenominator>5000</MinScaleDenominator>
+          <MaxScaleDenominator>1000000</MaxScaleDenominator>
           <PolygonSymbolizer>
             <Fill>
               <CssParameter name="fill">#F3F3F3</CssParameter>
@@ -43,6 +56,7 @@
             </Stroke>
           </LineSymbolizer>
         </Rule>
+
       </FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
