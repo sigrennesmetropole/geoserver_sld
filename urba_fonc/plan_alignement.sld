@@ -45,7 +45,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         
         <!-- petites échelles : étiquettes avec un A -->
         <se:Rule>
-          <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>5000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Geometry>
