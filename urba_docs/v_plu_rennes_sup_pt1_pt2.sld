@@ -24,7 +24,49 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Description>
         
         <se:FeatureTypeStyle>
-        
+
+          <!-- Centres de réceptions radioélectriques -->  
+          <se:Rule>
+            <se:Name>Centres de réceptions radioélectriques</se:Name>   
+            <ogc:Filter>
+                  <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+                    <ogc:Literal>99116</ogc:Literal>
+                  </ogc:PropertyIsEqualTo>
+            </ogc:Filter>           
+            <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>    
+            <se:PointSymbolizer>
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>ttf://Webdings#0x3D</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">#000000</se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Size>18</se:Size>
+              </se:Graphic>
+            </se:PointSymbolizer>               
+            <se:PointSymbolizer>
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>ttf://Wingdings 2#0xCB</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">#FFFF00</se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">#FFFF00</se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Size>12</se:Size>
+              </se:Graphic>
+            </se:PointSymbolizer> 
+          </se:Rule>        
+          
           <!-- PT1 Zone de garde    -->
           <se:Rule>
             <se:Name>Servitude de protection des centre de réception radioélectrique contre les perturbations électromagnétiques (PT1) - Zone de garde</se:Name>   
@@ -255,49 +297,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </se:PolygonSymbolizer>        
           </se:Rule>
           
-          <!-- Centres de réceptions radioélectriques -->  
-          <se:Rule>
-            <se:Name>Centres de réceptions radioélectriques</se:Name>   
-            <ogc:Filter>
-                  <ogc:PropertyIsEqualTo>
-                    <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
-                    <ogc:Literal>99116</ogc:Literal>
-                  </ogc:PropertyIsEqualTo>
-            </ogc:Filter>           
-            <se:MaxScaleDenominator>200000</se:MaxScaleDenominator>    
-            <se:PointSymbolizer>
-              <se:Graphic>
-                <se:Mark>
-                  <se:WellKnownName>ttf://Webdings#0x3D</se:WellKnownName>
-                  <se:Fill>
-                    <se:SvgParameter name="fill">#000000</se:SvgParameter>
-                  </se:Fill>
-                  <se:Stroke>
-                    <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-                    <se:SvgParameter name="stroke-width">0</se:SvgParameter>
-                  </se:Stroke>
-                </se:Mark>
-                <se:Size>18</se:Size>
-              </se:Graphic>
-            </se:PointSymbolizer>               
-            <se:PointSymbolizer>
-              <se:Graphic>
-                <se:Mark>
-                  <se:WellKnownName>ttf://Wingdings 2#0xCB</se:WellKnownName>
-                  <se:Fill>
-                    <se:SvgParameter name="fill">#FFFF00</se:SvgParameter>
-                  </se:Fill>
-                  <se:Stroke>
-                    <se:SvgParameter name="stroke">#FFFF00</se:SvgParameter>
-                    <se:SvgParameter name="stroke-width">0</se:SvgParameter>
-                  </se:Stroke>
-                </se:Mark>
-                <se:Size>12</se:Size>
-              </se:Graphic>
-            </se:PointSymbolizer> 
-            
-          </se:Rule>          
-			</se:FeatureTypeStyle>
+  		</se:FeatureTypeStyle>
 		</UserStyle>
 	</NamedLayer>
 </StyledLayerDescriptor>
