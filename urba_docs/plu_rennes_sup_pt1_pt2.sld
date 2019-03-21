@@ -14,6 +14,7 @@
   date        |  auteur              |  description
   21/03/2019  |  Maël REBOUX         |  version initiale
   21/03/2019  |  S GELIN             |  stylage
+  21/03/2019  |  Maël REBOUX         |  ordre des FeatureTypeStyle
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -202,7 +203,7 @@
               <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#73004C</se:SvgParameter>
+              <se:SvgParameter name="stroke">#4E1A82</se:SvgParameter>
               <se:SvgParameter name="stroke-width">2</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
@@ -213,10 +214,10 @@
                   <se:Mark>
                     <se:WellKnownName>wkt://MULTILINESTRING((-0.25 0, 0 -1),(0 -1, 0.25 0))</se:WellKnownName>
                     <se:Fill>
-                      <se:SvgParameter name="fill">#73004C</se:SvgParameter>
+                      <se:SvgParameter name="fill">#4E1A82</se:SvgParameter>
                     </se:Fill>
                     <se:Stroke>
-                      <se:SvgParameter name="stroke">#73004C</se:SvgParameter>
+                      <se:SvgParameter name="stroke">#4E1A82</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
@@ -278,11 +279,10 @@
       </se:FeatureTypeStyle>
 
 
-
       <!-- Centres de réceptions radioélectriques -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Centres de réceptions radioélectriques</se:Name>
+          <se:Name>Centres de réceptions radio-électriques</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
@@ -322,7 +322,6 @@
           </se:PointSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-
 
 
     </UserStyle>
