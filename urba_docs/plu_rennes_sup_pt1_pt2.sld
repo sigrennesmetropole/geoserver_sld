@@ -33,9 +33,9 @@
         <se:Abstract>Style pour le PLU de Rennes</se:Abstract>
       </se:Description>
 
-      <se:FeatureTypeStyle>
 
-        <!-- Centres de réceptions radioélectriques -->
+      <!-- Centres de réceptions radioélectriques -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Centres de réceptions radioélectriques</se:Name>
           <ogc:Filter>
@@ -76,8 +76,11 @@
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-        <!-- PT1 Zone de garde    -->
+
+      <!-- PT1 Zone de garde    -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Servitude de protection des centre de réception radioélectrique contre les perturbations électromagnétiques (PT1) - Zone de garde</se:Name>
           <ogc:Filter>
@@ -122,8 +125,11 @@
             <se:VendorOption name="graphic-margin">2</se:VendorOption>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-        <!-- PT1 Zone de protection    -->
+
+      <!-- PT1 Zone de protection    -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Servitude de protection des centre de réception radioélectrique contre les perturbations électromagnétiques (PT1) - Zone de protection</se:Name>
           <ogc:Filter>
@@ -163,8 +169,11 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-        <!-- PT2 primaire de dégagement    -->
+
+      <!-- PT2 primaire de dégagement    -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Servitude de protection des centre radioélectriques d'émission et de réception contre les obstacles (PT2) - Zone primaire de dégagement</se:Name>
           <ogc:Filter>
@@ -185,8 +194,11 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-        <!-- PT2 secondaire de dégagement    -->
+
+      <!-- PT2 secondaire de dégagement    -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Servitude de protection des centre radioélectriques d'émission et de réception contre les obstacles (PT2) - Zone secondaire de dégagement</se:Name>
           <ogc:Filter>
@@ -220,7 +232,6 @@
                   <se:Size>10</se:Size>
                 </se:Graphic>
               </se:GraphicStroke>
-
             </se:Stroke>
           </se:PolygonSymbolizer>
           <se:PolygonSymbolizer>
@@ -246,8 +257,11 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+      </se:FeatureTypeStyle>
 
-        <!-- PT2 spéciale de dégagement    -->
+
+      <!-- PT2 spéciale de dégagement    -->
+      <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Servitude de protection des centre radioélectriques d'émission et de réception contre les obstacles (PT2) - Zone spéciale de dégagement</se:Name>
           <ogc:Filter>
@@ -306,7 +320,6 @@
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-
       </se:FeatureTypeStyle>
 
 
