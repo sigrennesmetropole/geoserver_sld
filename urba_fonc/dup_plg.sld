@@ -29,56 +29,95 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <!-- DUP métro ligne B : aplat orange -->
       <se:FeatureTypeStyle>
         <se:Rule>
+        
           <se:Name>Déclaration d'Utilité Publique "métro ligne B"</se:Name>
+          
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>nomdup</ogc:PropertyName>
               <ogc:Literal>Metro ligne B</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
+          
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#FF5500</se:SvgParameter>
+              <se:SvgParameter name="fill">#FF7227</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke">#A5000D</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
+          
         </se:Rule>
       </se:FeatureTypeStyle>
       
       <!-- DUP centre ancien : croisillon noir -->
       <se:FeatureTypeStyle>
         <se:Rule>
+          
           <se:Name>Déclaration d'Utilité Publique "centre ancien"</se:Name>
+          
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
               <ogc:PropertyName>nomdup</ogc:PropertyName>
               <ogc:Literal>Centre*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
+          
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
+          
+          <se:PolygonSymbolizer>    
             <se:Fill>
-              <se:SvgParameter name="fill">#666666</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://horline</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>4</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
             </se:Fill>
+           </se:PolygonSymbolizer>
+          
+           <se:PolygonSymbolizer> 
+             <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>4</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+            
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
+            
           </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
       
       <!-- DUP autres : hachures horizontales bleues -->
+      
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Déclaration d'Utilité Publique</se:Name>
@@ -98,19 +137,34 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:Not>
             </ogc:And>
           </ogc:Filter>
+          
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
+            
+           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">99FFFF</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://horline</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#006FBA</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>5</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+             
+             <se:Stroke>
+              <se:SvgParameter name="stroke">#006FBA</se:SvgParameter>
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
-          </se:PolygonSymbolizer>
+             
+          </se:PolygonSymbolizer>     
+       
         </se:Rule>
       </se:FeatureTypeStyle>
       
