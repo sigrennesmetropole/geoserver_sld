@@ -13,6 +13,7 @@
   14/01/2019  |  arnaud LECLERE      |  version initiale
   12/02/2019  |  Maël REBOUX         |  renommage du style du même nom que le layer
   18/02/2019  |  Maël REBOUX         |  affichage aux moyennes échelles
+  22/02/2019  |  Maël REBOUX         |  rajout d'un remplissage de polygone pour pouvoir cliquer sur les polygones
 
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -39,6 +40,10 @@
           <se:MinScaleDenominator>2000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>   
+            <se:Fill>
+              <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
               <se:SvgParameter name="stroke-width">6</se:SvgParameter>   
@@ -58,7 +63,11 @@
           <se:Name>Zonages du PLU de Rennes : limites en tiretés noir et blanc</se:Name>
           <se:MinScaleDenominator>5000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>15000</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>   
+          <se:PolygonSymbolizer> 
+            <se:Fill>
+              <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>          
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
               <se:SvgParameter name="stroke-width">4</se:SvgParameter>   
@@ -79,6 +88,10 @@
           <se:MinScaleDenominator>15000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>   
+            <se:Fill>
+              <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
               <se:SvgParameter name="stroke-width">2</se:SvgParameter>   
