@@ -1,43 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  
+
   nom du SLD : drac_zppa_plg
-  
+
   couche source dans la base :  urba_foncier.drac_zppa
   layer cible du style       :  urba_fonc:drac_zppa
-  
+
   objet :
   simples polygones mauves
-  
+
   Historique des versions :
   date        |  auteur              |  description
-  03/11/2016  |  Maël REBOUX          |  version initiale
-  01/03/2019  |  S GELIN              |  modif style
+  03/11/2016  |  Maël REBOUX         |  version initiale
+  01/03/2019  |  S GELIN             |  modif style
+  21/03/2019  |  Maël REBOUX         |  ajout d'une échelle
+
 -->
-<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
     <se:Name>urba_fonc:drac_zppa</se:Name>
     <UserStyle>
       <se:Name>drac_zppa_plg</se:Name>
-        <se:Description>
-          <se:Title>Zones de Présomption de Prescriptions Archéologiques (ZPPA)</se:Title>
-        </se:Description>
+      <se:Description>
+        <se:Title>Zones de Présomption de Prescriptions Archéologiques (ZPPA)</se:Title>
+      </se:Description>
       <se:FeatureTypeStyle>
 
+        <!-- moyennes / grandes échelles -->
         <se:Rule>
-
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#F5A27A</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.4</se:SvgParameter>            
+              <se:SvgParameter name="fill-opacity">0.4</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#F46666</se:SvgParameter>
               <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
-
           <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>n_zone</ogc:PropertyName>
@@ -47,9 +50,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:SvgParameter name="font-size">16</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">bold</se:SvgParameter>
-            
             </se:Font>
-         
             <se:LabelPlacement>
               <!-- centré / centré -->
               <se:PointPlacement>
@@ -73,11 +74,29 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:SvgParameter name="fill">#8400A8</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
             </se:Fill>
-            <se:VendorOption name="conflictResolution">false</se:VendorOption>           
-          </se:TextSymbolizer>          
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+          </se:TextSymbolizer>
         </se:Rule>
-        
-			</se:FeatureTypeStyle>
-		</UserStyle>
-	</NamedLayer>
+
+
+        <!-- petites échelles : pas d'étiquettes -->
+        <se:Rule>
+          <se:MinScaleDenominator>25000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#F5A27A</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.4</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#F46666</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+
+
+      </se:FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
 </StyledLayerDescriptor>
