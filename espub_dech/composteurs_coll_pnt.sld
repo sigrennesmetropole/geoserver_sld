@@ -3,7 +3,7 @@
 
   nom du SLD : composteurs_coll_pnt
 
-  couche source dans la base :  espace_public.composteurs_coll
+  couche source dans la base :  espace_public.v_composteurs_coll
   layer cible du style       :  espub_dech:composteurs_coll
 
   objet :
@@ -15,6 +15,7 @@
   06/07/2017  |  Maël REBOUX         |  picto plus gros et jaune
   12/07/2017  |  Stéphane GELIN      |  picto image
   20/11/2018  |  Maël REBOUX         |  http -> https
+  27/03/2019  |  Maël REBOUX         |  utilisation de la vue qui filtre les composteurs hors-service
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld"
