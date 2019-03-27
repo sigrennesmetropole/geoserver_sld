@@ -4,14 +4,16 @@
   nom du SLD : plu_rennes_sup_zh_ce
   
   couche source dans la base :  urba_foncier.v_plu_rennes_prescription_surf et urba_foncier.v_plu_rennes_prescription_lin
-  layer cible du style       :  urba_fonc:v_plu_rennes_zh_ce
+  layer cible du style       :  urba_docs:v_plu_rennes_zh_ce
   
   objet :
    Inventaire des zones humides et des cours d'eau
   
   Historique des versions :
   date        |  auteur              |  description
-  14/03/2019  |  S GELIN              |  version initiale
+  14/03/2019  |  S GELIN             |  version initiale
+  27/03/2019  |  Maël REBOUX         |  correction workspace + divers
+  
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

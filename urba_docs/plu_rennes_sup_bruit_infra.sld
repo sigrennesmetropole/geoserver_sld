@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
 
   nom du SLD : plu_rennes_sup_bruit_infra
 
   couche source dans la base :  urba_foncier.v_plu_rennes_info_surf
-  layer cible du style       :  urba_foncier:v_plu_rennes_bruit_infra
+  layer cible du style       :  urba_docs:v_plu_rennes_bruit_infra
 
   objet : style relatif aux secteurs affectés par le bruit en fonction du classement sonore des infrastructures de transport terrestre.
 
   Historique des versions :
   date        |  auteur              |  description
   26/03/2019  |  arnaud LECLERE      |  version initiale
-
+  27/03/2019  |  Maël REBOUX         |  correction workspace + divers
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -23,7 +22,7 @@
                        xmlns:xlink="http://www.w3.org/1999/xlink"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>urba_foncier:v_plu_rennes_bruit_infra</se:Name>
+    <se:Name>urba_docs:v_plu_rennes_bruit_infra</se:Name>
     <UserStyle>
       <se:Name>plu_rennes_sup_bruit_infra</se:Name>
       <se:Description>
