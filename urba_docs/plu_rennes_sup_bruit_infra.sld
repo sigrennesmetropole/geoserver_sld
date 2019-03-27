@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   26/03/2019  |  arnaud LECLERE      |  version initiale
-  27/03/2019  |  Maël REBOUX         |  correction workspace + divers
+  27/03/2019  |  Maël REBOUX         |  correction workspace + divers + ordre des règles
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -32,74 +32,6 @@
 
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Catégorie 1 (largeur : 300m)</se:Name>
-          <se:Description>
-            <se:Title>Catégorie 1 (largeur : 300m)</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
-              <ogc:Literal>14002</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#ffea3c</se:SvgParameter>
-            </se:Fill>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        <se:Rule>
-          <se:Name>Catégorie 2 (largeur : 250m)</se:Name>
-          <se:Description>
-            <se:Title>Catégorie 2 (largeur : 250m)</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
-              <ogc:Literal>14003</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#ffa522</se:SvgParameter>
-            </se:Fill>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        <se:Rule>
-          <se:Name>Catégorie 3 (largeur : 100m)</se:Name>
-          <se:Description>
-            <se:Title>Catégorie 3 (largeur : 100m)</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
-              <ogc:Literal>14004</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#f9abb4</se:SvgParameter>
-            </se:Fill>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        <se:Rule>
-          <se:Name>Catégorie 4 (largeur : 30m)</se:Name>
-          <se:Description>
-            <se:Title>Catégorie 4 (largeur : 30m)</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
-              <ogc:Literal>14005</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#fb7679</se:SvgParameter>
-            </se:Fill>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        <se:Rule>
           <se:Name>Catégorie 5 (largeur : 10m)</se:Name>
           <se:Description>
             <se:Title>Catégorie 5 (largeur : 10m)</se:Title>
@@ -117,6 +49,87 @@
           </se:PolygonSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Catégorie 4 (largeur : 30m)</se:Name>
+          <se:Description>
+            <se:Title>Catégorie 4 (largeur : 30m)</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+              <ogc:Literal>14005</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#fb7679</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Catégorie 3 (largeur : 100m)</se:Name>
+          <se:Description>
+            <se:Title>Catégorie 3 (largeur : 100m)</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+              <ogc:Literal>14004</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f9abb4</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Catégorie 2 (largeur : 250m)</se:Name>
+          <se:Description>
+            <se:Title>Catégorie 2 (largeur : 250m)</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+              <ogc:Literal>14003</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#ffa522</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Catégorie 1 (largeur : 300m)</se:Name>
+          <se:Description>
+            <se:Title>Catégorie 1 (largeur : 300m)</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stypeinf_rm</ogc:PropertyName>
+              <ogc:Literal>14002</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#ffea3c</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
