@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   08/02/2019  |  S GELIN             |  version initiale
   26/02/2019  |  Maël REBOUX         |  rajout d'une échelle
+  08/04/2019  |  Maël REBOUX         |  modification échelle supérieure
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -43,7 +44,7 @@
         <se:Rule>
           <se:Name>Contour des communes de Rennes Métropole</se:Name>
           <se:MinScaleDenominator>150000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>1100000</se:MaxScaleDenominator>
            <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
