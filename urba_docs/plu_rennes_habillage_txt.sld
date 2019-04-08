@@ -23,7 +23,6 @@
                        xmlns:se="http://www.opengis.net/se"
                        xmlns:xlink="http://www.w3.org/1999/xlink"
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
   <NamedLayer>
     <se:Name>urba_docs:plu_rennes_habillage_txt</se:Name>
     <UserStyle>
