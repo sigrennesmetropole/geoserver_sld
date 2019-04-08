@@ -3,7 +3,7 @@
 
   nom du SLD : plu_rennes_presc_pnt
 
-  couche source dans la base :  urba_foncier.plu_rennes_prescription_pnt
+  couche source dans la base :  urba_foncier.v_plu_rennes_prescription_pnt
   layer cible du style       :  urba_docs:v_plu_rennes_prescription_pnt
 
   objet : style relatif aux prescriptions ponctuelles des documents d'urbanisme numérisés - CNIG 2014
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   14/01/2019  |  arnaud LECLERE      |  version initiale
+  08/04/2019  |  Maël REBOUX         |  modification échelle min pour permettre visualisation jusqu'au 1/533
 
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -25,8 +26,8 @@
     <UserStyle>
       <se:Name>plu_rennes_presc_pnt</se:Name>
       <se:Description>
-        <se:Title>Prescriptions ponctuelles des documents d'urbanisme numérisés pour la ville de Rennes - CNIG 2014</se:Title>
-        <se:Abstract>Prescriptions ponctuelles des documents d'urbanisme numérisés pour la ville de Rennes - CNIG 2014</se:Abstract>
+        <se:Title>Prescriptions ponctuelles</se:Title>
+        <se:Abstract>Prescriptions ponctuelles</se:Abstract>
       </se:Description>
       
       <se:FeatureTypeStyle>
@@ -39,7 +40,7 @@
               <ogc:Literal>07001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -64,7 +65,7 @@
               <ogc:Literal>01001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -89,7 +90,7 @@
               <ogc:Literal>07007</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -118,7 +119,7 @@
               <ogc:Literal>07008</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -143,7 +144,7 @@
               <ogc:Literal>07009</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>

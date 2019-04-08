@@ -3,7 +3,7 @@
 
   nom du SLD : plu_rennes_presc_plg
 
-  couche source dans la base :  urba_foncier.plu_prescription_plg
+  couche source dans la base :  urba_foncier.v_plu_prescription_plg
   layer cible du style       :  urba_docs:v_plu_prescription_plg
 
   objet : style relatif aux prescriptions surfaciques des documents d'urbanisme numérisés - CNIG 2014
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   14/01/2019  |  arnaud LECLERE      |  version initiale
+  08/04/2019  |  Maël REBOUX         |  modification échelle min pour permettre visualisation jusqu'au 1/533
 
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -25,8 +26,8 @@
     <UserStyle>
       <se:Name>plu_rennes_presc_plg</se:Name>
       <se:Description>
-        <se:Title>Prescriptions surfaciques des documents d'urbanisme numérisés - CNIG 2014</se:Title>
-        <se:Abstract>Prescriptions surfaciques des documents d'urbanisme numérisés - CNIG 2014P</se:Abstract>
+        <se:Title>Prescriptions surfaciques</se:Title>
+        <se:Abstract>Prescriptions surfaciques</se:Abstract>
       </se:Description>
       
       <se:FeatureTypeStyle>
@@ -40,7 +41,7 @@
               <ogc:Literal>01001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -73,7 +74,7 @@
               <ogc:Literal>07002</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -127,7 +128,7 @@
               <ogc:Literal>07004</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -180,7 +181,7 @@
               <ogc:Literal>12001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -231,7 +232,7 @@
               <ogc:Literal>08001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -268,7 +269,7 @@
               <ogc:Literal>07006</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -310,7 +311,7 @@
               <ogc:Literal>05001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -361,7 +362,7 @@
               <ogc:Literal>09001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -424,7 +425,7 @@
               <ogc:Literal>21003</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -484,7 +485,7 @@
               <ogc:Literal>21002</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -531,7 +532,7 @@
               <ogc:Literal>22001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -566,7 +567,7 @@
               <ogc:Literal>11005</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -601,7 +602,7 @@
               <ogc:Literal>02001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -671,7 +672,7 @@
               <ogc:Literal>99003</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -709,7 +710,7 @@
               <ogc:Literal>25001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -748,7 +749,7 @@
               <ogc:Literal>99023</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -787,7 +788,7 @@
               <ogc:Literal>99024</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -822,7 +823,7 @@
               <ogc:Literal>99025</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -873,7 +874,7 @@
               <ogc:Literal>99030</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -934,7 +935,7 @@
               <ogc:Literal>99033</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>

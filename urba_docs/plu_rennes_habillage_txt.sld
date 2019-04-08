@@ -3,7 +3,7 @@
 
   nom du SLD : plu_rennes_habillage_txt
 
-  couche source dans la base :  urba_foncier.plu_rennes_habillage_txt
+  couche source dans la base :  urba_foncier.v_plu_rennes_habillage_txt
   layer cible du style       :  urba_docs:plu_rennes_habillage_txt
 
   objet : annotations / Étiquettes du plan de zonage de Rennes, sauf les zonages réglementaires
@@ -14,6 +14,7 @@
   24/01/2019  |  Arnaud LECLERE      |  ajout typologie
   19/02/2019  |  Maël REBOUX         |  toute la typologie sauf les zonages qui a un style spécifique pour pouvoir être utilisé à part
   19/02/2019  |  Maël REBOUX         |  rajout cartouche sur équipement intérêt général
+  08/04/2019  |  Maël REBOUX         |  modification échelle min pour permettre visualisation jusqu'au 1/533
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -42,7 +43,7 @@
               <ogc:Literal>emplacement réservé</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -122,7 +123,7 @@
               <ogc:Literal>emplacement réservé programme logement</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -185,7 +186,7 @@
               <ogc:Literal>équipement d'intérêt général</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -264,7 +265,7 @@
               <ogc:Literal>espace public</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -343,7 +344,7 @@
               <ogc:Literal>espace vert</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -405,7 +406,7 @@
               <ogc:Literal>performance énergétique renforcée</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -483,7 +484,7 @@
               <ogc:Literal>principe de cheminement</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -545,7 +546,7 @@
               <ogc:Literal>principe de voirie</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -607,7 +608,7 @@
               <ogc:Literal>règle architecturale particulière</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>

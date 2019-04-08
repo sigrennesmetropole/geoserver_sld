@@ -3,7 +3,7 @@
 
   nom du SLD : plu_rennes_habill_lin
 
-  couche source dans la base :  urba_foncier.plu_rennes_habillage_lin
+  couche source dans la base :  urba_foncier.v_plu_rennes_habillage_lin
   layer cible du style       :  urba_docs:v_plu_rennes_habillage_lin
 
   objet : style relatif aux habillages linéaires des documents d'urbanisme numérisés - CNIG 2014
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   06/01/2019  |  arnaud LECLERE      |  version initiale
+  08/04/2019  |  Maël REBOUX         |  modification échelle min pour permettre visualisation jusqu'au 1/533
 
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -25,8 +26,8 @@
     <UserStyle>
       <se:Name>plu_rennes_habill_lin</se:Name>
       <se:Description>
-        <se:Title>Habillage linéaires des documents d'urbanisme numérisés pour la ville de Rennes - CNIG 2014</se:Title>
-        <se:Abstract>Habillage linéaires des documents d'urbanisme numérisés pour la ville de Rennes - CNIG 2014</se:Abstract>
+        <se:Title>Habillage linéaires</se:Title>
+        <se:Abstract>Habillage linéaires</se:Abstract>
       </se:Description>
       
       <se:FeatureTypeStyle>
@@ -40,7 +41,7 @@
               <ogc:Literal>10</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -75,7 +76,7 @@
               <ogc:Literal>7</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -92,7 +93,7 @@
               <ogc:Literal>3</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>

@@ -3,7 +3,7 @@
 
   nom du SLD : plu_rennes_info_plg
 
-  couche source dans la base :  urba_foncier.plu_rennes_zone_urba
+  couche source dans la base :  urba_foncier.v_plu_rennes_zone_urba
   layer cible du style       :  urba_docs:plu_rennes_zone_urba
 
   objet : style relatif aux zonages des documents d'urbanisme numérisés - CNIG 2014
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   17/01/2019  |  arnaud LECLERE      |  version initiale
+  08/04/2019  |  Maël REBOUX         |  modification échelle min pour permettre visualisation jusqu'au 1/533
   
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -25,8 +26,8 @@
     <UserStyle>
       <se:Name>plu_rennes_info_plg</se:Name>
       <se:Description>
-        <se:Title>Informations surfaciques des documents d'urbanisme numérisés - CNIG 2014</se:Title>
-        <se:Abstract>Informations surfaciques des documents d'urbanisme numérisés - CNIG 2014</se:Abstract>
+        <se:Title>Informations surfaciques</se:Title>
+        <se:Abstract>Informations surfaciques</se:Abstract>
       </se:Description>
       
       <se:FeatureTypeStyle>
@@ -39,7 +40,7 @@
               <ogc:Literal>01001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
@@ -75,7 +76,7 @@
               <ogc:Literal>99070</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>
@@ -110,7 +111,7 @@
               <ogc:Literal>99001</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2200</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>

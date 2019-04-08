@@ -13,6 +13,7 @@
   22/01/2019  |  Maël REBOUX         |  version initiale
   24/01/2019  |  Arnaud LECLERE      |  ajout typologie
   19/02/2019  |  Maël REBOUX         |  style uniquement pour les zonages
+  08/04/2019  |  Maël REBOUX         |  modification échelle min pour permettre visualisation jusqu'au 1/533
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -42,7 +43,7 @@
               <ogc:Literal>zonage</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2100</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
