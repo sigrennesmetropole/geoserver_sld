@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   08/02/2019  |  S GELIN             |  version initiale
-  26/02/2019  |  Maël REBOUX         |  rajout d'une échelle
+  26/02/2019  |  MaÃ«l REBOUX         |  rajout d'une Ã©chelle
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
