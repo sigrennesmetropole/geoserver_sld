@@ -21,10 +21,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       <se:Name>sv_sitorg_economie</se:Name>
         <se:Description>
           <se:Title>Thème Economie, emploi</se:Title>
-          <se:Abstract>Thème economie, démarches</se:Abstract>
+          <se:Abstract>Thème économie, démarches</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
-        <!-- Marchés -->
+        <!-- Marché, AMAP -->
         <se:Rule>
           <se:Name>Marché et AMAP</se:Name>
           <ogc:Filter>
@@ -53,19 +53,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <ogc:Or>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.1\.*</ogc:Literal>
+                <ogc:Literal>3\.1\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.2\.*</ogc:Literal>
-              </ogc:PropertyIsLike>
-              <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
-                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.3\.*</ogc:Literal>
-              </ogc:PropertyIsLike>
-              <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
-                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.4\.*</ogc:Literal>
+                <ogc:Literal>3\.5\.*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:Or>
           </ogc:Filter>
