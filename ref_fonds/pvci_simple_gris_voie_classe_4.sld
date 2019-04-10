@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_voie_classe_4
+  nom du SLD : pvci_simple_gris_voie_classe_4
 
   couche source dans la base :  rva.v_troncon_lgn
   layer cible du style       :  ref_fonds:vgs_troncon_automixte_classe4
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,7 +25,7 @@
   <NamedLayer>
     <se:Name>ref_fonds:vgs_troncon_automixte_classe0</se:Name>
     <UserStyle>
-      <se:Name>light_voie_classe_4</se:Name>
+      <se:Name>pvci_simple_gris_voie_classe_4</se:Name>
       <se:Description>
         <se:Title>Voie de desserte locale</se:Title>
         <se:Abstract>Voie de desserte locale.</se:Abstract>
@@ -33,7 +34,7 @@
       
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_4</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_4</se:Name>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -50,7 +51,7 @@
       
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_4</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_4</se:Name>
           <se:MinScaleDenominator>5000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -67,7 +68,7 @@
       
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_4</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_4</se:Name>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -84,7 +85,7 @@
       
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_4</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_4</se:Name>
           <se:MinScaleDenominator>25000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:LineSymbolizer>

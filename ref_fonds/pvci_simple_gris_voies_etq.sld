@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_voies_etq
+  nom du SLD : pvci_simple_gris_voies_etq
 
   couche source dans la base :  rva.v_voie_lgn
   layer cible du style       :  ref_fonds:v_voie_lgn
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,7 +25,7 @@
   <NamedLayer>
     <se:Name>ref_fonds:v_voie_lgn</se:Name>
     <UserStyle>
-      <se:Name>light_voies_etq</se:Name>
+      <se:Name>pvci_simple_gris_voies_etq</se:Name>
       <se:Description>
         <se:Title>Noms des voies</se:Title>
         <se:Abstract></se:Abstract>

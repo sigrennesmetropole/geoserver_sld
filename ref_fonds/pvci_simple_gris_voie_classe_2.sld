@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_voie_classe_3
+  nom du SLD : pvci_simple_gris_voie_classe_2
 
   couche source dans la base :  rva.v_troncon_lgn
-  layer cible du style       :  ref_fonds:vgs_troncon_automixte_classe3
+  layer cible du style       :  ref_fonds:vgs_troncon_automixte_classe2
 
-  objet : Voie inter quartier
+  objet : Voie communale principale hors agglomération
 
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,17 +25,17 @@
   <NamedLayer>
     <se:Name>ref_fonds:vgs_troncon_automixte_classe0</se:Name>
     <UserStyle>
-      <se:Name>light_voie_classe_3</se:Name>
+      <se:Name>pvci_simple_gris_voie_classe_2</se:Name>
       <se:Description>
-        <se:Title>Voie inter quartier</se:Title>
-        <se:Abstract>Voie inter quartier.</se:Abstract>
+        <se:Title>Voie communale principale hors agglomération</se:Title>
+        <se:Abstract>Voie communale principale hors agglomération.</se:Abstract>
       </se:Description>
       
       
       <!-- grandes échelles 1 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - contour</se:Name>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -49,7 +50,7 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - centre</se:Name>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -67,7 +68,7 @@
       <!-- grandes échelles 2 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - contour</se:Name>
           <se:MinScaleDenominator>5000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -82,7 +83,7 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - centre</se:Name>
           <se:MinScaleDenominator>5000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -100,7 +101,7 @@
       <!-- moyennes échelles 1 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - contour</se:Name>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -116,7 +117,7 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - centre</se:Name>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -135,7 +136,7 @@
       <!-- moyennes échelles 2 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - contour</se:Name>
           <se:MinScaleDenominator>25000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -151,7 +152,7 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2 - centre</se:Name>
           <se:MinScaleDenominator>25000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -170,7 +171,7 @@
       <!-- petites échelles 1 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2</se:Name>
           <se:MinScaleDenominator>50000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -189,7 +190,7 @@
       <!-- petites échelles 2 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_3</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_2</se:Name>
           <se:MinScaleDenominator>150000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
           <se:LineSymbolizer>

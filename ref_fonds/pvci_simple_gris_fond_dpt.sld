@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : light_fond_dpt
+  nom du SLD : pvci_simple_gris_fond_dpt
   
   couche source dans la base :  limite_admin.ign_geofla_depart
   layer cible du style       :  ref_fonds:ign_geofla_depart
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -18,7 +19,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
   <NamedLayer>
     <se:Name>ref_fonds:ign_geofla_depart</se:Name>
     <UserStyle>
-      <se:Name>light_fond_dpt</se:Name>
+      <se:Name>pvci_simple_gris_fond_dpt</se:Name>
         <se:Description>
           <se:Title>Fond gris du style "light"</se:Title>
           <se:Abstract>Fond gris du style "light"</se:Abstract>

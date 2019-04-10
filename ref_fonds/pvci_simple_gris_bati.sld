@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_bati
+  nom du SLD : pvci_simple_gris_bati
 
   couche source dans la base :  cadastre.edi_bati
   layer cible du style       :  ref_fonds:edi_bati
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,7 +25,7 @@
   <NamedLayer>
     <se:Name>ref_fonds:edi_bati_plg</se:Name>
     <UserStyle>
-      <se:Name>light_bati</se:Name>
+      <se:Name>pvci_simple_gris_bati</se:Name>
       <se:Description>
         <se:Title>Bâtiments</se:Title>
         <se:Abstract>Bâtiments du cadastre.</se:Abstract>

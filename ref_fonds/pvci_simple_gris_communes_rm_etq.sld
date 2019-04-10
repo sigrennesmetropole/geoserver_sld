@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_communes_rm_etq
+  nom du SLD : pvci_simple_gris_communes_rm_etq
 
   couche source dans la base :  limite_admin.v_commune_centrbrg
   layer cible du style       :  ref_fonds:v_commune_centrbrg
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,7 +25,7 @@
   <NamedLayer>
     <se:Name>ref_fonds:v_commune_centrbrg</se:Name>
     <UserStyle>
-      <se:Name>light_communes_rm_etq</se:Name>
+      <se:Name>pvci_simple_gris_communes_rm_etq</se:Name>
       <se:Description>
         <se:Title>Noms des communes de Rennes Métropole</se:Title>
         <se:Abstract></se:Abstract>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_voies_ferrees
+  nom du SLD : pvci_simple_gris_voies_ferrees
 
   couche source dans la base :  donnees_gen.v_axe_rail
   layer cible du style       :  ref_fonds:v_axe_rail
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 
@@ -25,7 +26,7 @@
   <NamedLayer>
     <se:Name>ref_fonds:v_axe_rail</se:Name>
     <UserStyle>
-      <se:Name>light_voies_ferrees</se:Name>
+      <se:Name>pvci_simple_gris_voies_ferrees</se:Name>
       <se:Description>
         <se:Title>Voies ferrées</se:Title>
         <se:Abstract></se:Abstract>

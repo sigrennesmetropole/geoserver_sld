@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_bois
+  nom du SLD : pvci_simple_gris_bois
 
   couche source dans la base :  pat_naturel.audiar_espforet
   layer cible du style       :  ref_fonds:pvci_espforet
@@ -12,6 +12,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -25,7 +26,7 @@
   <NamedLayer>
     <se:Name>ref_fonds:pvci_espforet</se:Name>
     <UserStyle>
-      <se:Name>light_bois</se:Name>
+      <se:Name>pvci_simple_gris_bois</se:Name>
       <se:Description>
         <se:Title>Espaces boisés</se:Title>
         <se:Abstract>Espaces boisés.</se:Abstract>

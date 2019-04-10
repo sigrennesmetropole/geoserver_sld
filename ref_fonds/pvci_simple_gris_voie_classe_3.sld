@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : light_voie_classe_1
+  nom du SLD : pvci_simple_gris_voie_classe_3
 
   couche source dans la base :  rva.v_troncon_lgn
-  layer cible du style       :  ref_fonds:vgs_troncon_automixte_classe1
+  layer cible du style       :  ref_fonds:vgs_troncon_automixte_classe3
 
-  objet : Voie structurant l'aire urbaine ou ceinture de desserte
+  objet : Voie inter quartier
 
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
+  10/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -24,52 +25,19 @@
   <NamedLayer>
     <se:Name>ref_fonds:vgs_troncon_automixte_classe0</se:Name>
     <UserStyle>
-      <se:Name>light_voie_classe_1</se:Name>
+      <se:Name>pvci_simple_gris_voie_classe_3</se:Name>
       <se:Description>
-        <se:Title>Voie structurant l'aire urbaine ou ceinture de desserte</se:Title>
-        <se:Abstract>Voie structurant l'aire urbaine ou ceinture de desserte.</se:Abstract>
+        <se:Title>Voie inter quartier</se:Title>
+        <se:Abstract>Voie inter quartier.</se:Abstract>
       </se:Description>
       
       
       <!-- grandes échelles 1 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3 - contour</se:Name>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">12.0</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>light_voie_classe_1 - centre</se:Name>
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">11.0</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-      
-      
-      <!-- grandes échelles 2 -->
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
-          <se:MinScaleDenominator>5000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
@@ -82,13 +50,46 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3 - centre</se:Name>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">9.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      
+      
+      <!-- grandes échelles 2 -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>pvci_simple_gris_voie_classe_3 - contour</se:Name>
+          <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">8.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
+              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>pvci_simple_gris_voie_classe_3 - centre</se:Name>
           <se:MinScaleDenominator>5000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">8.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">6.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
@@ -100,13 +101,14 @@
       <!-- moyennes échelles 1 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3 - contour</se:Name>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">8.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">4.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
@@ -115,13 +117,14 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3 - centre</se:Name>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">7.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3.8</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
@@ -133,13 +136,14 @@
       <!-- moyennes échelles 2 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3 - contour</se:Name>
           <se:MinScaleDenominator>25000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">5.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
@@ -148,13 +152,14 @@
       </se:FeatureTypeStyle>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - centre</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3 - centre</se:Name>
           <se:MinScaleDenominator>25000</se:MinScaleDenominator>
           <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">4.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">3.2</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
@@ -166,28 +171,14 @@
       <!-- petites échelles 1 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3</se:Name>
           <se:MinScaleDenominator>50000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>light_voie_classe_1 - centre</se:Name>
-          <se:MinScaleDenominator>50000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffffff</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+              <se:SvgParameter name="stroke">#d7d7d7</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
@@ -199,56 +190,20 @@
       <!-- petites échelles 2 -->
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
-          <se:MinScaleDenominator>100000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>150000</se:MaxScaleDenominator>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#d7d7d7</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-      
-      
-      <!-- petites échelles 3 -->
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
+          <se:Name>pvci_simple_gris_voie_classe_3</se:Name>
           <se:MinScaleDenominator>150000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#d5d5d5</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
       </se:FeatureTypeStyle>
-      
-      
-      <!-- petites échelles 4 -->
-      <se:FeatureTypeStyle>
-        <se:Rule>
-          <se:Name>light_voie_classe_1 - contour</se:Name>
-          <se:MinScaleDenominator>500000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1000000</se:MaxScaleDenominator>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#d7d7d7</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
-        </se:Rule>
-      </se:FeatureTypeStyle>
-      
       
     </UserStyle>
   </NamedLayer>

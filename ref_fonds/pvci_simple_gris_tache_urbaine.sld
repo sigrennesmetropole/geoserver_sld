@@ -1,7 +1,7 @@
   <?xml version="1.0" encoding="UTF-8"?>
   <!--
 
-    nom du SLD : light_tache_urbaine
+    nom du SLD : pvci_simple_gris_tache_urbaine
 
     couche source dans la base :  occup_sol.audiar_tache_urbaine
     layer cible du style       :  ref_fonds:pvci_tu_rm
@@ -11,6 +11,7 @@
     Historique des versions :
     date        |  auteur              |  description
     04/07/2018  |  Maël REBOUX         |  version initiale
+    10/04/2019  |  Maël REBOUX         |  renommage
 
   -->
   <StyledLayerDescriptor version="1.1.0"
@@ -24,7 +25,7 @@
     <NamedLayer>
       <se:Name>ref_fonds:pvci_tu_rm</se:Name>
       <UserStyle>
-        <se:Name>light_tache_urbaine</se:Name>
+        <se:Name>pvci_simple_gris_tache_urbaine</se:Name>
         <se:Description>
           <se:Title>Couche des surfaces urbanisées (tâche urbaine)</se:Title>
           <se:Abstract>Couche des surfaces urbanisées (tâche urbaine)</se:Abstract>
