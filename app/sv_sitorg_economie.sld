@@ -24,6 +24,29 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:Abstract>Thème économie, démarches</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
+	  
+	  <!-- Développement économique et commercial-->
+        <se:Rule>
+          <se:Name>Commerces</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+              <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+              <ogc:Literal>3\.1\.*</ogc:Literal>
+            </ogc:PropertyIsLike>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/commerces.png" />
+                <se:Format>image/png</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>30</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+		
         <!-- Marché, AMAP -->
         <se:Rule>
           <se:Name>Marché et AMAP</se:Name>
