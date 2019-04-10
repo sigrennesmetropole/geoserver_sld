@@ -97,6 +97,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                   <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                  <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
               <se:Size>24</se:Size>
