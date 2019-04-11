@@ -184,19 +184,31 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <ogc:Or>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.1\.*</ogc:Literal>
+                <ogc:Literal>7\.1\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.5\.*</ogc:Literal>
+                <ogc:Literal>7\.2\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.10\.*</ogc:Literal>
+                <ogc:Literal>7\.3\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.11\.*</ogc:Literal>
+                <ogc:Literal>7\.4\.*</ogc:Literal>
+              </ogc:PropertyIsLike>
+			   <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+                <ogc:Literal>7\.5\.*</ogc:Literal>
+              </ogc:PropertyIsLike>
+			   <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+                <ogc:Literal>7\.6\.*</ogc:Literal>
+              </ogc:PropertyIsLike>
+			   <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+                <ogc:Literal>7\.7\.*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:Or>
           </ogc:Filter>
