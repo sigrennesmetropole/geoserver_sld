@@ -1,37 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : sv_sitorg_education
+  nom du SLD : sv_sitorg_deplacement
   
   couche source dans la base :  serv_equipub.v_sitorg_organisme
-  layer cible du style       :  app:sv_sitorg_education
+  layer cible du style       :  app:sv_sitorg_deplacement
   
   objet : style pour l'appli sviewer destinées aux sites des communes
   
   Historique des versions :
   date        |  auteur              |  description
-  09/04/2019  |  Maël REBOUX         |  version initiale
+  09/04/2019  |  Catherine Morales         |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>app:sv_sitorg_education</se:Name>
+    <se:Name>app:sv_sitorg_deplacement</se:Name>
     <UserStyle>
-      <se:Name>sv_sitorg_education</se:Name>
+      <se:Name>sv_sitorg_deplacement</se:Name>
         <se:Description>
-          <se:Title>Thème éducation, enseignement, recherche</se:Title>
-          <se:Abstract>Thème éducation, enseignement, recherche</se:Abstract>
+          <se:Title>Thème déplacement, mobilité</se:Title>
+          <se:Abstract>Thème déplacement, mobilité</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
-      
-        <!-- Petite enfance -->
+        <!-- Parking, covoiturage, taxi-->
         <se:Rule>
-          <se:Name>Petite enfance</se:Name>
+          <se:Name>Parking, covoiturage, taxi</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>2\.1\.*</ogc:Literal>
+              <ogc:Literal>11\.1\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -39,7 +38,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/accueil-petite-enfance.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/parking.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -47,13 +46,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Primaire -->
+        <!-- Vélo -->
         <se:Rule>
-          <se:Name>Enseignement primaire</se:Name>
+          <se:Name>Parking vélo et entretien</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>2\.2\.*</ogc:Literal>
+              <ogc:Literal>11\.3\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -61,7 +60,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/enseignement-primaire.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/parcs-velo.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -69,13 +68,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Secondaire -->
+        <!-- Bus, métro, autocar -->
         <se:Rule>
-          <se:Name>Enseignement secondaire</se:Name>
+          <se:Name>Bus, métro, autocar</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>2\.3\.*</ogc:Literal>
+              <ogc:Literal>11\.4\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -83,7 +82,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/enseignement-secondaire.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/autocar.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -91,13 +90,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Supérieur -->
+        <!-- Train -->
         <se:Rule>
-          <se:Name>Enseignement supérieur</se:Name>
+          <se:Name>Gare de train, halte, information</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>2\.4\.*</ogc:Literal>
+              <ogc:Literal>11\.5\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -105,14 +104,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/enseignement-superieur.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/picto-vide.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        
         
         <!-- une règle globale pour étiqueter -->
         <se:Rule>
@@ -120,19 +118,19 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <ogc:Or>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.1\.*</ogc:Literal>
+                <ogc:Literal>11\.1\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.2\.*</ogc:Literal>
+                <ogc:Literal>11\.3\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.3\.*</ogc:Literal>
+                <ogc:Literal>11\.4\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>2\.4\.*</ogc:Literal>
+                <ogc:Literal>11\.5\.*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:Or>
           </ogc:Filter>
@@ -163,7 +161,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <!-- réglages de la fonte sauf la couleur et opacité -->
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
