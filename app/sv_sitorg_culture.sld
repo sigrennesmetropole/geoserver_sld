@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : sv_sitorg_administration
+  nom du SLD : sv_sitorg_culture
   
   couche source dans la base :  serv_equipub.v_sitorg_organisme
-  layer cible du style       :  app:sv_sitorg_administration
+  layer cible du style       :  app:sv_sitorg_culture
   
   objet : style pour l'appli sviewer destinées aux sites des communes
   
@@ -16,21 +16,21 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>app:sv_sitorg_administration</se:Name>
+    <se:Name>app:sv_sitorg_culture</se:Name>
     <UserStyle>
-      <se:Name>sv_sitorg_administration</se:Name>
+      <se:Name>sv_sitorg_culture</se:Name>
         <se:Description>
-          <se:Title>Thème administration, démarches</se:Title>
-          <se:Abstract>Thème administration, démarches</se:Abstract>
+          <se:Title>Thème culture, socio-culturel</se:Title>
+          <se:Abstract>Thème culture, socio-culturel</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
-        <!-- Mairie - Services  de la commune -->
+        <!-- Enseignement culturel -->
         <se:Rule>
-          <se:Name>Mairie et services de la commune</se:Name>
+          <se:Name>Ecole de musique, de danse, enseignement spécialisé</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.1\.*</ogc:Literal>
+              <ogc:Literal>7\.1\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -38,7 +38,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/mairies-et-collectivites.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/ecole_musique_danse.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -46,13 +46,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Etat -->
+        <!-- Action socio-culturelle -->
         <se:Rule>
-          <se:Name>Services de l'état</se:Name>
+          <se:Name>Action socio-culturelle</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.5\.*</ogc:Literal>
+              <ogc:Literal>7\.2\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -60,7 +60,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/justicefinance.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/centre-des-loisirs.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -68,13 +68,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Funéraire -->
+        <!-- Lieux d'exposition -->
         <se:Rule>
-          <se:Name>Funéraire</se:Name>
+          <se:Name>Musée, galerie d'exposition, Parc des expositions</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.11\.*</ogc:Literal>
+              <ogc:Literal>7\.3\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -82,7 +82,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/funeraire.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/musees-et-galeries-art.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -90,13 +90,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Communication -->
+        <!-- Salle des fêtes et polyvalentes -->
         <se:Rule>
-          <se:Name>Poste</se:Name>
+          <se:Name>Salle des fêtes et polyvalentes</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.10\.1*</ogc:Literal>
+              <ogc:Literal>7\.4\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -104,14 +104,79 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/poste.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/spectacles.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        
+		
+        <!-- Lieux de savoir -->
+        <se:Rule>
+          <se:Name>Bibliothèques, espaces numériques,...</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+              <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+              <ogc:Literal>7\.5\.*</ogc:Literal>
+            </ogc:PropertyIsLike>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/bibliotheques.png"/>
+                <se:Format>image/png</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>30</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+		
+		<!-- Cinémas -->
+        <se:Rule>
+          <se:Name>Cinémas</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+              <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+              <ogc:Literal>7\.6\.*</ogc:Literal>
+            </ogc:PropertyIsLike>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/cinemas.png"/>
+                <se:Format>image/png</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>30</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+		
+		<!-- Salles de spectacle -->
+        <se:Rule>
+          <se:Name>Salles de spectacle</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+              <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+              <ogc:Literal>7\.7\.*</ogc:Literal>
+            </ogc:PropertyIsLike>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:ExternalGraphic>
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/art-dans-la-ville.png"/>
+                <se:Format>image/png</se:Format>
+              </se:ExternalGraphic>
+              <se:Size>30</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
         
         <!-- une règle globale pour étiqueter -->
         <se:Rule>
@@ -119,19 +184,31 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <ogc:Or>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.1\.*</ogc:Literal>
+                <ogc:Literal>7\.1\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.5\.*</ogc:Literal>
+                <ogc:Literal>7\.2\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.10\.*</ogc:Literal>
+                <ogc:Literal>7\.3\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.11\.*</ogc:Literal>
+                <ogc:Literal>7\.4\.*</ogc:Literal>
+              </ogc:PropertyIsLike>
+			   <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+                <ogc:Literal>7\.5\.*</ogc:Literal>
+              </ogc:PropertyIsLike>
+			   <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+                <ogc:Literal>7\.6\.*</ogc:Literal>
+              </ogc:PropertyIsLike>
+			   <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
+                <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
+                <ogc:Literal>7\.7\.*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:Or>
           </ogc:Filter>

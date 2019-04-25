@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : v_plu_rennes_sup_pt3
+  nom du SLD : plu_rennes_sup_pt3
 
   couche source dans la base : urba_foncier.v_plu_rennes_info_lin
   layer cible du style       : urba_docs:v_plu_rennes_sup_pt3
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   10/04/2019  |  arnaud LECLERE      |  version initiale
+  12/04/2019  |  Maël REBOUX         |  renommage
 
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -25,7 +26,7 @@
     <se:Name>urba_docs:v_plu_rennes_sup_pt3</se:Name>
   
     <UserStyle>
-      <se:Name>v_plu_rennes_sup_pt3</se:Name>
+      <se:Name>plu_rennes_sup_pt3</se:Name>
       
       <se:Description>
         <se:Title>Axe de la servitude</se:Title>

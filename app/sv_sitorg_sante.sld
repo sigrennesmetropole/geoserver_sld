@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : sv_sitorg_administration
+  nom du SLD : sv_sitorg_sante
   
   couche source dans la base :  serv_equipub.v_sitorg_organisme
-  layer cible du style       :  app:sv_sitorg_administration
+  layer cible du style       :  app:sv_sitorg_sante
   
   objet : style pour l'appli sviewer destinées aux sites des communes
   
@@ -16,21 +16,21 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>app:sv_sitorg_administration</se:Name>
+    <se:Name>app:sv_sitorg_sante</se:Name>
     <UserStyle>
-      <se:Name>sv_sitorg_administration</se:Name>
+      <se:Name>sv_sitorg_sante</se:Name>
         <se:Description>
-          <se:Title>Thème administration, démarches</se:Title>
-          <se:Abstract>Thème administration, démarches</se:Abstract>
+          <se:Title>Thème santé, action sociale</se:Title>
+          <se:Abstract>Thème santé, action sociale</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
-        <!-- Mairie - Services  de la commune -->
+        <!-- Services sociaux -->
         <se:Rule>
-          <se:Name>Mairie et services de la commune</se:Name>
+          <se:Name>Services sociaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.1\.*</ogc:Literal>
+              <ogc:Literal>8\.1\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -38,7 +38,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/mairies-et-collectivites.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/ccas-centre-sociaux.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -46,13 +46,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Etat -->
+        <!-- Action sociale -->
         <se:Rule>
-          <se:Name>Services de l'état</se:Name>
+          <se:Name>Action sociale</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.5\.*</ogc:Literal>
+              <ogc:Literal>8\.2\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -60,7 +60,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/justicefinance.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/lieu-d-accueil.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -68,13 +68,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Funéraire -->
+        <!-- Action santé -->
         <se:Rule>
-          <se:Name>Funéraire</se:Name>
+          <se:Name>Informations, soins à domicile</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.11\.*</ogc:Literal>
+              <ogc:Literal>8\.3\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -82,7 +82,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/funeraire.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/personnes-agees.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
@@ -90,13 +90,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PointSymbolizer>
         </se:Rule>
         
-        <!-- Communication -->
+        <!-- Etablissements de santé -->
         <se:Rule>
-          <se:Name>Poste</se:Name>
+          <se:Name>Etablissements de santé</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
               <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-              <ogc:Literal>1\.10\.1*</ogc:Literal>
+              <ogc:Literal>8\.4\.*</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -104,14 +104,13 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
-                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/poste.png" />
+                <se:OnlineResource  xlink:type="simple" xlink:href="https://public.sig.rennesmetropole.fr/ressources/app/sviewer/sld_pictos/hopitaux-cliniques.png"/>
                 <se:Format>image/png</se:Format>
               </se:ExternalGraphic>
               <se:Size>30</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-        
         
         <!-- une règle globale pour étiqueter -->
         <se:Rule>
@@ -119,19 +118,19 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <ogc:Or>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.1\.*</ogc:Literal>
+                <ogc:Literal>8\.1\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.5\.*</ogc:Literal>
+                <ogc:Literal>8\.2\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.10\.*</ogc:Literal>
+                <ogc:Literal>8\.3\.*</ogc:Literal>
               </ogc:PropertyIsLike>
               <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="\">
                 <ogc:PropertyName>code_nomenclature_principale</ogc:PropertyName>
-                <ogc:Literal>1\.11\.*</ogc:Literal>
+                <ogc:Literal>8\.4\.*</ogc:Literal>
               </ogc:PropertyIsLike>
             </ogc:Or>
           </ogc:Filter>

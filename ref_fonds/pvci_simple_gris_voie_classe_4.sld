@@ -11,7 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   04/07/2018  |  Maël REBOUX         |  version initiale
-  10/04/2019  |  Maël REBOUX         |  renommage
+  10/04/2019  |  Maël REBOUX         |  renommage + voies plus larges
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -40,7 +40,7 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#d7d7d7</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">8</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.90</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
@@ -57,7 +57,7 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#d5d5d5</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">5</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.75</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
@@ -74,7 +74,7 @@
           <se:LineSymbolizer>
             <se:Stroke>
               <se:SvgParameter name="stroke">#bababa</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">0.40</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">round</se:SvgParameter>
               <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>

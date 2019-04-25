@@ -10,7 +10,7 @@
     Historique des versions :
     date        |  auteur              |  description
     04/07/2018  |  Maël REBOUX         |  version initiale
-    10/04/2019  |  Maël REBOUX         |  renommage
+    10/04/2019  |  Maël REBOUX         |  renommage +  italique + même taille que les lieux-dits
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -40,8 +40,8 @@
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">SansSerif</se:SvgParameter>
-              <se:SvgParameter name="font-size">10</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-style">italic</se:SvgParameter>
             </se:Font>
             <se:LabelPlacement>
               <se:PointPlacement>
