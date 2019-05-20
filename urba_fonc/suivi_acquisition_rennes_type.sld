@@ -11,8 +11,10 @@
   Historique des versions :
   date        |  auteur              |  description
   27/03/2019  |  arnaud LECLERE      |  version initiale
+  22/05/2019  |  arnaud LECLERE      |  prise en compte des parcelles en projet
 
 -->
+
 <StyledLayerDescriptor version="1.1.0"
                        xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
                        xmlns="http://www.opengis.net/sld"
@@ -29,6 +31,10 @@
         <se:Abstract>Suivi des acquisitions foncières de Rennes</se:Abstract>
       </se:Description>
 
+  
+      
+<!-- DEBUT PROJET = NON -->
+      
       <se:FeatureTypeStyle>
 
         <se:Rule>
@@ -328,12 +334,14 @@
           <se:Description>
             <se:Title>Servitude</se:Title>
           </se:Description>
+          
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_code</ogc:PropertyName>
               <ogc:Literal>10</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -484,6 +492,48 @@
         </se:Rule>
 
       </se:FeatureTypeStyle>
+      
+<!-- FIN PROJET = NON   -->      
+<!-- DEBUT PROJET = OUI -->        
+      <se:FeatureTypeStyle>
+
+        <se:Rule>
+          <se:Name>Parcelle en projet </se:Name>
+          <se:Description>
+            <se:Title>Parcelle en projet</se:Title>
+          </se:Description>
+          
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">          
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>projet</ogc:PropertyName>
+              <ogc:Literal>Oui</ogc:Literal>
+            </ogc:PropertyIsEqualTo>   
+          </ogc:Filter>
+          
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          
+          <se:PolygonSymbolizer>      
+            
+            <se:Fill>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+              <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+            </se:Fill> 
+ 
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#055fff</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">7 4</se:SvgParameter> 
+              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+            </se:Stroke>
+
+          </se:PolygonSymbolizer>
+          
+        </se:Rule>
+        
+     </se:FeatureTypeStyle>
+      
+<!-- FIN PROJET = OUI --> 
+
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
