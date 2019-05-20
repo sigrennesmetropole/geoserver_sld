@@ -67,8 +67,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 1
-                Broyeur thermique : 1
+                Broyeur électrique : 1 -
+                Broyeur thermique : 1 -
                 Tondeuse thermique : 1   
             </se:Label>
             <se:Font>
@@ -105,8 +105,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 1
-                Broyeur thermique : 0
+                Broyeur électrique : 1 -
+                Broyeur thermique : 0 -
                 Tondeuse thermique : 1   
             </se:Label>
             <se:Font>
@@ -143,8 +143,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 1
-                Broyeur thermique : 0
+                Broyeur électrique : 1 -
+                Broyeur thermique : 0 -
                 Tondeuse thermique : 0   
             </se:Label>
             <se:Font>
@@ -181,8 +181,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 1
-                Broyeur thermique : 1
+                Broyeur électrique : 1 -
+                Broyeur thermique : 1 -
                 Tondeuse thermique : 0   
             </se:Label>
             <se:Font>
@@ -219,8 +219,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 0
-                Broyeur thermique : 1
+                Broyeur électrique : 0 -
+                Broyeur thermique : 1 -
                 Tondeuse thermique : 1   
             </se:Label>
             <se:Font>
@@ -257,8 +257,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 0
-                Broyeur thermique : 0
+                Broyeur électrique : 0 -
+                Broyeur thermique : 0 -
                 Tondeuse thermique : 1   
             </se:Label>
             <se:Font>
@@ -295,8 +295,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 0
-                Broyeur thermique : 1
+                Broyeur électrique : 0 -
+                Broyeur thermique : 1 -
                 Tondeuse thermique : 0   
             </se:Label>
             <se:Font>
@@ -333,8 +333,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </ogc:Filter>          
           <se:TextSymbolizer>
             <se:Label>
-                Broyeur électrique : 0
-                Broyeur thermique : 0
+                Broyeur électrique : 0 -
+                Broyeur thermique : 0 -
                 Tondeuse thermique : 0   
             </se:Label>
             <se:Font>
