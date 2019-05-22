@@ -11,10 +11,10 @@
   Historique des versions :
   date        |  auteur              |  description
   27/03/2019  |  arnaud LECLERE      |  version initiale
-  22/05/2019  |  arnaud LECLERE      |  prise en compte des parcelles en projet
+  20/05/2019  |  arnaud LECLERE      |  prise en compte des parcelles en projet
+  22/05/2019  |  Maël REBOUX         |  correction projet / pas projet
 
 -->
-
 <StyledLayerDescriptor version="1.1.0"
                        xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
                        xmlns="http://www.opengis.net/sld"
@@ -31,10 +31,10 @@
         <se:Abstract>Suivi des acquisitions foncières de Rennes</se:Abstract>
       </se:Description>
 
-  
-      
-<!-- DEBUT PROJET = NON -->
-      
+
+
+      <!-- projet != oui + typologie -->
+
       <se:FeatureTypeStyle>
 
         <se:Rule>
@@ -43,10 +43,16 @@
             <se:Title>Parcelle Ville de Rennes</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>1</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>1</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -67,10 +73,16 @@
             <se:Title>Copropriété</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>2</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>2</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -91,10 +103,16 @@
             <se:Title>Bail</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>4</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -115,10 +133,16 @@
             <se:Title>Emphytéote</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>5</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -139,10 +163,16 @@
             <se:Title>Indivision</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>3</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -163,10 +193,16 @@
             <se:Title>Parcelle RM</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>13</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>13</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -187,10 +223,16 @@
             <se:Title>Déclassement</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>6</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>6</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -224,10 +266,16 @@
             <se:Title>Convention</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>7</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>7</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -261,10 +309,16 @@
             <se:Title>Déclaration d'Utilité Publique</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>8</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>8</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -298,10 +352,16 @@
             <se:Title>Enquête</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>9</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>9</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -334,14 +394,18 @@
           <se:Description>
             <se:Title>Servitude</se:Title>
           </se:Description>
-          
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>10</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>10</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
-          
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
@@ -377,10 +441,16 @@
             <se:Title>Aliénation</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>11</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>11</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -417,10 +487,16 @@
             <se:Title>Domaine Public Routier</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>12</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>12</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -457,10 +533,16 @@
             <se:Title>Arrêté Alignement</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_code</ogc:PropertyName>
-              <ogc:Literal>14</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+            <ogc:And>
+              <ogc:PropertyIsNotEqualTo>
+                <ogc:PropertyName>projet</ogc:PropertyName>
+                <ogc:Literal>Oui</ogc:Literal>
+              </ogc:PropertyIsNotEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>type_code</ogc:PropertyName>
+                <ogc:Literal>14</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
@@ -492,47 +574,37 @@
         </se:Rule>
 
       </se:FeatureTypeStyle>
-      
-<!-- FIN PROJET = NON   -->      
-<!-- DEBUT PROJET = OUI -->        
-      <se:FeatureTypeStyle>
 
+
+      <!-- projet = oui sans typologie -->
+
+      <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Parcelle en projet </se:Name>
+          <se:Name>Projet d'acquisition</se:Name>
           <se:Description>
-            <se:Title>Parcelle en projet</se:Title>
+            <se:Title>Projet d'acquisition</se:Title>
           </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">          
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>projet</ogc:PropertyName>
               <ogc:Literal>Oui</ogc:Literal>
-            </ogc:PropertyIsEqualTo>   
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-          
-          <se:PolygonSymbolizer>      
-            
+          <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
               <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
-            </se:Fill> 
- 
+            </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#055fff</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">7 4</se:SvgParameter> 
+              <se:SvgParameter name="stroke-dasharray">7 4</se:SvgParameter>
               <se:SvgParameter name="stroke-width">2</se:SvgParameter>
             </se:Stroke>
-
           </se:PolygonSymbolizer>
-          
         </se:Rule>
-        
-     </se:FeatureTypeStyle>
-      
-<!-- FIN PROJET = OUI --> 
+      </se:FeatureTypeStyle>
 
     </UserStyle>
   </NamedLayer>
