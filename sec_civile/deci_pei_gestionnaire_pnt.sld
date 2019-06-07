@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   09/02/2018  |  Arnaud LECLERE      |  version initiale
   30/03/2018  |  Maël REBOUX         |  abstract pour mise en prod
+  07/06/2019  |  Maël REBOUX         |  adapatations à cause du changement de source des données
 
 -->
 
@@ -113,43 +114,11 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>Autre gestionnaire</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>gestionnaire</ogc:PropertyName>
-                <ogc:Literal>SDIS 35</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>gestionnaire</ogc:PropertyName>
-                <ogc:Literal>Total</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:Or>
-          </ogc:Filter>
-          <se:PointSymbolizer>
-            <se:Graphic>
-              <se:Mark>
-                <se:WellKnownName>ttf://Equipements_PVI#${'U+00A3'}</se:WellKnownName>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#e60000</se:SvgParameter>
-                </se:Fill>
-                <se:Stroke>
-                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
-                  <se:SvgParameter  name="stroke-opacity">0</se:SvgParameter>
-                </se:Stroke>
-              </se:Mark>
-              <se:Size>14</se:Size>
-            </se:Graphic>
-          </se:PointSymbolizer>
-        </se:Rule>
-
-        <se:Rule>
           <se:Name>Inconnu</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>gestionnaire</ogc:PropertyName>
-              <ogc:Literal>inconnu</ogc:Literal>
+              <ogc:Literal>Inconnu</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PointSymbolizer>

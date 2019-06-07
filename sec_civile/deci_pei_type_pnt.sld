@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   09/02/2018  |  Arnaud LECLERE      |  version initiale
   30/03/2018  |  Maël REBOUX         |  abstract pour mise en prod
+  07/06/2019  |  Maël REBOUX         |  adapatations à cause du changement de source des données
 
 -->
 
@@ -37,10 +38,10 @@
         <se:Rule>
           <se:Name>poteau</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
               <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>poteau</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+              <ogc:Literal>PI de *</ogc:Literal>
+            </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -63,10 +64,10 @@
         <se:Rule>
           <se:Name>bouche</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
               <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>bouche</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
+              <ogc:Literal>Bouche *</ogc:Literal>
+            </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:PointSymbolizer>
             <se:Graphic>
@@ -103,37 +104,11 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>réserve</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
-              <ogc:PropertyName>gestionnaire</ogc:PropertyName>
-              <ogc:Literal>réserve *</ogc:Literal>
-            </ogc:PropertyIsLike>
-          </ogc:Filter>
-          <se:PointSymbolizer>
-            <se:Graphic>
-              <se:Mark>
-                <se:WellKnownName>ttf://Equipements_PVI#${'U+00B9'}</se:WellKnownName>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#005ce6</se:SvgParameter>
-                </se:Fill>
-                <se:Stroke>
-                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
-                  <se:SvgParameter  name="stroke-opacity">0</se:SvgParameter>
-                </se:Stroke>
-              </se:Mark>
-              <se:Size>14</se:Size>
-            </se:Graphic>
-          </se:PointSymbolizer>
-        </se:Rule>
-
-        <se:Rule>
           <se:Name>réservoir</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
-              <ogc:PropertyName>gestionnaire</ogc:PropertyName>
-              <ogc:Literal>réservoir *</ogc:Literal>
+              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:Literal>Réservoir *</ogc:Literal>
             </ogc:PropertyIsLike>
           </ogc:Filter>
           <se:PointSymbolizer>
@@ -155,11 +130,11 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>puisard ou puisard d'aspiration</se:Name>
+          <se:Name>puisard d'aspiration</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>puisard ou puisard d'aspiration</ogc:Literal>
+              <ogc:Literal>Puisard d'aspiration</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PointSymbolizer>
@@ -213,11 +188,11 @@
         </se:Rule>
 
         <se:Rule>
-          <se:Name>point d'eau naturel</se:Name>
+          <se:Name>plan d'eau naturel</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>point d'eau naturel</ogc:Literal>
+              <ogc:Literal>Plan d'eau naturel</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PointSymbolizer>

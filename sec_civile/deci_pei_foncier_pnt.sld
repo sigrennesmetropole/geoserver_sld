@@ -13,6 +13,7 @@
   date        |  auteur              |  description
   09/02/2018  |  Arnaud LECLERE      |  version initiale
   30/03/2018  |  Maël REBOUX         |  abstract pour mise en prod
+  07/06/2019  |  Maël REBOUX         |  adapatations à cause du changement de source des données
 
 -->
 
