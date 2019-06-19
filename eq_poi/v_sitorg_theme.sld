@@ -379,12 +379,12 @@
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
-                  <se:AnchorPointX>0.5</se:AnchorPointX>
-                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                  <se:AnchorPointX>1</se:AnchorPointX>
+                  <se:AnchorPointY>1</se:AnchorPointY>
                 </se:AnchorPoint>
                 <se:Displacement>
-                  <se:DisplacementX>0</se:DisplacementX>
-                  <se:DisplacementY>-2</se:DisplacementY>
+                  <se:DisplacementX>3</se:DisplacementX>
+                  <se:DisplacementY>-5</se:DisplacementY>
                 </se:Displacement>
               </se:PointPlacement>
             </se:LabelPlacement>
