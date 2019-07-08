@@ -273,6 +273,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <!-- options avancées -->
             <se:VendorOption name="conflictResolution">true</se:VendorOption>
             <se:VendorOption name="followLine">true</se:VendorOption>
+            <se:VendorOption name="labelObstacle">true</se:VendorOption>
             <se:VendorOption name="group">yes</se:VendorOption>
             <se:VendorOption name="labelAllGroup">true</se:VendorOption>
           </se:TextSymbolizer>
