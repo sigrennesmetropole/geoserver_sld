@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
   nom du SLD : deci_pei_type_pnt
@@ -13,6 +13,8 @@
   date        |  auteur              |  description
   09/02/2018  |  Arnaud LECLERE      |  version initiale
   30/03/2018  |  Maël REBOUX         |  abstract pour mise en prod
+  07/06/2019  |  Maël REBOUX         |  adapatations à cause du changement de source des données
+  03/07/2019  |  Maël REBOUX         |  échelles raccord avec toutes les données DECI
   09/07/2019  |  S GELIN             |  modif représentation
 
 -->
@@ -133,7 +135,7 @@
               <se:Mark>
                 <se:OnlineResource xlink:href="ttf://Equipements_PVI" xlink:type="simple"/>
                 <se:Format>ttf</se:Format>
-                <se:MarkIndex>92</se:MarkIndex>
+               <se:MarkIndex>92</se:MarkIndex>
                 <se:Fill>
                   <se:SvgParameter name="fill">#3434ff</se:SvgParameter>
                 </se:Fill>

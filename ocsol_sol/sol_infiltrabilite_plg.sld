@@ -4,7 +4,7 @@
 
   nom du SLD : sol_infiltrabilite_plg
 
-  couche source dans la base :  occup_sol:sol_infiltrabilite
+  couche source dans la base :  occup_sol.sol_infiltrabilite
   layer cible du style       :  ocsol_sol:sol_infiltrabilite
 
   objet : style relatif aux secteurs où l'infiltration des eaux pluviales est obligatoire

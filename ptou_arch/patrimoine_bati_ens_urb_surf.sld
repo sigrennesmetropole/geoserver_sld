@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   22/01/2019  |  Maël REBOUX         |  version initiale
+  09/07/2019  |  Maël REBOUX         |  adaptation
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -35,7 +36,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>-->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#505050</se:SvgParameter>
@@ -43,11 +44,35 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#005fd4</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1.0</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1.75</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0.75</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <!--<se:Name>Polygone</se:Name>-->
+          <!--ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>grp_type</ogc:PropertyName>
+              <ogc:Literal>composition urbaine et architecturale</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>-->
+          <se:MinScaleDenominator>5000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#505050</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#005fd4</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+        
       
       </se:FeatureTypeStyle>
     </UserStyle>

@@ -57,7 +57,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                       <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
                     </se:Stroke>                    
                   </se:Mark>
-                  <se:Size>10</se:Size>         
+                  <se:Size>16</se:Size>         
                 </se:Graphic>
               </se:PointSymbolizer>
         </se:Rule>
