@@ -33,6 +33,21 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
              <se:PointSymbolizer>
                 <se:Graphic>
                   <se:Mark>
+                    <se:WellKnownName>ttf://Equipements_PVI#${'U+0038'}</se:WellKnownName>
+                    <se:Fill>
+                      <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+                    </se:Fill>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0.2</se:SvgParameter>
+                    </se:Stroke>                    
+                  </se:Mark>
+                  <se:Size>8</se:Size>         
+                </se:Graphic>
+              </se:PointSymbolizer>           
+             <se:PointSymbolizer>
+                <se:Graphic>
+                  <se:Mark>
                     <se:WellKnownName>ttf://Equipements_PVI#${'U+0041'}</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#F29400</se:SvgParameter>
@@ -46,7 +61,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                 </se:Graphic>
               </se:PointSymbolizer>
         </se:Rule>
-         
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>

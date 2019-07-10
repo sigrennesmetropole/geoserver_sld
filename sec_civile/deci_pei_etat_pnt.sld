@@ -13,6 +13,8 @@
   date        |  auteur              |  description
   09/02/2018  |  Arnaud LECLERE      |  version initiale
   30/03/2018  |  Maël REBOUX         |  abstract pour mise en prod
+  07/06/2019  |  Maël REBOUX         |  adapatations à cause du changement de source des données
+  03/07/2019  |  Maël REBOUX         |  échelles raccord avec toutes les données DECI
   
 -->
 
@@ -35,17 +37,19 @@
       <se:FeatureTypeStyle>
 
         <se:Rule>
-          <se:Name>En service</se:Name>
+          <se:Name>disponible</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etat</ogc:PropertyName>
-              <ogc:Literal>en service</ogc:Literal>
+              <ogc:Literal>disponible</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://Equipements_PVI#${'U+00A3'}</se:WellKnownName>
+                <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#0070ff</se:SvgParameter>
                 </se:Fill>
@@ -59,21 +63,107 @@
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
+        
+        <se:Rule>
+          <se:Name>disponible non conforme</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat</ogc:PropertyName>
+              <ogc:Literal>disponible non conforme</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FF934C</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                  <se:SvgParameter  name="stroke-opacity">0</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>14</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>indisponible</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat</ogc:PropertyName>
+              <ogc:Literal>indisponible</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                  <se:SvgParameter  name="stroke-opacity">0</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>14</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
 
         <se:Rule>
-          <se:Name>En projet</se:Name>
+          <se:Name>en projet</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>etat</ogc:PropertyName>
               <ogc:Literal>en projet</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://Equipements_PVI#${'U+00A3'}</se:WellKnownName>
+               <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#38a800</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                  <se:SvgParameter  name="stroke-opacity">0</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>14</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>supprimé / archivé</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat</ogc:PropertyName>
+              <ogc:Literal>supprimé/archivé</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>50000</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+               <se:WellKnownName>triangle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#666666</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
