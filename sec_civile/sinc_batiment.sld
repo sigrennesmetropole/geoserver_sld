@@ -223,6 +223,35 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
+ 
+        <se:Rule>
+          <se:Name>Conformité accessibilités</se:Name>
+          <se:Description>
+            <se:Title>Conformité accessibilités</se:Title>
+          </se:Description>
+          <se:PointSymbolizer>
+            <se:Geometry>
+              <ogc:Function name="interiorPoint">
+                <ogc:PropertyName>shape</ogc:PropertyName>
+              </ogc:Function>
+            </se:Geometry>          
+            <se:Graphic>
+              <se:Mark>
+                   <se:WellKnownName>ttf://Arial#${'U+003F'}</se:WellKnownName>
+                   
+                 	<se:Fill>
+              			<se:SvgParameter name="fill">#FF0000</se:SvgParameter>          
+                  </se:Fill>
+                
+                   <se:Stroke>
+                      <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                  		<se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                   </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
         
         <se:Rule>
           <se:Name>A vérifier</se:Name>
@@ -255,11 +284,11 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
                   </se:Fill>
                 
                    <se:Stroke>
-                      <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
-                  		<se:SvgParameter name="stroke-width">0</se:SvgParameter>
+                      <se:SvgParameter name="stroke">#FF0000</se:SvgParameter>
+                  		<se:SvgParameter name="stroke-width">1</se:SvgParameter>
                    </se:Stroke>
               </se:Mark>
-              <se:Size>36</se:Size>
+              <se:Size>10</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>        
