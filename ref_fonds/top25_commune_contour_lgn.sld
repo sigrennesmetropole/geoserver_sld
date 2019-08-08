@@ -11,6 +11,7 @@
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  mise en forme
+  08/01/2019  |  Arnaud LECLERE      |	adaptation
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -27,28 +28,35 @@
       <se:Name>top25_commune_contour_lgn</se:Name>
       <se:Description>
         <se:Title>Limites communales</se:Title>
-        <se:Abstract>Style de lignes de points et traits gris.</se:Abstract>
+        <se:Abstract>Style de lignes de points gris.</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
         <se:Rule>
           <se:Name>Limites communales</se:Name>
+          
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          
           <!-- ligne grise moyennement lisse -->
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:GraphicStroke>
-                <se:Graphic>
-                  <se:Mark>
-                    <se:WellKnownName>ttf://Webdings#${'U+003D'}</se:WellKnownName>
-                  </se:Mark>
-                  <se:Size>1</se:Size>
-                </se:Graphic>
-              </se:GraphicStroke>
-              <se:SvgParameter name="stroke-dasharray">4 4</se:SvgParameter>
-            </se:Stroke>
-          </se:LineSymbolizer>
+         
+       <se:LineSymbolizer>
+         <se:Stroke>
+           <se:GraphicStroke>
+             <se:Graphic>
+               <se:Mark>
+                 <se:WellKnownName>circle</se:WellKnownName>
+                 <se:Fill>
+                   <se:SvgParameter name="fill">#999999</se:SvgParameter>
+                 </se:Fill>
+               </se:Mark>
+               <se:Size>4</se:Size>
+             </se:Graphic>
+           </se:GraphicStroke>
+           <se:SvgParameter name="stroke-dasharray">4 4</se:SvgParameter>
+         </se:Stroke>
+       </se:LineSymbolizer>
+        
         </se:Rule>
 
       </se:FeatureTypeStyle>
