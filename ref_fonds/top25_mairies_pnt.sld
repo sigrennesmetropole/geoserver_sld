@@ -2,8 +2,8 @@
 <!--
   nom du SLD : top25_mairies_pnt
 
-  couche source dans la base :  serv_equipub.audiar_equipement
-  layer cible du style       :  ref_fonds:audiar_equipement
+  couche source dans la base :  serv_equipub.v_sitorg_organisme
+  layer cible du style       :  ref_fonds:v_sitorg_organisme
 
   objet : Affiche les mairies par un symbole ponctuel.
 
@@ -11,6 +11,7 @@
   date        |  auteur              |  description
   20/01/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  mise en forme
+  06/08/2019  |  Arnaud LECLERE      |  changement vers données "site et organisme"
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -22,36 +23,34 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds:audiar_equipement</se:Name>
+    <se:Name>ref_fonds:v_sitorg_organisme</se:Name>
     <UserStyle>
       <se:Name>top25_mairies_pnt</se:Name>
       <se:Description>
         <se:Title>Mairies</se:Title>
-        <se:Abstract>Style de points représantant les mairies - Equipements maîtres</se:Abstract>
+        <se:Abstract>Style de points représantant les mairies</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
         <se:Rule>
           <ogc:Filter>
             <ogc:And>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>eqtmtre</ogc:PropertyName>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:Or>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>nom_princi</ogc:PropertyName>
-                  <ogc:Literal>Mairie</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-                <ogc:PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
-                  <ogc:PropertyName>nom_princi</ogc:PropertyName>
-                  <ogc:Literal>Hôtel *</ogc:Literal>
+              
+             <ogc:PropertyIsLike wildCard="%" singleChar="#" escapeChar="!">
+                  <ogc:PropertyName>nom_specialite_principale</ogc:PropertyName>
+                  <ogc:Literal>Mairie%</ogc:Literal>
                 </ogc:PropertyIsLike>
-              </ogc:Or>
+             
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>etat_organisme</ogc:PropertyName>
+                  <ogc:Literal>actif</ogc:Literal>
+                </ogc:PropertyIsEqualTo>              
+              
             </ogc:And>
           </ogc:Filter>
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>
