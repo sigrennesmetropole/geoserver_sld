@@ -26,7 +26,7 @@
   <NamedLayer>
     <se:Name>trp_rout:v_gestion_plateforme</se:Name>
     <UserStyle>
-      <se:Name>perim_gestion_plateforme_aplat_couleurs </se:Name>
+      <se:Name>perim_gestion_plateforme_aplat_couleurs (aplat couleurs)</se:Name>
       
       <se:Description>
         <se:Title>Périmètres gestion de plateforme voirie</se:Title>
