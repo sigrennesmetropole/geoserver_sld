@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : v_secteur_regie
+  nom du SLD : v_secteur_entreprise
 
   couche source dans la base :  bdu.mobilite.transp:v_gestion_dv_commune
   layer cible du style       :  trp_rout:v_gestion_dv_commune
 
-  objet :  Style relatif à la gestion en régie de la Direction de la Voirie
+  objet : Style relatif aux secteurs des entreprises pour la Direction de la Voirie
 
   Historique des versions :
   date        |  auteur              |  description
@@ -25,10 +25,10 @@
   <NamedLayer>
     <se:Name>trp_rout:v_gestion_dv_commune</se:Name>
     <UserStyle>
-      <se:Name>v_gestion_regie</se:Name>
+      <se:Name>v_secteur_entreprise</se:Name>
       <se:Description>
-        <se:Title>Style relatif à la gestion en régie de la Direction de la Voirie</se:Title>
-        <se:Abstract>Style relatif à la gestion en régie de la Direction de la Voirie</se:Abstract>
+        <se:Title>Style relatif aux secteurs des entreprises pour la Direction de la Voirie</se:Title>
+        <se:Abstract>Style relatif aux secteurs des entreprises pour la Direction de la Voirie</se:Abstract>
       </se:Description>
 
         <se:FeatureTypeStyle>

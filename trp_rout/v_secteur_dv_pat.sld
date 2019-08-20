@@ -33,22 +33,19 @@
 
        <se:FeatureTypeStyle>
          
-        <se:Rule>
-          <se:Name>Antenne Betton</se:Name>
-          <se:Description>
-            <se:Title>Antenne Betton</se:Title>
-          </se:Description>
-          
+               <se:Rule>
+          <se:Name>Christopher ADAM</se:Name>
+                   
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Betton</ogc:Literal>
+              <ogc:PropertyName>dvpat_techn</ogc:PropertyName>
+              <ogc:Literal>Christopher ADAM</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#0c9c90</se:SvgParameter>
+              <se:SvgParameter name="fill">#e6bae0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
@@ -56,216 +53,50 @@
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
-          
         </se:Rule>
+        
+        <se:Rule>
+          <se:Name>Isabelle PERROT</se:Name>
+          
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>dvpat_techn</ogc:PropertyName>
+              <ogc:Literal>Isabelle PERROT</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f5d4bc</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>Stéphanie NERAT DE LESGUISE</se:Name>
          
-        <se:Rule>
-          <se:Name>Antenne Cesson-Sévigné</se:Name>
-          
-          <se:Description>
-            <se:Title>Antenne Cesson-Sévigné</se:Title>
-          </se:Description>
-          
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Cesson-Sévigné</ogc:Literal>
+              <ogc:PropertyName>dvpat_techn</ogc:PropertyName>
+              <ogc:Literal>Stéphanie NERAT DE LESGUISE</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#9c49bf</se:SvgParameter>
+              <se:SvgParameter name="fill">#a6d9ed</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>
               <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
             </se:Stroke>
-          </se:PolygonSymbolizer>
-          
-        </se:Rule>
-         
-        <se:Rule>
-          <se:Name>Antenne Saint-Erblon</se:Name>
-          <se:Description>
-            <se:Title>Antenne Saint-Erblon</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Saint-Erblon</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#c7413a</se:SvgParameter>
-            </se:Fill>
-            
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-          
-        </se:Rule>
-         
-        <se:Rule>
-          <se:Name>Antenne Chartres-de-Bretagne</se:Name>
-          <se:Description>
-            <se:Title>Antenne Chartres-de-Bretagne</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Chartres-de-Bretagne</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#c4b954</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        <se:Rule>
-          <se:Name>Antenne Mordelles</se:Name>
-          <se:Description>
-            <se:Title>Antenne Mordelles</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Mordelles</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#276b97</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-         
-        <se:Rule>
-          <se:Name>Antenne Pacé</se:Name>
-          <se:Description>
-            <se:Title>Antenne Pacé</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Pacé</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#00ba6d</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-         
-        <se:Rule>
-          <se:Name>Antenne Rennes Nord-Ouest</se:Name>
-          <se:Description>
-            <se:Title>Antenne Rennes Nord-Ouest</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Rennes Nord-Ouest</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#cc6897</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-         
-        <se:Rule>
-          <se:Name>Antenne Rennes Nord-Est</se:Name>
-          <se:Description>
-            <se:Title>Antenne Rennes Nord-Est</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Rennes Nord-Est</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            
-            <se:Fill>
-              <se:SvgParameter name="fill">#cf9076</se:SvgParameter>
-            </se:Fill>
-            
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-            
-          </se:PolygonSymbolizer>
-        </se:Rule>
-         
-        <se:Rule>
-          <se:Name>Antenne Rennes Sud</se:Name>
-          <se:Description>
-            <se:Title>Antenne Rennes Sud</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>dve_sect_regie</ogc:PropertyName>
-              <ogc:Literal>Antenne Rennes Sud</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          
-          <se:PolygonSymbolizer>
-            
-            <se:Fill>
-              <se:SvgParameter name="fill">#0053b8</se:SvgParameter>
-            </se:Fill>
-            
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#8b8b8b</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
-            
-          </se:PolygonSymbolizer>
-          
+          </se:PolygonSymbolizer>     
         </se:Rule>
          
       </se:FeatureTypeStyle>
