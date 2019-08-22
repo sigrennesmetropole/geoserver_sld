@@ -47,14 +47,14 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>3000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
               <ogc:PropertyName>ogr_atr_val</ogc:PropertyName>
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
+              <se:SvgParameter name="font-size">10</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
@@ -79,7 +79,7 @@
             </se:LabelPlacement>
             <!-- la couleur et l'opacité du texte -->
             <se:Fill>
-              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              <se:SvgParameter name="fill">#353535</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
             </se:Fill>
             <!-- options avancées -->
@@ -96,7 +96,7 @@
               <ogc:Literal>ZONCOMMUNI_id</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>3000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:TextSymbolizer>
             <se:Label>
@@ -104,7 +104,7 @@
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
-              <se:SvgParameter name="font-size">9</se:SvgParameter>
+              <se:SvgParameter name="font-size">7</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>
@@ -129,7 +129,7 @@
             </se:LabelPlacement>
             <!-- la couleur et l'opacité du texte -->
             <se:Fill>
-              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              <se:SvgParameter name="fill">#555555</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">0.75</se:SvgParameter>
             </se:Fill>
             <!-- options avancées -->
@@ -181,16 +181,9 @@
                 </se:Rotation>
               </se:PointPlacement>
             </se:LabelPlacement>
-            <!-- halo -->
-            <se:Halo>
-              <se:Radius>0</se:Radius>
-              <se:Fill>
-                <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
-              </se:Fill>
-            </se:Halo>
             <!-- la couleur et l'opacité du texte -->
             <se:Fill>
-              <se:SvgParameter name="fill">#000000</se:SvgParameter>
+              <se:SvgParameter name="fill">#666666</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
             </se:Fill>
             <!-- options avancées -->
@@ -518,7 +511,64 @@
             </se:Label>
             <se:Font>
               <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
-              <se:SvgParameter name="font-size">9</se:SvgParameter>
+              <se:SvgParameter name="font-size">11</se:SvgParameter>
+              <se:SvgParameter name="font-style">normal</se:SvgParameter>
+              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
+            </se:Font>
+            <!-- placement de l'étiquette -->
+            <se:LabelPlacement>
+              <se:PointPlacement>
+                <se:AnchorPoint>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
+                  <se:AnchorPointY>0.5</se:AnchorPointY>
+                </se:AnchorPoint>
+                <se:Displacement>
+                  <se:DisplacementX>0</se:DisplacementX>
+                  <se:DisplacementY>0</se:DisplacementY>
+                </se:Displacement>
+                <se:Rotation>
+                  <ogc:Sub>
+                    <ogc:Literal>360</ogc:Literal>
+                    <ogc:PropertyName>ogr_angle</ogc:PropertyName>
+                  </ogc:Sub>
+                </se:Rotation>
+              </se:PointPlacement>
+            </se:LabelPlacement>
+            <!-- halo -->
+            <se:Halo>
+              <se:Radius>0</se:Radius>
+              <se:Fill>
+                <se:SvgParameter name="fill">#ffffff</se:SvgParameter>
+              </se:Fill>
+            </se:Halo>
+            <!-- la couleur et l'opacité du texte -->
+            <se:Fill>
+              <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
+            </se:Fill>
+            <!-- options avancées -->
+            <!-- ne pas gérer les conflits de positionnement = superposer -->
+            <se:VendorOption name="conflictResolution">false</se:VendorOption>
+          </se:TextSymbolizer>
+        </se:Rule>
+
+        <se:Rule>
+          <se:Name>Subdivisions fiscales</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>ogr_obj_lnk_layer</ogc:PropertyName>
+              <ogc:Literal>SUBDFISC_id</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
+          <se:TextSymbolizer>
+            <se:Label>
+              <ogc:PropertyName>ogr_atr_val</ogc:PropertyName>
+            </se:Label>
+            <se:Font>
+              <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
+              <se:SvgParameter name="font-size">8</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>

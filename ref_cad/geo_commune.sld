@@ -48,11 +48,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#ceaece</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -70,11 +65,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#9b7caf</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -92,11 +82,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#affbd8</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -114,11 +99,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#f3ff6e</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -136,11 +116,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#a1d197</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -158,11 +133,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#c0ab79</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -180,11 +150,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#a8acd1</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -202,11 +167,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#cba6cb</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -224,11 +184,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#f3c4d8</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -246,11 +201,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e2a6a6</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -268,11 +218,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#c3ffc3</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -290,11 +235,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e2e17f</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -312,11 +252,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#d6b5db</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -334,11 +269,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#c8d89a</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -356,11 +286,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#b4e1fe</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -378,11 +303,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#b4e1fe</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -400,11 +320,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#9dc0c0</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -422,11 +337,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#c8d89a</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -444,11 +354,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#cea6ce</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -466,11 +371,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#cccc96</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -488,11 +388,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e8ddfe</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -510,11 +405,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e1feeb</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -532,11 +422,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#b4e1fe</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -554,11 +439,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#ff9999</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -576,11 +456,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e9e15e</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -598,11 +473,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#ffffcc</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -620,11 +490,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e2e17f</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -642,11 +507,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#b8d5e6</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -664,11 +524,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#cefe87</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -686,11 +541,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#a1d197</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -708,11 +558,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#fea4a4</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -730,11 +575,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#eeeeee</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -752,11 +592,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e2a6a6</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -774,11 +609,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#ccccff</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -796,11 +626,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#9dc0c0</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -818,11 +643,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#e9e15e</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -840,11 +660,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#f2e3b3</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -862,11 +677,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#a8acd1</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -884,11 +694,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#c0ab79</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -906,11 +711,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#dfc7aa</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -928,11 +728,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#ff9999</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -950,11 +745,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#d2d2d2</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 
@@ -972,11 +762,6 @@
             <se:Fill>
               <se:SvgParameter name="fill">#dfc7aa</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffaa00</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
 

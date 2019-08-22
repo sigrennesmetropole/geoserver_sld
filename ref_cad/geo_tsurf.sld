@@ -96,7 +96,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>4500</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#99ccff</se:SvgParameter>
