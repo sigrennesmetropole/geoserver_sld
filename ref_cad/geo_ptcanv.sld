@@ -44,7 +44,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des bornes limites de commune -->
           <se:PointSymbolizer>
@@ -75,7 +75,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des autres repères de nivellement -->
           <se:PointSymbolizer>
@@ -110,7 +110,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des bornes du N.G.F. -->
           <se:PointSymbolizer>
@@ -145,7 +145,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des repères du N.G.F. -->
           <se:PointSymbolizer>
@@ -180,7 +180,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des points bornés d'appui de géoréférencement -->
           <se:PointSymbolizer>
@@ -215,7 +215,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des points bornés pérenne ou cadastral de précision -->
           <se:PointSymbolizer>
@@ -250,7 +250,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des points bornés cadastral ordinaire -->
           <se:PointSymbolizer>
@@ -285,7 +285,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des points géodésiques non bornés -->
           <se:PointSymbolizer>
@@ -320,7 +320,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <!-- Echelle d'affichage -->
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>1800</se:MaxScaleDenominator>
           <!-- représentation des points géodésiques bornés -->
           <se:PointSymbolizer>
