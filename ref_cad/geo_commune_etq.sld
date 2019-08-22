@@ -39,7 +39,7 @@
           <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
              afin de ne pas avoir +ieurs étiquettes dans le cache -->
             <se:Geometry>
-              <ogc:Function name="interiorPoint">
+              <ogc:Function name="centroid">
                 <ogc:PropertyName>geom</ogc:PropertyName>
               </ogc:Function>
             </se:Geometry>
@@ -91,7 +91,7 @@
           <!-- on génère un point au centroïde comme support plutôt que placement libre dans le polygone
              afin de ne pas avoir +ieurs étiquettes dans le cache -->
             <se:Geometry>
-              <ogc:Function name="interiorPoint">
+              <ogc:Function name="centroid">
                 <ogc:PropertyName>geom</ogc:PropertyName>
               </ogc:Function>
             </se:Geometry>
