@@ -36,16 +36,13 @@
         <se:Rule>
           <se:Name>voie privée</se:Name>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>25000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>600</se:MaxScaleDenominator>
+          <!-- fond gris translucide -->
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#e1e1e1</se:SvgParameter>
+              <se:SvgParameter name="fill">#e5e3e3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
             </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#7c7c7c</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-            </se:Stroke>
           </se:PolygonSymbolizer>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -54,16 +51,75 @@
                   <se:Mark>
                     <se:WellKnownName>shape://slash</se:WellKnownName>
                     <se:Stroke>
-                      <se:SvgParameter name="stroke">#545454</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                      <se:SvgParameter name="stroke">#969696</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">2</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>13</se:Size>
+                  <se:Size>40</se:Size>
                 </se:Graphic>
               </se:GraphicFill>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
+        
+        <se:Rule>
+          <se:Name>voie privée</se:Name>
+          <se:MinScaleDenominator>600</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
+          <!-- fond gris translucide -->
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e5e3e3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.3</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#969696</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>20</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        <se:Rule>
+          <se:Name>voie privée</se:Name>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+          <!-- fond gris translucide -->
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e5e3e3</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#969696</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>10</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
 
       </se:FeatureTypeStyle>
     </UserStyle>
