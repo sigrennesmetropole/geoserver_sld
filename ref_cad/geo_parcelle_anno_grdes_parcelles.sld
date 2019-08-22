@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : geo_parc_grdes_parcelles
+  nom du SLD : geo_parcelle_anno_grdes_parcelles
 
   couche source dans la base :  cadastre_qgis.geo_parcelle
   layer cible du style       :  ref_cad:geo_parcelle
@@ -14,6 +14,7 @@
   Historique des versions :
   date        |  auteur              |  description
   17/06/2019  |  Arnaud LECLERE      |  version initiale
+  21/08/2019  |  Maël REBOUX         |  modif diverses avant mise en prod
 
 -->
 
@@ -28,7 +29,7 @@
   <NamedLayer>
     <se:Name>ref_cad:geo_parcelle</se:Name>
     <UserStyle>
-      <se:Name>geo_parc_grdes_parcelles</se:Name>
+      <se:Name>geo_parcelle_anno_grdes_parcelles</se:Name>
       <se:Description>
         <se:Title>Etiquettes des grandes parcelles</se:Title>
         <se:Abstract>Etiquettes des grandes parcelles</se:Abstract>
@@ -37,7 +38,7 @@
 
 
         <se:Rule>
-          <se:Name>Etiquettes</se:Name>
+          <se:Name>Numéros des grandes parcelles</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsGreaterThanOrEqualTo>
               <ogc:PropertyName>supf</ogc:PropertyName>
@@ -56,8 +57,8 @@
               <ogc:PropertyName>tex</ogc:PropertyName>
             </se:Label>
             <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans</se:SvgParameter>
-              <se:SvgParameter name="font-size">8</se:SvgParameter>
+              <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
+              <se:SvgParameter name="font-size">7</se:SvgParameter>
               <se:SvgParameter name="font-style">normal</se:SvgParameter>
               <se:SvgParameter name="font-weight">normal</se:SvgParameter>
             </se:Font>

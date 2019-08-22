@@ -3,7 +3,7 @@
 
   nom du SLD : geo_batiment
 
-  couche source dans la base :  ref_fond:geo_batiment
+  couche source dans la base :  cadastre_qgis:geo_batiment
   layer cible du style       :  ref_cad:geo_batiment
 
   objet : style relatif aux bâtiments qui figurent sur le plan cadastral de Rennes Métropole
@@ -11,6 +11,7 @@
   Historique des versions :
   date        |  auteur              |  description
   28/05/2019  |  arnaud LECLERE      |  version initiale
+  21/08/2019  |  Maël REBOUX         |  modif diverses avant mise en prod
 
 -->
 
@@ -26,73 +27,60 @@
     <se:Name>ref_cad:geo_batiment</se:Name>
     <UserStyle>
       <se:Name>geo_batiment</se:Name>
-      
       <se:Description>
-        <se:Title>Suivi des acquisitions foncières de Rennes</se:Title>
-        <se:Abstract>Suivi des acquisitions foncières de Rennes</se:Abstract>
+        <se:Title>Bâtiments du cadastre en rouge orangé</se:Title>
+        <se:Abstract>Bâtiments du cadastre rouge orangé : style du fond cadastral.</se:Abstract>
       </se:Description>
-
       <se:FeatureTypeStyle>
         
+        
+        <!-- bâtis durs -->
         <se:Rule>
-          <se:Name>bâti dur</se:Name>     
-          
-          <se:Description>
-            <se:Title>bâti dur</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <se:Name>Bâtis durs</se:Name>
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>geo_dur</ogc:PropertyName>
               <ogc:Literal>01</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>25100</se:MaxScaleDenominator>
-          
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#db8282</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#606060</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7b7b7b</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.3</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
-          </se:PolygonSymbolizer>     
+          </se:PolygonSymbolizer>
         </se:Rule>
-        
+
+        <!-- bâtis légers -->
         <se:Rule>
-          <se:Name>bâti léger</se:Name>
-          <se:Description>
-            <se:Title>bâti léger</se:Title>
-          </se:Description>
-          
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+          <se:Name>Bâtis légers</se:Name>
+          <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>geo_dur</ogc:PropertyName>
               <ogc:Literal>02</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          
-          <se:MinScaleDenominator>0</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>25100</se:MaxScaleDenominator>
-          
+          <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#efdbda</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
-            
             <se:Stroke>
-              <se:SvgParameter name="stroke">#6d6d6d</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+              <se:SvgParameter name="stroke">#7b7b7b</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
-            
           </se:PolygonSymbolizer>
-          
         </se:Rule>
+        
+        
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
