@@ -3,8 +3,8 @@
 
   nom du SLD : geo_contour_subdfisc
   
-  couche source dans la base :  ref_fond:rm_suf_line
-  layer cible du style       :  ref_cad:rm_suf_line
+  couche source dans la base :  cadastre_qgis:rm_suf_lin
+  layer cible du style       :  ref_cad:rm_suf_lin
 
   objet : style relatif aux limites de subdivisions fiscales sur le plan cadastral de Rennes Métropole
 
@@ -23,7 +23,7 @@
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                        
   <NamedLayer>
-    <se:Name>ref_cad:rm_suf_line</se:Name>
+    <se:Name>ref_cad:rm_suf_lin</se:Name>
     <UserStyle>
       <se:Name>geo_contour_subdfisc</se:Name>
       
