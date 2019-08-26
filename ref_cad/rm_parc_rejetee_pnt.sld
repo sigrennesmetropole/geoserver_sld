@@ -6,8 +6,7 @@
   couche source dans la base :  cadastre_qgis.rm_parc_rejetee
   layer cible du style       :  ref_cad:rm_parc_rejetee
   
-  objet :
-  Style pour les parcelles rejetées du cadastre (drapeau rouge).
+  objet :    Style pour les parcelles rejetées du cadastre : croix rouge
   
   Historique des versions :
   date        |  auteur              |  description
@@ -65,7 +64,7 @@
                   <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>10</se:Size>
+              <se:Size>6</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
