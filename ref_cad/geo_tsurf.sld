@@ -54,6 +54,7 @@
         </se:Rule>
 
 
+        <!-- provoque 1 erreur : "Rendering process failed  The specified mark brush://dense7 was not found!" 
         <se:Rule>
           <se:Name>parapet de pont</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
@@ -84,7 +85,7 @@
               <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
             </se:Stroke>
           </se:PolygonSymbolizer>
-        </se:Rule>
+        </se:Rule> -->
 
 
         <se:Rule>
