@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : rm_contour_com
+  nom du SLD : rm_comm_lin
 
-  couche source dans la base :  cadastre_qgis:rm_comm_lin
+  couche source dans la base :  cadastre_qgis.rm_comm_lin
   layer cible du style       :  ref_cad:rm_comm_lin
 
   objet : style relatif aux limites de communes qui figurent sur le plan cadastral de Rennes Métropole.
@@ -27,7 +27,7 @@
     <se:Name>ref_cad:rm_comm_lin</se:Name>
 
     <UserStyle>
-      <se:Name>rm_contour_com</se:Name>
+      <se:Name>rm_comm_lin</se:Name>
       <se:Description>
         <se:Title>Limites communales</se:Title>
         <se:Abstract>Limites communales</se:Abstract>
