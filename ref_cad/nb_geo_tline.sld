@@ -153,7 +153,7 @@
         </se:Rule>
 
 
-        <se:Rule>
+        <!--<se:Rule>
           <se:Name>amorce de limite de commune</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
@@ -171,7 +171,7 @@
               <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
-        </se:Rule>
+        </se:Rule>-->
 
 
         <se:Rule>
