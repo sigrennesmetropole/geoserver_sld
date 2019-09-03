@@ -3,8 +3,8 @@
 
   nom du SLD : top25_equip_gare_pnt
 
-  couche source dans la base :  serv_equipub.audiar_equipements
-  layer cible du style       :  ref_fonds:audiar_equipement
+  couche source dans la base :  serv_equipub.v_sitorg_organisme
+  layer cible du style       :  ref_fonds:v_sitorg_organisme
 
   objet : Affiche les haltes et gares sncf par un symbole ponctuel .
 
@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   03/01/2017  |  Arnaud LECLERE      |  version initiale
   17/10/2017  |  Maël REBOUX         |  mise en forme
+  06/08/2019  |  Arnaud LECLERE      |  changement vers données "site et organisme"
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -23,28 +24,38 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <NamedLayer>
-    <se:Name>ref_fonds:audiar_equipement</se:Name>
+    <se:Name>ref_fonds:v_sitorg_organisme</se:Name>
     <UserStyle>
       <se:Name>top25_equip_gare_pnt</se:Name>
       <se:Description>
         <se:Title>Pictogramme gare ferroviaire</se:Title>
-        <se:Abstract>Style pour les gares issus du PVCI.</se:Abstract>
+        <se:Abstract>Style pour les gares issues de la base site et organisme</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
 
         <se:Rule>
           <se:Description>
-            <se:Title>Gares SNCF</se:Title>
+            <se:Title>Gares / Halte SNCF</se:Title>
             <se:Abstract>Style de points représantant les haltes et gares SNCF</se:Abstract>
           </se:Description>
+          
           <ogc:Filter>
+           <ogc:And>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nom_princi</ogc:PropertyName>
-              <ogc:Literal>Gare SNCF</ogc:Literal>
+              <ogc:PropertyName>nom_specialite_principale</ogc:PropertyName>
+              <ogc:Literal>Gare/Halte</ogc:Literal>
             </ogc:PropertyIsEqualTo>
+             
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>etat_organisme</ogc:PropertyName>
+              <ogc:Literal>actif</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            </ogc:And>  
           </ogc:Filter>
+          
           <se:MinScaleDenominator>7500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>137000</se:MaxScaleDenominator>
+          
           <se:PointSymbolizer>
             <se:Graphic>
               <se:Mark>

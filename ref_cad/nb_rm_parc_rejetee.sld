@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : rm_parc_rejetee_pnt
+  nom du SLD : nb_rm_parc_rejetee
   
   couche source dans la base :  cadastre_qgis.rm_parc_rejetee
   layer cible du style       :  ref_cad:rm_parc_rejetee
@@ -10,8 +10,7 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  13/06/2016  |  Maël REBOUX         |  version initiale
-  21/08/2019  |  Maël REBOUX         |  passage en style encoding + cadastre_qgis
+  27/08/2019  |  Maël REBOUX         |  version initiale reprise de la version couleurs
   
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -25,7 +24,7 @@
   <NamedLayer>
     <se:Name>ref_cad:rm_parc_rejetee</se:Name>
     <UserStyle>
-      <se:Name>rm_parc_rejetee_pnt</se:Name>
+      <se:Name>nb_rm_parc_rejetee</se:Name>
       <se:Description>
         <se:Title>Parcelle rejetée</se:Title>
         <se:Abstract>Parcelle qui apparaît au plan mais sans correspondance dans la matrice foncière.</se:Abstract>
@@ -42,7 +41,7 @@
               <se:Mark>
                 <se:WellKnownName>shape://times</se:WellKnownName>
                 <se:Stroke>
-                  <se:SvgParameter name="stroke">#ff0000</se:SvgParameter>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                   <se:SvgParameter name="stroke-width">3</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
@@ -60,7 +59,7 @@
               <se:Mark>
                 <se:WellKnownName>shape://times</se:WellKnownName>
                 <se:Stroke>
-                  <se:SvgParameter name="stroke">#ff0000</se:SvgParameter>
+                  <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                   <se:SvgParameter name="stroke-width">1.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>

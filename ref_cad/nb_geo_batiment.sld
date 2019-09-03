@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : geo_batiment
+  nom du SLD : nb_geo_batiment
 
-  couche source dans la base :  cadastre_qgis:geo_batiment
+  couche source dans la base :  cadastre_qgis.geo_batiment
   layer cible du style       :  ref_cad:geo_batiment
 
   objet : style relatif aux bâtiments qui figurent sur le plan cadastral de Rennes Métropole
 
   Historique des versions :
   date        |  auteur              |  description
-  28/05/2019  |  arnaud LECLERE      |  version initiale
-  21/08/2019  |  Maël REBOUX         |  modif diverses avant mise en prod
+  27/08/2019  |  Maël REBOUX         |  version initiale reprise de la version couleurs
 
 -->
-
 <StyledLayerDescriptor version="1.1.0"
                        xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
                        xmlns="http://www.opengis.net/sld"
@@ -26,10 +24,10 @@
   <NamedLayer>
     <se:Name>ref_cad:geo_batiment</se:Name>
     <UserStyle>
-      <se:Name>geo_batiment</se:Name>
+      <se:Name>nb_geo_batiment</se:Name>
       <se:Description>
-        <se:Title>Bâtiments du cadastre en rouge orangé</se:Title>
-        <se:Abstract>Bâtiments du cadastre rouge orangé : style du fond cadastral.</se:Abstract>
+        <se:Title>nb_geo_batiment</se:Title>
+        <se:Abstract>nb_geo_batiment.</se:Abstract>
       </se:Description>
       <se:FeatureTypeStyle>
         
@@ -46,7 +44,7 @@
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#db8282</se:SvgParameter>
+              <se:SvgParameter name="fill">#999999</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
@@ -69,7 +67,7 @@
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#efdbda</se:SvgParameter>
+              <se:SvgParameter name="fill">#cccccc</se:SvgParameter>
               <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
             </se:Fill>
             <se:Stroke>

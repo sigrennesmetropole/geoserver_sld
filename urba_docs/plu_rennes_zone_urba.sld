@@ -14,6 +14,7 @@
   12/02/2019  |  Maël REBOUX         |  renommage du style du même nom que le layer
   18/02/2019  |  Maël REBOUX         |  affichage aux moyennes échelles
   22/03/2019  |  Maël REBOUX         |  rajout d'un remplissage de polygone pour pouvoir cliquer sur les polygones
+  02/09/2019  |  Maël REBOUX         |  mise en conformité échelle mini avec les autres couches
 
 -->
 <StyledLayerDescriptor version="1.1.0"
@@ -37,7 +38,7 @@
         <!-- grandes échelles -->
         <se:Rule>
           <se:Name>Zonages du PLU de Rennes : limites en tiretés noir et blanc</se:Name>
-          <se:MinScaleDenominator>2000</se:MinScaleDenominator>
+          <se:MinScaleDenominator>500</se:MinScaleDenominator>
           <se:MaxScaleDenominator>5000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Stroke>

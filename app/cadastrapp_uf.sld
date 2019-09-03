@@ -13,31 +13,40 @@
   date        |  auteur              |  description
   05/03/2018  |  Maël REBOUX         |  version initiale transparente
   28/06/2019  |  Maël REBOUX         |  migration modèle QGIS + workspace app
+  26/08/2019  |  Maël REBOUX         |  passage en style encoding
   
 -->
-<sld:StyledLayerDescriptor xmlns:sld="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
-  <sld:NamedLayer>
-    <sld:Name>app:cadastrapp_uf</sld:Name>
-    <sld:UserStyle>
-      <sld:FeatureTypeStyle>
-        <sld:Rule>
-          <!-- polygone vide avec fine bordure noire. Changer en opacité à 0 pour mise en prod -->
-          <sld:Name>cadastrapp_uf</sld:Name>
-          <sld:Title>cadastrapp_uf</sld:Title>
-          <sld:MaxScaleDenominator>35001</sld:MaxScaleDenominator>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#808080</sld:CssParameter>
-              <sld:CssParameter name="fill-opacity">0.01</sld:CssParameter>
-            </sld:Fill>
-            <sld:Stroke>
-              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
-              <sld:CssParameter name="stroke-opacity">0</sld:CssParameter>
-              <sld:CssParameter name="stroke-width">0.25</sld:CssParameter>
-            </sld:Stroke>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-      </sld:FeatureTypeStyle>
-    </sld:UserStyle>
-  </sld:NamedLayer>
-</sld:StyledLayerDescriptor>
+<StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
+xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <se:Name>app:cadastrapp_uf</se:Name>
+    <UserStyle>
+      <se:Name>cadastrapp_uf</se:Name>
+        <se:Description>
+          <se:Title>cadastrapp_uf</se:Title>
+          <se:Abstract>cadastrapp_uf</se:Abstract>
+        </se:Description>
+      <se:FeatureTypeStyle>
+      
+        <!-- polygone vide avec fine bordure noire. Changer en opacité à 0 pour mise en prod -->
+        <se:Rule>
+          <se:Name>Polygone</se:Name>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>35001</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#505050</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.001</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      
+      </se:FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
