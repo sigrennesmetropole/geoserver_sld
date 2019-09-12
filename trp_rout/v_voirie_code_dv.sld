@@ -1003,28 +1003,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
-        <se:Rule>
-          <se:Name>Dérogation</se:Name>
-          <se:Description>
-            <se:Title>Dérogation</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>derogation</ogc:PropertyName>
-              <ogc:Literal>t</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:LineSymbolizer>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#080600</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
-            </se:Stroke>
-            <se:PerpendicularOffset>0</se:PerpendicularOffset>
-          </se:LineSymbolizer>
-        </se:Rule>
       </se:FeatureTypeStyle>
     </UserStyle>
   </NamedLayer>
