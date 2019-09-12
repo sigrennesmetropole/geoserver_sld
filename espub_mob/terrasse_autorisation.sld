@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : v_voirie_domanialite_gestionnaire
+  nom du SLD : terrasse_autorisation
 
-  couche source dans la base :  mobilite_transp.v_voirie_domaine_gestionnaire
-  layer cible du style       :  trp_rout:v_voirie_domaine_gestionnaire
+  couche source dans la base :  espace_public.terrasse_autorisation
+  layer cible du style       :  espub_mob:terrasse_autorisation
 
   objet : style par type de gestionnaire et en fonction de la domanialité
 
