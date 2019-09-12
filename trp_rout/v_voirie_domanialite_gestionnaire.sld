@@ -344,8 +344,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#b9f70d</se:SvgParameter>
               <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
               <se:SvgParameter name="stroke-dasharray">4 2 1 2</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
@@ -575,9 +573,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#e31a1c</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -602,9 +598,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#0989f8</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -629,9 +623,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#6fe87f</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -656,9 +648,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#8d5017</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -683,9 +673,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#fdf90b</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -710,9 +698,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#e35cca</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>

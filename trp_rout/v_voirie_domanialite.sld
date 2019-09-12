@@ -178,9 +178,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#f3070f</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -199,9 +197,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#37eb43</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -220,9 +216,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#1366ec</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -241,9 +235,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#f2fa07</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
@@ -262,9 +254,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             <se:Stroke>
               <se:SvgParameter name="stroke">#f50ace</se:SvgParameter>
               <se:SvgParameter name="stroke-width">5</se:SvgParameter>
-              <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
-              <se:SvgParameter name="stroke-linecap">square</se:SvgParameter>
-              <se:SvgParameter name="stroke-dasharray">1 2</se:SvgParameter>
+              <se:SvgParameter name="stroke-dasharray">5 5</se:SvgParameter>
             </se:Stroke>
           </se:LineSymbolizer>
         </se:Rule>
