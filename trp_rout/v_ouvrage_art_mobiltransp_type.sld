@@ -574,28 +574,31 @@
           <se:PointSymbolizer>               
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>20</se:Size>         
+              <se:Size>20</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>            
           </se:PointSymbolizer>
           <se:PointSymbolizer>          
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#FF5500</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>18</se:Size>         
+              <se:Size>18</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>
           </se:PointSymbolizer>  
         </se:Rule>
       </se:FeatureTypeStyle> 
-                                                                                                                                                           
+ 
+ 
       <!-- Ouvrage hydraulique - DIRO -->
       <se:FeatureTypeStyle>
         
@@ -618,23 +621,25 @@
           <se:PointSymbolizer>               
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>20</se:Size>         
+              <se:Size>20</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>            
           </se:PointSymbolizer>
           <se:PointSymbolizer>          
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#A900E6</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>18</se:Size>         
+              <se:Size>18</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>
           </se:PointSymbolizer>  
         </se:Rule>
@@ -662,23 +667,25 @@
           <se:PointSymbolizer>               
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>20</se:Size>         
+              <se:Size>20</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>            
           </se:PointSymbolizer>
           <se:PointSymbolizer>          
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#38A800</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>18</se:Size>         
+              <se:Size>18</se:Size> 
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>
           </se:PointSymbolizer>  
         </se:Rule>
@@ -706,23 +713,25 @@
           <se:PointSymbolizer>               
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>20</se:Size>         
+              <se:Size>20</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>            
           </se:PointSymbolizer>
           <se:PointSymbolizer>          
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#FFFF00</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>18</se:Size>         
+              <se:Size>18</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>
           </se:PointSymbolizer>  
         </se:Rule>
@@ -750,23 +759,25 @@
           <se:PointSymbolizer>               
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>20</se:Size>         
+              <se:Size>20</se:Size>
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>            
           </se:PointSymbolizer>
           <se:PointSymbolizer>          
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#828282</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>18</se:Size>         
+              <se:Size>18</se:Size>    
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>
           </se:PointSymbolizer>  
         </se:Rule>
@@ -794,23 +805,25 @@
           <se:PointSymbolizer>               
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>20</se:Size>         
+              <se:Size>20</se:Size>   
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>            
           </se:PointSymbolizer>
           <se:PointSymbolizer>          
             <se:Graphic>
               <se:Mark>
-                <se:WellKnownName>ttf://DejaVu Sans Condensed#${'U+2B23'}</se:WellKnownName>
+                <se:WellKnownName>ttf://DejaVu Sans Mono#${'U+25FE'}</se:WellKnownName>
                 <se:Fill>
                   <se:SvgParameter name="fill">#005CE6</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>18</se:Size>         
+              <se:Size>18</se:Size>  
+              <se:Rotation>45</se:Rotation>                
             </se:Graphic>
           </se:PointSymbolizer>  
         </se:Rule>
