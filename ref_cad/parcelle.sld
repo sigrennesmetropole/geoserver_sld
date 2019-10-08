@@ -12,6 +12,7 @@
   date        |  auteur              |  description
   02/02/2017  |  Maël REBOUX         |  version initiale
   26/08/2019  |  Maël REBOUX         |  cadastre_qgis
+  08/10/2019  |  Maël REBOUX         |  correction valeur opacité pour clic getFeatureInfo
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -33,7 +34,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffeabe</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.001</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9b9b9b</se:SvgParameter>
@@ -67,7 +68,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffeabe</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.001</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9b9b9b</se:SvgParameter>
