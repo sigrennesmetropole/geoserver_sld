@@ -6,7 +6,7 @@
   couche source dans la base :  occup_sol.ocsge_rm
   layer cible du style       :  ocsol_mode:ocsge_rm
 
-  objet : style avec contour
+  objet : style Couverture du sol
 
   Historique des versions :
   date        |  auteur              |  description
@@ -18,10 +18,10 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
   <NamedLayer>
     <se:Name>Couche d'OCcupation du Sol à Grande Echelle (OCSGE)</se:Name>
     <UserStyle>
-      <se:Name>OCcupation du Sol à Grande Echelle (OCSGE) - CS </se:Name>
+      <se:Name>OCcupation du Sol à Grande Echelle (OCSGE) - Couverture du sol </se:Name>
       <se:Description>
-        <se:Title>OCSGE - CS</se:Title>
-        <se:Abstract>OCcupation du Sol à Grande Echelle (OCSGE) - CS</se:Abstract>
+        <se:Title>OCSGE - Couverture du sol</se:Title>
+        <se:Abstract>OCcupation du Sol à Grande Echelle (OCSGE) - Couverture du sol</se:Abstract>
       </se:Description>       
 
       <!-- Zones bâties  -->      
