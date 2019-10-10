@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  nom du SLD : ocsge_rm_cs
+  nom du SLD : ocsge_rm_cs_2017
 
-  couche source dans la base :  occup_sol.ocsge_rm
-  layer cible du style       :  ocsol_mode:ocsge_rm
+  couche source dans la base :  occup_sol.ocsge_rm_2017
+  layer cible du style       :  ocsol_mode:ocsge_rm_2017
 
-  objet : style Couverture du sol
+  objet : style Couverture du sol - 2017
 
   Historique des versions :
   date        |  auteur              |  description
@@ -16,12 +16,12 @@
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>Couche d'OCcupation du Sol à Grande Echelle (OCSGE)</se:Name>
+    <se:Name>Couche d'OCcupation du Sol à Grande Echelle (OCSGE) - 2017</se:Name>
     <UserStyle>
-      <se:Name>OCcupation du Sol à Grande Echelle (OCSGE) - Couverture du sol </se:Name>
+      <se:Name>OCcupation du Sol à Grande Echelle (OCSGE) - Couverture du sol - 2017 </se:Name>
       <se:Description>
-        <se:Title>OCSGE - Couverture du sol</se:Title>
-        <se:Abstract>OCcupation du Sol à Grande Echelle (OCSGE) - Couverture du sol</se:Abstract>
+        <se:Title>OCSGE - Couverture du sol - 2017</se:Title>
+        <se:Abstract>OCcupation du Sol à Grande Echelle (OCSGE) - Couverture du sol - 2017</se:Abstract>
       </se:Description>       
 
       <!-- Zones bâties  -->      

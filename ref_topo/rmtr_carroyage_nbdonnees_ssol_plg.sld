@@ -34,8 +34,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       
         <se:Rule>
           <se:Name>Limites des carreaux</se:Name>
-          <se:MinScaleDenominator>1000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1500</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>1100</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#888888</se:SvgParameter>
@@ -48,148 +47,6 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Stroke>
           </se:PolygonSymbolizer>
         </se:Rule>
-        
-        
-        
-        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-        <!-- polygones avec bordures pour les moyennes et grandes échelles -->
-        <!-- opacité réduite -->
-
-        <!-- 0 = pas de données -> gris transparent -->
-        <se:Rule>
-          <se:Name>Pas de données</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:Literal>0</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#888888</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.10</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-
-        <!-- 1 - 125 -->
-        <se:Rule>
-          <se:Name>1 à 125 objets</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsBetween>
-              <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:LowerBoundary>
-                <ogc:Literal>1</ogc:Literal>
-              </ogc:LowerBoundary>
-              <ogc:UpperBoundary>
-                <ogc:Literal>125</ogc:Literal>
-              </ogc:UpperBoundary>
-            </ogc:PropertyIsBetween>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#d9fbff</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.50</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-
-        <!-- 126 - 250 -->
-        <se:Rule>
-          <se:Name>126 à 250 objets</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsBetween>
-              <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:LowerBoundary>
-                <ogc:Literal>126</ogc:Literal>
-              </ogc:LowerBoundary>
-              <ogc:UpperBoundary>
-                <ogc:Literal>250</ogc:Literal>
-              </ogc:UpperBoundary>
-            </ogc:PropertyIsBetween>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#adcfff</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.50</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        
-        <!-- 251 - 500 -->
-        <se:Rule>
-          <se:Name>251 à 500 objets</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsBetween>
-              <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:LowerBoundary>
-                <ogc:Literal>251</ogc:Literal>
-              </ogc:LowerBoundary>
-              <ogc:UpperBoundary>
-                <ogc:Literal>500</ogc:Literal>
-              </ogc:UpperBoundary>
-            </ogc:PropertyIsBetween>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#598bd1</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.50</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-
-        <!-- > 501 -->
-        <se:Rule>
-          <se:Name>> à 501 objets</se:Name>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsGreaterThan>
-              <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:Literal>501</ogc:Literal>
-            </ogc:PropertyIsGreaterThan>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:PolygonSymbolizer>
-            <se:Fill>
-              <se:SvgParameter name="fill">#2f5e9e</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.50</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#444444</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.25</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">0.5</se:SvgParameter>
-            </se:Stroke>
-          </se:PolygonSymbolizer>
-        </se:Rule>
-        
         
       
         <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -204,7 +61,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <ogc:Literal>0</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -233,7 +90,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:UpperBoundary>
             </ogc:PropertyIsBetween>
           </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -262,7 +119,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:UpperBoundary>
             </ogc:PropertyIsBetween>
           </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -291,7 +148,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               </ogc:UpperBoundary>
             </ogc:PropertyIsBetween>
           </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -306,16 +163,16 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PolygonSymbolizer>
         </se:Rule>
 
-        <!-- > 501 -->
+        <!-- > 500 -->
         <se:Rule>
-          <se:Name>> à 501 objets</se:Name>
+          <se:Name>> à 500 objets</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsGreaterThan>
               <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:Literal>501</ogc:Literal>
+              <ogc:Literal>500</ogc:Literal>
             </ogc:PropertyIsGreaterThan>
           </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
+          <se:MinScaleDenominator>1100</se:MinScaleDenominator>
           <se:MaxScaleDenominator>35000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
@@ -344,7 +201,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#888888</se:SvgParameter>
@@ -368,7 +225,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsBetween>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#d9fbff</se:SvgParameter>
@@ -392,7 +249,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsBetween>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#adcfff</se:SvgParameter>
@@ -416,7 +273,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </ogc:PropertyIsBetween>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#598bd1</se:SvgParameter>
@@ -425,17 +282,17 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           </se:PolygonSymbolizer>
         </se:Rule>
 
-        <!-- > 501 -->
+        <!-- > 500 -->
         <se:Rule>
-          <se:Name>> à 501 objets</se:Name>
+          <se:Name>> à 500 objets</se:Name>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsGreaterThan>
               <ogc:PropertyName>nb_donnees_ssol</ogc:PropertyName>
-              <ogc:Literal>501</ogc:Literal>
+              <ogc:Literal>500</ogc:Literal>
             </ogc:PropertyIsGreaterThan>
           </ogc:Filter>
           <se:MinScaleDenominator>35000</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>300000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>273000</se:MaxScaleDenominator>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#2f5e9e</se:SvgParameter>
