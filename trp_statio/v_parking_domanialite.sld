@@ -13,7 +13,7 @@
   Historique des versions :
   date        |  auteur              |  description
   24/05/2018  |  S GELIN             |  version initiale
-
+  17/10/2019  |  S GELIN             |  rajout type de domaines
   
 -->
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se">
@@ -68,7 +68,7 @@
               <se:Mark>
                 <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#FF7F7F</se:SvgParameter>
+                  <se:SvgParameter name="fill">#FF0000</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
@@ -95,7 +95,61 @@
               <se:Mark>
                 <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#A80000</se:SvgParameter>
+                  <se:SvgParameter name="fill">#55FF00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                </se:Stroke>                
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <!-- Privé intercommunal -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Privé intercommunal</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>domaine</ogc:PropertyName>
+              <ogc:Literal>Privé intercommunal</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>          
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#00A9E6</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                </se:Stroke>                
+              </se:Mark>
+              <se:Size>12</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+
+      <!-- Privé départemental -->
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Privé départemental</se:Name>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>domaine</ogc:PropertyName>
+              <ogc:Literal>Privé départemental</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>          
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#E600A9</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
@@ -122,7 +176,7 @@
               <se:Mark>
                 <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#FF00C5</se:SvgParameter>
+                  <se:SvgParameter name="fill">#FF73DF</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
@@ -149,7 +203,7 @@
               <se:Mark>
                 <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#00C5FF</se:SvgParameter>
+                  <se:SvgParameter name="fill">#73FFDF</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
@@ -176,7 +230,7 @@
               <se:Mark>
                 <se:WellKnownName>ttf://Equipements_PVI#0x004E</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#38A800</se:SvgParameter>
+                  <se:SvgParameter name="fill">#A3FF73</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
