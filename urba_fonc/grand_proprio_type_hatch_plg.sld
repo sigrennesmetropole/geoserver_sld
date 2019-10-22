@@ -3,8 +3,8 @@
   
   nom du SLD : grand_proprio_type_hatch_plg
   
-  couche source dans la base :  urba_foncier.grand_proprio
-  layer cible du style       :  urba_fonc:grand_proprio
+  couche source dans la base :  urba_foncier.grand_proprio_parcelle
+  layer cible du style       :  urba_fonc:grand_proprio_parcelle
   
   objet :
   classification discrète sur l'attribut "type" en aplats de couleurs hachurés
@@ -13,6 +13,7 @@
   Historique des versions :
   date        |  auteur              |  description
   15/05/2018  |  Maël REBOUX         |  version initiale
+  22/10/2019  |  Maël REBOUX         |  rajout Diocèse et SNCF + modif type État + nouvelle couche
   
 -->
 <StyledLayerDescriptor version="1.1.0" 
@@ -24,7 +25,7 @@
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
   <NamedLayer>
-    <se:Name>urba_fonc:grand_proprio</se:Name>
+    <se:Name>urba_fonc:grand_proprio_parcelle</se:Name>
     <UserStyle>
       <se:Name>grand_proprio_type_hatch_plg</se:Name>
         <se:Description>
@@ -38,7 +39,7 @@
           <se:Name>Commune</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Commune</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -69,7 +70,7 @@
           <se:Name>Commune</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Commune</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -104,7 +105,7 @@
           <se:Name>Autre commune</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Autre commune</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -135,7 +136,7 @@
           <se:Name>Autre commune</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Autre commune</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -170,7 +171,7 @@
           <se:Name>Rennes Métropole</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Rennes Métropole</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -201,7 +202,7 @@
           <se:Name>Rennes Métropole</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Rennes Métropole</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -236,7 +237,7 @@
           <se:Name>Département</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Département</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -267,7 +268,7 @@
           <se:Name>Département</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Département</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -302,7 +303,7 @@
           <se:Name>Région</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Région</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -333,7 +334,7 @@
           <se:Name>Région</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Région</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -368,8 +369,8 @@
           <se:Name>État</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>Etat</ogc:Literal>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
+              <ogc:Literal>État</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
@@ -399,8 +400,8 @@
           <se:Name>État</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
-              <ogc:Literal>Etat</ogc:Literal>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
+              <ogc:Literal>État</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>10000</se:MinScaleDenominator>
@@ -434,7 +435,7 @@
           <se:Name>Établissement public foncier (EPF)</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>EPF</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -465,7 +466,7 @@
           <se:Name>Établissement public foncier (EPF)</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>EPF</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -500,7 +501,7 @@
           <se:Name>Établissement public de santé (EPS)</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>EPS</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -531,7 +532,7 @@
           <se:Name>Établissement public de santé (EPS)</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>EPS</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -566,7 +567,7 @@
           <se:Name>Aménageurs publics</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Aménageurs publics</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -597,7 +598,7 @@
           <se:Name>Aménageurs publics</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Aménageurs publics</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -632,7 +633,7 @@
           <se:Name>SBAFER</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>SBAFER</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -663,7 +664,7 @@
           <se:Name>SBAFER</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>SBAFER</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -698,7 +699,7 @@
           <se:Name>Bailleurs sociaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Bailleurs sociaux</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -729,7 +730,7 @@
           <se:Name>Bailleurs sociaux</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type</ogc:PropertyName>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
               <ogc:Literal>Bailleurs sociaux</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -743,6 +744,138 @@
                     <se:WellKnownName>shape://slash</se:WellKnownName>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#ff9c00</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>12</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        
+        <!-- Diocèse -->
+        <se:Rule>
+          <se:Name>Diocèse</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
+              <ogc:Literal>Diocèse</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#8ffeff</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>30</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Diocèse</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
+              <ogc:Literal>Diocèse</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#8ffeff</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">4</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>12</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        
+        
+        <!-- SNCF -->
+        <se:Rule>
+          <se:Name>SNCF</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
+              <ogc:Literal>SNCF</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#e15989</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">10</se:SvgParameter>
+                    </se:Stroke>
+                  </se:Mark>
+                  <se:Size>30</se:Size>
+                </se:Graphic>
+              </se:GraphicFill>
+            </se:Fill>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#aaaaaa</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">0.4</se:SvgParameter>
+              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
+            </se:Stroke>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>SNCF</se:Name>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>prop_type</ogc:PropertyName>
+              <ogc:Literal>SNCF</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10000</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>69000</se:MaxScaleDenominator>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:GraphicFill>
+                <se:Graphic>
+                  <se:Mark>
+                    <se:WellKnownName>shape://slash</se:WellKnownName>
+                    <se:Stroke>
+                      <se:SvgParameter name="stroke">#e15989</se:SvgParameter>
                       <se:SvgParameter name="stroke-width">4</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
