@@ -14,6 +14,7 @@
   14/01/2019  |  Maël REBOUX         |  exclusion des multi et des édifices groupés qui ne doivent plus apparaître
   30/04/2019  |  Maël REBOUX         |  déplacement dans workspace app
   02/05/2019  |  Maël REBOUX         |  filtrages particuliers uniquement sur Rennes
+  30/10/2019  |  Maël REBOUX         |  modification du style
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
@@ -28,29 +29,8 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
       </se:Description>
       <se:FeatureTypeStyle>
 
-        <!-- polygone transparent avec bordure noire moyenne -->
+        <!-- polygone transparent avec bordure noire avec des demi ronds -->
         <se:Rule>
-          <!--<se:Name>Polygone</se:Name>-->
-          <!--<ogc:Filter>
-            <ogc:And>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>grp_type</ogc:PropertyName>
-                  <ogc:Literal>multi</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-              <ogc:Not>
-                <ogc:PropertyIsEqualTo>
-                  <ogc:PropertyName>grp_type</ogc:PropertyName>
-                  <ogc:Literal>édifices groupés</ogc:Literal>
-                </ogc:PropertyIsEqualTo>
-              </ogc:Not>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>code_commune</ogc:PropertyName>
-                <ogc:Literal>35238</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-            </ogc:And>
-          </ogc:Filter>-->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>250000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
@@ -58,30 +38,26 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:GraphicStroke>
                 <se:Graphic>
                   <se:Mark>
-                    <se:WellKnownName>shape://backslash</se:WellKnownName>
+                    <se:WellKnownName>ttf://plui_rm#${'U+002C'}</se:WellKnownName>
                     <se:Fill>
                       <se:SvgParameter name="fill">#000000</se:SvgParameter>
                     </se:Fill>
                     <se:Stroke>
                       <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-                      <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                      <se:SvgParameter name="stroke-width">0</se:SvgParameter>
                     </se:Stroke>
                   </se:Mark>
-                  <se:Size>12</se:Size>
+                  <se:Size>11</se:Size>
+                  <se:Rotation>180</se:Rotation>                  
                   <se:Displacement>
-                    <se:DisplacementX>3</se:DisplacementX>
-                    <se:DisplacementY>6</se:DisplacementY>
+                    <se:DisplacementX>0</se:DisplacementX>
+                    <se:DisplacementY>4</se:DisplacementY>
                   </se:Displacement>
-                </se:Graphic>       
+                </se:Graphic>
               </se:GraphicStroke>
             </se:Stroke>
           </se:LineSymbolizer>
-          <se:PolygonSymbolizer>           
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#000000</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>      
-            </se:Stroke>
-          </se:PolygonSymbolizer>   
+
         </se:Rule>
 
       </se:FeatureTypeStyle>
