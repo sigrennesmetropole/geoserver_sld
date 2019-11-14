@@ -1,39 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : star_ligne_itineraire_lgn
+  nom du SLD : cr_bzh_reseau_dep_ligne
   
-  couche source dans la base :  mobilite_transp.star_ligne_itineraire
-  layer cible du style       :  trp_coll:star_ligne_itineraire
+  couche source dans la base :  mobilite_transp.cr_bzh_reseau_dep_ligne
+  layer cible du style       :  trp_coll:cr_bzh_reseau_dep_ligne
   
   objet : style par défaut
   
   Historique des versions :
   date        |  auteur              |  description
-  10/03/2017  |  Maël REBOUX         |  version initiale
-  07/11/2019  |  Maël REBOUX         |  calage sur style données CR BZH
+  07/11/2019  |  Maël REBOUX         |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:star_ligne_itineraire</se:Name>
+    <se:Name>trp_coll:cr_bzh_reseau_dep_ligne</se:Name>
     <UserStyle>
-      <se:Name>star_ligne_itineraire_lgn</se:Name>
+      <se:Name>cr_bzh_reseau_dep_ligne</se:Name>
         <se:Description>
-          <se:Title>Style par défaut</se:Title>
+          <se:Title>Tracé des lignes en violet</se:Title>
           <se:Abstract>Style par défaut</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- ligne bleue -->
+        <!-- bordure noire fine -->
         <se:Rule>
           <!--<se:Name>Polyligne</se:Name>-->
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
           <se:MaxScaleDenominator>2000000</se:MaxScaleDenominator>
           <se:LineSymbolizer>
             <se:Stroke>
-              <se:SvgParameter name="stroke">#2158C6</se:SvgParameter>
+              <se:SvgParameter name="stroke">#AE79C4</se:SvgParameter>
               <se:SvgParameter name="stroke-width">3.0</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>

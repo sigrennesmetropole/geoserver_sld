@@ -1,33 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : star_arret_logique_pnt
+  nom du SLD : cr_bzh_reseau_dep_al
   
-  couche source dans la base :  mobilite_transp.star_arret_logique
-  layer cible du style       :  trp_coll:star_arret_logique
+  couche source dans la base :  mobilite_transp.cr_bzh_reseau_dep_al
+  layer cible du style       :  trp_coll:cr_bzh_reseau_dep_al
   
-  objet : Style par défaut
+  objet : style par défaut
   
   Historique des versions :
   date        |  auteur              |  description
-  14/11/2016  |  Léo Petipas         |  version initiale
-  10/03/2017  |  Maël REBOUX         |  en vert pour distinguer des arrêts physiques
-  07/11/2019  |  Maël REBOUX         |  calage sur style données CR BZH
+  07/11/2019  |  Maël REBOUX         |  version initiale
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>trp_coll:star_arret_logique</se:Name>
+    <se:Name>trp_coll:cr_bzh_reseau_dep_al</se:Name>
     <UserStyle>
-      <se:Name>star_arret_logique_pnt</se:Name>
+      <se:Name>cr_bzh_reseau_dep_al</se:Name>
         <se:Description>
           <se:Title>Arrêts logiques</se:Title>
-          <se:Abstract>Rond bleu</se:Abstract>
+          <se:Abstract>Rond violet</se:Abstract>
         </se:Description>
       <se:FeatureTypeStyle>
       
-        <!-- point rond bleu avec bordure noire -->
+        <!-- point rond violet avec bordure noire -->
         <se:Rule>
           <se:Name>Arrêt logique</se:Name>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -37,7 +35,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#2158C6</se:SvgParameter>
+                  <se:SvgParameter name="fill">#AE79C4</se:SvgParameter>
                   <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
@@ -51,7 +49,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
         
         
-        <!-- point rond bleu avec bordure noire -->
+        <!-- point rond violet avec bordure noire -->
         <se:Rule>
           <se:Name>Arrêt logique</se:Name>
           <se:MinScaleDenominator>25000</se:MinScaleDenominator>
@@ -61,7 +59,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#2158C6</se:SvgParameter>
+                  <se:SvgParameter name="fill">#AE79C4</se:SvgParameter>
                   <se:SvgParameter name="fill-opacity">1.0</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
@@ -73,6 +71,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
+        
       
       </se:FeatureTypeStyle>
     </UserStyle>
