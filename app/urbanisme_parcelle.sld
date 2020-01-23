@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
   
-  nom du SLD : urbanisme_parcelle
+  nom du SLD : app_urbanisme_parcelle
   
   couche source dans la base :  cadastre_qgis.geo_parcelle
   layer cible du style       :  app:urbanisme_parcelle
@@ -11,15 +11,14 @@
   
   Historique des versions :
   date        |  auteur              |  description
-  28/09/2016  |  Maël REBOUX         |  version initiale pour test module urbanisme
-  26/08/2019  |  Maël REBOUX         |  migration modèle QGIS + workspace app Reprise du style ref_cad:parcelle
+  29/08/2019  |  Maël REBOUX         |  couche temporaire le temps de reconfigurer le module urbanisme
   
   
 -->
 <StyledLayerDescriptor version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" xmlns="http://www.opengis.net/sld" 
 xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>app:urbanisme_parcelle</se:Name>
+    <se:Name>ref_cad:app_urbanisme_parcelle</se:Name>
     <UserStyle>
       <se:Name>urbanisme_parcelle</se:Name>
       <se:Description>
@@ -35,7 +34,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffeabe</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.001</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9b9b9b</se:SvgParameter>
@@ -52,7 +51,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#ffeabe</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">0.001</se:SvgParameter>
+              <se:SvgParameter name="fill-opacity">0.01</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#9b9b9b</se:SvgParameter>
@@ -63,141 +62,7 @@ xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmln
         </se:Rule>
       
       
-      
-        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <!-- étiquettes -->
-        
-        <se:Rule>
-          <se:Name>Numéros des grandes parcelles</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsGreaterThanOrEqualTo>
-              <ogc:PropertyName>supf</ogc:PropertyName>
-              <ogc:Literal>7500</ogc:Literal>
-            </ogc:PropertyIsGreaterThanOrEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>10000</se:MaxScaleDenominator>
-          <se:TextSymbolizer>
-            <se:Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>geom</ogc:PropertyName>
-              </ogc:Function>
-            </se:Geometry>
-            <se:Label>
-              <ogc:PropertyName>parcelle_txt</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
-              <se:SvgParameter name="font-size">7</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
-            </se:Font>
-            <se:LabelPlacement>
-              <se:PointPlacement>
-                <se:AnchorPoint>
-                  <se:AnchorPointX>0.5</se:AnchorPointX>
-                  <se:AnchorPointY>0.5</se:AnchorPointY>
-                </se:AnchorPoint>
-                <se:Displacement>
-                  <se:DisplacementX>0</se:DisplacementX>
-                  <se:DisplacementY>0</se:DisplacementY>
-                </se:Displacement>
-              </se:PointPlacement>
-            </se:LabelPlacement>
-            <se:Fill>
-              <se:SvgParameter name="fill">#606060</se:SvgParameter>
-            </se:Fill>
-            <se:Priority>10</se:Priority>
-            <se:VendorOption name="conflictResolution">false</se:VendorOption>
-          </se:TextSymbolizer>
-        </se:Rule>
-      
-      
-        <se:Rule>
-          <se:Name>Numéros de parcelles</se:Name>
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>1500</se:MaxScaleDenominator>
-          <se:TextSymbolizer>
-            <se:Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>geom</ogc:PropertyName>
-              </ogc:Function>
-            </se:Geometry>
-            <se:Label>
-              <ogc:PropertyName>parcelle_txt</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
-              <se:SvgParameter name="font-size">12</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
-            </se:Font>
-            <!-- placement de l'étiquette -->
-            <se:LabelPlacement>
-              <se:PointPlacement>
-                <se:AnchorPoint>
-                  <se:AnchorPointX>0.5</se:AnchorPointX>
-                  <se:AnchorPointY>0.5</se:AnchorPointY>
-                </se:AnchorPoint>
-                <se:Displacement>
-                  <se:DisplacementX>0</se:DisplacementX>
-                  <se:DisplacementY>0</se:DisplacementY>
-                </se:Displacement>
-              </se:PointPlacement>
-            </se:LabelPlacement>
-            <!-- la couleur et l'opacité du texte -->
-            <se:Fill>
-              <se:SvgParameter name="fill">#606060</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
-            <!-- options avancées -->
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <se:VendorOption name="conflictResolution">false</se:VendorOption>
-          </se:TextSymbolizer>
-        </se:Rule>
-        
-        <se:Rule>
-          <se:Name>Numéros de parcelles</se:Name>
-          <se:MinScaleDenominator>1500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:TextSymbolizer>
-            <se:Geometry>
-              <ogc:Function name="centroid">
-                <ogc:PropertyName>geom</ogc:PropertyName>
-              </ogc:Function>
-            </se:Geometry>
-            <se:Label>
-              <ogc:PropertyName>parcelle_txt</ogc:PropertyName>
-            </se:Label>
-            <se:Font>
-              <se:SvgParameter name="font-family">DejaVu Sans Mono</se:SvgParameter>
-              <se:SvgParameter name="font-size">8</se:SvgParameter>
-              <se:SvgParameter name="font-style">normal</se:SvgParameter>
-              <se:SvgParameter name="font-weight">normal</se:SvgParameter>
-            </se:Font>
-            <!-- placement de l'étiquette -->
-            <se:LabelPlacement>
-              <se:PointPlacement>
-                <se:AnchorPoint>
-                  <se:AnchorPointX>0.5</se:AnchorPointX>
-                  <se:AnchorPointY>0.5</se:AnchorPointY>
-                </se:AnchorPoint>
-                <se:Displacement>
-                  <se:DisplacementX>0</se:DisplacementX>
-                  <se:DisplacementY>0</se:DisplacementY>
-                </se:Displacement>
-              </se:PointPlacement>
-            </se:LabelPlacement>
-            <!-- la couleur et l'opacité du texte -->
-            <se:Fill>
-              <se:SvgParameter name="fill">#606060</se:SvgParameter>
-              <se:SvgParameter name="fill-opacity">1</se:SvgParameter>
-            </se:Fill>
-            <!-- options avancées -->
-            <!-- ne pas gérer les conflits de positionnement = superposer -->
-            <se:VendorOption name="conflictResolution">false</se:VendorOption>
-          </se:TextSymbolizer>
-        </se:Rule>
+
 
       </se:FeatureTypeStyle>
     </UserStyle>
