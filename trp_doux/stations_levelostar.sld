@@ -15,6 +15,7 @@
   08/12/2015  |  Maël REBOUX         |  version initiale qui affichait tous les objets
   10/08/2016  |  Maël REBOUX         |  restriction aux stations ouvertes ou fermées
   13/11/2018  |  Maël REBOUX         |  svg -> png + https
+  11/05/2020  |  Maël REBOUX         |  échelle min et max
   
 -->
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se">
@@ -37,6 +38,8 @@
               <ogc:Literal>Ouverte</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
@@ -57,6 +60,8 @@
               <ogc:Literal>Fermée</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
+          <se:MinScaleDenominator>1</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <se:ExternalGraphic>
