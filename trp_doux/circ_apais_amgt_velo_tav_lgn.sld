@@ -146,13 +146,13 @@
           </se:LineSymbolizer>
         </se:Rule>
         
-        <!-- piste cyclable transitoire : trait orange foncé -->
+        <!-- aménagement cyclable transitoire : trait orange foncé -->
         <se:Rule>
-          <se:Name>piste cyclable transitoire</se:Name>
+          <se:Name>aménagement cyclable transitoire</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_agt_velo_d</ogc:PropertyName>
-              <ogc:Literal>piste cyclable transitoire</ogc:Literal>
+              <ogc:Literal>aménagement cyclable transitoire</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -167,26 +167,6 @@
           </se:LineSymbolizer>
         </se:Rule>
 
-        <!-- bande cyclable transitoire : trait jaune foncé -->
-        <se:Rule>
-          <se:Name>bande cyclable transitoire</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_agt_velo_d</ogc:PropertyName>
-              <ogc:Literal>bande cyclable transitoire</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffe732</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">2.0</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
-            </se:Stroke>
-            <se:PerpendicularOffset>3</se:PerpendicularOffset>
-          </se:LineSymbolizer>
-        </se:Rule>
 
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <!-- gauche -->
@@ -295,13 +275,13 @@
           </se:LineSymbolizer>
         </se:Rule>
         
-        <!-- piste cyclable transitoire : trait orange foncé -->
+        <!-- aménagement cyclable transitoire : trait orange foncé -->
         <se:Rule>
-          <se:Name>piste cyclable transitoire</se:Name>
+          <se:Name>aménagement cyclable transitoire</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_agt_velo_g</ogc:PropertyName>
-              <ogc:Literal>piste cyclable transitoire</ogc:Literal>
+              <ogc:Literal>aménagement cyclable transitoire</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1</se:MinScaleDenominator>
@@ -309,27 +289,6 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff6633</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">2.0</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
-            </se:Stroke>
-            <se:PerpendicularOffset>-3</se:PerpendicularOffset>
-          </se:LineSymbolizer>
-        </se:Rule>
-
-        <!-- bande cyclable transitoire : trait jaune foncé -->
-        <se:Rule>
-          <se:Name>bande cyclable transitoire</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_agt_velo_g</ogc:PropertyName>
-              <ogc:Literal>bande cyclable transitoire</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>1</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2500</se:MaxScaleDenominator>
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffe732</se:SvgParameter>
               <se:SvgParameter name="stroke-width">2.0</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
@@ -448,13 +407,13 @@
           </se:LineSymbolizer>
         </se:Rule>
         
-        <!-- piste cyclable transitoire : trait orange foncé -->
+        <!-- aménagement cyclable transitoire : trait orange foncé -->
         <se:Rule>
-          <se:Name>piste cyclable transitoire</se:Name>
+          <se:Name>aménagement cyclable transitoire</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_agt_velo_d</ogc:PropertyName>
-              <ogc:Literal>piste cyclable transitoire</ogc:Literal>
+              <ogc:Literal>aménagement cyclable transitoire</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
@@ -468,27 +427,7 @@
             <se:PerpendicularOffset>5</se:PerpendicularOffset>
           </se:LineSymbolizer>
         </se:Rule>
-
-        <!-- bande cyclable transitoire : trait jaune foncé -->
-        <se:Rule>
-          <se:Name>bande cyclable transitoire</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_agt_velo_d</ogc:PropertyName>
-              <ogc:Literal>bande cyclable transitoire</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffe732</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">4.0</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
-            </se:Stroke>
-            <se:PerpendicularOffset>5</se:PerpendicularOffset>
-          </se:LineSymbolizer>
-        </se:Rule>
+        
 
         <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <!-- gauche -->
@@ -597,13 +536,13 @@
           </se:LineSymbolizer>
         </se:Rule>
         
-        <!-- piste cyclable transitoire : trait orange foncé -->
+        <!-- aménagement cyclable transitoire : trait orange foncé -->
         <se:Rule>
-          <se:Name>piste cyclable transitoire</se:Name>
+          <se:Name>aménagement cyclable transitoire</se:Name>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>type_agt_velo_g</ogc:PropertyName>
-              <ogc:Literal>piste cyclable transitoire</ogc:Literal>
+              <ogc:Literal>aménagement cyclable transitoire</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
@@ -611,27 +550,6 @@
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff6633</se:SvgParameter>
-              <se:SvgParameter name="stroke-width">4.0</se:SvgParameter>
-              <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
-            </se:Stroke>
-            <se:PerpendicularOffset>-5</se:PerpendicularOffset>
-          </se:LineSymbolizer>
-        </se:Rule>
-
-        <!-- bande cyclable transitoire : trait jaune foncé -->
-        <se:Rule>
-          <se:Name>bande cyclable transitoire</se:Name>
-          <ogc:Filter>
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>type_agt_velo_g</ogc:PropertyName>
-              <ogc:Literal>bande cyclable transitoire</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
-          <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
-            <se:Stroke>
-              <se:SvgParameter name="stroke">#ffe732</se:SvgParameter>
               <se:SvgParameter name="stroke-width">4.0</se:SvgParameter>
               <se:SvgParameter name="stroke-opacity">1.0</se:SvgParameter>
             </se:Stroke>
