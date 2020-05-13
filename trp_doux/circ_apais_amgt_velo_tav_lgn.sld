@@ -16,6 +16,7 @@
   02/05/2019  |  Arnaud LECLERE      |  prise en compte gauche droite
   11/05/2020  |  Maël REBOUX         |  rajout des aménagements transitoires covid19 + passage en unités terrain
   12/05/2020  |  Maël REBOUX         |  passage du décalage par geometry à PerpendicularOffset + homogénéisation
+  12/05/2020  |  Maël REBOUX         |  modif échelles max
 
 -->
 
@@ -298,7 +299,6 @@
 
 
         <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-        
         <!-- ////////////////////////////   2500 - 100000   //////////////////////////////////// -->
 
         <!-- gauche -->
@@ -312,7 +312,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#007fe9</se:SvgParameter>
@@ -333,7 +333,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#48c7fc</se:SvgParameter>
@@ -354,7 +354,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#e13afa</se:SvgParameter>
@@ -375,7 +375,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#00bb39</se:SvgParameter>
@@ -396,7 +396,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#9d9d9d</se:SvgParameter>
@@ -417,7 +417,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff6633</se:SvgParameter>
@@ -441,7 +441,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#007fe9</se:SvgParameter>
@@ -462,7 +462,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#48c7fc</se:SvgParameter>
@@ -483,7 +483,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#e13afa</se:SvgParameter>
@@ -504,7 +504,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#00bb39</se:SvgParameter>
@@ -525,7 +525,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#9d9d9d</se:SvgParameter>
@@ -546,7 +546,7 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>2500</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>100000</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>500000</se:MaxScaleDenominator>
           <se:LineSymbolizer uom="http://www.opengeospatial.org/se/units/metre">
             <se:Stroke>
               <se:SvgParameter name="stroke">#ff6633</se:SvgParameter>
